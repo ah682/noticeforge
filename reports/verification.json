@@ -299,13 +299,14 @@
   },
   "clean_comparison_scope": "all application Python/static files and tests; later documentation and check-script updates separately verified",
   "publication": {
-    "status": "prepared_not_pushed",
+    "status": "published",
     "owner": "ah682",
-    "visibility": "awaiting_selection",
+    "visibility": "public",
+    "repository": "https://github.com/ah682/noticeforge",
+    "project_page": "https://ah682.github.io/noticeforge/",
     "project_license": "not_selected",
-    "project_page": "prepared; not deployed",
     "live_application": "local Python backend; not hosted on Pages",
-    "preparation_checks": "reports/quality/github-preparation.json"
+    "deployment_verification": "reports/quality/github-publication.json"
   },
   "distribution_archives": {
     "noticeforge-0.1.0-py3-none-any.whl": {

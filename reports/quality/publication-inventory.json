@@ -1,6 +1,6 @@
 {
-  "files": 411,
-  "bytes": 18111053,
+  "files": 412,
+  "bytes": 18112492,
   "largest": [
     {
       "path": "reports/browser-model/model-decision-history.png",
@@ -28,5 +28,5 @@
   "credential_pattern_matches": [],
   "missing_documentation_links": [],
   "index_byte_mismatches": [],
-  "scope": "Prepared GitHub source inventory: application, owned fixtures, attributed schemas, documentation, project page and verification evidence. Runtime data, credentials, generated model weights and internal planning notes are excluded."
+  "scope": "Published GitHub source inventory: application, owned fixtures, attributed schemas, documentation, project page and verification evidence. Runtime data, credentials, generated model weights and internal planning notes are excluded."
 }

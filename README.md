@@ -2,6 +2,8 @@
 
 NoticeForge is a local review tool for semiconductor product-change and discontinuance notices. It reads PDF or text notices, connects affected parts to their deadlines, and keeps the source evidence beside the extracted records.
 
+[Project page](https://ah682.github.io/noticeforge/) · [Walkthrough](docs/WALKTHROUGH.md)
+
 ![NoticeForge review workspace](docs/images/review.png)
 
 ## Run it locally

@@ -1,9 +1,9 @@
 # GitHub and hosting
 
-The prepared publication targets [ah682/noticeforge](https://github.com/ah682/noticeforge), with a
-[project page](https://ah682.github.io/noticeforge/) containing a workspace preview and local setup
-instructions. Upload and deployment are pending. The page source is in `site/`;
-`.github/workflows/pages.yml` deploys that directory after changes are pushed to `main`.
+The public source repository is [ah682/noticeforge](https://github.com/ah682/noticeforge). The
+[project page](https://ah682.github.io/noticeforge/) contains a workspace preview and local setup
+instructions. Its source is in `site/`; `.github/workflows/pages.yml` deploys that directory after
+changes are pushed to `main`.
 
 GitHub Pages serves static files. It cannot run the FastAPI backend or store uploaded notices in
 SQLite. Run `make demo` locally to use uploads, review decisions, BOM matching, and exports.

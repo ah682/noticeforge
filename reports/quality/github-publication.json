@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-14",
+  "repository": "https://github.com/ah682/noticeforge",
+  "visibility": "public",
+  "release_commit": "fd49e3b0abc83d974758aebb1b934bd6e3080fd5",
+  "release_file_hashes_verified": 411,
+  "github_pages": {
+    "url": "https://ah682.github.io/noticeforge/",
+    "https": true,
+    "type": "static project overview; full app runs locally",
+    "html_matches_source": true,
+    "tested_widths": [
+      1440,
+      768,
+      390,
+      320
+    ],
+    "axe_violations": 0,
+    "manual_diagnostic": "Decorative down arrow has white foreground on #193130; desktop and mobile screenshots inspected.",
+    "browser_errors": []
+  },
+  "workflows": [
+    {
+      "name": "local-acceptance",
+      "head_sha": "fd49e3b0abc83d974758aebb1b934bd6e3080fd5",
+      "conclusion": "success",
+      "html_url": "https://github.com/ah682/noticeforge/actions/runs/38548452724"
+    },
+    {
+      "name": "GitHub Pages",
+      "head_sha": "fd49e3b0abc83d974758aebb1b934bd6e3080fd5",
+      "conclusion": "success",
+      "html_url": "https://github.com/ah682/noticeforge/actions/runs/38548452717"
+    }
+  ],
+  "attribution_findings": [],
+  "credential_pattern_findings": [],
+  "retained_credits": "Third-party schema and dependency attribution retained."
+}

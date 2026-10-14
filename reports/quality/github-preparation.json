@@ -1,7 +1,7 @@
 {
   "date": "2026-10-14",
   "repository": "https://github.com/ah682/noticeforge",
-  "status": "prepared; credentials and repository visibility pending",
+  "status": "Preparation snapshot before publication; see github-publication.json for deployment results.",
   "checks": {
     "fresh_publication_checkout": {
       "tests_passed": 174,
@@ -31,8 +31,8 @@
     "attribution_findings": [],
     "credential_pattern_findings": []
   },
-  "hosted_actions": "not run",
-  "github_pages": "not deployed",
+  "hosted_actions": "not run at preparation time",
+  "github_pages": "not deployed at preparation time",
   "excluded": "local runtime databases, credentials, environments, caches, model weights, original task prompt and internal planning notes",
   "historical_evidence": "Frozen experiment reports retain their original measured outcomes and paths.",
   "publication_source_sha256": {
