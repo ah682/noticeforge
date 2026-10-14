@@ -1,0 +1,10 @@
+OWNED SYNTHETIC EVALUATION CASE
+Notice ID: TL-98
+Supplier: Tern Logic
+Notice type: PDN
+Title: Synthetic unsupported-ragged-row
+Issue date: 2027-10-01
+Part number | Last buy
+TR-001 | 2028-11-30
+TR-002 | Unlabelled legacy qualifier | 2028-12-31
+Page 1 of 1

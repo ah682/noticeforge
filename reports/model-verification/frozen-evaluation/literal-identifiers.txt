@@ -1,0 +1,13 @@
+OWNED SYNTHETIC EVALUATION CASE
+Notice ID: IC-09
+Supplier: Indigo Circuits
+Notice type: PDN
+Title: Synthetic literal-identifiers
+Issue date: 2027-10-01
+Part number | Last buy
+0010-TR | 2028-02-01
+010-TR | 2028-02-01
+OO10-TR | 2028-02-01
+0010-T | 2028-02-01
+Replacement for 0010-T: 0010-N
+Page 1 of 1

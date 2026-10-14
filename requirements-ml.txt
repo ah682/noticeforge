@@ -1,0 +1,10 @@
+# Optional isolated environment. Never installed by the CPU-first demo.
+# Pin compatibility is checked by resolver/import probes; actual model/GPU runs remain separate.
+torch==2.8.0
+transformers==4.56.2
+peft==0.17.1
+accelerate==1.10.1
+bitsandbytes==0.47.0
+safetensors==0.6.2
+tokenizers==0.22.0
+huggingface-hub==0.34.4

@@ -1,0 +1,1619 @@
+{
+  "id": "a6148bf817e932cbdfbd",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "OCR-CHECK-2026",
+      "raw": "OCR-CHECK-2026",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 50,
+          "end": 64,
+          "quote": "OCR-CHECK-2026",
+          "bbox": [
+            40.32,
+            62.63999999999999,
+            219.11999999999998,
+            70.32
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Owned OCR Components",
+      "raw": "Owned OCR Components",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 75,
+          "end": 95,
+          "quote": "Owned OCR Components",
+          "bbox": [
+            41.04,
+            90.47999999999999,
+            254.88,
+            100.08
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PDN",
+      "raw": "PDN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 109,
+          "end": 112,
+          "quote": "PDN",
+          "bbox": [
+            40.32,
+            118.55999999999999,
+            154.79999999999998,
+            128.16
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Literal identifiers",
+      "raw": "Literal identifiers",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 120,
+          "end": 139,
+          "quote": "Literal identifiers",
+          "bbox": [
+            40.8,
+            146.64,
+            226.07999999999998,
+            154.32
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2026-10-01",
+      "raw": "2026-10-01",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 152,
+          "end": 162,
+          "quote": "2026-10-01",
+          "bbox": [
+            41.279999999999994,
+            174.48,
+            197.27999999999997,
+            182.16
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": "A",
+      "raw": "A",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 173,
+          "end": 174,
+          "quote": "A",
+          "bbox": [
+            40.559999999999995,
+            202.55999999999997,
+            119.27999999999999,
+            210.23999999999998
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "a6148bf817e932cbdfbd3be3127e7f654e912b29db8521e60e856cc24443caf7",
+    "filename": "literal-identifiers-300dpi.pdf",
+    "media_type": "application/pdf",
+    "byte_size": 138954,
+    "pages": [
+      {
+        "number": 1,
+        "text": "OWNED SYNTHETIC OCR VERIFICATION — CCO\nNotice ID: OCR-CHECK-2026\nSupplier: Owned OCR Components\nNotice type: PDN\nTitle: Literal identifiers\nIssue date: 2026-10-01\nRevision: A\nPart: OO10-TR; Last buy: 2027-07-31\nPart: O10-TR; Last buy: 2027-07-31\nPart: OO10-TR; Last buy: 2027-07-31\nPart: 0010-T; Last buy: 2027-07-31\nPart: AO1LO-L; Last buy: 2027-07-31\nPart: AO10O-L; Last buy: 2027-07-31\nPage 1 of 1\n",
+        "width": 612.0,
+        "height": 792.0,
+        "method": "ocr",
+        "lines": [
+          {
+            "text": "OWNED SYNTHETIC OCR VERIFICATION — CCO",
+            "start": 0,
+            "end": 38,
+            "bbox": [
+              40.559999999999995,
+              34.559999999999995,
+              312.47999999999996,
+              42.239999999999995
+            ]
+          },
+          {
+            "text": "Notice ID: OCR-CHECK-2026",
+            "start": 39,
+            "end": 64,
+            "bbox": [
+              40.32,
+              62.63999999999999,
+              219.11999999999998,
+              70.32
+            ]
+          },
+          {
+            "text": "Supplier: Owned OCR Components",
+            "start": 65,
+            "end": 95,
+            "bbox": [
+              41.04,
+              90.47999999999999,
+              254.88,
+              100.08
+            ]
+          },
+          {
+            "text": "Notice type: PDN",
+            "start": 96,
+            "end": 112,
+            "bbox": [
+              40.32,
+              118.55999999999999,
+              154.79999999999998,
+              128.16
+            ]
+          },
+          {
+            "text": "Title: Literal identifiers",
+            "start": 113,
+            "end": 139,
+            "bbox": [
+              40.8,
+              146.64,
+              226.07999999999998,
+              154.32
+            ]
+          },
+          {
+            "text": "Issue date: 2026-10-01",
+            "start": 140,
+            "end": 162,
+            "bbox": [
+              41.279999999999994,
+              174.48,
+              197.27999999999997,
+              182.16
+            ]
+          },
+          {
+            "text": "Revision: A",
+            "start": 163,
+            "end": 174,
+            "bbox": [
+              40.559999999999995,
+              202.55999999999997,
+              119.27999999999999,
+              210.23999999999998
+            ]
+          },
+          {
+            "text": "Part: OO10-TR; Last buy: 2027-07-31",
+            "start": 175,
+            "end": 210,
+            "bbox": [
+              40.559999999999995,
+              230.64,
+              290.88,
+              240.23999999999998
+            ]
+          },
+          {
+            "text": "Part: O10-TR; Last buy: 2027-07-31",
+            "start": 211,
+            "end": 245,
+            "bbox": [
+              40.559999999999995,
+              258.47999999999996,
+              283.68,
+              268.08
+            ]
+          },
+          {
+            "text": "Part: OO10-TR; Last buy: 2027-07-31",
+            "start": 246,
+            "end": 281,
+            "bbox": [
+              40.559999999999995,
+              286.56,
+              290.88,
+              296.15999999999997
+            ]
+          },
+          {
+            "text": "Part: 0010-T; Last buy: 2027-07-31",
+            "start": 282,
+            "end": 316,
+            "bbox": [
+              40.559999999999995,
+              314.64,
+              283.68,
+              324.23999999999995
+            ]
+          },
+          {
+            "text": "Part: AO1LO-L; Last buy: 2027-07-31",
+            "start": 317,
+            "end": 352,
+            "bbox": [
+              40.559999999999995,
+              342.47999999999996,
+              283.68,
+              352.08
+            ]
+          },
+          {
+            "text": "Part: AO10O-L; Last buy: 2027-07-31",
+            "start": 353,
+            "end": 388,
+            "bbox": [
+              40.559999999999995,
+              370.55999999999995,
+              283.68,
+              380.15999999999997
+            ]
+          },
+          {
+            "text": "Page 1 of 1",
+            "start": 389,
+            "end": 400,
+            "bbox": [
+              40.559999999999995,
+              398.88,
+              118.08,
+              408.23999999999995
+            ]
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 1,
+    "complete": true,
+    "warnings": [],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "OO10-TR",
+        "raw": "OO10-TR",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 181,
+            "end": 188,
+            "quote": "OO10-TR",
+            "bbox": [
+              40.559999999999995,
+              230.64,
+              290.88,
+              240.23999999999998
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "OO10-TR",
+      "manufacturer": {
+        "value": "Owned OCR Components",
+        "raw": "Owned OCR Components",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 75,
+            "end": 95,
+            "quote": "Owned OCR Components",
+            "bbox": [
+              41.04,
+              90.47999999999999,
+              254.88,
+              100.08
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2027-07-31",
+          "raw": "2027-07-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 200,
+              "end": 210,
+              "quote": "2027-07-31",
+              "bbox": [
+                40.559999999999995,
+                230.64,
+                290.88,
+                240.23999999999998
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-2",
+      "raw_identifier": {
+        "value": "O10-TR",
+        "raw": "O10-TR",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 217,
+            "end": 223,
+            "quote": "O10-TR",
+            "bbox": [
+              40.559999999999995,
+              258.47999999999996,
+              283.68,
+              268.08
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "O10-TR",
+      "manufacturer": {
+        "value": "Owned OCR Components",
+        "raw": "Owned OCR Components",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 75,
+            "end": 95,
+            "quote": "Owned OCR Components",
+            "bbox": [
+              41.04,
+              90.47999999999999,
+              254.88,
+              100.08
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2027-07-31",
+          "raw": "2027-07-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 235,
+              "end": 245,
+              "quote": "2027-07-31",
+              "bbox": [
+                40.559999999999995,
+                258.47999999999996,
+                283.68,
+                268.08
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-3",
+      "raw_identifier": {
+        "value": "OO10-TR",
+        "raw": "OO10-TR",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 252,
+            "end": 259,
+            "quote": "OO10-TR",
+            "bbox": [
+              40.559999999999995,
+              286.56,
+              290.88,
+              296.15999999999997
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "OO10-TR",
+      "manufacturer": {
+        "value": "Owned OCR Components",
+        "raw": "Owned OCR Components",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 75,
+            "end": 95,
+            "quote": "Owned OCR Components",
+            "bbox": [
+              41.04,
+              90.47999999999999,
+              254.88,
+              100.08
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2027-07-31",
+          "raw": "2027-07-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 271,
+              "end": 281,
+              "quote": "2027-07-31",
+              "bbox": [
+                40.559999999999995,
+                286.56,
+                290.88,
+                296.15999999999997
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-4",
+      "raw_identifier": {
+        "value": "0010-T",
+        "raw": "0010-T",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 288,
+            "end": 294,
+            "quote": "0010-T",
+            "bbox": [
+              40.559999999999995,
+              314.64,
+              283.68,
+              324.23999999999995
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "0010-T",
+      "manufacturer": {
+        "value": "Owned OCR Components",
+        "raw": "Owned OCR Components",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 75,
+            "end": 95,
+            "quote": "Owned OCR Components",
+            "bbox": [
+              41.04,
+              90.47999999999999,
+              254.88,
+              100.08
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2027-07-31",
+          "raw": "2027-07-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 306,
+              "end": 316,
+              "quote": "2027-07-31",
+              "bbox": [
+                40.559999999999995,
+                314.64,
+                283.68,
+                324.23999999999995
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-5",
+      "raw_identifier": {
+        "value": "AO1LO-L",
+        "raw": "AO1LO-L",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 323,
+            "end": 330,
+            "quote": "AO1LO-L",
+            "bbox": [
+              40.559999999999995,
+              342.47999999999996,
+              283.68,
+              352.08
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "AO1LO-L",
+      "manufacturer": {
+        "value": "Owned OCR Components",
+        "raw": "Owned OCR Components",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 75,
+            "end": 95,
+            "quote": "Owned OCR Components",
+            "bbox": [
+              41.04,
+              90.47999999999999,
+              254.88,
+              100.08
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2027-07-31",
+          "raw": "2027-07-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 342,
+              "end": 352,
+              "quote": "2027-07-31",
+              "bbox": [
+                40.559999999999995,
+                342.47999999999996,
+                283.68,
+                352.08
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-6",
+      "raw_identifier": {
+        "value": "AO10O-L",
+        "raw": "AO10O-L",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 359,
+            "end": 366,
+            "quote": "AO10O-L",
+            "bbox": [
+              40.559999999999995,
+              370.55999999999995,
+              283.68,
+              380.15999999999997
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "AO10O-L",
+      "manufacturer": {
+        "value": "Owned OCR Components",
+        "raw": "Owned OCR Components",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 75,
+            "end": 95,
+            "quote": "Owned OCR Components",
+            "bbox": [
+              41.04,
+              90.47999999999999,
+              254.88,
+              100.08
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2027-07-31",
+          "raw": "2027-07-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 378,
+              "end": 388,
+              "quote": "2027-07-31",
+              "bbox": [
+                40.559999999999995,
+                370.55999999999995,
+                283.68,
+                380.15999999999997
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    }
+  ],
+  "relationships": [],
+  "findings": [
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.notice_id",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 50,
+          "end": 64,
+          "quote": "OCR-CHECK-2026",
+          "bbox": [
+            40.32,
+            62.63999999999999,
+            219.11999999999998,
+            70.32
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.supplier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 75,
+          "end": 95,
+          "quote": "Owned OCR Components",
+          "bbox": [
+            41.04,
+            90.47999999999999,
+            254.88,
+            100.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.notice_type",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 109,
+          "end": 112,
+          "quote": "PDN",
+          "bbox": [
+            40.32,
+            118.55999999999999,
+            154.79999999999998,
+            128.16
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.title",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 120,
+          "end": 139,
+          "quote": "Literal identifiers",
+          "bbox": [
+            40.8,
+            146.64,
+            226.07999999999998,
+            154.32
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.issue_date",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 152,
+          "end": 162,
+          "quote": "2026-10-01",
+          "bbox": [
+            41.279999999999994,
+            174.48,
+            197.27999999999997,
+            182.16
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.revision",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 173,
+          "end": 174,
+          "quote": "A",
+          "bbox": [
+            40.559999999999995,
+            202.55999999999997,
+            119.27999999999999,
+            210.23999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 181,
+          "end": 188,
+          "quote": "OO10-TR",
+          "bbox": [
+            40.559999999999995,
+            230.64,
+            290.88,
+            240.23999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 75,
+          "end": 95,
+          "quote": "Owned OCR Components",
+          "bbox": [
+            41.04,
+            90.47999999999999,
+            254.88,
+            100.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 200,
+          "end": 210,
+          "quote": "2027-07-31",
+          "bbox": [
+            40.559999999999995,
+            230.64,
+            290.88,
+            240.23999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 217,
+          "end": 223,
+          "quote": "O10-TR",
+          "bbox": [
+            40.559999999999995,
+            258.47999999999996,
+            283.68,
+            268.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 75,
+          "end": 95,
+          "quote": "Owned OCR Components",
+          "bbox": [
+            41.04,
+            90.47999999999999,
+            254.88,
+            100.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 235,
+          "end": 245,
+          "quote": "2027-07-31",
+          "bbox": [
+            40.559999999999995,
+            258.47999999999996,
+            283.68,
+            268.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 252,
+          "end": 259,
+          "quote": "OO10-TR",
+          "bbox": [
+            40.559999999999995,
+            286.56,
+            290.88,
+            296.15999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 75,
+          "end": 95,
+          "quote": "Owned OCR Components",
+          "bbox": [
+            41.04,
+            90.47999999999999,
+            254.88,
+            100.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 271,
+          "end": 281,
+          "quote": "2027-07-31",
+          "bbox": [
+            40.559999999999995,
+            286.56,
+            290.88,
+            296.15999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 288,
+          "end": 294,
+          "quote": "0010-T",
+          "bbox": [
+            40.559999999999995,
+            314.64,
+            283.68,
+            324.23999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 75,
+          "end": 95,
+          "quote": "Owned OCR Components",
+          "bbox": [
+            41.04,
+            90.47999999999999,
+            254.88,
+            100.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 306,
+          "end": 316,
+          "quote": "2027-07-31",
+          "bbox": [
+            40.559999999999995,
+            314.64,
+            283.68,
+            324.23999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 323,
+          "end": 330,
+          "quote": "AO1LO-L",
+          "bbox": [
+            40.559999999999995,
+            342.47999999999996,
+            283.68,
+            352.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 75,
+          "end": 95,
+          "quote": "Owned OCR Components",
+          "bbox": [
+            41.04,
+            90.47999999999999,
+            254.88,
+            100.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 342,
+          "end": 352,
+          "quote": "2027-07-31",
+          "bbox": [
+            40.559999999999995,
+            342.47999999999996,
+            283.68,
+            352.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 359,
+          "end": 366,
+          "quote": "AO10O-L",
+          "bbox": [
+            40.559999999999995,
+            370.55999999999995,
+            283.68,
+            380.15999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 75,
+          "end": 95,
+          "quote": "Owned OCR Components",
+          "bbox": [
+            41.04,
+            90.47999999999999,
+            254.88,
+            100.08
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 378,
+          "end": 388,
+          "quote": "2027-07-31",
+          "bbox": [
+            40.559999999999995,
+            370.55999999999995,
+            283.68,
+            380.15999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "duplicate_identifier",
+      "severity": "warning",
+      "message": "Identifier appears in multiple source rows; records have been retained separately",
+      "part_ids": [
+        "part-3"
+      ],
+      "field_path": null,
+      "evidence": []
+    }
+  ],
+  "unsupported_fields": [],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T03:51:23.224594+00:00",
+  "status": "review_required",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

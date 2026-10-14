@@ -1,0 +1,61 @@
+name: local-acceptance
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  cpu-release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.11.28'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: make verify
+      - run: npm run format:check
+      - run: make distribution-check
+      - run: .venv/bin/python scripts/benchmark_pipeline.py
+      - run: npx playwright install --with-deps chromium
+      - name: Project page layout and accessibility
+        run: |
+          export CHROME_PATH="$(node --input-type=module -e "import { chromium } from 'playwright'; console.log(chromium.executablePath());")"
+          npm run test:pages -- --output reports/pages-ci
+      - name: Browser workflows and delayed-response regressions
+        shell: bash
+        run: |
+          export NOTICEFORGE_DATA_DIR="$RUNNER_TEMP/noticeforge-browser"
+          export CHROME_PATH="$(node --input-type=module -e "import { chromium } from 'playwright'; console.log(chromium.executablePath());")"
+          .venv/bin/python -m noticeforge.cli demo > "$RUNNER_TEMP/noticeforge-server.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          curl --fail --silent --show-error --retry 30 --retry-delay 1 --retry-connrefused http://127.0.0.1:8877/api/health
+          node scripts/browser-qa.mjs --output reports/browser-ci
+          node scripts/browser-qa.mjs --races --output reports/browser-races-ci
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cpu-verification
+          path: |
+            reports/evaluation.json
+            reports/evaluation.txt
+            reports/pipeline-benchmark.json
+            reports/cpu-smoke/
+            reports/browser-ci/
+            reports/browser-races-ci/
+            reports/pages-ci/
+            ${{ runner.temp }}/noticeforge-server.log
+          retention-days: 14

@@ -1,0 +1,26 @@
+{
+  "standard": "smartPCN 3.0",
+  "schema_revision": "SmartPCN_3.08",
+  "schema_date": "2018-08-09",
+  "retrieved_at": "2026-10-13",
+  "publisher": "COGD (Component Obsolescence Group Deutschland) e.V.",
+  "download_page": "https://smartpcn.org/downloads/",
+  "archive_url": "https://smartpcn.org/wp-content/uploads/2021/02/smartPCN3.0_V3_08.zip",
+  "archive_sha256": "34068a3aaa8d03da656e52200a69926f7a945dcc365372c3fb8a37a9fc58fd3a",
+  "specification_url": "https://smartpcn.org/wp-content/uploads/2021/01/Specification-smartPCN-3.01-released-20180323.pdf",
+  "permission": "All material is property of COGD and can be used, also partially, with reference to COGD.",
+  "permission_source": "https://smartpcn.org/downloads/",
+  "modifications": "None. Both XSD files are original bytes from the official ZIP archive.",
+  "files": [
+    {
+      "file": "Attachment_V3_03.xsd",
+      "sha256": "637f05a7a8e1d59252db7ac14c11964b4fff1d25c1d46cdd481c16ef98eae875",
+      "bytes": 3091
+    },
+    {
+      "file": "PCNbody_V3_08.xsd",
+      "sha256": "0e6f6b6b7edb8a34b0258e8996f25349a070d7b2ef67a6b84fb0951fe84de38d",
+      "bytes": 82129
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "executed_at": "2026-10-14T03:49:30.859749+00:00",
+  "scope": "Local XSD and NoticeForge extension verification; no downstream receiver integration",
+  "publisher_example": {
+    "source": "https://smartpcn.org/wp-content/uploads/2021/03/COG-smartPCN-3.0-Testfile-3.2.zip",
+    "archive_sha256": "701552adba0aa72ba64f359aced24711ac62ab5b5d24a6bcb449fc205bfb89c9",
+    "xml_bytes": 13316,
+    "valid_against_pinned_xsd": true,
+    "embedded_body_xsd_identical": true
+  },
+  "owned_body": {
+    "source": "fixtures/development/aster-site-transfer.pdf",
+    "valid_against_pinned_xsd": true,
+    "output": "owned-PCNbody.xml",
+    "sha256": "21d16da4b6b8003af9dfc9aca2d6e5404cfd057d3d128c649e2facb1ec55ac43",
+    "bytes": 51069,
+    "canonical_reconstruction_byte_exact": true,
+    "canonical_sha256": "871975e384fb6574f0221129f4218e083823a112ff24dc7ee2cc461c9dacc175",
+    "all_chunks_same_hash": true,
+    "items": [
+      [
+        "AMP-230-A",
+        {
+          "itemEOPeffDate": "2027-01-15"
+        }
+      ],
+      [
+        "AMP-230-B",
+        {
+          "itemEOPeffDate": "2027-02-15"
+        }
+      ]
+    ]
+  },
+  "invalid_missing_required_date_rejected": true,
+  "downstream_receiver_integration": "unexecuted; publisher-listed viewers require browser/container transport, no suitable local open-source receiver identified in brief investigation"
+}

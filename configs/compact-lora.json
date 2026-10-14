@@ -1,0 +1,29 @@
+{
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "license": "Apache-2.0",
+  "device": "cuda",
+  "precision": "bfloat16",
+  "allow_download": false,
+  "seed": 17,
+  "epochs": 2,
+  "learning_rate": 0.0002,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 4,
+  "max_input_tokens": 2048,
+  "max_sequence_tokens": 3072,
+  "max_new_tokens": 1024,
+  "max_characters": 7000,
+  "generation_max_seconds": 120,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+  "gradient_checkpointing": true,
+  "resource_planning": {
+    "note": "Planning budget only; not measured or guaranteed. Actual peak memory is recorded by an executed run.",
+    "gpu_memory_budget_gib": 8,
+    "host_memory_budget_gib": 8,
+    "disk_budget_gib": 4
+  }
+}

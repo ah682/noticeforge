@@ -1,0 +1,535 @@
+{
+  "id": "a3a5635e681c369758d4",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "MM-771",
+      "raw": "MM-771",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 43,
+          "end": 49,
+          "quote": "MM-771",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Morrow Micro",
+      "raw": "Morrow Micro",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 60,
+          "end": 72,
+          "quote": "Morrow Micro",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PDN",
+      "raw": "PDN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 86,
+          "end": 89,
+          "quote": "PDN",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Synthetic row-footnote",
+      "raw": "Synthetic row-footnote",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 97,
+          "end": 119,
+          "quote": "Synthetic row-footnote",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2027-10-01",
+      "raw": "2027-10-01",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 132,
+          "end": 142,
+          "quote": "2027-10-01",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "a3a5635e681c369758d4b76513e7ceefa8547028b58264a779beeb08b8010acc",
+    "filename": "row-footnote.txt",
+    "media_type": "text/plain",
+    "byte_size": 287,
+    "pages": [
+      {
+        "number": 1,
+        "text": "OWNED SYNTHETIC EVALUATION CASE\nNotice ID: MM-771\nSupplier: Morrow Micro\nNotice type: PDN\nTitle: Synthetic row-footnote\nIssue date: 2027-10-01\nPart number | Last buy\nMX-010-A | 2028-01-31 [7]\nMX-010-B | 2028-01-31\n[7] Last buy extended to 2028-03-15 for the marked row only.\nPage 1 of 1\n",
+        "width": null,
+        "height": null,
+        "method": "text",
+        "lines": [
+          {
+            "text": "OWNED SYNTHETIC EVALUATION CASE",
+            "start": 0,
+            "end": 31,
+            "bbox": null
+          },
+          {
+            "text": "Notice ID: MM-771",
+            "start": 32,
+            "end": 49,
+            "bbox": null
+          },
+          {
+            "text": "Supplier: Morrow Micro",
+            "start": 50,
+            "end": 72,
+            "bbox": null
+          },
+          {
+            "text": "Notice type: PDN",
+            "start": 73,
+            "end": 89,
+            "bbox": null
+          },
+          {
+            "text": "Title: Synthetic row-footnote",
+            "start": 90,
+            "end": 119,
+            "bbox": null
+          },
+          {
+            "text": "Issue date: 2027-10-01",
+            "start": 120,
+            "end": 142,
+            "bbox": null
+          },
+          {
+            "text": "Part number | Last buy",
+            "start": 143,
+            "end": 165,
+            "bbox": null
+          },
+          {
+            "text": "MX-010-A | 2028-01-31 [7]",
+            "start": 166,
+            "end": 191,
+            "bbox": null
+          },
+          {
+            "text": "MX-010-B | 2028-01-31",
+            "start": 192,
+            "end": 213,
+            "bbox": null
+          },
+          {
+            "text": "[7] Last buy extended to 2028-03-15 for the marked row only.",
+            "start": 214,
+            "end": 274,
+            "bbox": null
+          },
+          {
+            "text": "Page 1 of 1",
+            "start": 275,
+            "end": 286,
+            "bbox": null
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 1,
+    "complete": true,
+    "warnings": [],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "MX-010-A",
+        "raw": "MX-010-A",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 166,
+            "end": 174,
+            "quote": "MX-010-A",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "MX-010-A",
+      "manufacturer": {
+        "value": "Morrow Micro",
+        "raw": "Morrow Micro",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 60,
+            "end": 72,
+            "quote": "Morrow Micro",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-03-15",
+          "raw": "2028-03-15",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 239,
+              "end": 249,
+              "quote": "2028-03-15",
+              "bbox": null,
+              "method": "text"
+            },
+            {
+              "page": 1,
+              "start": 214,
+              "end": 274,
+              "quote": "[7] Last buy extended to 2028-03-15 for the marked row only.",
+              "bbox": null,
+              "method": "text"
+            },
+            {
+              "page": 1,
+              "start": 177,
+              "end": 191,
+              "quote": "2028-01-31 [7]",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": "Footnote [7] modifies row value 2028-01-31 [7]",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [
+        {
+          "value": "Last buy extended to 2028-03-15 for the marked row only.",
+          "raw": "Last buy extended to 2028-03-15 for the marked row only.",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 218,
+              "end": 274,
+              "quote": "Last buy extended to 2028-03-15 for the marked row only.",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    },
+    {
+      "id": "part-2",
+      "raw_identifier": {
+        "value": "MX-010-B",
+        "raw": "MX-010-B",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 192,
+            "end": 200,
+            "quote": "MX-010-B",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "MX-010-B",
+      "manufacturer": {
+        "value": "Morrow Micro",
+        "raw": "Morrow Micro",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 60,
+            "end": 72,
+            "quote": "Morrow Micro",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-01-31",
+          "raw": "2028-01-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 203,
+              "end": 213,
+              "quote": "2028-01-31",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    }
+  ],
+  "relationships": [],
+  "findings": [],
+  "unsupported_fields": [],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T03:42:25.604533+00:00",
+  "status": "supported",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

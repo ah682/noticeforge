@@ -1,0 +1,4 @@
+Supplier: Copper training devices
+Notice: OWN-TRAIN-010
+Affected identifier and deadline:
+00CF-1111-A | Acknowledgment: while inventory lasts

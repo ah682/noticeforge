@@ -1,0 +1,12 @@
+OWNED SYNTHETIC FIXTURE
+Notice ID: BRS-PDN-2026-018
+Supplier: Borealis Devices
+Notice type: PDN
+Title: Timing devices: supplier clarification needed
+Issue date: 2026-10-05
+Revision: A
+Group | Part number | Last buy | Last delivery | Notes
+Timing | 00CLK-8A | 03/04/2027 | 2027-09-30 | Supplier has not specified the date convention
+Timing | 00CLK-8B | while supplies last | TBD | Ordering subject to remaining stock
+Replacement for 00CLK-8A: CLK-9A
+Page 1 of 1

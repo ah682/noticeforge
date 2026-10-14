@@ -1,0 +1,46 @@
+{
+  "base": "http://127.0.0.1:8885",
+  "boundary": "Real API and rendered UI; selected response delivery deliberately delayed. Error responses explicitly mocked as 409.",
+  "results": [
+    {
+      "name": "BOM late result stays with its original notice",
+      "passed": true
+    },
+    {
+      "name": "BOM late error stays with its original notice",
+      "passed": true
+    },
+    {
+      "name": "Reloading the same notice invalidates its earlier BOM request",
+      "passed": true
+    },
+    {
+      "name": "A newer BOM submission keeps its results when an earlier request completes",
+      "passed": true
+    },
+    {
+      "name": "Review late save after escape stays with its original notice",
+      "passed": true
+    },
+    {
+      "name": "Review late save after button stays with its original notice",
+      "passed": true
+    },
+    {
+      "name": "Review late save after reload stays with its original notice",
+      "passed": true
+    },
+    {
+      "name": "Review late error after escape stays with its original notice",
+      "passed": true
+    },
+    {
+      "name": "Review late error after button stays with its original notice",
+      "passed": true
+    },
+    {
+      "name": "Review late error after reload stays with its original notice",
+      "passed": true
+    }
+  ]
+}

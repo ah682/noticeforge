@@ -1,0 +1,1598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+==========================================================================
+Schema: PCNbody.xsd
+Version: VDMA24903_1.08		SmartPCN_3.08
+Date: 2018.08.09
+Author: H.Reger  DDM
+
+Additional values for typeOfChangeType, pcnContactType, PhoneType or alertType in lowercase 
+
+Schema: PCNbody.xsd
+Version: VDMA24903_1.07		SmartPCN_3.07
+Date: 2018.04.20
+
+Author: COG Deutschland e.V. (DEHU)
+
+This file represents the XML format description of PCNbody.xml 
+described in VDMA 24903 Appendix A.4
+
+Changelog
+Version: SmartPCN_3.07
+Date: 2018.04.20
+Author: H.Reger  DDM
+Type Name of pcnSubstructures changed to pcnSubStructures
+
+Version: SmartPCN_3.06
+Date: 2018.03.12
+Author: H.Reger  DDM
+
+2 additional Values for typeOfChangeType
+and enumeration value="MATBUMPMETAL" 	changed 
+
+Additional Type itemCategoryType 
+
+
+Version: SmartPCN_3.05
+Date: 2018.02.16
+Author: H.Reger  DDM
+
+Type Name of ChangeType changed to typeOfChangeType
+
+
+Version: SmartPCN_3.04
+Date: 2018.01.26
+Author: H.Reger  DDM
+
+itemLifeCycleData are now mandatory.
+
+
+Version: SmartPCN_3.03
+Date: 2018.01.11
+Author: H.Reger  DDM
+
+ItemChanges are now mandatory.
+itemRev is no longer mandatory.
+
+Version: SmartPCN_3.02
+Date: 2018.01.08
+Author: H.Reger  DDM
+
+Pattern for PhoneNumber changed.
+
+
+Version: SmartPCN_3.01
+Date: 2017.11.15
+Author: H.Reger  DDM
+
+URL for targetNamespace changed
+Field pcnEmail in contactType is now mandatory
+
+History of Schema: smartPCN.xsd
+
+==========================================================================
+Version: 1.2.1
+Date: 2016.03.08
+Author: DDM 
+
+
+==========================================================================
+
+-->
+
+<xsd:schema
+    xmlns="http://www.smartpcn.org/images/files/VDMA24903Schema/PCNbody"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.smartpcn.org/images/files/VDMA24903Schema/PCNbody"
+elementFormDefault="qualified">
+<xsd:element name="PCNbody">
+    <xsd:complexType>
+      <xsd:sequence>
+        <!--Cluster Masterdata-->
+        <xsd:element name="masterData" maxOccurs="1" minOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+
+              <!--PCN-Number-->
+              <xsd:element name="pcnNumber" minOccurs="1" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="128"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+
+               <!--Title-->
+              <xsd:element name="pcnTitle" minOccurs="1" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="256"/>
+                    <xsd:whiteSpace value="replace"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              
+              <!--Alert-Type: Major - Minor-->
+              <xsd:element name="pcnAlertType" type="alertType" minOccurs="0" maxOccurs="1"/>
+              
+              <!--PCN-Type-->
+              <xsd:element name="pcnType" type="pcnType" minOccurs="1" maxOccurs="1"/>
+
+              
+              <!--Manufacturer High level name-->
+              <xsd:element name="pcnMfrName" minOccurs="1" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="32"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              
+               <!--Impact Description-->
+              <xsd:element name="pcnAlertImpact" minOccurs="0" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="4096"/>
+                    <xsd:whiteSpace value="replace"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+              
+               <!--Product Category-->
+              <xsd:element name="pcnProductCategory" type="productCategoryType" minOccurs="0" maxOccurs="1"/>
+
+              <!--Issue Date-->
+              <xsd:element name="pcnIssueDate" type="xsd:date" minOccurs="1" maxOccurs="1"/>
+
+              <!--optional Blank-->
+              <xsd:element name="pcnAddInfo" minOccurs="0" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="1024"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+
+              <xsd:element name="pcnRevision" minOccurs="0" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value = "32"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+
+              <!--PCN Link-->
+              <xsd:element name="pcnLink"  minOccurs="0" maxOccurs="1">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="pcnUrl" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+
+                    <!--Username-->
+                    <xsd:element name="pcnUserName" minOccurs="0" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="128"/>
+                          <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+
+                    <!--Password-->
+                    <xsd:element name="pcnPassword" minOccurs="0" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="128"/>
+                          <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+
+              <!--Revisions-->
+              <xsd:element name="revisions" minOccurs="0" maxOccurs="1">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="revision" type="revisionType" minOccurs="1" maxOccurs="unbounded" />
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              
+              <!--Contacts-->
+              <xsd:element name="contacts" minOccurs="1" maxOccurs="1">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="contact" type="contactType" minOccurs="1" maxOccurs="unbounded"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+
+           <!--SmartPCN Format Version   Beipiel: VDMA24903_1.0-->
+              <xsd:attribute name="pcnFormatVersion" use="required">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="16"/>
+                    <xsd:whiteSpace value="replace"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:attribute>           
+          </xsd:complexType>
+        
+        </xsd:element>
+        <!--Masterdata Cluster End-->
+        
+        <!--Cluster Difference Description-->
+        <xsd:element name="difference" maxOccurs="1" minOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+
+              <!--Change Titel-->
+              <xsd:element name="pcnChangeTitle" minOccurs="1" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="128"/>
+                    <xsd:whiteSpace value="replace"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+
+              <!--Change Detail-->
+              <xsd:element name="pcnChangeDetail" minOccurs="1" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="4096"/>
+                    <xsd:whiteSpace value="replace"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+
+              <!--Input to customer for risk assessment process-->
+              <xsd:element name="pcnRiskAssessment" minOccurs="0" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="2048"/>
+                    <xsd:whiteSpace value="replace"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+
+              <!--Intended start of delivery-->
+              <xsd:element name="pcnFirstDelivery" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+
+              <!--Customer feedback required until-->
+              <xsd:element name="pcnFeedbackUntil" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+
+              <!--Method identifiying changed product-->
+              <xsd:element name="pcnChangeIdentificationMethod" minOccurs="0" maxOccurs="1">
+                <xsd:simpleType>
+                  <xsd:restriction base="xsd:string">
+                    <xsd:maxLength value="4096"/>
+                    <xsd:whiteSpace value="replace"/>
+                  </xsd:restriction>
+                </xsd:simpleType>
+              </xsd:element>
+
+              <!--Effective date-->
+              <xsd:element name="pcnEffectiveDate" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <!--Difference Description Cluster End-->
+
+        <!--Cluster Itemnumbers-->
+        <xsd:element name="ItemNumbers" maxOccurs="1" minOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="ItemNumber" minOccurs="1" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+
+                    <!--Item Manufacturer Item number-->
+                    <xsd:element name="itemMfrNumber" minOccurs="1" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="128"/>
+                          <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+
+                    <!--Manufacturer item Type identifier-->
+                    <xsd:element name="itemMfrTypeIdent" minOccurs="0" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="128"/>
+                          <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+
+                    <!--Manufacturer item Name-->
+                    <xsd:element name="itemMfrName" minOccurs="1" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="128"/>
+                          <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+
+                    <!--Manufacturer item description-->
+                    <xsd:element name="itemMfrDescription" minOccurs="0" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="1024"/>
+                          <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+
+                    <!--Item form-->
+                    <xsd:element name="itemFormName" minOccurs="0" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="128"/>
+                          <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+
+                    <!--Item Category-->
+                    <xsd:element name="itemCategory" type="itemCategoryType" minOccurs="1" maxOccurs="1" />
+                    
+                    <!--Item Revision Number-->
+                    <xsd:element name="itemRev" minOccurs="0" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value = "32"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>                    
+                    
+
+                    <!--Qualification-->
+                    <xsd:element name="itemQualification" type="qualificationType" minOccurs="0" maxOccurs="1"/>
+
+                    <!--End of life-->
+                    <xsd:element name="itemLifeCycleData" minOccurs="1" maxOccurs="1" > <!--type="endOfLifeType"-->
+                      <xsd:complexType>
+                          <!--Item SOP start of production-->
+                        <xsd:attribute name="itemSOP" type="xsd:date"/>
+
+                          <!--Item EOS end of sales-->
+                        <xsd:attribute name="itemEOS" type="xsd:date" />
+
+                          <!--Item EOP end of production-->
+                        <xsd:attribute name="itemEOPeffDate" type="xsd:date" use="required"/>
+
+                          <!--Item LTD Last time delivery-->
+                        <xsd:attribute name="itemLTD" type="xsd:date" />
+
+                          <!--Item EOSR end of service and repair-->
+                        <xsd:attribute name="itemEOSR" type="xsd:date" />
+
+                          <!--Delivery Unit-->
+                        <xsd:attribute name="itemLCI" >
+                          <xsd:simpleType>
+                            <xsd:restriction base="xsd:string">
+                              <xsd:maxLength value="2"/>
+                              <xsd:pattern value="[0-9]{2}"/>
+                            </xsd:restriction>
+                          </xsd:simpleType>
+                        </xsd:attribute>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <!--endOfLifeType end-->
+
+                    <!--Replacements-->
+                    <xsd:element name="itemReplacements" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <!--Customer Partnumber-->
+                          <xsd:element name="itemReplacement" type="replacementType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+
+                    <!--Customer Itemnumbers-->
+                    <xsd:element name="customerItemnumbers" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <!--Customer Partnumber-->
+                          <xsd:element name="customerItemnumber" type="customerItemnumberType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+
+                    <!--Item substructures-->
+                    <xsd:element name="itemSubStructures" minOccurs="0" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <!--Customer Partnumber-->
+                          <xsd:element name="itemSubStructure" type="SubStructureType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    
+                    <!--Item change types-->
+                    <xsd:element name="itemChanges" minOccurs="1" maxOccurs="1">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <!--Customer Partnumber-->
+                          <xsd:element name="itemChange" type="itemChangeType" minOccurs="1" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <!--Itemnumbers Cluster End-->
+        
+        <!--Cluster Life Cycle Data-->
+        <xsd:element name="pcnLifeCycleData" maxOccurs="1" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+              <!--SOP start of production-->
+              <xsd:element name="pcnSOP" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+
+              <!--EOS end of sales-->
+              <xsd:element name="pcnEOS" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+
+              <!--EOP end of production-->
+              <xsd:element name="pcnEOPeffDate" type="xsd:date" minOccurs="1" maxOccurs="1"/>
+
+              <!--LTD Last time delivery-->
+              <xsd:element name="pcnLTD" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+
+              <!--EOSR end of service and repair-->
+              <xsd:element name="pcnEOSR" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <!--Life Cycle Data Cluster End-->
+        
+        <!--Cluster Causes of Changes-->
+        <xsd:element name="pcnCauseOfChanges" maxOccurs="1" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+
+              <!--Single Change-->
+              <xsd:element name="pcnChange" minOccurs="1" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+
+                    <!--Description of change-->
+                    <xsd:element name="pcnChangeDescription" minOccurs="1" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="1024"/>
+                          <xsd:whiteSpace value="replace"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    
+                  </xsd:sequence>
+
+                  <!--Type of Change-->
+                  <xsd:attribute name="pcnChangeType" type="typeOfChangeType" use="required" />
+                  
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <!--Causes of Changes Cluster End-->
+        
+        <!--Cluster Substructures-->
+        <xsd:element name="pcnSubStructures" maxOccurs="1" minOccurs="0">
+          <xsd:complexType>
+            <xsd:sequence>
+
+              <!--classificationEntry-->
+              <xsd:element name="pcnSubStructure" minOccurs="1" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+
+                    <!--classification data-->
+                    <xsd:element name="pcnSubData" minOccurs="1" maxOccurs="1">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="4096"/>
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                  </xsd:sequence>
+
+                  <!--Type of classification-->
+                  <xsd:attribute name="pcnSubType" type="SubType" use="required" />
+
+                  <!--Revision of classification-->
+                  <xsd:attribute name="pcnSubRevision" use="optional" >
+                    <xsd:simpleType>
+                      <xsd:restriction base="xsd:string">
+                        <xsd:maxLength value="32"/>
+                        <xsd:whiteSpace value="replace"/>                        
+                      </xsd:restriction>
+                    </xsd:simpleType>
+                  </xsd:attribute>
+
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <!--Substructures Cluster End-->
+      </xsd:sequence>
+    </xsd:complexType>  
+  </xsd:element>
+  <!--PCNbody End-->
+
+  <!--############ PCNbody data types definitions ###############-->
+  <!--Datatype for Alert Type-->
+  <xsd:simpleType name="alertType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="MAJOR"/>
+	  <xsd:enumeration value="Major"/>
+      <xsd:enumeration value="MINOR"/>
+	  <xsd:enumeration value="Minor"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!--Datatype for Pcn Type-->
+  <xsd:simpleType name="pcnType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="PCN"/>
+      <xsd:enumeration value="PDN"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!--Datatype for Product Category-->
+  <xsd:simpleType name="productCategoryType">    
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ACEL"/>     <!--active electronic-->
+      <xsd:enumeration value="ASSY"/>     <!--assembly-->
+      <xsd:enumeration value="AUXM"/>     <!--auxiliary materials-->
+      <xsd:enumeration value="CCBL"/>     <!--connectors/cables-->
+      <xsd:enumeration value="DACE"/>     <!--data/certificates-->
+      <xsd:enumeration value="DOCU"/>     <!--documentation-->
+      <xsd:enumeration value="ELME"/>     <!--electro mechanical-->
+      <xsd:enumeration value="FLUI"/>     <!--fluids-->
+      <xsd:enumeration value="HYDR"/>     <!--hydraulic-->
+      <xsd:enumeration value="MECH"/>     <!--mechanical-->
+      <xsd:enumeration value="MULT"/>     <!--multiple categories-->
+      <xsd:enumeration value="OTHR"/>     <!--others-->
+      <xsd:enumeration value="PAEL"/>     <!--passive electrical/electronic-->
+      <xsd:enumeration value="PNEU"/>     <!--pneumatic-->
+      <xsd:enumeration value="RAWM"/>     <!--raw material-->
+      <xsd:enumeration value="SERV"/>     <!--services-->
+      <xsd:enumeration value="SWFW"/>     <!--software/firmware-->
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!--Datatype for item Category is identical to productCategoryType-->
+  <xsd:simpleType name="itemCategoryType" >
+    <xsd:restriction base="productCategoryType" />
+  </xsd:simpleType>
+
+  <xsd:simpleType name="SubType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="32"/>
+  <!--<xsd:enumeration value="ECLASS"/>   --><!-- eCl@ss--><!--
+      <xsd:enumeration value="BMECAT"/>   --><!-- BMEcat--><!--
+      <xsd:enumeration value="CHANGE"/>   --><!-- Change information--><!--
+      <xsd:enumeration value="TEXT"/>     --><!-- Beliebiger Text--><!--
+      <xsd:enumeration value="MACH"/>     --><!-- Maschinenbau--><!--
+      <xsd:enumeration value="RAILWAY"/>  --><!-- Eisenbahntechnik--><!--
+      <xsd:enumeration value="AVIONIK"/>  --><!-- Flugzeugtechnik--><!--
+      <xsd:enumeration value="REACH"/>    --><!-- Schadstoffe--><!--
+      <xsd:enumeration value="HMM"/>      --><!-- Hazareous Materials Management--><!--
+      <xsd:enumeration value="CMM"/>      --><!-- Conflict Minerals Management--><!--
+      <xsd:enumeration value="CHEM"/>     --><!-- Chemische Industrie--><!--
+      <xsd:enumeration value="PHARM"/>    --><!-- Pharmazeutische Industrie--><!--
+      <xsd:enumeration value="MEDI"/>     --><!-- Medizintechnik--><!--
+      <xsd:enumeration value="AUTO"/>     --><!-- Automobiltechnik-->
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!--Data type for a Revision-->
+  <xsd:complexType name="revisionType">
+    <xsd:sequence>
+      <!--Cause of Revision-->
+      <xsd:element name="pcnRevisionCause" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value = "2048"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>      
+    
+    <!--Revision Number-->
+      <xsd:attribute name="pcnRevisionNumber" use="required">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value = "16"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:attribute>
+
+      <!--Revision Date-->
+      <xsd:attribute name="pcnRevDate" type="xsd:date" use="required" />
+  </xsd:complexType>
+  <!--revisionType end-->
+
+  <!--Datatype for a qualification-->
+  <xsd:complexType name="qualificationType">
+    <xsd:sequence>
+
+      <!--Manufacturer Qualification plan schedule and results-->
+      <xsd:element name="itemQualificationSchedule" minOccurs="0" maxOccurs="1" >
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Qualification description-->
+      <xsd:element name="itemQualificationDescription"  minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="1024"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Date of qualification results-->
+      <xsd:element name="itemQualificationResultDate" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+
+      <!--Date qualification samples available-->
+      <xsd:element name="itemQualificationSamplesDate" type="xsd:date" minOccurs="0" maxOccurs="1"/>
+
+      <!--Date final qualification data available-->
+      <xsd:element name="itemQualificationFinalDate"  type="xsd:date" minOccurs="0" maxOccurs="1"/>
+
+      <!--Qualification report and qualification results-->
+      <xsd:element name="itemQualificationReport" minOccurs="0" maxOccurs="1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="itemQualificationReportUrl" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+
+            <!--Username-->
+            <xsd:element name="itemQualificationReportUsername" minOccurs="0" maxOccurs="1">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="128"/>
+                  <xsd:whiteSpace value="replace"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+
+            <!--Password-->
+            <xsd:element name="itemQualificationReportPassword" minOccurs="0" maxOccurs="1">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="128"/>
+                  <xsd:whiteSpace value="replace"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--qualificationType end-->
+
+  <!--Type for replacement type-->
+  <xsd:complexType name="replacementType">
+    <xsd:sequence>
+      <!--Replacement manufacturer item number-->
+      <xsd:element name="itemMfrReplNumber" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Replacement manufacturer item Type identifier-->
+      <xsd:element name="itemMfrReplTypeIdent" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Replacement manufacturer item name-->
+      <xsd:element name="itemMfrReplName" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Replacement manufacturer brand name-->
+      <xsd:element name="itemMfrReplBrandName" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Replacement package-->
+      <xsd:element name="itemMfrReplPackage" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--replacementType end-->
+
+  <!--Datatype for one Customer Itemnumber-->
+  <xsd:complexType name="customerItemnumberType">
+    <xsd:sequence>
+      <!--Partnumber-->
+      <xsd:element name="itemCustomerNumber"  minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Customer type identifier-->
+      <xsd:element name="itemCustomerTypeIdent"  minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Reference items  with customer number-->
+      <xsd:element name="itemCustomerReference"  minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Last Customer PO number-->
+      <xsd:element name="itemLastOrderNumber"  minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--customerpanumberType end-->
+
+  
+  <!--Datatype for one SubStructure-->
+  <xsd:complexType name="SubStructureType">
+    <xsd:sequence>
+      <xsd:element name="itemSubData" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value = "4096"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+    </xsd:sequence>
+    
+    <!--Type of substructure-->
+    <xsd:attribute name="itemSubType" type="SubType" use="required" />
+
+    <!--Revision of substructure-->
+    <xsd:attribute name="itemSubRevision" use="optional" >
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:maxLength value = "32"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+    
+  </xsd:complexType>
+  <!--end substructure-->
+
+  <!--Datatype for one itemChange-->
+  <xsd:complexType name="itemChangeType">
+    <xsd:sequence>
+      <!--Description of itemChange-->
+      <xsd:element name="itemChangeText" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value = "64"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+    </xsd:sequence>
+
+    <xsd:attribute name="itemChangeType" type="typeOfChangeType" use="required" />
+    
+  </xsd:complexType>
+  <!--end itemChange-->
+
+  <!--Type of typeOfChangeType-->  
+  <xsd:simpleType name="typeOfChangeType">
+    <xsd:restriction base="xsd:string">
+      <!--Tabelle A.12 – Kategorie der Art der Änderung/Abkündigung-->
+      <xsd:enumeration value="PDN"/>        <!-- Abkündigung-->
+      <xsd:enumeration value="MANAQ"/>      <!-- Akquise-->
+      <xsd:enumeration value="ALERT"/>      <!-- Alarm-->
+      <xsd:enumeration value="SOFTW"/>      <!-- Änderung der Software-->
+      <xsd:enumeration value="LABEL"/>      <!-- Beschriftung-->
+      <xsd:enumeration value="CHARA"/>      <!-- Charakteristika-->
+      <xsd:enumeration value="DOCUM"/>      <!-- Dokumentation-->
+      <xsd:enumeration value="NRND"/>       <!-- Einschränkung der Verwendungsempfehlung-->
+      <xsd:enumeration value="FIT"/>        <!-- Fit-->
+      <xsd:enumeration value="FORM"/>       <!-- Form und Erscheinung-->
+      <xsd:enumeration value="FUNCT"/>      <!-- Funktion-->
+      <xsd:enumeration value="INSOL"/>      <!-- Insolvenz-->
+      <xsd:enumeration value="CORR"/>       <!-- Korrektur-->
+      <xsd:enumeration value="SHIP"/>       <!-- Lieferung-->
+      <xsd:enumeration value="MATER"/>      <!-- Material-->
+      <xsd:enumeration value="PRODS"/>      <!-- Produktionsanlauf-->
+      <xsd:enumeration value="PPROC"/>      <!-- Produktionsprozess-->
+      <xsd:enumeration value="PSITE"/>      <!-- Produktionsstandort-->
+      <xsd:enumeration value="CANCN"/>      <!-- Rücknahme PCN-->
+      <xsd:enumeration value="CANDN"/>      <!-- Rücknahme PDN-->
+      <xsd:enumeration value="RECA"/>       <!-- Rückruf-->
+      <xsd:enumeration value="TESTP"/>      <!-- Testprozess-->
+      <xsd:enumeration value="TESTS"/>      <!-- Teststandort-->
+      <xsd:enumeration value="ORCOD"/>      <!-- Typenschlüssel-->
+      <xsd:enumeration value="PACKA"/>      <!-- Verpackung-->
+
+      <!--Tabelle A.11 – Zusätzliche Klassifizierungen von Änderungen-->
+      <xsd:enumeration value="GENMFRNAME"/>             <!-- MAJOR - Change of manufacturer or distributor name-->
+	  <xsd:enumeration value="genMfrName"/>   			<!-- MAJOR - Change of manufacturer or distributor name-->
+      <xsd:enumeration value="GENCUSSPEC"/>             <!-- MAJOR - any change with impact on special customer characteristics/contractual agreements-->
+	  <xsd:enumeration value="genCusSpec"/>   			<!-- MAJOR - Any change with impact on special customer characteristics/contractual agreements-->
+      <xsd:enumeration value="GENCUSINTERF"/>           <!-- MAJOR - any change with impact on technical interface or processability/ manufacturability of customer-->
+	  <xsd:enumeration value="genCusInterf"/>   		<!-- MAJOR - Any change with impact on technical interface or processability/manufacturability of customer-->
+      <xsd:enumeration value="GENFUNC"/>                <!-- MAJOR - Change of function-->
+	  <xsd:enumeration value="genFunc"/>   				<!-- MAJOR - Change of function-->
+      <xsd:enumeration value="GENDATAELEC"/>            <!-- MAJOR - Change of datasheet parameters/electrical specification-->
+	  <xsd:enumeration value="genDataElec"/>   			<!-- MAJOR - Change of datasheet parameters/electrical specification-->
+      <xsd:enumeration value="GENDATAPHYSCHEM"/>        <!-- MAJOR - Change of datasheet parameters/physical/chemical specification-->
+	  <xsd:enumeration value="genDataPhysChem"/>   		<!-- MAJOR - Change of datasheet parameters/physical/chemical specification-->
+      <xsd:enumeration value="GENDATACORR"/>            <!-- MAJOR - Correction of data sheet-->
+	  <xsd:enumeration value="genDataCorr"/>   			<!-- MAJOR - Correction of data sheet-->
+      <xsd:enumeration value="GENADDSPEC"/>             <!-- MAJOR - Specification of additional parameters-->
+	  <xsd:enumeration value="genAddSpec"/>   			<!-- MAJOR - Specification of additional parameters-->
+      <xsd:enumeration value="GENPARTNOCHG"/>           <!-- MAJOR - Change of Item Number or/and Item Name-->
+	  <xsd:enumeration value="genPartNoChg"/>   		<!-- MAJOR - Change of Item Number or/and Item Name-->
+      <xsd:enumeration value="GENPARTPACHG"/>           <!-- MAJOR - Change of Item Package-->
+	  <xsd:enumeration value="genPartPaChg"/>   		<!-- MAJOR - Change of Item Package-->
+      <xsd:enumeration value="GENINSPMARK"/>            <!-- MAJOR - Official inspection mark/safety approval change-->
+	  <xsd:enumeration value="genInspMark"/>   			<!-- MAJOR - Official inspection mark/safety approval change-->
+      <xsd:enumeration value="GENCUSREQU"/>             <!-- MAJOR - Change of Customer requirements-->
+	  <xsd:enumeration value="genCusRequ"/>   			<!-- MAJOR - Change of Customer requirements-->
+      <xsd:enumeration value="GENOPERMETHOD"/>          <!-- MAJOR - Operation method modification-->
+	  <xsd:enumeration value="genOperMethod"/>   		<!-- MAJOR - Operation method modification-->
+      <xsd:enumeration value="GENQUALITYCHANGE"/>       <!-- MAJOR - Change of quality-->
+	  <xsd:enumeration value="genQualityChange"/>   	<!-- MAJOR - Change of quality-->
+      <xsd:enumeration value="GENRELIABILITYCHANGE"/>   <!-- MAJOR - Change of reliability-->
+	  <xsd:enumeration value="genReliabilityChange"/>   <!-- MAJOR - Change of reliability-->
+      <xsd:enumeration value="GNCREGREQU"/>             <!-- MAJOR - Regulatotory requirements-->
+	  <xsd:enumeration value="gncRegRequ"/>   			<!-- MAJOR - Regulatory requirements-->
+      <xsd:enumeration value="GNCSTDREQU"/>             <!-- MAJOR - Standards requirements-->
+	  <xsd:enumeration value="gncStdRequ"/>   			<!-- MAJOR - Standards requirements-->
+      <xsd:enumeration value="GNCINNCHNG"/>             <!-- MAJOR - Innovation-->
+	  <xsd:enumeration value="gncInnChng"/>   			<!-- MAJOR - Innovation-->
+      <xsd:enumeration value="GNCSAFSEC"/>              <!-- MAJOR - Safety/Security-->
+	  <xsd:enumeration value="gncSafSec"/>   			<!-- MAJOR - Safety/Security-->
+      <xsd:enumeration value="GNCFIFOFU"/>              <!-- MAJOR - Fit-Form-Function-->
+	  <xsd:enumeration value="gncFiFoFu"/>   			<!-- MAJOR - Fit-Form-Function-->
+      <xsd:enumeration value="MATCOMP"/>                <!-- MAJOR - Change of material composition-->
+	  <xsd:enumeration value="matComp"/>   				<!-- MAJOR - Change of material composition-->
+      <xsd:enumeration value="MATWAFSUB"/>              <!-- MAJOR - New / change of wafer substrate material-->
+	  <xsd:enumeration value="matWafSub"/>   			<!-- MAJOR - New / change of wafer substrate material-->
+      <xsd:enumeration value="MATDOPIMP"/>              <!-- MAJOR - Change of electrically active doping/implantation element-->
+	  <xsd:enumeration value="matDopImp"/>   			<!-- MAJOR - Change of electrically active doping/implantation element-->
+      <xsd:enumeration value="MATGATEDIELECT"/>         <!-- MAJOR - Change of Gate material / dielectrics-->
+	  <xsd:enumeration value="matGateDielect"/>   		<!-- MAJOR - Change of gate material / dielectrics-->
+      <xsd:enumeration value="MATLEADFRAMEBASE"/>       <!-- MAJOR - Change of leadframe base material-->
+	  <xsd:enumeration value="matLeadframeBase"/>   	<!-- MAJOR - Change of leadframe base material-->
+      <xsd:enumeration value="MATLEADFRAMEFINISH"/>     <!-- MAJOR - Change of lead frame finishing material (internal)-->
+	  <xsd:enumeration value="matLeadframeFinish"/>   	<!-- MAJOR - Change of lead frame finishing material (internal)-->
+      <xsd:enumeration value="MATBONDWIRE"/>            <!-- MAJOR - Change of bond wire material-->
+	  <xsd:enumeration value="matBondWire"/>   			<!-- MAJOR - Change of bond wire material-->
+      <xsd:enumeration value="MATBGA"/>                 <!-- MAJOR - Change of BGA substrate-->
+	  <xsd:enumeration value="matBga"/>   				<!-- MAJOR - Change of BGA substrate-->
+      <xsd:enumeration value="MATDIEOVERCOATUNDERFILL"/><!-- MAJOR - Die Overcoat / Underfill-->
+	  <xsd:enumeration value="matDieovercoatUnderfill"/><!-- MAJOR - Die overcoat / underfill-->
+      <xsd:enumeration value="MATMETALLIZATION"/>       <!-- MAJOR - Change of Metallization Material-->
+	  <xsd:enumeration value="matMetallization"/>   	<!-- MAJOR - Change of metallization material-->
+      <xsd:enumeration value="MATENCAPSSEALING"/>       <!-- MAJOR - Change of encapsulation/sealing material-->
+	  <xsd:enumeration value="matEncapsSealing"/>   	<!-- MAJOR - Change of encapsulation/sealing material-->
+      <xsd:enumeration value="MATBUMPMETAL"/>           <!-- MAJOR - Bump Material / Metal System (internal)-->
+	  <xsd:enumeration value="matBumpMetal"/>   		<!-- MAJOR - Bump material/metal system (internal)-->
+      <xsd:enumeration value="MATMOLD"/>                <!-- MAJOR - Change of mold compound-->
+	  <xsd:enumeration value="matMold"/>   				<!-- MAJOR - Change of mold compound-->
+      <xsd:enumeration value="MATOUTER"/>               <!-- MAJOR - Change of outer material-->
+	  <xsd:enumeration value="matOuter"/>   			<!-- MAJOR - Change of outer material-->
+      <xsd:enumeration value="MATPIN"/>                 <!-- MAJOR - Change of pin material-->
+	  <xsd:enumeration value="matPin"/>   				<!-- MAJOR - Change of pin material-->
+      <xsd:enumeration value="MATDIEATTACH"/>           <!-- MAJOR - Die attach material-->
+	  <xsd:enumeration value="matDieAttach"/>   		<!-- MAJOR - Die attach material-->
+      <xsd:enumeration value="MATSUBCOMP"/>             <!-- MAJOR - Change in material for sub-components (excluding LED chip & LED package) with impact on agreed specifications-->
+	  <xsd:enumeration value="matSubcomp"/>   			<!-- MAJOR - Change in material for sub-components (excluding LED chip & LED package) with impact on agreed specifications-->
+      <xsd:enumeration value="MATCONV"/>                <!-- MAJOR - Change in conversion material-->
+	  <xsd:enumeration value="matConv"/>   				<!-- MAJOR - Change in conversion material-->
+      <xsd:enumeration value="MATSUPPL"/>               <!-- MINOR - Change of supplier of indirect material-->
+	  <xsd:enumeration value="matSuppl"/>   			<!-- MINOR - Change of supplier of indirect material-->
+      <xsd:enumeration value="MATSUPPLDIR"/>            <!-- MINOR - Change of direct material supplier-->
+	  <xsd:enumeration value="matSupplDir"/>   			<!-- MINOR - Change of direct material supplier-->
+      <xsd:enumeration value="MATSUPPLWAF"/>            <!-- MINOR - Change of wafer supplier.-->
+	  <xsd:enumeration value="matSupplWaf"/>   			<!-- MINOR - Change of wafer supplier-->
+      <xsd:enumeration value="MATSUPPLNOIMP"/>          <!-- MINOR - Change of (direct) material supplier without impact on agreed specifications-->
+	  <xsd:enumeration value="matSupplNoimp"/>   		<!-- MINOR - Change of (direct) material supplier without impact on agreed specifications-->
+      <xsd:enumeration value="MATSUPPLCONV"/>           <!-- MINOR - Change of direct supplier of converter material-->
+	  <xsd:enumeration value="matSupplConv"/>   		<!-- MINOR - Change of direct supplier of converter material-->
+      <xsd:enumeration value="DESGCHG"/>                <!-- MAJOR - Design Change-->
+	  <xsd:enumeration value="desgChg"/>   				<!-- MAJOR - Design Change-->
+      <xsd:enumeration value="DESGINNERCONST"/>         <!-- MAJOR - Changes of inner construction-->
+	  <xsd:enumeration value="desgInnerConst"/>   		<!-- MAJOR - Changes of inner construction-->
+      <xsd:enumeration value="DESGSEV"/>                <!-- MAJOR - Changes termination, surface finish, shape, color, appearance or dimension structure-->
+	  <xsd:enumeration value="desgSev"/>   				<!-- MAJOR - Changes termination, surface finish, shape, color, appearance or dimension structure-->
+      <xsd:enumeration value="DESGWAFTHICK"/>           <!-- MAJOR - New final wafer thickness-->
+	  <xsd:enumeration value="desgWafThick"/>   		<!-- MAJOR - New final wafer thickness-->
+      <xsd:enumeration value="DESGWAFDIAM"/>            <!-- MAJOR - New wafer diameter-->
+	  <xsd:enumeration value="desgWafDiam"/>   			<!-- MAJOR - New wafer diameter-->
+      <xsd:enumeration value="DESGWAFSETUP"/>           <!-- MAJOR - Change of wafer setup or number of possible good dies on wafer.-->
+	  <xsd:enumeration value="desgWafSetup"/>   		<!-- MAJOR - Change of wafer setup or number of possible good dies on wafer-->
+      <xsd:enumeration value="DESGWAFEDGE"/>            <!-- MAJOR - Change of optical appearance of wafer edge region-->
+	  <xsd:enumeration value="desgWafEdge"/>   			<!-- MAJOR - Change of optical appearance of wafer edge region-->
+      <xsd:enumeration value="DESGWAFLAY"/>             <!-- MAJOR - Change in stacking of layers-->
+	  <xsd:enumeration value="desgWafLay"/>   			<!-- MAJOR - Change in stacking of layers-->
+      <xsd:enumeration value="DESGDIESIZE"/>            <!-- MAJOR - Die scribe or separation, change of die size-->
+	  <xsd:enumeration value="desgDieSize"/>   			<!-- MAJOR - Die scribe or separation, change of die size-->
+      <xsd:enumeration value="DESGOUTERDIM"/>           <!-- MAJOR - Outer material dimensions-->
+	  <xsd:enumeration value="desgOuterDim"/>   		<!-- MAJOR - Outer material dimensions-->
+      <xsd:enumeration value="DESGLEADFRAME"/>          <!-- MAJOR - Change in leadframe dimensions-->
+	  <xsd:enumeration value="desgLeadframe"/>   		<!-- MAJOR - Change in leadframe dimensions-->
+      <xsd:enumeration value="DESGMARK"/>               <!-- MAJOR - Change of product marking-->
+	  <xsd:enumeration value="desgMark"/>   			<!-- MAJOR - Change of product marking-->
+      <xsd:enumeration value="DESGPLAT"/>               <!-- MAJOR - Change of lead and heat slug plating material/plating thickness (external)-->
+	  <xsd:enumeration value="desgPlat"/>   			<!-- MAJOR - Change of lead and heat slug plating material/plating thickness (external)-->
+      <xsd:enumeration value="DESGPIN"/>                <!-- MAJOR - Change of pin diameter-->
+	  <xsd:enumeration value="desgPin"/>   				<!-- MAJOR - Change of pin diameter-->
+      <xsd:enumeration value="DESGACTIVE"/>             <!-- MAJOR - Design changes in active elements-->
+	  <xsd:enumeration value="desgActive"/>   			<!-- MAJOR - Design changes in active elements-->
+      <xsd:enumeration value="DESGROUT"/>               <!-- MAJOR - Design changes in routing / layout-->
+	  <xsd:enumeration value="desgRout"/>   			<!-- MAJOR - Design changes in routing / layout-->
+      <xsd:enumeration value="DESGDIESHRINK"/>          <!-- MAJOR - Chip size/ die shrink-->
+	  <xsd:enumeration value="desgDieShrink"/>   		<!-- MAJOR - Chip size/ die shrink-->
+      <xsd:enumeration value="PROCGEN"/>                <!-- MAJOR - Changes in process technology or manufacturing methods-->
+	  <xsd:enumeration value="procGen"/>   				<!-- MAJOR - Changes in process technology or manufacturing methods-->
+      <xsd:enumeration value="PROCSTEPCHG"/>            <!-- MAJOR - Elimination or addition of a manufacturing process steps-->
+	  <xsd:enumeration value="procStepChg"/>   			<!-- MAJOR - Elimination or addition of a manufacturing process steps-->
+      <xsd:enumeration value="PROCASSY"/>               <!-- MAJOR - Change of specified assembly process sequence-->
+	  <xsd:enumeration value="procAssy"/>   			<!-- MAJOR - Change of specified assembly process sequence-->
+      <xsd:enumeration value="PROCWAF"/>                <!-- MAJOR - Change of specified wafer process sequence-->
+	  <xsd:enumeration value="procWaf"/>   				<!-- MAJOR - Change of specified wafer process sequence-->
+      <xsd:enumeration value="PROCPLAT"/>               <!-- MAJOR - Plating process change-->
+	  <xsd:enumeration value="procPlat"/>   			<!-- MAJOR - Plating process change-->
+      <xsd:enumeration value="PROCWIREBOND"/>           <!-- MAJOR - wire bond method-->
+	  <xsd:enumeration value="procWireBond"/>   		<!-- MAJOR - Wire bond method-->
+      <xsd:enumeration value="PROCMARK"/>               <!-- MAJOR - marking method-->
+	  <xsd:enumeration value="procMark"/>   			<!-- MAJOR - Marking method-->
+      <xsd:enumeration value="PROCMETALLIZATIONBACK"/>  <!-- MAJOR - New / change of metallization (backside)-->
+	  <xsd:enumeration value="procMetallizationBack"/>  <!-- MAJOR - New / change of metallization (backside)-->
+      <xsd:enumeration value="PROCMETALLIZATIONFRONT"/> <!-- MAJOR - New / change of metallization (frontside)-->
+	  <xsd:enumeration value="procMetallizationFront"/> <!-- MAJOR - New / change of metallization (frontside)-->
+      <xsd:enumeration value="PROCPASSIVATION"/>        <!-- MAJOR - New / change of passivation or die coating (without bare die)-->
+	  <xsd:enumeration value="procPassivation"/>   		<!-- MAJOR - New / change of passivation or die coating (without bare die)-->
+      <xsd:enumeration value="PROCTUN"/>                <!-- MAJOR - Process integrity: tuning within specification-->
+	  <xsd:enumeration value="procTun"/>   				<!-- MAJOR - Process integrity: tuning within specification-->
+      <xsd:enumeration value="PROCCONTIMPR"/>           <!-- MAJOR - Roadmap - continuous improvement notifications-->
+	  <xsd:enumeration value="procContImpr"/>   		<!-- MAJOR - Roadmap – continuous improvement notifications-->
+      <xsd:enumeration value="TESTSPEC"/>               <!-- MAJOR - Change of testing specifications-->
+	  <xsd:enumeration value="testSpec"/>   			<!-- MAJOR - Change of testing specifications-->
+      <xsd:enumeration value="TESTFINALELIM"/>          <!-- MAJOR - Elimination of final electrical measurement / test flow block-->
+	  <xsd:enumeration value="testFinalElim"/>   		<!-- MAJOR - Elimination of final electrical measurement/test flow block-->
+      <xsd:enumeration value="TESTPROCFLOW"/>           <!-- MAJOR - Change of the test coverage/testing process flow used by the supplier to ensure data sheet compliance-->
+	  <xsd:enumeration value="testProcFlow"/>   		<!-- MAJOR - Change of the test coverage/testing process flow used by the supplier to ensure data sheet compliance-->
+      <xsd:enumeration value="LOCCOAQU"/>               <!-- MAJOR - Acquisition of another company/ production line-->
+	  <xsd:enumeration value="locCoAqu"/>   			<!-- MAJOR - Acquisition of another company/production line-->
+      <xsd:enumeration value="LOCMFR"/>                 <!-- MAJOR - Manufacturing site transfer or movement of a item of production process to a not previously released location/site-->
+	  <xsd:enumeration value="locMfr"/>   				<!-- MAJOR - Manufacturing site transfer or movement of an item of production process to a not previously released location/site-->
+      <xsd:enumeration value="LOCWAF"/>                 <!-- MAJOR - Move of all or item of wafer fab to a not previously released location/site/subcontractor-->
+	  <xsd:enumeration value="locWaf"/>   				<!-- MAJOR - Move of all or item of wafer fab to a not previously released location/site/subcontractor-->
+      <xsd:enumeration value="LOCASSY"/>                <!-- MAJOR - Move of all or item of assembly to a not previously released location/site/subcontractor-->
+	  <xsd:enumeration value="locAssy"/>   				<!-- MAJOR - Move of all or item of assembly to a not previously released location/site/subcontractor-->
+      <xsd:enumeration value="LOCWAFTEST"/>             <!-- MAJOR - Move of all or item of electrical wafer test and/or final test to a not previously released location/site/subcontractor-->
+	  <xsd:enumeration value="locWafTest"/>  			<!-- MAJOR - Move of all or item of electrical wafer test and/or final test to a not previously released location/site/subcontractor-->
+      <xsd:enumeration value="LOCTOOLNEWTECH"/>         <!-- MAJOR - Production from a new equipment/tool which uses a different basic technology and which due to its unique form or function can be expected to influence the integrity of the final product.-->
+	  <xsd:enumeration value="locToolNewtech"/>   		<!-- MAJOR - Production from a new equipment/tool which uses a different basic technology and which due to its unique form or function can be expected to influence the integrity of the final product.-->
+      <xsd:enumeration value="LOCTOOLOLDTECH"/>         <!-- MAJOR - Production from a new equipment/tool which uses the same basic technology without change of process.-->
+	  <xsd:enumeration value="locToolOldtech"/>   		<!-- MAJOR - Production from a new equipment/tool which uses the same basic technology without change of process-->
+      <xsd:enumeration value="LOCTOOLNEWTEST"/>         <!-- MAJOR - Change in final test equipment type that uses a different technology.-->
+	  <xsd:enumeration value="locToolNewtest"/>   		<!-- MAJOR - Change in final test equipment type that uses a different technology-->
+      <xsd:enumeration value="LOCSW"/>                  <!-- MAJOR - Firmware or BIOS of product-->
+	  <xsd:enumeration value="locSw"/>   				<!-- MAJOR - Firmware or BIOS of product-->
+      <xsd:enumeration value="SHIPCUS"/>                <!-- MINOR - Export/ customs relevant data-->
+	  <xsd:enumeration value="shipCus"/>   				<!-- MINOR - Export/ customs relevant data-->
+      <xsd:enumeration value="SHIPSVC"/>                <!-- MINOR - Changes in serviceability-->
+	  <xsd:enumeration value="shipSvc"/>   				<!-- MINOR - Changes in serviceability-->
+      <xsd:enumeration value="SHIPPKGDIM"/>             <!-- MAJOR - Change in critical dimensions of package-->
+	  <xsd:enumeration value="shipPkgDim"/>   			<!-- MAJOR - Change in critical dimensions of package-->
+      <xsd:enumeration value="SHIPENV"/>                <!-- MAJOR - Environment max storage temperature-->
+	  <xsd:enumeration value="shipEnv"/>   				<!-- MAJOR - Environment max storage temperature-->
+      <xsd:enumeration value="SHIPDRYPACK"/>            <!-- MINOR - Dry pack requirements change-->
+	  <xsd:enumeration value="shipDrypack"/>   			<!-- MINOR - Dry pack requirements change-->
+      <xsd:enumeration value="SHIPCARRIER"/>            <!-- MINOR - Change of carrier-->
+	  <xsd:enumeration value="shipCarrier"/>   			<!-- MINOR - Change of carrier-->
+      <xsd:enumeration value="SHIPLABEL"/>              <!-- MINOR - Change of labelling-->
+	  <xsd:enumeration value="shipLabel"/>   			<!-- MINOR - Change of labelling-->
+      <xsd:enumeration value="SHIPSPEC"/>               <!-- MINOR - Change of packing/shipping specification-->
+	  <xsd:enumeration value="shipSpec"/>   			<!-- MINOR - Change of packing/shipping specification-->
+      <xsd:enumeration value="SHIPMAT"/>                <!-- MINOR - Change of packing material-->
+	  <xsd:enumeration value="shipMat"/>   				<!-- MINOR - Change of packing material-->
+      <xsd:enumeration value="SWUPDSAFSEC"/>            <!-- MAJOR - Update for Safety/Security-->
+	  <xsd:enumeration value="swUpdSafSec"/>   			<!-- MAJOR - Update for Safety/Security-->
+      <xsd:enumeration value="SWUPGRD"/>                <!-- MAJOR - Product upgrade-->
+	  <xsd:enumeration value="swUpgrd"/>   				<!-- MAJOR - Product upgrade-->
+      <xsd:enumeration value="SWCHGFUNC"/>              <!-- MAJOR - Changes/extension in functionality-->
+	  <xsd:enumeration value="swChgFunc"/>   			<!-- MAJOR - Changes/extension in functionality-->
+      <xsd:enumeration value="SWCHGIFC"/>               <!-- MAJOR - Interface change-->
+	  <xsd:enumeration value="swChgIfc"/>   			<!-- MAJOR - Interface change-->
+      <xsd:enumeration value="SWERRCOR"/>               <!-- MAJOR - error correction-->
+	  <xsd:enumeration value="swErrCor"/>   			<!-- MAJOR - Error correction-->
+      <xsd:enumeration value="SWPARCHG"/>               <!-- MAJOR - parameter changes-->
+	  <xsd:enumeration value="swParChg"/>   			<!-- MAJOR - Parameter changes-->
+      <xsd:enumeration value="SWCERCRP"/>               <!-- MAJOR - modification of certificates or crypto keys-->
+	  <xsd:enumeration value="swCerCrp"/>   			<!-- MAJOR - Modification of certificates or crypto keys-->
+      <xsd:enumeration value="SWOSCHG"/>                <!-- MAJOR - modification due to operation system changes-->
+	  <xsd:enumeration value="swOsChg"/>   				<!-- MAJOR - Modification due to operation system changes-->
+      <xsd:enumeration value="SWDOCCHG"/>               <!-- MINOR - change of software documentation-->
+	  <xsd:enumeration value="swDocChg"/>   			<!-- MINOR - Change of software documentation-->
+      <xsd:enumeration value="SWLIBCHG"/>               <!-- MAJOR - changes in software libraries from third party suppliers-->
+	  <xsd:enumeration value="swLibChg"/>   			<!-- MAJOR - Changes in software libraries from third party suppliers-->
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!--end Type of Change form SmartPCN-->
+  
+  <!--Datatype for one contact-->
+  <xsd:complexType name="contactType">
+    <xsd:sequence>
+      <!--CustomerNumber-->
+      <xsd:element name="pcnCustomerNumber" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="32"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--DUNS-Number-->
+      <xsd:element name="pcnDunsNumber" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{9}"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Business Unit-->
+      <xsd:element name="pcnBusinessUnit" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Company-->
+      <xsd:element name="pcnCompany" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--E-Mail-->
+      <xsd:element name="pcnEmail" type="emailType" minOccurs="1" maxOccurs="1"/>
+
+      <!--Contact Link-->
+      <xsd:element name="contactLink"  minOccurs="0" maxOccurs="1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="pcnContactUrl" type="xsd:anyURI" minOccurs="1" maxOccurs="1"/>
+
+            <!--Username-->
+            <xsd:element name="pcnContactUsername" minOccurs="0" maxOccurs="1">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="128"/>
+                  <xsd:whiteSpace value="replace"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+
+            <!--Password-->
+            <xsd:element name="pcnContactPassword" minOccurs="0" maxOccurs="1">
+              <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                  <xsd:maxLength value="128"/>
+                  <xsd:whiteSpace value="replace"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <!--Address-->
+      <xsd:element name="address" type="addressType" minOccurs="1" maxOccurs="1"/>
+
+      <!--Phone Number-->
+      <xsd:element name="phone" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:attribute name="pcnPhoneNumber" type="PhoneNumber" use="required" />
+          <xsd:attribute name="pcnPhoneType" type ="PhoneType" use="required"/>
+        </xsd:complexType>
+      </xsd:element>   
+
+        <!--ContactPersons-->
+      <xsd:element name="persons" minOccurs="0" maxOccurs="1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="person" type="personType" minOccurs="1" maxOccurs="unbounded"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:sequence>
+
+    <!--Contact-Type-->
+    <xsd:attribute name="pcnContactType" use="required">
+      <xsd:simpleType>
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="MANUFACTURER"/>
+		  <xsd:enumeration value="Manufacturer"/>
+          <xsd:enumeration value="DISTRIBUTOR"/>
+          <xsd:enumeration value="Distributor"/>
+		  <xsd:enumeration value="CUSTOMER"/>
+		  <xsd:enumeration value="Customer"/>
+		  <xsd:enumeration value="DATASERVICEPROVIDER"/>
+		  <xsd:enumeration value="DataServiceProvider"/>
+          <xsd:enumeration value="SERVICEPROVIDER"/>
+          <xsd:enumeration value="Serviceprovider"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+  </xsd:complexType>
+  <!--End contact-->
+  
+  <!--Data type for an E-Mail-Address-->
+  <xsd:simpleType name="emailType">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="256"/>
+      <xsd:pattern value="([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!--emailType end-->
+
+  <!--Data type for Phonenumber-->
+  <xsd:simpleType name="PhoneNumber">
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="128"/>
+      <!--<xsd:pattern value="\+(?:[0-9]\x20?){6,14}[0-9]"/>-->
+	  <xsd:pattern value="\+([0-9] ?){6,14}[0-9]"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!--Data type for Phone Type-->
+  <xsd:simpleType name="PhoneType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="HOME"/>
+	  <xsd:enumeration value="Home"/>
+      <xsd:enumeration value="BUSINESS"/>
+	  <xsd:enumeration value="Business"/>
+      <xsd:enumeration value="FAX"/>
+      <xsd:enumeration value="Fax"/>
+	  <xsd:enumeration value="MOBILE"/>
+	  <xsd:enumeration value="Mobile"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <!--Data type for one contact person-->
+  <xsd:complexType name="personType">
+    <xsd:sequence>
+
+      <!--Firstname-->
+      <xsd:element name="pcnPersFirstname" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Lastname-->
+      <xsd:element name="pcnPersLastname" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Title-->
+      <xsd:element name="pcnPersTitle" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="32"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Function-->
+      <xsd:element name="pcnPersFunction" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--E-Mail-->
+      <xsd:element name="pcnPersEmail" type="emailType" minOccurs="0" maxOccurs="1"/>
+
+      <!--Phone Number-->
+      <xsd:element name="persPhone" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:attribute name="pcnPersPhoneNumber" type="PhoneNumber" use="required" />
+          <xsd:attribute name="pcnPersPhoneType" type ="PhoneType" use="required"/>
+        </xsd:complexType>
+      </xsd:element>
+
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--End contact person type-->
+  
+  <!--Data type for an Address-->
+  <xsd:complexType name="addressType">
+    <xsd:sequence>
+      <xsd:element name="pcnStreet" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--ZipCode-->
+      <xsd:element name="pcnZipCode" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="32"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--City-->
+      <xsd:element name="pcnCity" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--State-->
+      <xsd:element name="pcnState" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="128"/>
+            <xsd:whiteSpace value="replace"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+
+      <!--Country-->
+      <xsd:element name="pcnCountry" type="countryType" minOccurs="1" maxOccurs="1"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--end addressType -->
+
+ <!--Data type for countries ISO 3166-1-->
+  <xsd:simpleType name="countryType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="AD"/>   <!-- ANDORRA-->
+      <xsd:enumeration value="AE"/>   <!-- UNITED ARAB EMIRATES-->
+      <xsd:enumeration value="AF"/>   <!-- AFGHANISTAN-->
+      <xsd:enumeration value="AG"/>   <!-- ANTIGUA AND BARBUDA-->
+      <xsd:enumeration value="AI"/>   <!-- ANGUILLA-->
+      <xsd:enumeration value="AL"/>   <!-- ALBANIA-->
+      <xsd:enumeration value="AM"/>   <!-- ARMENIA-->
+      <xsd:enumeration value="AO"/>   <!-- ANGOLA-->
+      <xsd:enumeration value="AQ"/>   <!-- ANTARCTICA-->
+      <xsd:enumeration value="AR"/>   <!-- ARGENTINA-->
+      <xsd:enumeration value="AS"/>   <!-- AMERICAN SAMOA-->
+      <xsd:enumeration value="AT"/>   <!-- AUSTRIA-->
+      <xsd:enumeration value="AU"/>   <!-- AUSTRALIA-->
+      <xsd:enumeration value="AW"/>   <!-- ARUBA-->
+      <xsd:enumeration value="AX"/>   <!-- ALAND ISLANDS-->
+      <xsd:enumeration value="AZ"/>   <!-- AZERBAIJAN-->
+      <xsd:enumeration value="BA"/>   <!-- BOSNIA AND HERZEGOVINA-->
+      <xsd:enumeration value="BB"/>   <!-- BARBADOS-->
+      <xsd:enumeration value="BD"/>   <!-- BANGLADESH-->
+      <xsd:enumeration value="BE"/>   <!-- BELGIUM-->
+      <xsd:enumeration value="BF"/>   <!-- BURKINA FASO-->
+      <xsd:enumeration value="BG"/>   <!-- BULGARIA-->
+      <xsd:enumeration value="BH"/>   <!-- BAHRAIN-->
+      <xsd:enumeration value="BI"/>   <!-- BURUNDI-->
+      <xsd:enumeration value="BJ"/>   <!-- BENIN-->
+      <xsd:enumeration value="BM"/>   <!-- BERMUDA-->
+      <xsd:enumeration value="BN"/>   <!-- BRUNEI DARUSSALAM-->
+      <xsd:enumeration value="BO"/>   <!-- BOLIVIA-->
+      <xsd:enumeration value="BR"/>   <!-- BRAZIL-->
+      <xsd:enumeration value="BS"/>   <!-- BAHAMAS-->
+      <xsd:enumeration value="BT"/>   <!-- BHUTAN-->
+      <xsd:enumeration value="BV"/>   <!-- BOUVET ISLAND-->
+      <xsd:enumeration value="BW"/>   <!-- BOTSWANA-->
+      <xsd:enumeration value="BY"/>   <!-- BELARUS-->
+      <xsd:enumeration value="BZ"/>   <!-- BELIZE-->
+      <xsd:enumeration value="CA"/>   <!-- CANADA-->
+      <xsd:enumeration value="CC"/>   <!-- COCOS (KEELING) ISLANDS-->
+      <xsd:enumeration value="CD"/>   <!-- CONGO, THE DEMOCRATIC REPUBLIC OF THE-->
+      <xsd:enumeration value="CF"/>   <!-- CENTRAL AFRICAN REPUBLIC-->
+      <xsd:enumeration value="CG"/>   <!-- CONGO-->
+      <xsd:enumeration value="CH"/>   <!-- SWITZERLAND-->
+      <xsd:enumeration value="CI"/>   <!-- COTE D'IVOIRE-->
+      <xsd:enumeration value="CK"/>   <!-- COOK ISLANDS-->
+      <xsd:enumeration value="CL"/>   <!-- CHILE-->
+      <xsd:enumeration value="CM"/>   <!-- CAMEROON-->
+      <xsd:enumeration value="CN"/>   <!-- CHINA-->
+      <xsd:enumeration value="CO"/>   <!-- COLOMBIA-->
+      <xsd:enumeration value="CR"/>   <!-- COSTA RICA-->
+      <xsd:enumeration value="CU"/>   <!-- CUBA-->
+      <xsd:enumeration value="CV"/>   <!-- CAPE VERDE-->
+      <xsd:enumeration value="CX"/>   <!-- CHRISTMAS ISLAND-->
+      <xsd:enumeration value="CY"/>   <!-- CYPRUS-->
+      <xsd:enumeration value="CZ"/>   <!-- CZECH REPUBLIC-->
+      <xsd:enumeration value="DE"/>   <!-- GERMANY-->
+      <xsd:enumeration value="DJ"/>   <!-- DJIBOUTI-->
+      <xsd:enumeration value="DK"/>   <!-- DENMARK-->
+      <xsd:enumeration value="DM"/>   <!-- DOMINICA-->
+      <xsd:enumeration value="DO"/>   <!-- DOMINICAN REPUBLIC-->
+      <xsd:enumeration value="DZ"/>   <!-- ALGERIA-->
+      <xsd:enumeration value="EC"/>   <!-- ECUADOR-->
+      <xsd:enumeration value="EE"/>   <!-- ESTONIA-->
+      <xsd:enumeration value="EG"/>   <!-- EGYPT-->
+      <xsd:enumeration value="EH"/>   <!-- WESTERN SAHARA-->
+      <xsd:enumeration value="ER"/>   <!-- ERITREA-->
+      <xsd:enumeration value="ES"/>   <!-- SPAIN-->
+      <xsd:enumeration value="ET"/>   <!-- ETHIOPIA-->
+      <xsd:enumeration value="FI"/>   <!-- FINLAND-->
+      <xsd:enumeration value="FJ"/>   <!-- FIJI-->
+      <xsd:enumeration value="FK"/>   <!-- FALKLAND ISLANDS (MALVINAS)-->
+      <xsd:enumeration value="FM"/>   <!-- MICRONESIA, FEDERATED STATES OF-->
+      <xsd:enumeration value="FO"/>   <!-- FAROE ISLANDS-->
+      <xsd:enumeration value="FR"/>   <!-- FRANCE-->
+      <xsd:enumeration value="GA"/>   <!-- GABON-->
+      <xsd:enumeration value="GB"/>   <!-- UNITED KINGDOM-->
+      <xsd:enumeration value="GD"/>   <!-- GRENADA-->
+      <xsd:enumeration value="GE"/>   <!-- GEORGIA-->
+      <xsd:enumeration value="GF"/>   <!-- FRENCH GUIANA-->
+      <xsd:enumeration value="GG"/>   <!-- GUERNSEY-->
+      <xsd:enumeration value="GH"/>   <!-- GHANA-->
+      <xsd:enumeration value="GI"/>   <!-- GIBRALTAR-->
+      <xsd:enumeration value="GL"/>   <!-- GREENLAND-->
+      <xsd:enumeration value="GM"/>   <!-- GAMBIA-->
+      <xsd:enumeration value="GN"/>   <!-- GUINEA-->
+      <xsd:enumeration value="GP"/>   <!-- GUADELOUPE-->
+      <xsd:enumeration value="GQ"/>   <!-- EQUATORIAL GUINEA-->
+      <xsd:enumeration value="GR"/>   <!-- GREECE-->
+      <xsd:enumeration value="GS"/>   <!-- SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS-->
+      <xsd:enumeration value="GT"/>   <!-- GUATEMALA-->
+      <xsd:enumeration value="GU"/>   <!-- GUAM-->
+      <xsd:enumeration value="GW"/>   <!-- GUINEA-BISSAU-->
+      <xsd:enumeration value="GY"/>   <!-- GUYANA-->
+      <xsd:enumeration value="HK"/>   <!-- HONG KONG-->
+      <xsd:enumeration value="HM"/>   <!-- HEARD ISLAND AND MCDONALD ISLANDS-->
+      <xsd:enumeration value="HN"/>   <!-- HONDURAS-->
+      <xsd:enumeration value="HR"/>   <!-- CROATIA-->
+      <xsd:enumeration value="HT"/>   <!-- HAITI-->
+      <xsd:enumeration value="HU"/>   <!-- HUNGARY-->
+      <xsd:enumeration value="ID"/>   <!-- INDONESIA-->
+      <xsd:enumeration value="IE"/>   <!-- IRELAND-->
+      <xsd:enumeration value="IL"/>   <!-- ISRAEL-->
+      <xsd:enumeration value="IM"/>   <!-- ISLE OF MAN-->
+      <xsd:enumeration value="IN"/>   <!-- INDIA-->
+      <xsd:enumeration value="IO"/>   <!-- BRITISH INDIAN OCEAN TERRITORY-->
+      <xsd:enumeration value="IQ"/>   <!-- IRAQ-->
+      <xsd:enumeration value="IR"/>   <!-- IRAN, ISLAMIC REPUBLIC OF-->
+      <xsd:enumeration value="IS"/>   <!-- ICELAND-->
+      <xsd:enumeration value="IT"/>   <!-- ITALY-->
+      <xsd:enumeration value="JE"/>   <!-- JERSEY-->
+      <xsd:enumeration value="JM"/>   <!-- JAMAICA-->
+      <xsd:enumeration value="JO"/>   <!-- JORDAN-->
+      <xsd:enumeration value="JP"/>   <!-- JAPAN-->
+      <xsd:enumeration value="KE"/>   <!-- KENYA-->
+      <xsd:enumeration value="KG"/>   <!-- KYRGYZSTAN-->
+      <xsd:enumeration value="KH"/>   <!-- CAMBODIA-->
+      <xsd:enumeration value="KI"/>   <!-- KIRIBATI-->
+      <xsd:enumeration value="KM"/>   <!-- COMOROS-->
+      <xsd:enumeration value="KN"/>   <!-- SAINT KITTS AND NEVIS-->
+      <xsd:enumeration value="KP"/>   <!-- KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF-->
+      <xsd:enumeration value="KR"/>   <!-- KOREA, REPUBLIC OF-->
+      <xsd:enumeration value="KW"/>   <!-- KUWAIT-->
+      <xsd:enumeration value="KY"/>   <!-- CAYMAN ISLANDS-->
+      <xsd:enumeration value="KZ"/>   <!-- KAZAKHSTAN-->
+      <xsd:enumeration value="LA"/>   <!-- LAO PEOPLE'S DEMOCRATIC REPUBLIC-->
+      <xsd:enumeration value="LB"/>   <!-- LEBANON-->
+      <xsd:enumeration value="LC"/>   <!-- SAINT LUCIA-->
+      <xsd:enumeration value="LI"/>   <!-- LIECHTENSTEIN-->
+      <xsd:enumeration value="LK"/>   <!-- SRI LANKA-->
+      <xsd:enumeration value="LR"/>   <!-- LIBERIA-->
+      <xsd:enumeration value="LS"/>   <!-- LESOTHO-->
+      <xsd:enumeration value="LT"/>   <!-- LITHUANIA-->
+      <xsd:enumeration value="LU"/>   <!-- LUXEMBOURG-->
+      <xsd:enumeration value="LV"/>   <!-- ATVIA-->
+      <xsd:enumeration value="LY"/>   <!-- LIBYAN ARAB JAMAHIRIYA-->
+      <xsd:enumeration value="MA"/>   <!-- MOROCCO-->
+      <xsd:enumeration value="MC"/>   <!-- MONACO-->
+      <xsd:enumeration value="MD"/>   <!-- MOLDOVA, REPUBLIC OF-->
+      <xsd:enumeration value="MG"/>   <!-- MADAGASCAR-->
+      <xsd:enumeration value="MH"/>   <!-- MARSHALL ISLANDS-->
+      <xsd:enumeration value="MK"/>   <!-- MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF-->
+      <xsd:enumeration value="ML"/>   <!-- MALI-->
+      <xsd:enumeration value="MM"/>   <!-- MYANMAR-->
+      <xsd:enumeration value="MN"/>   <!-- MONGOLIA-->
+      <xsd:enumeration value="MO"/>   <!-- MACAO-->
+      <xsd:enumeration value="MP"/>   <!-- NORTHERN MARIANA ISLANDS-->
+      <xsd:enumeration value="MQ"/>   <!-- MARTINIQUE-->
+      <xsd:enumeration value="MR"/>   <!-- MAURITANIA-->
+      <xsd:enumeration value="MS"/>   <!-- MONTSERRAT-->
+      <xsd:enumeration value="MT"/>   <!-- MALTA-->
+      <xsd:enumeration value="MU"/>   <!-- MAURITIUS-->
+      <xsd:enumeration value="MV"/>   <!-- MALDIVES-->
+      <xsd:enumeration value="MW"/>   <!-- MALAWI-->
+      <xsd:enumeration value="MX"/>   <!-- MEXICO-->
+      <xsd:enumeration value="MY"/>   <!-- MALAYSIA-->
+      <xsd:enumeration value="MZ"/>   <!-- MOZAMBIQUE-->
+      <xsd:enumeration value="NA"/>   <!-- NAMIBIA-->
+      <xsd:enumeration value="NC"/>   <!-- NEW CALEDONIA-->
+      <xsd:enumeration value="NE"/>   <!-- NIGER-->
+      <xsd:enumeration value="NF"/>   <!-- NORFOLK ISLAND-->
+      <xsd:enumeration value="NG"/>   <!-- NIGERIA-->
+      <xsd:enumeration value="NI"/>   <!-- NICARAGUA-->
+      <xsd:enumeration value="NL"/>   <!-- NETHERLANDS-->
+      <xsd:enumeration value="NO"/>   <!-- NORWAY-->
+      <xsd:enumeration value="NP"/>   <!-- NEPAL-->
+      <xsd:enumeration value="NR"/>   <!-- NAURU-->
+      <xsd:enumeration value="NU"/>   <!-- NIUE-->
+      <xsd:enumeration value="NZ"/>   <!-- NEW ZEALAND-->
+      <xsd:enumeration value="OM"/>   <!-- OMAN-->
+      <xsd:enumeration value="PA"/>   <!-- PANAMA-->
+      <xsd:enumeration value="PE"/>   <!-- PERU-->
+      <xsd:enumeration value="PF"/>   <!-- FRENCH POLYNESIA-->
+      <xsd:enumeration value="PG"/>   <!-- PAPUA NEW GUINEA-->
+      <xsd:enumeration value="PH"/>   <!-- PHILIPPINES-->
+      <xsd:enumeration value="PK"/>   <!-- PAKISTAN-->
+      <xsd:enumeration value="PL"/>   <!-- POLAND-->
+      <xsd:enumeration value="PM"/>   <!-- SAINT PIERRE AND MIQUELON-->
+      <xsd:enumeration value="PN"/>   <!-- PITCAIRN-->
+      <xsd:enumeration value="PR"/>   <!-- PUERTO RICO-->
+      <xsd:enumeration value="PS"/>   <!-- PALESTINIAN TERRITORY, OCCUPIED-->
+      <xsd:enumeration value="PT"/>   <!-- PORTUGAL-->
+      <xsd:enumeration value="PW"/>   <!-- PALAU-->
+      <xsd:enumeration value="PY"/>   <!-- PARAGUAY-->
+      <xsd:enumeration value="QA"/>   <!-- QATAR-->
+      <xsd:enumeration value="RE"/>   <!-- REUNION-->
+      <xsd:enumeration value="RO"/>   <!-- ROMANIA-->
+      <xsd:enumeration value="RU"/>   <!-- RUSSIAN FEDERATION-->
+      <xsd:enumeration value="RW"/>   <!-- RWANDA-->
+      <xsd:enumeration value="SA"/>   <!-- SAUDI ARABIA-->
+      <xsd:enumeration value="SB"/>   <!-- SOLOMON ISLANDS-->
+      <xsd:enumeration value="SC"/>   <!-- SEYCHELLES-->
+      <xsd:enumeration value="SD"/>   <!-- SUDAN-->
+      <xsd:enumeration value="SE"/>   <!-- SWEDEN-->
+      <xsd:enumeration value="SG"/>   <!-- SINGAPORE-->
+      <xsd:enumeration value="SH"/>   <!-- SAINT HELENA-->
+      <xsd:enumeration value="SI"/>   <!-- SLOVENIA-->
+      <xsd:enumeration value="SJ"/>   <!-- SVALBARD AND JAN MAYEN-->
+      <xsd:enumeration value="SK"/>   <!-- SLOVAKIA-->
+      <xsd:enumeration value="SL"/>   <!-- SIERRA LEONE-->
+      <xsd:enumeration value="SM"/>   <!-- SAN MARINO-->
+      <xsd:enumeration value="SN"/>   <!-- SENEGAL-->
+      <xsd:enumeration value="SO"/>   <!-- SOMALIA-->
+      <xsd:enumeration value="SR"/>   <!-- SURINAME-->
+      <xsd:enumeration value="ST"/>   <!-- SAO TOME AND PRINCIPE-->
+      <xsd:enumeration value="SV"/>   <!-- EL SALVADOR-->
+      <xsd:enumeration value="SY"/>   <!-- SYRIAN ARAB REPUBLIC-->
+      <xsd:enumeration value="SZ"/>   <!-- SWAZILAND-->
+      <xsd:enumeration value="TC"/>   <!-- TURKS AND CAICOS ISLANDS-->
+      <xsd:enumeration value="TD"/>   <!-- CHAD-->
+      <xsd:enumeration value="TF"/>   <!-- FRENCH SOUTHERN TERRITORIES-->
+      <xsd:enumeration value="TG"/>   <!-- TOGO-->
+      <xsd:enumeration value="TH"/>   <!-- THAILAND-->
+      <xsd:enumeration value="TJ"/>   <!-- TAJIKISTAN-->
+      <xsd:enumeration value="TK"/>   <!-- TOKELAU-->
+      <xsd:enumeration value="TL"/>   <!-- TIMOR-LESTE-->
+      <xsd:enumeration value="TM"/>   <!-- TURKMENISTAN-->
+      <xsd:enumeration value="TN"/>   <!-- TUNISIA-->
+      <xsd:enumeration value="TO"/>   <!-- TONGA-->
+      <xsd:enumeration value="TR"/>   <!-- TURKEY-->
+      <xsd:enumeration value="TT"/>   <!-- TRINIDAD AND TOBAGO-->
+      <xsd:enumeration value="TV"/>   <!-- TUVALU-->
+      <xsd:enumeration value="TW"/>   <!-- TAIWAN, PROVINCE OF CHINA-->
+      <xsd:enumeration value="TZ"/>   <!-- TANZANIA, UNITED REPUBLIC OF-->
+      <xsd:enumeration value="UA"/>   <!-- UKRAINE-->
+      <xsd:enumeration value="UG"/>   <!-- UGANDA-->
+      <xsd:enumeration value="US"/>   <!-- UNITED STATES-->
+      <xsd:enumeration value="UY"/>   <!-- URUGUAY-->
+      <xsd:enumeration value="UZ"/>   <!-- UZBEKISTAN-->
+      <xsd:enumeration value="VA"/>   <!-- HOLY SEE (VATICAN CITY STATE)-->
+      <xsd:enumeration value="VC"/>   <!-- SAINT VINCENT AND THE GRENADINES-->
+      <xsd:enumeration value="VE"/>   <!-- VENEZUELA-->
+      <xsd:enumeration value="VG"/>   <!-- VIRGIN ISLANDS, BRITISH-->
+      <xsd:enumeration value="VN"/>   <!-- VIET NAM-->
+      <xsd:enumeration value="VU"/>   <!-- VANUATU-->
+      <xsd:enumeration value="WF"/>   <!-- WALLIS AND FUTUNA-->
+      <xsd:enumeration value="WS"/>   <!-- SAMOA-->
+      <xsd:enumeration value="YE"/>   <!-- YEMEN-->
+      <xsd:enumeration value="YT"/>   <!-- MAYOTTE-->
+      <xsd:enumeration value="ZA"/>   <!-- SOUTH AFRICA-->
+      <xsd:enumeration value="ZM"/>   <!-- ZAMBIA-->
+      <xsd:enumeration value="ZW"/>   <!-- ZIMBABWE-->
+      <xsd:enumeration value="VI"/>   <!-- VIRGIN ISLANDS, U.S.-->
+      <xsd:enumeration value="UM"/>   <!-- UNITED STATES MINOR OUTLYING ISLANDS-->
+      <xsd:enumeration value="BQ"/>   <!-- BONAIRE, SINT EUSTATIUS AND SABA-->
+      <xsd:enumeration value="CW"/>   <!-- CURAÇAO-->
+      <xsd:enumeration value="ME"/>   <!-- MONTENEGRO-->
+      <xsd:enumeration value="RS"/>   <!-- SERBIA-->
+      <xsd:enumeration value="BL"/>   <!-- SAINT BARTHÉLEMY-->
+      <xsd:enumeration value="MF"/>   <!-- SAINT MARTIN (FRENCH PART)-->
+      <xsd:enumeration value="SX"/>   <!-- SINT MAARTEN (DUTCH PART)-->
+      <xsd:enumeration value="SS"/>   <!-- SOUTH SUDAN-->
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!--countryType end-->
+  
+</xsd:schema>

@@ -1,0 +1,1639 @@
+{
+  "id": "d8c31596101e686843c8",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "AST-PCN-2026-052",
+      "raw": "AST-PCN-2026-052",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 115,
+          "end": 131,
+          "quote": "AST-PCN-2026-052",
+          "bbox": [
+            57.599999999999994,
+            152.64,
+            179.28,
+            159.6
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Aster Semiconductor",
+      "raw": "Aster Semiconductor",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 142,
+          "end": 161,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.36,
+            166.56,
+            178.55999999999997,
+            175.2
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PCN",
+      "raw": "PCN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 175,
+          "end": 178,
+          "quote": "PCN",
+          "bbox": [
+            57.599999999999994,
+            180.72,
+            125.27999999999999,
+            189.35999999999999
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Assembly site transfer",
+      "raw": "Assembly site transfer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 186,
+          "end": 208,
+          "quote": "Assembly site transfer",
+          "bbox": [
+            57.12,
+            194.88,
+            167.51999999999998,
+            203.27999999999997
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2026-10-03",
+      "raw": "2026-10-03",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 221,
+          "end": 231,
+          "quote": "2026-10-03",
+          "bbox": [
+            57.839999999999996,
+            208.79999999999998,
+            149.04,
+            215.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": "A",
+      "raw": "A",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 242,
+          "end": 243,
+          "quote": "A",
+          "bbox": [
+            57.839999999999996,
+            222.95999999999998,
+            102.24,
+            229.67999999999998
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": "MANUFACTURER",
+        "raw": "MANUFACTURER",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 429,
+            "end": 441,
+            "quote": "MANUFACTURER",
+            "bbox": [
+              57.36,
+              306.71999999999997,
+              187.67999999999998,
+              315.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 459,
+            "end": 478,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.36,
+              320.64,
+              215.51999999999998,
+              329.28
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": "notices@aster.example",
+        "raw": "notices@aster.example",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 494,
+            "end": 515,
+            "quote": "notices@aster.example",
+            "bbox": [
+              57.36,
+              334.56,
+              210.72,
+              343.2
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": "12 Example Way",
+        "raw": "12 Example Way",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 532,
+            "end": 546,
+            "quote": "12 Example Way",
+            "bbox": [
+              57.36,
+              348.71999999999997,
+              185.76,
+              357.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": "10115",
+        "raw": "10115",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 568,
+            "end": 573,
+            "quote": "10115",
+            "bbox": [
+              57.36,
+              362.64,
+              166.32,
+              371.28
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": "Berlin",
+        "raw": "Berlin",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 588,
+            "end": 594,
+            "quote": "Berlin",
+            "bbox": [
+              57.36,
+              376.55999999999995,
+              131.51999999999998,
+              385.2
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": "DE",
+        "raw": "DE",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 612,
+            "end": 614,
+            "quote": "DE",
+            "bbox": [
+              57.36,
+              390.71999999999997,
+              137.04,
+              399.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": "Assembly site transfer",
+      "raw": "Assembly site transfer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 258,
+          "end": 280,
+          "quote": "Assembly site transfer",
+          "bbox": [
+            57.36,
+            236.64,
+            198.48,
+            245.27999999999997
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": "Assembly moves to the qualified North plant.",
+      "raw": "Assembly moves to the qualified North plant.",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 296,
+          "end": 340,
+          "quote": "Assembly moves to the qualified North plant.",
+          "bbox": [
+            57.36,
+            250.55999999999997,
+            294.96,
+            259.2
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "d8c31596101e686843c8c01618aea22df4b9d2363f441aa7a9901623aa5bcda1",
+    "filename": "site-transfer-300dpi.pdf",
+    "media_type": "application/pdf",
+    "byte_size": 231462,
+    "pages": [
+      {
+        "number": 1,
+        "text": "ASTER / ENGINEERING NOTIFICATIONS\nProduct change notice\nOWNED SYNTHETIC FIXTURE - no live supplier data\nNotice ID: AST-PCN-2026-052\nSupplier: Aster Semiconductor\nNotice type: PCN\nTitle: Assembly site transfer\nIssue date: 2026-10-03\nRevision: A\nChange title: Assembly site transfer\nChange detail: Assembly moves to the qualified North plant.\nChange category: PSITE\nItem name: Precision amplifier\nItem category: ACEL\nContact type: MANUFACTURER\nContact company: Aster Semiconductor\nContact email: notices@aster.example\nContact street: 12 Example Way\nContact postal code: 10115\nContact city: Berlin\nContact country: DE\nAffected products and deadlines\nGroup\tPart number\tEffective change\tNotes\nAmplifiers\tAMP-230-A\t2027-01-15\t-\nAmplifiers\tAMP-230-B\t2027-02-15\t-\nNoticeForge owned fixture | For evaluation and demonstration only Page 1 of 1\n",
+        "width": 595.2755737304688,
+        "height": 841.8897705078125,
+        "method": "ocr",
+        "lines": [
+          {
+            "text": "ASTER / ENGINEERING NOTIFICATIONS",
+            "start": 0,
+            "end": 33,
+            "bbox": [
+              57.12,
+              59.279999999999994,
+              229.2,
+              66.24
+            ]
+          },
+          {
+            "text": "Product change notice",
+            "start": 34,
+            "end": 55,
+            "bbox": [
+              58.559999999999995,
+              93.11999999999999,
+              261.35999999999996,
+              111.11999999999999
+            ]
+          },
+          {
+            "text": "OWNED SYNTHETIC FIXTURE - no live supplier data",
+            "start": 56,
+            "end": 103,
+            "bbox": [
+              57.36,
+              122.16,
+              225.83999999999997,
+              128.88
+            ]
+          },
+          {
+            "text": "Notice ID: AST-PCN-2026-052",
+            "start": 104,
+            "end": 131,
+            "bbox": [
+              57.599999999999994,
+              152.64,
+              179.28,
+              159.6
+            ]
+          },
+          {
+            "text": "Supplier: Aster Semiconductor",
+            "start": 132,
+            "end": 161,
+            "bbox": [
+              57.36,
+              166.56,
+              178.55999999999997,
+              175.2
+            ]
+          },
+          {
+            "text": "Notice type: PCN",
+            "start": 162,
+            "end": 178,
+            "bbox": [
+              57.599999999999994,
+              180.72,
+              125.27999999999999,
+              189.35999999999999
+            ]
+          },
+          {
+            "text": "Title: Assembly site transfer",
+            "start": 179,
+            "end": 208,
+            "bbox": [
+              57.12,
+              194.88,
+              167.51999999999998,
+              203.27999999999997
+            ]
+          },
+          {
+            "text": "Issue date: 2026-10-03",
+            "start": 209,
+            "end": 231,
+            "bbox": [
+              57.839999999999996,
+              208.79999999999998,
+              149.04,
+              215.51999999999998
+            ]
+          },
+          {
+            "text": "Revision: A",
+            "start": 232,
+            "end": 243,
+            "bbox": [
+              57.839999999999996,
+              222.95999999999998,
+              102.24,
+              229.67999999999998
+            ]
+          },
+          {
+            "text": "Change title: Assembly site transfer",
+            "start": 244,
+            "end": 280,
+            "bbox": [
+              57.36,
+              236.64,
+              198.48,
+              245.27999999999997
+            ]
+          },
+          {
+            "text": "Change detail: Assembly moves to the qualified North plant.",
+            "start": 281,
+            "end": 340,
+            "bbox": [
+              57.36,
+              250.55999999999997,
+              294.96,
+              259.2
+            ]
+          },
+          {
+            "text": "Change category: PSITE",
+            "start": 341,
+            "end": 363,
+            "bbox": [
+              57.36,
+              264.71999999999997,
+              156.23999999999998,
+              273.35999999999996
+            ]
+          },
+          {
+            "text": "Item name: Precision amplifier",
+            "start": 364,
+            "end": 394,
+            "bbox": [
+              57.839999999999996,
+              278.88,
+              178.07999999999998,
+              287.28
+            ]
+          },
+          {
+            "text": "Item category: ACEL",
+            "start": 395,
+            "end": 414,
+            "bbox": [
+              57.839999999999996,
+              292.56,
+              139.92,
+              301.2
+            ]
+          },
+          {
+            "text": "Contact type: MANUFACTURER",
+            "start": 415,
+            "end": 441,
+            "bbox": [
+              57.36,
+              306.71999999999997,
+              187.67999999999998,
+              315.35999999999996
+            ]
+          },
+          {
+            "text": "Contact company: Aster Semiconductor",
+            "start": 442,
+            "end": 478,
+            "bbox": [
+              57.36,
+              320.64,
+              215.51999999999998,
+              329.28
+            ]
+          },
+          {
+            "text": "Contact email: notices@aster.example",
+            "start": 479,
+            "end": 515,
+            "bbox": [
+              57.36,
+              334.56,
+              210.72,
+              343.2
+            ]
+          },
+          {
+            "text": "Contact street: 12 Example Way",
+            "start": 516,
+            "end": 546,
+            "bbox": [
+              57.36,
+              348.71999999999997,
+              185.76,
+              357.35999999999996
+            ]
+          },
+          {
+            "text": "Contact postal code: 10115",
+            "start": 547,
+            "end": 573,
+            "bbox": [
+              57.36,
+              362.64,
+              166.32,
+              371.28
+            ]
+          },
+          {
+            "text": "Contact city: Berlin",
+            "start": 574,
+            "end": 594,
+            "bbox": [
+              57.36,
+              376.55999999999995,
+              131.51999999999998,
+              385.2
+            ]
+          },
+          {
+            "text": "Contact country: DE",
+            "start": 595,
+            "end": 614,
+            "bbox": [
+              57.36,
+              390.71999999999997,
+              137.04,
+              399.35999999999996
+            ]
+          },
+          {
+            "text": "Affected products and deadlines",
+            "start": 615,
+            "end": 646,
+            "bbox": [
+              57.599999999999994,
+              427.2,
+              350.88,
+              445.2
+            ]
+          },
+          {
+            "text": "Group\tPart number\tEffective change\tNotes",
+            "start": 647,
+            "end": 687,
+            "bbox": [
+              57.36,
+              467.28,
+              398.15999999999997,
+              473.99999999999994
+            ]
+          },
+          {
+            "text": "Amplifiers\tAMP-230-A\t2027-01-15\t-",
+            "start": 688,
+            "end": 721,
+            "bbox": [
+              57.12,
+              490.79999999999995,
+              382.08,
+              501.35999999999996
+            ]
+          },
+          {
+            "text": "Amplifiers\tAMP-230-B\t2027-02-15\t-",
+            "start": 722,
+            "end": 755,
+            "bbox": [
+              57.12,
+              516.9599999999999,
+              382.08,
+              527.52
+            ]
+          },
+          {
+            "text": "NoticeForge owned fixture | For evaluation and demonstration only Page 1 of 1",
+            "start": 756,
+            "end": 833,
+            "bbox": [
+              51.599999999999994,
+              802.8,
+              542.64,
+              809.28
+            ]
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 1,
+    "complete": true,
+    "warnings": [],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "AMP-230-A",
+        "raw": "AMP-230-A",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 699,
+            "end": 708,
+            "quote": "AMP-230-A",
+            "bbox": [
+              57.12,
+              490.79999999999995,
+              382.08,
+              501.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "AMP-230-A",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 142,
+            "end": 161,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.36,
+              166.56,
+              178.55999999999997,
+              175.2
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Amplifiers",
+      "item_name": {
+        "value": "Precision amplifier",
+        "raw": "Precision amplifier",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 375,
+            "end": 394,
+            "quote": "Precision amplifier",
+            "bbox": [
+              57.839999999999996,
+              278.88,
+              178.07999999999998,
+              287.28
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 410,
+            "end": 414,
+            "quote": "ACEL",
+            "bbox": [
+              57.839999999999996,
+              292.56,
+              139.92,
+              301.2
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "PSITE",
+          "raw": "PSITE",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 358,
+              "end": 363,
+              "quote": "PSITE",
+              "bbox": [
+                57.36,
+                264.71999999999997,
+                156.23999999999998,
+                273.35999999999996
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-01-15",
+          "raw": "2027-01-15",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 709,
+              "end": 719,
+              "quote": "2027-01-15",
+              "bbox": [
+                57.12,
+                490.79999999999995,
+                382.08,
+                501.35999999999996
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "effective_change",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-2",
+      "raw_identifier": {
+        "value": "AMP-230-B",
+        "raw": "AMP-230-B",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 733,
+            "end": 742,
+            "quote": "AMP-230-B",
+            "bbox": [
+              57.12,
+              516.9599999999999,
+              382.08,
+              527.52
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "AMP-230-B",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 142,
+            "end": 161,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.36,
+              166.56,
+              178.55999999999997,
+              175.2
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Amplifiers",
+      "item_name": {
+        "value": "Precision amplifier",
+        "raw": "Precision amplifier",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 375,
+            "end": 394,
+            "quote": "Precision amplifier",
+            "bbox": [
+              57.839999999999996,
+              278.88,
+              178.07999999999998,
+              287.28
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 410,
+            "end": 414,
+            "quote": "ACEL",
+            "bbox": [
+              57.839999999999996,
+              292.56,
+              139.92,
+              301.2
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "PSITE",
+          "raw": "PSITE",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 358,
+              "end": 363,
+              "quote": "PSITE",
+              "bbox": [
+                57.36,
+                264.71999999999997,
+                156.23999999999998,
+                273.35999999999996
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-02-15",
+          "raw": "2027-02-15",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 743,
+              "end": 753,
+              "quote": "2027-02-15",
+              "bbox": [
+                57.12,
+                516.9599999999999,
+                382.08,
+                527.52
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "effective_change",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    }
+  ],
+  "relationships": [],
+  "findings": [
+    {
+      "code": "unparsed_part_row",
+      "severity": "error",
+      "message": "Page 1: part-like table row has missing headers or inconsistent columns",
+      "part_ids": [],
+      "field_path": null,
+      "evidence": [
+        {
+          "page": 1,
+          "start": 756,
+          "end": 833,
+          "quote": "NoticeForge owned fixture | For evaluation and demonstration only Page 1 of 1",
+          "bbox": [
+            51.599999999999994,
+            802.8,
+            542.64,
+            809.28
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.notice_id",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 115,
+          "end": 131,
+          "quote": "AST-PCN-2026-052",
+          "bbox": [
+            57.599999999999994,
+            152.64,
+            179.28,
+            159.6
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.supplier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 142,
+          "end": 161,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.36,
+            166.56,
+            178.55999999999997,
+            175.2
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.notice_type",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 175,
+          "end": 178,
+          "quote": "PCN",
+          "bbox": [
+            57.599999999999994,
+            180.72,
+            125.27999999999999,
+            189.35999999999999
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.title",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 186,
+          "end": 208,
+          "quote": "Assembly site transfer",
+          "bbox": [
+            57.12,
+            194.88,
+            167.51999999999998,
+            203.27999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.issue_date",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 221,
+          "end": 231,
+          "quote": "2026-10-03",
+          "bbox": [
+            57.839999999999996,
+            208.79999999999998,
+            149.04,
+            215.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.revision",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 242,
+          "end": 243,
+          "quote": "A",
+          "bbox": [
+            57.839999999999996,
+            222.95999999999998,
+            102.24,
+            229.67999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.change_title",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 258,
+          "end": 280,
+          "quote": "Assembly site transfer",
+          "bbox": [
+            57.36,
+            236.64,
+            198.48,
+            245.27999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.change_detail",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 296,
+          "end": 340,
+          "quote": "Assembly moves to the qualified North plant.",
+          "bbox": [
+            57.36,
+            250.55999999999997,
+            294.96,
+            259.2
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.contact.contact_type",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 429,
+          "end": 441,
+          "quote": "MANUFACTURER",
+          "bbox": [
+            57.36,
+            306.71999999999997,
+            187.67999999999998,
+            315.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.contact.company",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 459,
+          "end": 478,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.36,
+            320.64,
+            215.51999999999998,
+            329.28
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.contact.email",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 494,
+          "end": 515,
+          "quote": "notices@aster.example",
+          "bbox": [
+            57.36,
+            334.56,
+            210.72,
+            343.2
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.contact.street",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 532,
+          "end": 546,
+          "quote": "12 Example Way",
+          "bbox": [
+            57.36,
+            348.71999999999997,
+            185.76,
+            357.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.contact.zip_code",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 568,
+          "end": 573,
+          "quote": "10115",
+          "bbox": [
+            57.36,
+            362.64,
+            166.32,
+            371.28
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.contact.city",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 588,
+          "end": 594,
+          "quote": "Berlin",
+          "bbox": [
+            57.36,
+            376.55999999999995,
+            131.51999999999998,
+            385.2
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.contact.country",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 612,
+          "end": 614,
+          "quote": "DE",
+          "bbox": [
+            57.36,
+            390.71999999999997,
+            137.04,
+            399.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 699,
+          "end": 708,
+          "quote": "AMP-230-A",
+          "bbox": [
+            57.12,
+            490.79999999999995,
+            382.08,
+            501.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 142,
+          "end": 161,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.36,
+            166.56,
+            178.55999999999997,
+            175.2
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.item_name",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 375,
+          "end": 394,
+          "quote": "Precision amplifier",
+          "bbox": [
+            57.839999999999996,
+            278.88,
+            178.07999999999998,
+            287.28
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.item_category",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 410,
+          "end": 414,
+          "quote": "ACEL",
+          "bbox": [
+            57.839999999999996,
+            292.56,
+            139.92,
+            301.2
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 709,
+          "end": 719,
+          "quote": "2027-01-15",
+          "bbox": [
+            57.12,
+            490.79999999999995,
+            382.08,
+            501.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.change_categories.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 358,
+          "end": 363,
+          "quote": "PSITE",
+          "bbox": [
+            57.36,
+            264.71999999999997,
+            156.23999999999998,
+            273.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 733,
+          "end": 742,
+          "quote": "AMP-230-B",
+          "bbox": [
+            57.12,
+            516.9599999999999,
+            382.08,
+            527.52
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 142,
+          "end": 161,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.36,
+            166.56,
+            178.55999999999997,
+            175.2
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.item_name",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 375,
+          "end": 394,
+          "quote": "Precision amplifier",
+          "bbox": [
+            57.839999999999996,
+            278.88,
+            178.07999999999998,
+            287.28
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.item_category",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 410,
+          "end": 414,
+          "quote": "ACEL",
+          "bbox": [
+            57.839999999999996,
+            292.56,
+            139.92,
+            301.2
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 743,
+          "end": 753,
+          "quote": "2027-02-15",
+          "bbox": [
+            57.12,
+            516.9599999999999,
+            382.08,
+            527.52
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.change_categories.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 358,
+          "end": 363,
+          "quote": "PSITE",
+          "bbox": [
+            57.36,
+            264.71999999999997,
+            156.23999999999998,
+            273.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    }
+  ],
+  "unsupported_fields": [
+    "Page 1: part-like table row has missing headers or inconsistent columns"
+  ],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T09:07:50.481993+00:00",
+  "status": "review_required",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

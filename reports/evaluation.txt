@@ -1,0 +1,11 @@
+NoticeForge developmental evaluation
+
+synthetic developmental evaluation; parser designed around the supported fixture grammar; not authentic held-out real supplier validation
+
+Cases: 8. Exact part/date tuples: 18/19 expected; 18 predicted.
+Affected parts: 15/16. Critical omissions: 2. Unsupported assertions: 0.
+Evidence slices: 102/102. Required review flags: 2/2. Revision relations: 1/1.
+Serial p95 extraction: 0.792 ms over 80 requests, 2 warmups per case.
+
+These fixtures exercise a documented grammar. No authentic manufacturer corpus, GPU compact model comparison or engineer review-time gain has been validated.
+Raw outcomes, denominators, per-case errors and supplier/template breakdowns are in evaluation.json.

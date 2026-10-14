@@ -1,0 +1,10 @@
+OWNED SYNTHETIC EVALUATION CASE
+Notice ID: HEL-211-B
+Supplier: Helio Components
+Notice type: PDN
+Title: Synthetic partial-revision
+Issue date: 2027-10-01
+Supersedes: HEL-211-A; Parts: HL-3B
+Part number | Last buy
+HL-3B | 2028-07-31
+Page 1 of 1

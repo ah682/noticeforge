@@ -1,0 +1,10 @@
+OWNED SYNTHETIC EVALUATION CASE
+Notice ID: QL-94
+Supplier: Quarry Logic
+Notice type: PDN
+Title: Synthetic ambiguous-ordering
+Issue date: 2027-10-01
+Part number | Last buy
+000ZX-R | 05/06/2028
+000ZX-S | while supplies last
+Page 1 of 1

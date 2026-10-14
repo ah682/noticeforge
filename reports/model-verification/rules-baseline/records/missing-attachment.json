@@ -1,0 +1,416 @@
+{
+  "id": "6aa231c6bb8797b106e9",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "LA-41",
+      "raw": "LA-41",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 43,
+          "end": 48,
+          "quote": "LA-41",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Lumen Analog",
+      "raw": "Lumen Analog",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 59,
+          "end": 71,
+          "quote": "Lumen Analog",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PDN",
+      "raw": "PDN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 85,
+          "end": 88,
+          "quote": "PDN",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Synthetic missing-attachment",
+      "raw": "Synthetic missing-attachment",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 96,
+          "end": 124,
+          "quote": "Synthetic missing-attachment",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2027-10-01",
+      "raw": "2027-10-01",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 137,
+          "end": 147,
+          "quote": "2027-10-01",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "6aa231c6bb8797b106e9965929bd6555880544314acb9c5578504d6af7a1b775",
+    "filename": "missing-attachment.txt",
+    "media_type": "text/plain",
+    "byte_size": 200,
+    "pages": [
+      {
+        "number": 1,
+        "text": "OWNED SYNTHETIC EVALUATION CASE\nNotice ID: LA-41\nSupplier: Lumen Analog\nNotice type: PDN\nTitle: Synthetic missing-attachment\nIssue date: 2027-10-01\nPart number | Last buy\nLM-88A | 2028-07-15\nPage 1/3\n",
+        "width": null,
+        "height": null,
+        "method": "text",
+        "lines": [
+          {
+            "text": "OWNED SYNTHETIC EVALUATION CASE",
+            "start": 0,
+            "end": 31,
+            "bbox": null
+          },
+          {
+            "text": "Notice ID: LA-41",
+            "start": 32,
+            "end": 48,
+            "bbox": null
+          },
+          {
+            "text": "Supplier: Lumen Analog",
+            "start": 49,
+            "end": 71,
+            "bbox": null
+          },
+          {
+            "text": "Notice type: PDN",
+            "start": 72,
+            "end": 88,
+            "bbox": null
+          },
+          {
+            "text": "Title: Synthetic missing-attachment",
+            "start": 89,
+            "end": 124,
+            "bbox": null
+          },
+          {
+            "text": "Issue date: 2027-10-01",
+            "start": 125,
+            "end": 147,
+            "bbox": null
+          },
+          {
+            "text": "Part number | Last buy",
+            "start": 148,
+            "end": 170,
+            "bbox": null
+          },
+          {
+            "text": "LM-88A | 2028-07-15",
+            "start": 171,
+            "end": 190,
+            "bbox": null
+          },
+          {
+            "text": "Page 1/3",
+            "start": 191,
+            "end": 199,
+            "bbox": null
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 3,
+    "complete": false,
+    "warnings": [
+      "Expected 3 pages but received 1; notice may be incomplete",
+      "Printed page sequence is missing or duplicated; verify the original notice"
+    ],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "LM-88A",
+        "raw": "LM-88A",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 171,
+            "end": 177,
+            "quote": "LM-88A",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "LM-88A",
+      "manufacturer": {
+        "value": "Lumen Analog",
+        "raw": "Lumen Analog",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 59,
+            "end": 71,
+            "quote": "Lumen Analog",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-07-15",
+          "raw": "2028-07-15",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 180,
+              "end": 190,
+              "quote": "2028-07-15",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    }
+  ],
+  "relationships": [],
+  "findings": [
+    {
+      "code": "coverage",
+      "severity": "error",
+      "message": "Expected 3 pages but received 1; notice may be incomplete",
+      "part_ids": [],
+      "field_path": null,
+      "evidence": []
+    },
+    {
+      "code": "coverage",
+      "severity": "error",
+      "message": "Printed page sequence is missing or duplicated; verify the original notice",
+      "part_ids": [],
+      "field_path": null,
+      "evidence": []
+    }
+  ],
+  "unsupported_fields": [],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T03:42:25.631962+00:00",
+  "status": "incomplete",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

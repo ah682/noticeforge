@@ -1,0 +1,18 @@
+{
+  "testEngine": {
+    "name": "axe-core",
+    "version": "4.14.0"
+  },
+  "testEnvironment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.0.0 Safari/537.36",
+    "windowWidth": 390,
+    "windowHeight": 844,
+    "orientationAngle": 0,
+    "orientationType": "landscape-primary"
+  },
+  "timestamp": "2026-10-14T03:56:17.596Z",
+  "url": "http://127.0.0.1:8878/?notice=e8a03eb264818fc99330",
+  "violations": [],
+  "incomplete": [],
+  "pass_count": 25
+}

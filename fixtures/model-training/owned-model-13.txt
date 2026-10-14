@@ -1,0 +1,4 @@
+Supplier: Copper training devices
+Notice: OWN-TRAIN-013
+Affected identifier and deadline:
+00CF-1114-A | Last delivery: 2029-02-14

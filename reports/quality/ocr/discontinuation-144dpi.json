@@ -1,0 +1,3266 @@
+{
+  "id": "294defdf6513b5b01aca",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "AST-PDN-2026-041",
+      "raw": "AST-PDN-2026-041",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 124,
+          "end": 140,
+          "quote": "AST-PDN-2026-041",
+          "bbox": [
+            57.599999999999994,
+            152.88,
+            177.6,
+            159.6
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Aster Semiconductor",
+      "raw": "Aster Semiconductor",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 151,
+          "end": 170,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.599999999999994,
+            167.04,
+            178.55999999999997,
+            175.44
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PDN",
+      "raw": "PDN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 184,
+          "end": 187,
+          "quote": "PDN",
+          "bbox": [
+            57.599999999999994,
+            180.95999999999998,
+            125.52,
+            189.6
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Selected analog products discontinuation",
+      "raw": "Selected analog products discontinuation",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 195,
+          "end": 235,
+          "quote": "Selected analog products discontinuation",
+          "bbox": [
+            56.879999999999995,
+            194.88,
+            242.39999999999998,
+            203.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2026-10-01",
+      "raw": "2026-10-01",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 248,
+          "end": 258,
+          "quote": "2026-10-01",
+          "bbox": [
+            58.08,
+            209.04,
+            148.07999999999998,
+            215.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": "A",
+      "raw": "A",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 269,
+          "end": 270,
+          "quote": "A",
+          "bbox": [
+            58.08,
+            222.95999999999998,
+            102.47999999999999,
+            229.44
+          ],
+          "method": "ocr"
+        }
+      ],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Verify OCR or missing source evidence",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "294defdf6513b5b01acac17295688c486fe8e41d68a62d30bc78aedb2666e992",
+    "filename": "discontinuation-144dpi.pdf",
+    "media_type": "application/pdf",
+    "byte_size": 118335,
+    "pages": [
+      {
+        "number": 1,
+        "text": "ASTER / ENGINEERING NOTIFICATIONS\nProduct discontinuation notice\nOWNED SYNTHETIC FIXTURE - no live supplier data\nNotice ID: AST-PDN-2026-041\nSupplier: Aster Semiconductor\nNotice type: PDN\nTitle: Selected analog products discontinuation\nIssue date: 2026-10-01\nRevision: A\nChange category: WORAW\nItem name: Analog signal component\nItem category: ACEL\nAffected products and deadlines\nGroup\tPart number\tLast buy\tLast delivery\tEnd of production\tNotes\nPrecision\t00128-Q1\t2027-03-31\t2027-09-30\t2027-08-31\t-\nPrecision\t00128-Q2\t2027-03-31\t2027-09-30\t2027-08-31\t-\nPower\tNX-4100-A\t2027-06-30\t2027-12-15\t2027-11-30\t-\nPower\tNX-4100-B\t2027-06-30 [1]\t2027-12-15\t2027-11-30\t[1]\nInterface\tAO10-L\t2027-04-30\t2027-10-31\t2027-09-30\t-\nInterface\tAQ10-L\t2027-04-30\t2027-10-31\t2027-09-30\t-\n[1] Last buy extended to 2027-07-15 for the marked row only.\nException for 00128-Q2: Orders accepted only while remaining inventory lasts.\nReplacement for NX-4100-A: NX-4200-A\nReplacement suggestions require independent electrical and physical qualification.\nNoticeForge owned fixture | For evaluation and demonstration only Page 1 of 1\n",
+        "width": 595.2755737304688,
+        "height": 841.8897705078125,
+        "method": "ocr",
+        "lines": [
+          {
+            "text": "ASTER / ENGINEERING NOTIFICATIONS",
+            "start": 0,
+            "end": 33,
+            "bbox": [
+              56.879999999999995,
+              59.519999999999996,
+              228.95999999999998,
+              66.0
+            ]
+          },
+          {
+            "text": "Product discontinuation notice",
+            "start": 34,
+            "end": 64,
+            "bbox": [
+              58.559999999999995,
+              92.88,
+              336.47999999999996,
+              107.52
+            ]
+          },
+          {
+            "text": "OWNED SYNTHETIC FIXTURE - no live supplier data",
+            "start": 65,
+            "end": 112,
+            "bbox": [
+              57.599999999999994,
+              122.39999999999999,
+              225.6,
+              128.88
+            ]
+          },
+          {
+            "text": "Notice ID: AST-PDN-2026-041",
+            "start": 113,
+            "end": 140,
+            "bbox": [
+              57.599999999999994,
+              152.88,
+              177.6,
+              159.6
+            ]
+          },
+          {
+            "text": "Supplier: Aster Semiconductor",
+            "start": 141,
+            "end": 170,
+            "bbox": [
+              57.599999999999994,
+              167.04,
+              178.55999999999997,
+              175.44
+            ]
+          },
+          {
+            "text": "Notice type: PDN",
+            "start": 171,
+            "end": 187,
+            "bbox": [
+              57.599999999999994,
+              180.95999999999998,
+              125.52,
+              189.6
+            ]
+          },
+          {
+            "text": "Title: Selected analog products discontinuation",
+            "start": 188,
+            "end": 235,
+            "bbox": [
+              56.879999999999995,
+              194.88,
+              242.39999999999998,
+              203.51999999999998
+            ]
+          },
+          {
+            "text": "Issue date: 2026-10-01",
+            "start": 236,
+            "end": 258,
+            "bbox": [
+              58.08,
+              209.04,
+              148.07999999999998,
+              215.51999999999998
+            ]
+          },
+          {
+            "text": "Revision: A",
+            "start": 259,
+            "end": 270,
+            "bbox": [
+              58.08,
+              222.95999999999998,
+              102.47999999999999,
+              229.44
+            ]
+          },
+          {
+            "text": "Change category: WORAW",
+            "start": 271,
+            "end": 293,
+            "bbox": [
+              57.599999999999994,
+              236.88,
+              166.56,
+              245.51999999999998
+            ]
+          },
+          {
+            "text": "Item name: Analog signal component",
+            "start": 294,
+            "end": 328,
+            "bbox": [
+              58.08,
+              251.04,
+              205.44,
+              259.44
+            ]
+          },
+          {
+            "text": "Item category: ACEL",
+            "start": 329,
+            "end": 348,
+            "bbox": [
+              58.08,
+              264.96,
+              139.92,
+              273.35999999999996
+            ]
+          },
+          {
+            "text": "Affected products and deadlines",
+            "start": 349,
+            "end": 380,
+            "bbox": [
+              57.599999999999994,
+              300.96,
+              350.88,
+              318.96
+            ]
+          },
+          {
+            "text": "Group\tPart number\tLast buy\tLast delivery\tEnd of production\tNotes",
+            "start": 381,
+            "end": 445,
+            "bbox": [
+              57.599999999999994,
+              340.32,
+              474.47999999999996,
+              348.96
+            ]
+          },
+          {
+            "text": "Precision\t00128-Q1\t2027-03-31\t2027-09-30\t2027-08-31\t-",
+            "start": 446,
+            "end": 499,
+            "bbox": [
+              57.599999999999994,
+              367.44,
+              458.4,
+              372.96
+            ]
+          },
+          {
+            "text": "Precision\t00128-Q2\t2027-03-31\t2027-09-30\t2027-08-31\t-",
+            "start": 500,
+            "end": 553,
+            "bbox": [
+              57.599999999999994,
+              393.35999999999996,
+              458.4,
+              398.88
+            ]
+          },
+          {
+            "text": "Power\tNX-4100-A\t2027-06-30\t2027-12-15\t2027-11-30\t-",
+            "start": 554,
+            "end": 604,
+            "bbox": [
+              57.599999999999994,
+              417.11999999999995,
+              458.4,
+              427.67999999999995
+            ]
+          },
+          {
+            "text": "Power\tNX-4100-B\t2027-06-30 [1]\t2027-12-15\t2027-11-30\t[1]",
+            "start": 605,
+            "end": 661,
+            "bbox": [
+              57.599999999999994,
+              443.03999999999996,
+              463.91999999999996,
+              453.59999999999997
+            ]
+          },
+          {
+            "text": "Interface\tAO10-L\t2027-04-30\t2027-10-31\t2027-09-30\t-",
+            "start": 662,
+            "end": 713,
+            "bbox": [
+              57.599999999999994,
+              468.96,
+              458.4,
+              479.52
+            ]
+          },
+          {
+            "text": "Interface\tAQ10-L\t2027-04-30\t2027-10-31\t2027-09-30\t-",
+            "start": 714,
+            "end": 765,
+            "bbox": [
+              57.599999999999994,
+              495.11999999999995,
+              458.4,
+              505.67999999999995
+            ]
+          },
+          {
+            "text": "[1] Last buy extended to 2027-07-15 for the marked row only.",
+            "start": 766,
+            "end": 826,
+            "bbox": [
+              57.599999999999994,
+              533.04,
+              300.0,
+              541.4399999999999
+            ]
+          },
+          {
+            "text": "Exception for 00128-Q2: Orders accepted only while remaining inventory lasts.",
+            "start": 827,
+            "end": 904,
+            "bbox": [
+              58.08,
+              555.36,
+              369.35999999999996,
+              564.0
+            ]
+          },
+          {
+            "text": "Replacement for NX-4100-A: NX-4200-A",
+            "start": 905,
+            "end": 941,
+            "bbox": [
+              58.08,
+              577.92,
+              219.6,
+              586.56
+            ]
+          },
+          {
+            "text": "Replacement suggestions require independent electrical and physical qualification.",
+            "start": 942,
+            "end": 1024,
+            "bbox": [
+              58.08,
+              600.4799999999999,
+              385.44,
+              608.88
+            ]
+          },
+          {
+            "text": "NoticeForge owned fixture | For evaluation and demonstration only Page 1 of 1",
+            "start": 1025,
+            "end": 1102,
+            "bbox": [
+              51.599999999999994,
+              802.0799999999999,
+              542.88,
+              810.4799999999999
+            ]
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 1,
+    "complete": true,
+    "warnings": [],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "00128-Q1",
+        "raw": "00128-Q1",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 456,
+            "end": 464,
+            "quote": "00128-Q1",
+            "bbox": [
+              57.599999999999994,
+              367.44,
+              458.4,
+              372.96
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "00128-Q1",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 151,
+            "end": 170,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.599999999999994,
+              167.04,
+              178.55999999999997,
+              175.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Precision",
+      "item_name": {
+        "value": "Analog signal component",
+        "raw": "Analog signal component",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 305,
+            "end": 328,
+            "quote": "Analog signal component",
+            "bbox": [
+              58.08,
+              251.04,
+              205.44,
+              259.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 344,
+            "end": 348,
+            "quote": "ACEL",
+            "bbox": [
+              58.08,
+              264.96,
+              139.92,
+              273.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "WORAW",
+          "raw": "WORAW",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 288,
+              "end": 293,
+              "quote": "WORAW",
+              "bbox": [
+                57.599999999999994,
+                236.88,
+                166.56,
+                245.51999999999998
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-03-31",
+          "raw": "2027-03-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 465,
+              "end": 475,
+              "quote": "2027-03-31",
+              "bbox": [
+                57.599999999999994,
+                367.44,
+                458.4,
+                372.96
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-09-30",
+          "raw": "2027-09-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 476,
+              "end": 486,
+              "quote": "2027-09-30",
+              "bbox": [
+                57.599999999999994,
+                367.44,
+                458.4,
+                372.96
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_delivery",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-08-31",
+          "raw": "2027-08-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 487,
+              "end": 497,
+              "quote": "2027-08-31",
+              "bbox": [
+                57.599999999999994,
+                367.44,
+                458.4,
+                372.96
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "end_of_production",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-2",
+      "raw_identifier": {
+        "value": "00128-Q2",
+        "raw": "00128-Q2",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 510,
+            "end": 518,
+            "quote": "00128-Q2",
+            "bbox": [
+              57.599999999999994,
+              393.35999999999996,
+              458.4,
+              398.88
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "00128-Q2",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 151,
+            "end": 170,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.599999999999994,
+              167.04,
+              178.55999999999997,
+              175.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Precision",
+      "item_name": {
+        "value": "Analog signal component",
+        "raw": "Analog signal component",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 305,
+            "end": 328,
+            "quote": "Analog signal component",
+            "bbox": [
+              58.08,
+              251.04,
+              205.44,
+              259.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 344,
+            "end": 348,
+            "quote": "ACEL",
+            "bbox": [
+              58.08,
+              264.96,
+              139.92,
+              273.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "WORAW",
+          "raw": "WORAW",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 288,
+              "end": 293,
+              "quote": "WORAW",
+              "bbox": [
+                57.599999999999994,
+                236.88,
+                166.56,
+                245.51999999999998
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-03-31",
+          "raw": "2027-03-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 519,
+              "end": 529,
+              "quote": "2027-03-31",
+              "bbox": [
+                57.599999999999994,
+                393.35999999999996,
+                458.4,
+                398.88
+              ],
+              "method": "ocr"
+            },
+            {
+              "page": 1,
+              "start": 851,
+              "end": 904,
+              "quote": "Orders accepted only while remaining inventory lasts.",
+              "bbox": [
+                58.08,
+                555.36,
+                369.35999999999996,
+                564.0
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "This ordering cutoff is subject to a part-specific inventory condition",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "inventory_limited"
+        },
+        {
+          "value": "2027-09-30",
+          "raw": "2027-09-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 530,
+              "end": 540,
+              "quote": "2027-09-30",
+              "bbox": [
+                57.599999999999994,
+                393.35999999999996,
+                458.4,
+                398.88
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_delivery",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-08-31",
+          "raw": "2027-08-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 541,
+              "end": 551,
+              "quote": "2027-08-31",
+              "bbox": [
+                57.599999999999994,
+                393.35999999999996,
+                458.4,
+                398.88
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "end_of_production",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [
+        {
+          "value": "Orders accepted only while remaining inventory lasts.",
+          "raw": "Orders accepted only while remaining inventory lasts.",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 851,
+              "end": 904,
+              "quote": "Orders accepted only while remaining inventory lasts.",
+              "bbox": [
+                58.08,
+                555.36,
+                369.35999999999996,
+                564.0
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-3",
+      "raw_identifier": {
+        "value": "NX-4100-A",
+        "raw": "NX-4100-A",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 560,
+            "end": 569,
+            "quote": "NX-4100-A",
+            "bbox": [
+              57.599999999999994,
+              417.11999999999995,
+              458.4,
+              427.67999999999995
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "NX-4100-A",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 151,
+            "end": 170,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.599999999999994,
+              167.04,
+              178.55999999999997,
+              175.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Power",
+      "item_name": {
+        "value": "Analog signal component",
+        "raw": "Analog signal component",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 305,
+            "end": 328,
+            "quote": "Analog signal component",
+            "bbox": [
+              58.08,
+              251.04,
+              205.44,
+              259.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 344,
+            "end": 348,
+            "quote": "ACEL",
+            "bbox": [
+              58.08,
+              264.96,
+              139.92,
+              273.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "WORAW",
+          "raw": "WORAW",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 288,
+              "end": 293,
+              "quote": "WORAW",
+              "bbox": [
+                57.599999999999994,
+                236.88,
+                166.56,
+                245.51999999999998
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-06-30",
+          "raw": "2027-06-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 570,
+              "end": 580,
+              "quote": "2027-06-30",
+              "bbox": [
+                57.599999999999994,
+                417.11999999999995,
+                458.4,
+                427.67999999999995
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-12-15",
+          "raw": "2027-12-15",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 581,
+              "end": 591,
+              "quote": "2027-12-15",
+              "bbox": [
+                57.599999999999994,
+                417.11999999999995,
+                458.4,
+                427.67999999999995
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_delivery",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-11-30",
+          "raw": "2027-11-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 592,
+              "end": 602,
+              "quote": "2027-11-30",
+              "bbox": [
+                57.599999999999994,
+                417.11999999999995,
+                458.4,
+                427.67999999999995
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "end_of_production",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [
+        {
+          "part_number": {
+            "value": "NX-4200-A",
+            "raw": "NX-4200-A",
+            "evidence": [
+              {
+                "page": 1,
+                "start": 932,
+                "end": 941,
+                "quote": "NX-4200-A",
+                "bbox": [
+                  58.08,
+                  577.92,
+                  219.6,
+                  586.56
+                ],
+                "method": "ocr"
+              }
+            ],
+            "review_status": "review_required",
+            "method": "rules-v1",
+            "reason": "Verify OCR or missing source evidence",
+            "model_run_id": null,
+            "model_candidate_index": null
+          },
+          "compatibility": "not_assessed"
+        }
+      ],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-4",
+      "raw_identifier": {
+        "value": "NX-4100-B",
+        "raw": "NX-4100-B",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 611,
+            "end": 620,
+            "quote": "NX-4100-B",
+            "bbox": [
+              57.599999999999994,
+              443.03999999999996,
+              463.91999999999996,
+              453.59999999999997
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "NX-4100-B",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 151,
+            "end": 170,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.599999999999994,
+              167.04,
+              178.55999999999997,
+              175.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Power",
+      "item_name": {
+        "value": "Analog signal component",
+        "raw": "Analog signal component",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 305,
+            "end": 328,
+            "quote": "Analog signal component",
+            "bbox": [
+              58.08,
+              251.04,
+              205.44,
+              259.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 344,
+            "end": 348,
+            "quote": "ACEL",
+            "bbox": [
+              58.08,
+              264.96,
+              139.92,
+              273.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "WORAW",
+          "raw": "WORAW",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 288,
+              "end": 293,
+              "quote": "WORAW",
+              "bbox": [
+                57.599999999999994,
+                236.88,
+                166.56,
+                245.51999999999998
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-12-15",
+          "raw": "2027-12-15",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 636,
+              "end": 646,
+              "quote": "2027-12-15",
+              "bbox": [
+                57.599999999999994,
+                443.03999999999996,
+                463.91999999999996,
+                453.59999999999997
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_delivery",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-11-30",
+          "raw": "2027-11-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 647,
+              "end": 657,
+              "quote": "2027-11-30",
+              "bbox": [
+                57.599999999999994,
+                443.03999999999996,
+                463.91999999999996,
+                453.59999999999997
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "end_of_production",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-07-15",
+          "raw": "2027-07-15",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 791,
+              "end": 801,
+              "quote": "2027-07-15",
+              "bbox": [
+                57.599999999999994,
+                533.04,
+                300.0,
+                541.4399999999999
+              ],
+              "method": "ocr"
+            },
+            {
+              "page": 1,
+              "start": 766,
+              "end": 826,
+              "quote": "[1] Last buy extended to 2027-07-15 for the marked row only.",
+              "bbox": [
+                57.599999999999994,
+                533.04,
+                300.0,
+                541.4399999999999
+              ],
+              "method": "ocr"
+            },
+            {
+              "page": 1,
+              "start": 621,
+              "end": 635,
+              "quote": "2027-06-30 [1]",
+              "bbox": [
+                57.599999999999994,
+                443.03999999999996,
+                463.91999999999996,
+                453.59999999999997
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence; Footnote [1] modifies row value 2027-06-30 [1]",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [
+        {
+          "value": "Last buy extended to 2027-07-15 for the marked row only.",
+          "raw": "Last buy extended to 2027-07-15 for the marked row only.",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 770,
+              "end": 826,
+              "quote": "Last buy extended to 2027-07-15 for the marked row only.",
+              "bbox": [
+                57.599999999999994,
+                533.04,
+                300.0,
+                541.4399999999999
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-5",
+      "raw_identifier": {
+        "value": "AO10-L",
+        "raw": "AO10-L",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 672,
+            "end": 678,
+            "quote": "AO10-L",
+            "bbox": [
+              57.599999999999994,
+              468.96,
+              458.4,
+              479.52
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "AO10-L",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 151,
+            "end": 170,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.599999999999994,
+              167.04,
+              178.55999999999997,
+              175.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Interface",
+      "item_name": {
+        "value": "Analog signal component",
+        "raw": "Analog signal component",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 305,
+            "end": 328,
+            "quote": "Analog signal component",
+            "bbox": [
+              58.08,
+              251.04,
+              205.44,
+              259.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 344,
+            "end": 348,
+            "quote": "ACEL",
+            "bbox": [
+              58.08,
+              264.96,
+              139.92,
+              273.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "WORAW",
+          "raw": "WORAW",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 288,
+              "end": 293,
+              "quote": "WORAW",
+              "bbox": [
+                57.599999999999994,
+                236.88,
+                166.56,
+                245.51999999999998
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-04-30",
+          "raw": "2027-04-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 679,
+              "end": 689,
+              "quote": "2027-04-30",
+              "bbox": [
+                57.599999999999994,
+                468.96,
+                458.4,
+                479.52
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-10-31",
+          "raw": "2027-10-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 690,
+              "end": 700,
+              "quote": "2027-10-31",
+              "bbox": [
+                57.599999999999994,
+                468.96,
+                458.4,
+                479.52
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_delivery",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-09-30",
+          "raw": "2027-09-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 701,
+              "end": 711,
+              "quote": "2027-09-30",
+              "bbox": [
+                57.599999999999994,
+                468.96,
+                458.4,
+                479.52
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "end_of_production",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-6",
+      "raw_identifier": {
+        "value": "AQ10-L",
+        "raw": "AQ10-L",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 724,
+            "end": 730,
+            "quote": "AQ10-L",
+            "bbox": [
+              57.599999999999994,
+              495.11999999999995,
+              458.4,
+              505.67999999999995
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "AQ10-L",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 151,
+            "end": 170,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.599999999999994,
+              167.04,
+              178.55999999999997,
+              175.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Interface",
+      "item_name": {
+        "value": "Analog signal component",
+        "raw": "Analog signal component",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 305,
+            "end": 328,
+            "quote": "Analog signal component",
+            "bbox": [
+              58.08,
+              251.04,
+              205.44,
+              259.44
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 344,
+            "end": 348,
+            "quote": "ACEL",
+            "bbox": [
+              58.08,
+              264.96,
+              139.92,
+              273.35999999999996
+            ],
+            "method": "ocr"
+          }
+        ],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Verify OCR or missing source evidence",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "WORAW",
+          "raw": "WORAW",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 288,
+              "end": 293,
+              "quote": "WORAW",
+              "bbox": [
+                57.599999999999994,
+                236.88,
+                166.56,
+                245.51999999999998
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-04-30",
+          "raw": "2027-04-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 731,
+              "end": 741,
+              "quote": "2027-04-30",
+              "bbox": [
+                57.599999999999994,
+                495.11999999999995,
+                458.4,
+                505.67999999999995
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-10-31",
+          "raw": "2027-10-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 742,
+              "end": 752,
+              "quote": "2027-10-31",
+              "bbox": [
+                57.599999999999994,
+                495.11999999999995,
+                458.4,
+                505.67999999999995
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_delivery",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2027-09-30",
+          "raw": "2027-09-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 753,
+              "end": 763,
+              "quote": "2027-09-30",
+              "bbox": [
+                57.599999999999994,
+                495.11999999999995,
+                458.4,
+                505.67999999999995
+              ],
+              "method": "ocr"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Verify OCR or missing source evidence",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "end_of_production",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    }
+  ],
+  "relationships": [],
+  "findings": [
+    {
+      "code": "unparsed_part_row",
+      "severity": "error",
+      "message": "Page 1: part-like table row has missing headers or inconsistent columns",
+      "part_ids": [],
+      "field_path": null,
+      "evidence": [
+        {
+          "page": 1,
+          "start": 1025,
+          "end": 1102,
+          "quote": "NoticeForge owned fixture | For evaluation and demonstration only Page 1 of 1",
+          "bbox": [
+            51.599999999999994,
+            802.0799999999999,
+            542.88,
+            810.4799999999999
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.notice_id",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 124,
+          "end": 140,
+          "quote": "AST-PDN-2026-041",
+          "bbox": [
+            57.599999999999994,
+            152.88,
+            177.6,
+            159.6
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.supplier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 151,
+          "end": 170,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.599999999999994,
+            167.04,
+            178.55999999999997,
+            175.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.notice_type",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 184,
+          "end": 187,
+          "quote": "PDN",
+          "bbox": [
+            57.599999999999994,
+            180.95999999999998,
+            125.52,
+            189.6
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.title",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 195,
+          "end": 235,
+          "quote": "Selected analog products discontinuation",
+          "bbox": [
+            56.879999999999995,
+            194.88,
+            242.39999999999998,
+            203.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.issue_date",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 248,
+          "end": 258,
+          "quote": "2026-10-01",
+          "bbox": [
+            58.08,
+            209.04,
+            148.07999999999998,
+            215.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "metadata.revision",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 269,
+          "end": 270,
+          "quote": "A",
+          "bbox": [
+            58.08,
+            222.95999999999998,
+            102.47999999999999,
+            229.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 456,
+          "end": 464,
+          "quote": "00128-Q1",
+          "bbox": [
+            57.599999999999994,
+            367.44,
+            458.4,
+            372.96
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 151,
+          "end": 170,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.599999999999994,
+            167.04,
+            178.55999999999997,
+            175.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.item_name",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 305,
+          "end": 328,
+          "quote": "Analog signal component",
+          "bbox": [
+            58.08,
+            251.04,
+            205.44,
+            259.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.item_category",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 344,
+          "end": 348,
+          "quote": "ACEL",
+          "bbox": [
+            58.08,
+            264.96,
+            139.92,
+            273.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 465,
+          "end": 475,
+          "quote": "2027-03-31",
+          "bbox": [
+            57.599999999999994,
+            367.44,
+            458.4,
+            372.96
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.dates.1",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 476,
+          "end": 486,
+          "quote": "2027-09-30",
+          "bbox": [
+            57.599999999999994,
+            367.44,
+            458.4,
+            372.96
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.dates.2",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 487,
+          "end": 497,
+          "quote": "2027-08-31",
+          "bbox": [
+            57.599999999999994,
+            367.44,
+            458.4,
+            372.96
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.0.change_categories.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 288,
+          "end": 293,
+          "quote": "WORAW",
+          "bbox": [
+            57.599999999999994,
+            236.88,
+            166.56,
+            245.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 510,
+          "end": 518,
+          "quote": "00128-Q2",
+          "bbox": [
+            57.599999999999994,
+            393.35999999999996,
+            458.4,
+            398.88
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 151,
+          "end": 170,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.599999999999994,
+            167.04,
+            178.55999999999997,
+            175.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.item_name",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 305,
+          "end": 328,
+          "quote": "Analog signal component",
+          "bbox": [
+            58.08,
+            251.04,
+            205.44,
+            259.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.item_category",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 344,
+          "end": 348,
+          "quote": "ACEL",
+          "bbox": [
+            58.08,
+            264.96,
+            139.92,
+            273.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "This ordering cutoff is subject to a part-specific inventory condition",
+      "part_ids": [],
+      "field_path": "parts.1.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 519,
+          "end": 529,
+          "quote": "2027-03-31",
+          "bbox": [
+            57.599999999999994,
+            393.35999999999996,
+            458.4,
+            398.88
+          ],
+          "method": "ocr"
+        },
+        {
+          "page": 1,
+          "start": 851,
+          "end": 904,
+          "quote": "Orders accepted only while remaining inventory lasts.",
+          "bbox": [
+            58.08,
+            555.36,
+            369.35999999999996,
+            564.0
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.dates.1",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 530,
+          "end": 540,
+          "quote": "2027-09-30",
+          "bbox": [
+            57.599999999999994,
+            393.35999999999996,
+            458.4,
+            398.88
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.dates.2",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 541,
+          "end": 551,
+          "quote": "2027-08-31",
+          "bbox": [
+            57.599999999999994,
+            393.35999999999996,
+            458.4,
+            398.88
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.exceptions.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 851,
+          "end": 904,
+          "quote": "Orders accepted only while remaining inventory lasts.",
+          "bbox": [
+            58.08,
+            555.36,
+            369.35999999999996,
+            564.0
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.1.change_categories.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 288,
+          "end": 293,
+          "quote": "WORAW",
+          "bbox": [
+            57.599999999999994,
+            236.88,
+            166.56,
+            245.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 560,
+          "end": 569,
+          "quote": "NX-4100-A",
+          "bbox": [
+            57.599999999999994,
+            417.11999999999995,
+            458.4,
+            427.67999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 151,
+          "end": 170,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.599999999999994,
+            167.04,
+            178.55999999999997,
+            175.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.item_name",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 305,
+          "end": 328,
+          "quote": "Analog signal component",
+          "bbox": [
+            58.08,
+            251.04,
+            205.44,
+            259.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.item_category",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 344,
+          "end": 348,
+          "quote": "ACEL",
+          "bbox": [
+            58.08,
+            264.96,
+            139.92,
+            273.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 570,
+          "end": 580,
+          "quote": "2027-06-30",
+          "bbox": [
+            57.599999999999994,
+            417.11999999999995,
+            458.4,
+            427.67999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.dates.1",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 581,
+          "end": 591,
+          "quote": "2027-12-15",
+          "bbox": [
+            57.599999999999994,
+            417.11999999999995,
+            458.4,
+            427.67999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.dates.2",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 592,
+          "end": 602,
+          "quote": "2027-11-30",
+          "bbox": [
+            57.599999999999994,
+            417.11999999999995,
+            458.4,
+            427.67999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.change_categories.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 288,
+          "end": 293,
+          "quote": "WORAW",
+          "bbox": [
+            57.599999999999994,
+            236.88,
+            166.56,
+            245.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.2.replacement_suggestions.0.part_number",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 932,
+          "end": 941,
+          "quote": "NX-4200-A",
+          "bbox": [
+            58.08,
+            577.92,
+            219.6,
+            586.56
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 611,
+          "end": 620,
+          "quote": "NX-4100-B",
+          "bbox": [
+            57.599999999999994,
+            443.03999999999996,
+            463.91999999999996,
+            453.59999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 151,
+          "end": 170,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.599999999999994,
+            167.04,
+            178.55999999999997,
+            175.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.item_name",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 305,
+          "end": 328,
+          "quote": "Analog signal component",
+          "bbox": [
+            58.08,
+            251.04,
+            205.44,
+            259.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.item_category",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 344,
+          "end": 348,
+          "quote": "ACEL",
+          "bbox": [
+            58.08,
+            264.96,
+            139.92,
+            273.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 636,
+          "end": 646,
+          "quote": "2027-12-15",
+          "bbox": [
+            57.599999999999994,
+            443.03999999999996,
+            463.91999999999996,
+            453.59999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.dates.1",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 647,
+          "end": 657,
+          "quote": "2027-11-30",
+          "bbox": [
+            57.599999999999994,
+            443.03999999999996,
+            463.91999999999996,
+            453.59999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence; Footnote [1] modifies row value 2027-06-30 [1]",
+      "part_ids": [],
+      "field_path": "parts.3.dates.2",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 791,
+          "end": 801,
+          "quote": "2027-07-15",
+          "bbox": [
+            57.599999999999994,
+            533.04,
+            300.0,
+            541.4399999999999
+          ],
+          "method": "ocr"
+        },
+        {
+          "page": 1,
+          "start": 766,
+          "end": 826,
+          "quote": "[1] Last buy extended to 2027-07-15 for the marked row only.",
+          "bbox": [
+            57.599999999999994,
+            533.04,
+            300.0,
+            541.4399999999999
+          ],
+          "method": "ocr"
+        },
+        {
+          "page": 1,
+          "start": 621,
+          "end": 635,
+          "quote": "2027-06-30 [1]",
+          "bbox": [
+            57.599999999999994,
+            443.03999999999996,
+            463.91999999999996,
+            453.59999999999997
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.exceptions.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 770,
+          "end": 826,
+          "quote": "Last buy extended to 2027-07-15 for the marked row only.",
+          "bbox": [
+            57.599999999999994,
+            533.04,
+            300.0,
+            541.4399999999999
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.3.change_categories.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 288,
+          "end": 293,
+          "quote": "WORAW",
+          "bbox": [
+            57.599999999999994,
+            236.88,
+            166.56,
+            245.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 672,
+          "end": 678,
+          "quote": "AO10-L",
+          "bbox": [
+            57.599999999999994,
+            468.96,
+            458.4,
+            479.52
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 151,
+          "end": 170,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.599999999999994,
+            167.04,
+            178.55999999999997,
+            175.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.item_name",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 305,
+          "end": 328,
+          "quote": "Analog signal component",
+          "bbox": [
+            58.08,
+            251.04,
+            205.44,
+            259.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.item_category",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 344,
+          "end": 348,
+          "quote": "ACEL",
+          "bbox": [
+            58.08,
+            264.96,
+            139.92,
+            273.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 679,
+          "end": 689,
+          "quote": "2027-04-30",
+          "bbox": [
+            57.599999999999994,
+            468.96,
+            458.4,
+            479.52
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.dates.1",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 690,
+          "end": 700,
+          "quote": "2027-10-31",
+          "bbox": [
+            57.599999999999994,
+            468.96,
+            458.4,
+            479.52
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.dates.2",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 701,
+          "end": 711,
+          "quote": "2027-09-30",
+          "bbox": [
+            57.599999999999994,
+            468.96,
+            458.4,
+            479.52
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.4.change_categories.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 288,
+          "end": 293,
+          "quote": "WORAW",
+          "bbox": [
+            57.599999999999994,
+            236.88,
+            166.56,
+            245.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.raw_identifier",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 724,
+          "end": 730,
+          "quote": "AQ10-L",
+          "bbox": [
+            57.599999999999994,
+            495.11999999999995,
+            458.4,
+            505.67999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.manufacturer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 151,
+          "end": 170,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.599999999999994,
+            167.04,
+            178.55999999999997,
+            175.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.item_name",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 305,
+          "end": 328,
+          "quote": "Analog signal component",
+          "bbox": [
+            58.08,
+            251.04,
+            205.44,
+            259.44
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.item_category",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 344,
+          "end": 348,
+          "quote": "ACEL",
+          "bbox": [
+            58.08,
+            264.96,
+            139.92,
+            273.35999999999996
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 731,
+          "end": 741,
+          "quote": "2027-04-30",
+          "bbox": [
+            57.599999999999994,
+            495.11999999999995,
+            458.4,
+            505.67999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.dates.1",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 742,
+          "end": 752,
+          "quote": "2027-10-31",
+          "bbox": [
+            57.599999999999994,
+            495.11999999999995,
+            458.4,
+            505.67999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.dates.2",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 753,
+          "end": 763,
+          "quote": "2027-09-30",
+          "bbox": [
+            57.599999999999994,
+            495.11999999999995,
+            458.4,
+            505.67999999999995
+          ],
+          "method": "ocr"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Verify OCR or missing source evidence",
+      "part_ids": [],
+      "field_path": "parts.5.change_categories.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 288,
+          "end": 293,
+          "quote": "WORAW",
+          "bbox": [
+            57.599999999999994,
+            236.88,
+            166.56,
+            245.51999999999998
+          ],
+          "method": "ocr"
+        }
+      ]
+    }
+  ],
+  "unsupported_fields": [
+    "Page 1: part-like table row has missing headers or inconsistent columns"
+  ],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T09:07:52.386829+00:00",
+  "status": "review_required",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

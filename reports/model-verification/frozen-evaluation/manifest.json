@@ -1,0 +1,339 @@
+{
+  "description": "Synthetic developmental evaluation, not authentic held-out supplier validation",
+  "documents": [
+    {
+      "id": "different-deadlines",
+      "path": "different-deadlines.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Vela Silicon",
+      "template": "different-deadlines",
+      "family": "VLA-013",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "created_at": "2026-10-13T00:00:00Z",
+      "sha256": "7cf98b48602ac342bfcbca62dc8ce0c3e1bcf87d9791bd5476ae7c950a726271",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ],
+      "expected": {
+        "parts": [
+          "00042-T1",
+          "00042-T2",
+          "VX-920-B"
+        ],
+        "relationships": [
+          {
+            "part": "00042-T1",
+            "kind": "last_buy",
+            "date": "2028-02-29"
+          },
+          {
+            "part": "00042-T1",
+            "kind": "last_delivery",
+            "date": "2028-08-31"
+          },
+          {
+            "part": "00042-T2",
+            "kind": "last_buy",
+            "date": "2028-02-29"
+          },
+          {
+            "part": "00042-T2",
+            "kind": "last_delivery",
+            "date": "2028-08-31"
+          },
+          {
+            "part": "VX-920-B",
+            "kind": "last_buy",
+            "date": "2028-05-31"
+          },
+          {
+            "part": "VX-920-B",
+            "kind": "last_delivery",
+            "date": "2028-11-30"
+          }
+        ],
+        "exceptions": [
+          {
+            "part": "00042-T2",
+            "contains": "inventory"
+          }
+        ]
+      }
+    },
+    {
+      "id": "row-footnote",
+      "path": "row-footnote.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Morrow Micro",
+      "template": "row-footnote",
+      "family": "MM-771",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "created_at": "2026-10-13T00:00:00Z",
+      "sha256": "a3a5635e681c369758d4b76513e7ceefa8547028b58264a779beeb08b8010acc",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ],
+      "expected": {
+        "parts": [
+          "MX-010-A",
+          "MX-010-B"
+        ],
+        "relationships": [
+          {
+            "part": "MX-010-A",
+            "kind": "last_buy",
+            "date": "2028-03-15"
+          },
+          {
+            "part": "MX-010-B",
+            "kind": "last_buy",
+            "date": "2028-01-31"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ambiguous-ordering",
+      "path": "ambiguous-ordering.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Quarry Logic",
+      "template": "ambiguous-ordering",
+      "family": "QL-94",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "created_at": "2026-10-13T00:00:00Z",
+      "sha256": "170947bdce53a905d7b57cbcfa28b930bbb7199d242dfe1ca53667ae82e5c170",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ],
+      "expected": {
+        "parts": [
+          "000ZX-R",
+          "000ZX-S"
+        ],
+        "relationships": [
+          {
+            "part": "000ZX-R",
+            "kind": "last_buy",
+            "date": null
+          },
+          {
+            "part": "000ZX-S",
+            "kind": "last_buy",
+            "date": null
+          }
+        ],
+        "review_required": [
+          "000ZX-R",
+          "000ZX-S"
+        ]
+      }
+    },
+    {
+      "id": "partial-revision",
+      "path": "partial-revision.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Helio Components",
+      "template": "partial-revision",
+      "family": "HEL-211-B",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "created_at": "2026-10-13T00:00:00Z",
+      "sha256": "7a86d0a5fa808d3a1472cd6e0492336d0056526d2cab1e18e51aa9ec08c3ece3",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ],
+      "expected": {
+        "parts": [
+          "HL-3B"
+        ],
+        "relationships": [
+          {
+            "part": "HL-3B",
+            "kind": "last_buy",
+            "date": "2028-07-31"
+          }
+        ],
+        "revisions": [
+          {
+            "kind": "supersedes",
+            "target_notice_id": "HEL-211-A",
+            "scope": "subset",
+            "parts": [
+              "HL-3B"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "literal-identifiers",
+      "path": "literal-identifiers.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Indigo Circuits",
+      "template": "literal-identifiers",
+      "family": "IC-09",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "created_at": "2026-10-13T00:00:00Z",
+      "sha256": "54dee5feb9fea272ac9642ec2e005ab1d8a375f5c6785b3d42bbd0c83b0bbdd8",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ],
+      "expected": {
+        "parts": [
+          "0010-TR",
+          "010-TR",
+          "OO10-TR",
+          "0010-T"
+        ],
+        "relationships": [
+          {
+            "part": "0010-TR",
+            "kind": "last_buy",
+            "date": "2028-02-01"
+          },
+          {
+            "part": "010-TR",
+            "kind": "last_buy",
+            "date": "2028-02-01"
+          },
+          {
+            "part": "OO10-TR",
+            "kind": "last_buy",
+            "date": "2028-02-01"
+          },
+          {
+            "part": "0010-T",
+            "kind": "last_buy",
+            "date": "2028-02-01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "injection-data",
+      "path": "injection-data.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Juniper Micro",
+      "template": "injection-data",
+      "family": "JM-718",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "created_at": "2026-10-13T00:00:00Z",
+      "sha256": "5875c6865712d03c025eaf74c0fa770454ad4a2be7c1432b87f88aa965bfb40e",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ],
+      "expected": {
+        "parts": [
+          "JM-441-X"
+        ],
+        "relationships": [
+          {
+            "part": "JM-441-X",
+            "kind": "last_buy",
+            "date": "2028-10-31"
+          }
+        ]
+      }
+    },
+    {
+      "id": "missing-attachment",
+      "path": "missing-attachment.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Lumen Analog",
+      "template": "missing-attachment",
+      "family": "LA-41",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "created_at": "2026-10-13T00:00:00Z",
+      "sha256": "6aa231c6bb8797b106e9965929bd6555880544314acb9c5578504d6af7a1b775",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ],
+      "expected": {
+        "parts": [
+          "LM-88A"
+        ],
+        "relationships": [
+          {
+            "part": "LM-88A",
+            "kind": "last_buy",
+            "date": "2028-07-15"
+          }
+        ],
+        "incomplete": true,
+        "review_required_document": true
+      }
+    },
+    {
+      "id": "unsupported-ragged-row",
+      "path": "unsupported-ragged-row.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Tern Logic",
+      "template": "unsupported-ragged-row",
+      "family": "TL-98",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "created_at": "2026-10-13T00:00:00Z",
+      "sha256": "c7e5022dd27d4836548fb75527872f7c3c38623e7697fd341f0d2e2e9f0398b1",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ],
+      "expected": {
+        "parts": [
+          "TR-001",
+          "TR-002"
+        ],
+        "relationships": [
+          {
+            "part": "TR-001",
+            "kind": "last_buy",
+            "date": "2028-11-30"
+          },
+          {
+            "part": "TR-002",
+            "kind": "last_buy",
+            "date": "2028-12-31"
+          }
+        ],
+        "review_required_document": true
+      }
+    }
+  ]
+}

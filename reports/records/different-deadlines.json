@@ -1,0 +1,713 @@
+{
+  "id": "7cf98b48602ac342bfcb",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "VLA-013",
+      "raw": "VLA-013",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 43,
+          "end": 50,
+          "quote": "VLA-013",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Vela Silicon",
+      "raw": "Vela Silicon",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 61,
+          "end": 73,
+          "quote": "Vela Silicon",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PDN",
+      "raw": "PDN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 87,
+          "end": 90,
+          "quote": "PDN",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Synthetic different-deadlines",
+      "raw": "Synthetic different-deadlines",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 98,
+          "end": 127,
+          "quote": "Synthetic different-deadlines",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2027-10-01",
+      "raw": "2027-10-01",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 140,
+          "end": 150,
+          "quote": "2027-10-01",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "7cf98b48602ac342bfcbca62dc8ce0c3e1bcf87d9791bd5476ae7c950a726271",
+    "filename": "different-deadlines.txt",
+    "media_type": "text/plain",
+    "byte_size": 397,
+    "pages": [
+      {
+        "number": 1,
+        "text": "OWNED SYNTHETIC EVALUATION CASE\nNotice ID: VLA-013\nSupplier: Vela Silicon\nNotice type: PDN\nTitle: Synthetic different-deadlines\nIssue date: 2027-10-01\nGroup | Part number | Last buy | Last delivery\nEast | 00042-T1 | 2028-02-29 | 2028-08-31\nEast | 00042-T2 | 2028-02-29 | 2028-08-31\nWest | VX-920-B | 2028-05-31 | 2028-11-30\nException for 00042-T2: Orders only while inventory remains.\nPage 1 of 1\n",
+        "width": null,
+        "height": null,
+        "method": "text",
+        "lines": [
+          {
+            "text": "OWNED SYNTHETIC EVALUATION CASE",
+            "start": 0,
+            "end": 31,
+            "bbox": null
+          },
+          {
+            "text": "Notice ID: VLA-013",
+            "start": 32,
+            "end": 50,
+            "bbox": null
+          },
+          {
+            "text": "Supplier: Vela Silicon",
+            "start": 51,
+            "end": 73,
+            "bbox": null
+          },
+          {
+            "text": "Notice type: PDN",
+            "start": 74,
+            "end": 90,
+            "bbox": null
+          },
+          {
+            "text": "Title: Synthetic different-deadlines",
+            "start": 91,
+            "end": 127,
+            "bbox": null
+          },
+          {
+            "text": "Issue date: 2027-10-01",
+            "start": 128,
+            "end": 150,
+            "bbox": null
+          },
+          {
+            "text": "Group | Part number | Last buy | Last delivery",
+            "start": 151,
+            "end": 197,
+            "bbox": null
+          },
+          {
+            "text": "East | 00042-T1 | 2028-02-29 | 2028-08-31",
+            "start": 198,
+            "end": 239,
+            "bbox": null
+          },
+          {
+            "text": "East | 00042-T2 | 2028-02-29 | 2028-08-31",
+            "start": 240,
+            "end": 281,
+            "bbox": null
+          },
+          {
+            "text": "West | VX-920-B | 2028-05-31 | 2028-11-30",
+            "start": 282,
+            "end": 323,
+            "bbox": null
+          },
+          {
+            "text": "Exception for 00042-T2: Orders only while inventory remains.",
+            "start": 324,
+            "end": 384,
+            "bbox": null
+          },
+          {
+            "text": "Page 1 of 1",
+            "start": 385,
+            "end": 396,
+            "bbox": null
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 1,
+    "complete": true,
+    "warnings": [],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "00042-T1",
+        "raw": "00042-T1",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 205,
+            "end": 213,
+            "quote": "00042-T1",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "00042-T1",
+      "manufacturer": {
+        "value": "Vela Silicon",
+        "raw": "Vela Silicon",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 61,
+            "end": 73,
+            "quote": "Vela Silicon",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "East",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-02-29",
+          "raw": "2028-02-29",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 216,
+              "end": 226,
+              "quote": "2028-02-29",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2028-08-31",
+          "raw": "2028-08-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 229,
+              "end": 239,
+              "quote": "2028-08-31",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_delivery",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    },
+    {
+      "id": "part-2",
+      "raw_identifier": {
+        "value": "00042-T2",
+        "raw": "00042-T2",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 247,
+            "end": 255,
+            "quote": "00042-T2",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "00042-T2",
+      "manufacturer": {
+        "value": "Vela Silicon",
+        "raw": "Vela Silicon",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 61,
+            "end": 73,
+            "quote": "Vela Silicon",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "East",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-02-29",
+          "raw": "2028-02-29",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 258,
+              "end": 268,
+              "quote": "2028-02-29",
+              "bbox": null,
+              "method": "text"
+            },
+            {
+              "page": 1,
+              "start": 348,
+              "end": 384,
+              "quote": "Orders only while inventory remains.",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "This ordering cutoff is subject to a part-specific inventory condition",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "inventory_limited"
+        },
+        {
+          "value": "2028-08-31",
+          "raw": "2028-08-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 271,
+              "end": 281,
+              "quote": "2028-08-31",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_delivery",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [
+        {
+          "value": "Orders only while inventory remains.",
+          "raw": "Orders only while inventory remains.",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 348,
+              "end": 384,
+              "quote": "Orders only while inventory remains.",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-3",
+      "raw_identifier": {
+        "value": "VX-920-B",
+        "raw": "VX-920-B",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 289,
+            "end": 297,
+            "quote": "VX-920-B",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "VX-920-B",
+      "manufacturer": {
+        "value": "Vela Silicon",
+        "raw": "Vela Silicon",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 61,
+            "end": 73,
+            "quote": "Vela Silicon",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "West",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-05-31",
+          "raw": "2028-05-31",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 300,
+              "end": 310,
+              "quote": "2028-05-31",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        },
+        {
+          "value": "2028-11-30",
+          "raw": "2028-11-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 313,
+              "end": 323,
+              "quote": "2028-11-30",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_delivery",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    }
+  ],
+  "relationships": [],
+  "findings": [
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "This ordering cutoff is subject to a part-specific inventory condition",
+      "part_ids": [],
+      "field_path": "parts.1.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 258,
+          "end": 268,
+          "quote": "2028-02-29",
+          "bbox": null,
+          "method": "text"
+        },
+        {
+          "page": 1,
+          "start": 348,
+          "end": 384,
+          "quote": "Orders only while inventory remains.",
+          "bbox": null,
+          "method": "text"
+        }
+      ]
+    }
+  ],
+  "unsupported_fields": [],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T10:06:41.551816+00:00",
+  "status": "review_required",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

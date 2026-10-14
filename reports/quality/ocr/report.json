@@ -1,0 +1,1424 @@
+{
+  "created_at": "2026-10-14T09:07:49.885990+00:00",
+  "scope": "Owned synthetic development OCR verification; not held-out supplier evaluation",
+  "annotation_provenance": "Manually transcribed identifiers/date types/qualifiers from owned source fixtures",
+  "permission": "Owned synthetic fixtures, CC0-1.0; no supplier training or evaluation data",
+  "engine": {
+    "path": "/tmp/noticeforge-ocr/root/usr/bin/tesseract",
+    "version_output": "tesseract 5.3.4\n leptonica-1.82.0\n  libgif 5.2.1 : libjpeg 8d (libjpeg-turbo 2.1.5) : libpng 1.6.43 : libtiff 4.5.1 : zlib 1.3 : libwebp 1.3.2 : libopenjp2 2.5.0\n Found AVX512BW\n Found AVX512F\n Found AVX512VNNI\n Found AVX2\n Found AVX\n Found FMA\n Found SSE4.1\n Found OpenMP 201511\n Found libarchive 3.7.2 zlib/1.3 liblzma/5.4.5 bz2lib/1.0.8 liblz4/1.9.4 libzstd/1.5.5\n Found libcurl/8.5.0 OpenSSL/3.0.13 zlib/1.3 brotli/1.1.0 zstd/1.5.5 libidn2/2.3.7 libpsl/0.21.2 (+libidn2/2.3.7) libssh/0.10.6/openssl/zlib nghttp2/1.59.0 librtmp/2.3 OpenLDAP/2.6.10\n",
+    "packages": [
+      {
+        "package": "tesseract-ocr",
+        "version": "5.3.4-1build5",
+        "source": "https://archive.ubuntu.com/ubuntu/pool/universe/t/tesseract/tesseract-ocr_5.3.4-1build5_amd64.deb",
+        "sha256": "2dfac382d77215aee0c3de4a2a2205505d5f2195e72e79b54ad32154fc08da77"
+      },
+      {
+        "package": "libtesseract5",
+        "version": "5.3.4-1build5",
+        "source": "https://archive.ubuntu.com/ubuntu/pool/universe/t/tesseract/libtesseract5_5.3.4-1build5_amd64.deb",
+        "sha256": "a38438115dc203b5abc1e6a6b24eb5273ba82161a11faa2f619bf5f7622efb14"
+      },
+      {
+        "package": "tesseract-ocr-eng",
+        "version": "4.1.0-2",
+        "source": "https://archive.ubuntu.com/ubuntu/pool/universe/t/tesseract-lang/tesseract-ocr-eng_4.1.0-2_all.deb",
+        "sha256": "b1996b3113c78663f4dd16cf18aa1f288b07e9624f8d4a0ddbd7d9b52a234ba7"
+      },
+      {
+        "package": "tesseract-ocr-osd",
+        "version": "4.1.0-2",
+        "source": "https://archive.ubuntu.com/ubuntu/pool/universe/t/tesseract-lang/tesseract-ocr-osd_4.1.0-2_all.deb",
+        "sha256": "a266496b3268134493808c1595c9d16ac92c7e1c28e3e0bf46fdb322df95ca68"
+      },
+      {
+        "package": "liblept5",
+        "version": "1.82.0-3build4",
+        "source": "https://archive.ubuntu.com/ubuntu/pool/universe/l/leptonlib/liblept5_1.82.0-3build4_amd64.deb",
+        "sha256": "c2bb81d58f032b09917c0d50994cce905287a1596304a4e99681a03601456ea8"
+      }
+    ],
+    "tessdata_prefix": "/tmp/noticeforge-ocr/root/usr/share/tesseract-ocr/5/tessdata"
+  },
+  "hardware": {
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "cpu_count": 16,
+    "cpu": "AMD Ryzen 7 9700X 8-Core Processor"
+  },
+  "configuration": {
+    "dpi_target": 300,
+    "max_pixels": 20000000,
+    "threads": 1,
+    "page_timeout_seconds": 30,
+    "max_tsv_read_bytes": 8388608,
+    "page_segmentation_mode": 6,
+    "language": "eng",
+    "repetitions": 1,
+    "warmup": 0,
+    "concurrency": 1,
+    "character_correction": false
+  },
+  "cases": [
+    {
+      "id": "site-transfer-300dpi",
+      "family": "aster-052",
+      "split": "development",
+      "kind": "image_only",
+      "source_sha256": "e8a03eb264818fc99330fbf8fbd4035d444b468fa206325b835c9469cef68c9d",
+      "scan_sha256": "d8c31596101e686843c8c01618aea22df4b9d2363f441aa7a9901623aa5bcda1",
+      "transformation": "PyMuPDF rasterized at 300dpi; images only",
+      "status": "review_required",
+      "complete": true,
+      "warnings": [],
+      "page_methods": [
+        "ocr"
+      ],
+      "received_pages": 1,
+      "expected_pages": 1,
+      "source_chars": 834,
+      "latency_seconds": [
+        0.596395
+      ],
+      "median_seconds": 0.596395,
+      "p95_seconds": 0.596395,
+      "expected_identifiers": [
+        "AMP-230-A",
+        "AMP-230-B"
+      ],
+      "observed_identifiers": [
+        "AMP-230-A",
+        "AMP-230-B"
+      ],
+      "expected_relationships": [
+        [
+          "AMP-230-A",
+          "effective_change",
+          "2027-01-15",
+          "exact"
+        ],
+        [
+          "AMP-230-B",
+          "effective_change",
+          "2027-02-15",
+          "exact"
+        ]
+      ],
+      "record_count": 2,
+      "unique_record_ids": 2,
+      "duplicate_observed_identifiers": [],
+      "literal_identity_preserved": true,
+      "part_recall": {
+        "correct": 2,
+        "total": 2
+      },
+      "part_omissions": [],
+      "unexpected_identifier_candidates": [],
+      "relationship_exact": {
+        "correct": 2,
+        "total": 2
+      },
+      "missing_or_wrong_relationships": [],
+      "incorrect_relationship_candidates": [],
+      "observed_relationships": [
+        [
+          "AMP-230-A",
+          "effective_change",
+          "2027-01-15",
+          "exact"
+        ],
+        [
+          "AMP-230-B",
+          "effective_change",
+          "2027-02-15",
+          "exact"
+        ]
+      ],
+      "ocr_review_coverage": {
+        "review_required": 27,
+        "total": 27
+      },
+      "evidence": {
+        "total_evidence": 27,
+        "offset_quote_correct": 27,
+        "bbox_in_page": 27,
+        "original_geometry_comparable": 27,
+        "original_geometry_intersects": 27,
+        "original_text_not_found": 0,
+        "original_geometry_mismatches": []
+      },
+      "xml_blocked": true,
+      "xml_block_reason": "Notice has unresolved review-required findings; use canonical JSON until reviewed."
+    },
+    {
+      "id": "site-transfer-144dpi",
+      "family": "aster-052",
+      "split": "development",
+      "kind": "image_only",
+      "source_sha256": "e8a03eb264818fc99330fbf8fbd4035d444b468fa206325b835c9469cef68c9d",
+      "scan_sha256": "6fbc045d9d36960d0be61cf74de2e1bf416ed361a036bea8a20d1c1c45a5d3e0",
+      "transformation": "PyMuPDF rasterized at 144dpi; images only",
+      "status": "review_required",
+      "complete": true,
+      "warnings": [],
+      "page_methods": [
+        "ocr"
+      ],
+      "received_pages": 1,
+      "expected_pages": 1,
+      "source_chars": 834,
+      "latency_seconds": [
+        0.506486
+      ],
+      "median_seconds": 0.506486,
+      "p95_seconds": 0.506486,
+      "expected_identifiers": [
+        "AMP-230-A",
+        "AMP-230-B"
+      ],
+      "observed_identifiers": [
+        "AMP-230-A",
+        "AMP-230-B"
+      ],
+      "expected_relationships": [
+        [
+          "AMP-230-A",
+          "effective_change",
+          "2027-01-15",
+          "exact"
+        ],
+        [
+          "AMP-230-B",
+          "effective_change",
+          "2027-02-15",
+          "exact"
+        ]
+      ],
+      "record_count": 2,
+      "unique_record_ids": 2,
+      "duplicate_observed_identifiers": [],
+      "literal_identity_preserved": true,
+      "part_recall": {
+        "correct": 2,
+        "total": 2
+      },
+      "part_omissions": [],
+      "unexpected_identifier_candidates": [],
+      "relationship_exact": {
+        "correct": 2,
+        "total": 2
+      },
+      "missing_or_wrong_relationships": [],
+      "incorrect_relationship_candidates": [],
+      "observed_relationships": [
+        [
+          "AMP-230-A",
+          "effective_change",
+          "2027-01-15",
+          "exact"
+        ],
+        [
+          "AMP-230-B",
+          "effective_change",
+          "2027-02-15",
+          "exact"
+        ]
+      ],
+      "ocr_review_coverage": {
+        "review_required": 28,
+        "total": 28
+      },
+      "evidence": {
+        "total_evidence": 28,
+        "offset_quote_correct": 28,
+        "bbox_in_page": 28,
+        "original_geometry_comparable": 28,
+        "original_geometry_intersects": 27,
+        "original_text_not_found": 0,
+        "original_geometry_mismatches": [
+          {
+            "quote": ":",
+            "bbox": [
+              56.879999999999995,
+              491.03999999999996,
+              382.08,
+              501.59999999999997
+            ],
+            "page": 1
+          }
+        ]
+      },
+      "xml_blocked": true,
+      "xml_block_reason": "Notice has unresolved review-required findings; use canonical JSON until reviewed."
+    },
+    {
+      "id": "discontinuation-300dpi",
+      "family": "aster-041",
+      "split": "development",
+      "kind": "image_only",
+      "source_sha256": "4ee9f922f6d31d516cc939500d566db37efe7408c7cac4b6132cf4a06ffa5701",
+      "scan_sha256": "4037103a43c885851c691809f8b7fe4299bc38abec76dabbe31a7ef18fa59893",
+      "transformation": "PyMuPDF rasterized at 300dpi; images only",
+      "status": "review_required",
+      "complete": true,
+      "warnings": [],
+      "page_methods": [
+        "ocr"
+      ],
+      "received_pages": 1,
+      "expected_pages": 1,
+      "source_chars": 1103,
+      "latency_seconds": [
+        0.647247
+      ],
+      "median_seconds": 0.647247,
+      "p95_seconds": 0.647247,
+      "expected_identifiers": [
+        "00128-Q1",
+        "00128-Q2",
+        "NX-4100-A",
+        "NX-4100-B",
+        "AO10-L",
+        "A010-L"
+      ],
+      "observed_identifiers": [
+        "00128-Q1",
+        "00128-Q2",
+        "NX-4100-A",
+        "NX-4100-B",
+        "AQ10-L",
+        "A010-L"
+      ],
+      "expected_relationships": [
+        [
+          "00128-Q1",
+          "last_buy",
+          "2027-03-31",
+          "exact"
+        ],
+        [
+          "00128-Q1",
+          "last_delivery",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "00128-Q1",
+          "end_of_production",
+          "2027-08-31",
+          "exact"
+        ],
+        [
+          "00128-Q2",
+          "last_buy",
+          "2027-03-31",
+          "inventory_limited"
+        ],
+        [
+          "00128-Q2",
+          "last_delivery",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "00128-Q2",
+          "end_of_production",
+          "2027-08-31",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "last_buy",
+          "2027-06-30",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "last_delivery",
+          "2027-12-15",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "end_of_production",
+          "2027-11-30",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "last_buy",
+          "2027-07-15",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "last_delivery",
+          "2027-12-15",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "end_of_production",
+          "2027-11-30",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ]
+      ],
+      "record_count": 6,
+      "unique_record_ids": 6,
+      "duplicate_observed_identifiers": [],
+      "literal_identity_preserved": true,
+      "part_recall": {
+        "correct": 5,
+        "total": 6
+      },
+      "part_omissions": [
+        "AO10-L"
+      ],
+      "unexpected_identifier_candidates": [
+        "AQ10-L"
+      ],
+      "relationship_exact": {
+        "correct": 15,
+        "total": 18
+      },
+      "missing_or_wrong_relationships": [
+        [
+          "AO10-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ]
+      ],
+      "incorrect_relationship_candidates": [
+        [
+          "AQ10-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ]
+      ],
+      "observed_relationships": [
+        [
+          "00128-Q1",
+          "last_buy",
+          "2027-03-31",
+          "exact"
+        ],
+        [
+          "00128-Q1",
+          "last_delivery",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "00128-Q1",
+          "end_of_production",
+          "2027-08-31",
+          "exact"
+        ],
+        [
+          "00128-Q2",
+          "last_buy",
+          "2027-03-31",
+          "inventory_limited"
+        ],
+        [
+          "00128-Q2",
+          "last_delivery",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "00128-Q2",
+          "end_of_production",
+          "2027-08-31",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "last_buy",
+          "2027-06-30",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "last_delivery",
+          "2027-12-15",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "end_of_production",
+          "2027-11-30",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "last_delivery",
+          "2027-12-15",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "end_of_production",
+          "2027-11-30",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "last_buy",
+          "2027-07-15",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ]
+      ],
+      "ocr_review_coverage": {
+        "review_required": 59,
+        "total": 59
+      },
+      "evidence": {
+        "total_evidence": 62,
+        "offset_quote_correct": 62,
+        "bbox_in_page": 62,
+        "original_geometry_comparable": 55,
+        "original_geometry_intersects": 53,
+        "original_text_not_found": 7,
+        "original_geometry_mismatches": [
+          {
+            "quote": ":",
+            "bbox": [
+              57.599999999999994,
+              393.35999999999996,
+              458.64,
+              398.88
+            ],
+            "page": 1
+          },
+          {
+            "quote": ":",
+            "bbox": [
+              57.599999999999994,
+              497.52,
+              458.64,
+              502.79999999999995
+            ],
+            "page": 1
+          }
+        ]
+      },
+      "xml_blocked": true,
+      "xml_block_reason": "Notice has unresolved review-required findings; use canonical JSON until reviewed."
+    },
+    {
+      "id": "discontinuation-144dpi",
+      "family": "aster-041",
+      "split": "development",
+      "kind": "image_only",
+      "source_sha256": "4ee9f922f6d31d516cc939500d566db37efe7408c7cac4b6132cf4a06ffa5701",
+      "scan_sha256": "294defdf6513b5b01acac17295688c486fe8e41d68a62d30bc78aedb2666e992",
+      "transformation": "PyMuPDF rasterized at 144dpi; images only",
+      "status": "review_required",
+      "complete": true,
+      "warnings": [],
+      "page_methods": [
+        "ocr"
+      ],
+      "received_pages": 1,
+      "expected_pages": 1,
+      "source_chars": 1103,
+      "latency_seconds": [
+        0.559609
+      ],
+      "median_seconds": 0.559609,
+      "p95_seconds": 0.559609,
+      "expected_identifiers": [
+        "00128-Q1",
+        "00128-Q2",
+        "NX-4100-A",
+        "NX-4100-B",
+        "AO10-L",
+        "A010-L"
+      ],
+      "observed_identifiers": [
+        "00128-Q1",
+        "00128-Q2",
+        "NX-4100-A",
+        "NX-4100-B",
+        "AO10-L",
+        "AQ10-L"
+      ],
+      "expected_relationships": [
+        [
+          "00128-Q1",
+          "last_buy",
+          "2027-03-31",
+          "exact"
+        ],
+        [
+          "00128-Q1",
+          "last_delivery",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "00128-Q1",
+          "end_of_production",
+          "2027-08-31",
+          "exact"
+        ],
+        [
+          "00128-Q2",
+          "last_buy",
+          "2027-03-31",
+          "inventory_limited"
+        ],
+        [
+          "00128-Q2",
+          "last_delivery",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "00128-Q2",
+          "end_of_production",
+          "2027-08-31",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "last_buy",
+          "2027-06-30",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "last_delivery",
+          "2027-12-15",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "end_of_production",
+          "2027-11-30",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "last_buy",
+          "2027-07-15",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "last_delivery",
+          "2027-12-15",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "end_of_production",
+          "2027-11-30",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ]
+      ],
+      "record_count": 6,
+      "unique_record_ids": 6,
+      "duplicate_observed_identifiers": [],
+      "literal_identity_preserved": true,
+      "part_recall": {
+        "correct": 5,
+        "total": 6
+      },
+      "part_omissions": [
+        "A010-L"
+      ],
+      "unexpected_identifier_candidates": [
+        "AQ10-L"
+      ],
+      "relationship_exact": {
+        "correct": 15,
+        "total": 18
+      },
+      "missing_or_wrong_relationships": [
+        [
+          "A010-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ]
+      ],
+      "incorrect_relationship_candidates": [
+        [
+          "AQ10-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ]
+      ],
+      "observed_relationships": [
+        [
+          "00128-Q1",
+          "last_buy",
+          "2027-03-31",
+          "exact"
+        ],
+        [
+          "00128-Q1",
+          "last_delivery",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "00128-Q1",
+          "end_of_production",
+          "2027-08-31",
+          "exact"
+        ],
+        [
+          "00128-Q2",
+          "last_buy",
+          "2027-03-31",
+          "inventory_limited"
+        ],
+        [
+          "00128-Q2",
+          "last_delivery",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "00128-Q2",
+          "end_of_production",
+          "2027-08-31",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "last_buy",
+          "2027-06-30",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "last_delivery",
+          "2027-12-15",
+          "exact"
+        ],
+        [
+          "NX-4100-A",
+          "end_of_production",
+          "2027-11-30",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "last_delivery",
+          "2027-12-15",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "end_of_production",
+          "2027-11-30",
+          "exact"
+        ],
+        [
+          "NX-4100-B",
+          "last_buy",
+          "2027-07-15",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "last_buy",
+          "2027-04-30",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "last_delivery",
+          "2027-10-31",
+          "exact"
+        ],
+        [
+          "AQ10-L",
+          "end_of_production",
+          "2027-09-30",
+          "exact"
+        ]
+      ],
+      "ocr_review_coverage": {
+        "review_required": 57,
+        "total": 57
+      },
+      "evidence": {
+        "total_evidence": 60,
+        "offset_quote_correct": 60,
+        "bbox_in_page": 60,
+        "original_geometry_comparable": 53,
+        "original_geometry_intersects": 53,
+        "original_text_not_found": 7,
+        "original_geometry_mismatches": []
+      },
+      "xml_blocked": true,
+      "xml_block_reason": "Notice has unresolved review-required findings; use canonical JSON until reviewed."
+    },
+    {
+      "id": "literal-identifiers-300dpi",
+      "family": "ocr-literal-owned",
+      "split": "development",
+      "kind": "image_only",
+      "source_sha256": "acf3e4450e5a7ee61ec10031f1204d0a819f9398f85321789f8fab01d9d9229f",
+      "scan_sha256": "a6148bf817e932cbdfbd3be3127e7f654e912b29db8521e60e856cc24443caf7",
+      "transformation": "PyMuPDF rasterized at 300dpi; images only",
+      "status": "review_required",
+      "complete": true,
+      "warnings": [],
+      "page_methods": [
+        "ocr"
+      ],
+      "received_pages": 1,
+      "expected_pages": 1,
+      "source_chars": 401,
+      "latency_seconds": [
+        0.487538
+      ],
+      "median_seconds": 0.487538,
+      "p95_seconds": 0.487538,
+      "expected_identifiers": [
+        "0010-TR",
+        "010-TR",
+        "OO10-TR",
+        "0010-T",
+        "AO10-L",
+        "A010-L"
+      ],
+      "observed_identifiers": [
+        "OO10-TR",
+        "OO10-TR",
+        "O10-TR",
+        "0010-T",
+        "AO1LO-L",
+        "AO10O-L"
+      ],
+      "expected_relationships": [
+        [
+          "0010-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "010-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "OO10-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "0010-T",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ]
+      ],
+      "record_count": 6,
+      "unique_record_ids": 6,
+      "duplicate_observed_identifiers": [
+        "OO10-TR"
+      ],
+      "literal_identity_preserved": true,
+      "part_recall": {
+        "correct": 2,
+        "total": 6
+      },
+      "part_omissions": [
+        "0010-TR",
+        "010-TR",
+        "AO10-L",
+        "A010-L"
+      ],
+      "unexpected_identifier_candidates": [
+        "OO10-TR",
+        "O10-TR",
+        "AO1LO-L",
+        "AO10O-L"
+      ],
+      "relationship_exact": {
+        "correct": 2,
+        "total": 6
+      },
+      "missing_or_wrong_relationships": [
+        [
+          "0010-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "010-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "AO10-L",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "A010-L",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ]
+      ],
+      "incorrect_relationship_candidates": [
+        [
+          "OO10-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "O10-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "AO1LO-L",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "AO10O-L",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ]
+      ],
+      "observed_relationships": [
+        [
+          "OO10-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "OO10-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "O10-TR",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "0010-T",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "AO1LO-L",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ],
+        [
+          "AO10O-L",
+          "last_buy",
+          "2027-07-31",
+          "exact"
+        ]
+      ],
+      "ocr_review_coverage": {
+        "review_required": 24,
+        "total": 24
+      },
+      "evidence": {
+        "total_evidence": 24,
+        "offset_quote_correct": 24,
+        "bbox_in_page": 24,
+        "original_geometry_comparable": 22,
+        "original_geometry_intersects": 20,
+        "original_text_not_found": 2,
+        "original_geometry_mismatches": [
+          {
+            "quote": "OO10-TR",
+            "bbox": [
+              40.559999999999995,
+              230.64,
+              290.88,
+              240.23999999999998
+            ],
+            "page": 1
+          },
+          {
+            "quote": "O10-TR",
+            "bbox": [
+              40.559999999999995,
+              258.47999999999996,
+              283.68,
+              268.08
+            ],
+            "page": 1
+          }
+        ]
+      },
+      "xml_blocked": true,
+      "xml_block_reason": "Notice has unresolved review-required findings; use canonical JSON until reviewed."
+    },
+    {
+      "id": "mixed-native-image",
+      "family": "aster-052",
+      "split": "development",
+      "kind": "mixed_incomplete",
+      "source_sha256": "e8a03eb264818fc99330fbf8fbd4035d444b468fa206325b835c9469cef68c9d",
+      "scan_sha256": "f96aaec942f69fe274144e075990202de84a92b3eeb9508adf8ee0a3605e0b39",
+      "transformation": "PyMuPDF rasterized at 300dpi; native header plus page image",
+      "status": "incomplete",
+      "complete": false,
+      "warnings": [
+        "Page 1: substantial image region accompanies native text; embedded image content has not been OCR-verified"
+      ],
+      "page_methods": [
+        "pdf-text"
+      ],
+      "received_pages": 1,
+      "expected_pages": 1,
+      "source_chars": 30,
+      "latency_seconds": [
+        0.10967
+      ],
+      "median_seconds": 0.10967,
+      "p95_seconds": 0.10967,
+      "expected_identifiers": [
+        "AMP-230-A",
+        "AMP-230-B"
+      ],
+      "observed_identifiers": [],
+      "expected_relationships": [
+        [
+          "AMP-230-A",
+          "effective_change",
+          "2027-01-15",
+          "exact"
+        ],
+        [
+          "AMP-230-B",
+          "effective_change",
+          "2027-02-15",
+          "exact"
+        ]
+      ],
+      "record_count": 0,
+      "unique_record_ids": 0,
+      "duplicate_observed_identifiers": [],
+      "literal_identity_preserved": true,
+      "part_recall": {
+        "correct": 0,
+        "total": 2
+      },
+      "part_omissions": [
+        "AMP-230-A",
+        "AMP-230-B"
+      ],
+      "unexpected_identifier_candidates": [],
+      "relationship_exact": {
+        "correct": 0,
+        "total": 2
+      },
+      "missing_or_wrong_relationships": [
+        [
+          "AMP-230-A",
+          "effective_change",
+          "2027-01-15",
+          "exact"
+        ],
+        [
+          "AMP-230-B",
+          "effective_change",
+          "2027-02-15",
+          "exact"
+        ]
+      ],
+      "incorrect_relationship_candidates": [],
+      "observed_relationships": [],
+      "ocr_review_coverage": {
+        "review_required": 0,
+        "total": 0
+      },
+      "evidence": {
+        "total_evidence": 0,
+        "offset_quote_correct": 0,
+        "bbox_in_page": 0,
+        "original_geometry_comparable": 0,
+        "original_geometry_intersects": 0,
+        "original_text_not_found": 0,
+        "original_geometry_mismatches": []
+      },
+      "xml_blocked": true,
+      "xml_block_reason": "Document is incomplete; smartPCN export is blocked. Canonical JSON retains the warning."
+    },
+    {
+      "id": "missing-page-scan",
+      "family": "ocr-missing-owned",
+      "split": "development",
+      "kind": "missing_incomplete",
+      "source_sha256": "a98e6dd8984c2dc111edfbe02f36e5831730f1a991e0ce6e0ab24d7ca5433372",
+      "scan_sha256": "8fe6102727bf60d9e8235583668f15a330290a136f7816c8cb90968a82f469cd",
+      "transformation": "PyMuPDF rasterized at 300dpi; images only",
+      "status": "incomplete",
+      "complete": false,
+      "warnings": [
+        "Expected 2 pages but received 1; notice may be incomplete",
+        "Printed page sequence is missing or duplicated; verify the original notice"
+      ],
+      "page_methods": [
+        "ocr"
+      ],
+      "received_pages": 1,
+      "expected_pages": 2,
+      "source_chars": 33,
+      "latency_seconds": [
+        0.380665
+      ],
+      "median_seconds": 0.380665,
+      "p95_seconds": 0.380665,
+      "expected_identifiers": [],
+      "observed_identifiers": [],
+      "expected_relationships": [],
+      "record_count": 0,
+      "unique_record_ids": 0,
+      "duplicate_observed_identifiers": [],
+      "literal_identity_preserved": true,
+      "part_recall": {
+        "correct": 0,
+        "total": 0
+      },
+      "part_omissions": [],
+      "unexpected_identifier_candidates": [],
+      "relationship_exact": {
+        "correct": 0,
+        "total": 0
+      },
+      "missing_or_wrong_relationships": [],
+      "incorrect_relationship_candidates": [],
+      "observed_relationships": [],
+      "ocr_review_coverage": {
+        "review_required": 0,
+        "total": 0
+      },
+      "evidence": {
+        "total_evidence": 0,
+        "offset_quote_correct": 0,
+        "bbox_in_page": 0,
+        "original_geometry_comparable": 0,
+        "original_geometry_intersects": 0,
+        "original_text_not_found": 0,
+        "original_geometry_mismatches": []
+      },
+      "xml_blocked": true,
+      "xml_block_reason": "Document is incomplete; smartPCN export is blocked. Canonical JSON retains the warning."
+    },
+    {
+      "id": "large-blank-page",
+      "family": "ocr-blank-owned",
+      "split": "development",
+      "kind": "blank_incomplete",
+      "source_sha256": "312b6feb42d885a5d6a558e493c9f66bb5a6ea9d5010c52548680e682196fbda",
+      "scan_sha256": "312b6feb42d885a5d6a558e493c9f66bb5a6ea9d5010c52548680e682196fbda",
+      "transformation": "Blank 20000-point square PDF",
+      "status": "incomplete",
+      "complete": false,
+      "warnings": [
+        "One or more pages contain no readable text"
+      ],
+      "page_methods": [
+        "ocr"
+      ],
+      "received_pages": 1,
+      "expected_pages": 1,
+      "source_chars": 0,
+      "latency_seconds": [
+        0.499311
+      ],
+      "median_seconds": 0.499311,
+      "p95_seconds": 0.499311,
+      "expected_identifiers": [],
+      "observed_identifiers": [],
+      "expected_relationships": [],
+      "record_count": 0,
+      "unique_record_ids": 0,
+      "duplicate_observed_identifiers": [],
+      "literal_identity_preserved": true,
+      "part_recall": {
+        "correct": 0,
+        "total": 0
+      },
+      "part_omissions": [],
+      "unexpected_identifier_candidates": [],
+      "relationship_exact": {
+        "correct": 0,
+        "total": 0
+      },
+      "missing_or_wrong_relationships": [],
+      "incorrect_relationship_candidates": [],
+      "observed_relationships": [],
+      "ocr_review_coverage": {
+        "review_required": 0,
+        "total": 0
+      },
+      "evidence": {
+        "total_evidence": 0,
+        "offset_quote_correct": 0,
+        "bbox_in_page": 0,
+        "original_geometry_comparable": 0,
+        "original_geometry_intersects": 0,
+        "original_text_not_found": 0,
+        "original_geometry_mismatches": []
+      },
+      "xml_blocked": true,
+      "xml_block_reason": "Document is incomplete; smartPCN export is blocked. Canonical JSON retains the warning."
+    }
+  ],
+  "limits": [
+    "Development fixtures informed layout changes; these are not held-out scores.",
+    "Clean PDF rasterizations do not represent skew, noise, handwriting, all fonts, or supplier scans.",
+    "Table separation is a wide-gap heuristic for at least three columns; OCR has no general table parser.",
+    "Mixed native/image pages remain incomplete; image regions are not merged automatically.",
+    "The timeout bounds the engine subprocess; there is no hard process-RAM or disk quota here.",
+    "RSS high-water values cover this script or child processes, not concurrent service memory.",
+    "Evidence offset correctness is measured against OCR text; recognition errors can still be localized.",
+    "Every OCR-derived critical value must be reviewed; confidence is not used as a probability."
+  ],
+  "timeout_probe": {
+    "injected_limit_seconds": 0.001,
+    "elapsed_seconds": 0.178471,
+    "complete": false,
+    "warnings": [
+      "Page 1: OCR failed or exceeded its 0.001-second page limit",
+      "One or more pages contain no readable text"
+    ],
+    "actual_engine_invoked": true
+  },
+  "unavailable_probe": {
+    "complete": false,
+    "warnings": [
+      "Page 1: Tesseract OCR is unavailable; install it to read image-only pages",
+      "One or more pages contain no readable text"
+    ]
+  },
+  "resource_high_water_kib": {
+    "script": 414456,
+    "child_processes": 414456
+  },
+  "isolated_engine_resource_probe": {
+    "source_case": "site-transfer-300dpi",
+    "separate_actual_engine_invocation": true,
+    "sample_interval_seconds": 0.005,
+    "post_exec_samples": 77,
+    "observed_peak_rss_kib": 123824,
+    "observed_peak_threads": 1,
+    "elapsed_seconds": 0.394576,
+    "limitation": "Sampled Linux /proc RSS/threads after exec; may miss brief peaks, not a memory ceiling"
+  },
+  "safety_failures": []
+}

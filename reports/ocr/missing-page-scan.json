@@ -1,0 +1,295 @@
+{
+  "id": "8fe6102727bf60d9e823",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "missing"
+    },
+    "revision": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "8fe6102727bf60d9e8235583668f15a330290a136f7816c8cb90968a82f469cd",
+    "filename": "missing-page-scan.pdf",
+    "media_type": "application/pdf",
+    "byte_size": 47803,
+    "pages": [
+      {
+        "number": 1,
+        "text": "OWNED COVERAGE CHECK\nPage 1 of 2\n",
+        "width": 595.0,
+        "height": 842.0,
+        "method": "ocr",
+        "lines": [
+          {
+            "text": "OWNED COVERAGE CHECK",
+            "start": 0,
+            "end": 20,
+            "bbox": [
+              40.8,
+              68.16,
+              256.79999999999995,
+              80.39999999999999
+            ]
+          },
+          {
+            "text": "Page 1 of 2",
+            "start": 21,
+            "end": 32,
+            "bbox": [
+              41.519999999999996,
+              90.24,
+              121.19999999999999,
+              105.6
+            ]
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 2,
+    "complete": false,
+    "warnings": [
+      "Expected 2 pages but received 1; notice may be incomplete",
+      "Printed page sequence is missing or duplicated; verify the original notice"
+    ],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [],
+  "relationships": [],
+  "findings": [
+    {
+      "code": "missing_metadata",
+      "severity": "error",
+      "message": "Required notice metadata missing: notice id",
+      "part_ids": [],
+      "field_path": "metadata.notice_id",
+      "evidence": []
+    },
+    {
+      "code": "missing_metadata",
+      "severity": "error",
+      "message": "Required notice metadata missing: supplier",
+      "part_ids": [],
+      "field_path": "metadata.supplier",
+      "evidence": []
+    },
+    {
+      "code": "missing_metadata",
+      "severity": "error",
+      "message": "Required notice metadata missing: notice type",
+      "part_ids": [],
+      "field_path": "metadata.notice_type",
+      "evidence": []
+    },
+    {
+      "code": "missing_metadata",
+      "severity": "error",
+      "message": "Required notice metadata missing: issue date",
+      "part_ids": [],
+      "field_path": "metadata.issue_date",
+      "evidence": []
+    },
+    {
+      "code": "invalid_notice_type",
+      "severity": "error",
+      "message": "Notice type must be PCN or PDN; source needs review",
+      "part_ids": [],
+      "field_path": "metadata.notice_type",
+      "evidence": []
+    },
+    {
+      "code": "coverage",
+      "severity": "error",
+      "message": "Expected 2 pages but received 1; notice may be incomplete",
+      "part_ids": [],
+      "field_path": null,
+      "evidence": []
+    },
+    {
+      "code": "coverage",
+      "severity": "error",
+      "message": "Printed page sequence is missing or duplicated; verify the original notice",
+      "part_ids": [],
+      "field_path": null,
+      "evidence": []
+    },
+    {
+      "code": "no_parts",
+      "severity": "error",
+      "message": "No supported affected-part rows found; this layout needs annotation",
+      "part_ids": [],
+      "field_path": null,
+      "evidence": []
+    }
+  ],
+  "unsupported_fields": [],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T03:51:24.883044+00:00",
+  "status": "incomplete",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

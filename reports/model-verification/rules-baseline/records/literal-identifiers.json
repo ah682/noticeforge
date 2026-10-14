@@ -1,0 +1,716 @@
+{
+  "id": "54dee5feb9fea272ac96",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "IC-09",
+      "raw": "IC-09",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 43,
+          "end": 48,
+          "quote": "IC-09",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Indigo Circuits",
+      "raw": "Indigo Circuits",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 59,
+          "end": 74,
+          "quote": "Indigo Circuits",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PDN",
+      "raw": "PDN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 88,
+          "end": 91,
+          "quote": "PDN",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Synthetic literal-identifiers",
+      "raw": "Synthetic literal-identifiers",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 99,
+          "end": 128,
+          "quote": "Synthetic literal-identifiers",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2027-10-01",
+      "raw": "2027-10-01",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 141,
+          "end": 151,
+          "quote": "2027-10-01",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "54dee5feb9fea272ac9642ec2e005ab1d8a375f5c6785b3d42bbd0c83b0bbdd8",
+    "filename": "literal-identifiers.txt",
+    "media_type": "text/plain",
+    "byte_size": 300,
+    "pages": [
+      {
+        "number": 1,
+        "text": "OWNED SYNTHETIC EVALUATION CASE\nNotice ID: IC-09\nSupplier: Indigo Circuits\nNotice type: PDN\nTitle: Synthetic literal-identifiers\nIssue date: 2027-10-01\nPart number | Last buy\n0010-TR | 2028-02-01\n010-TR | 2028-02-01\nOO10-TR | 2028-02-01\n0010-T | 2028-02-01\nReplacement for 0010-T: 0010-N\nPage 1 of 1\n",
+        "width": null,
+        "height": null,
+        "method": "text",
+        "lines": [
+          {
+            "text": "OWNED SYNTHETIC EVALUATION CASE",
+            "start": 0,
+            "end": 31,
+            "bbox": null
+          },
+          {
+            "text": "Notice ID: IC-09",
+            "start": 32,
+            "end": 48,
+            "bbox": null
+          },
+          {
+            "text": "Supplier: Indigo Circuits",
+            "start": 49,
+            "end": 74,
+            "bbox": null
+          },
+          {
+            "text": "Notice type: PDN",
+            "start": 75,
+            "end": 91,
+            "bbox": null
+          },
+          {
+            "text": "Title: Synthetic literal-identifiers",
+            "start": 92,
+            "end": 128,
+            "bbox": null
+          },
+          {
+            "text": "Issue date: 2027-10-01",
+            "start": 129,
+            "end": 151,
+            "bbox": null
+          },
+          {
+            "text": "Part number | Last buy",
+            "start": 152,
+            "end": 174,
+            "bbox": null
+          },
+          {
+            "text": "0010-TR | 2028-02-01",
+            "start": 175,
+            "end": 195,
+            "bbox": null
+          },
+          {
+            "text": "010-TR | 2028-02-01",
+            "start": 196,
+            "end": 215,
+            "bbox": null
+          },
+          {
+            "text": "OO10-TR | 2028-02-01",
+            "start": 216,
+            "end": 236,
+            "bbox": null
+          },
+          {
+            "text": "0010-T | 2028-02-01",
+            "start": 237,
+            "end": 256,
+            "bbox": null
+          },
+          {
+            "text": "Replacement for 0010-T: 0010-N",
+            "start": 257,
+            "end": 287,
+            "bbox": null
+          },
+          {
+            "text": "Page 1 of 1",
+            "start": 288,
+            "end": 299,
+            "bbox": null
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 1,
+    "complete": true,
+    "warnings": [],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "0010-TR",
+        "raw": "0010-TR",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 175,
+            "end": 182,
+            "quote": "0010-TR",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "0010-TR",
+      "manufacturer": {
+        "value": "Indigo Circuits",
+        "raw": "Indigo Circuits",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 59,
+            "end": 74,
+            "quote": "Indigo Circuits",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-02-01",
+          "raw": "2028-02-01",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 185,
+              "end": 195,
+              "quote": "2028-02-01",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    },
+    {
+      "id": "part-2",
+      "raw_identifier": {
+        "value": "010-TR",
+        "raw": "010-TR",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 196,
+            "end": 202,
+            "quote": "010-TR",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "010-TR",
+      "manufacturer": {
+        "value": "Indigo Circuits",
+        "raw": "Indigo Circuits",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 59,
+            "end": 74,
+            "quote": "Indigo Circuits",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-02-01",
+          "raw": "2028-02-01",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 205,
+              "end": 215,
+              "quote": "2028-02-01",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    },
+    {
+      "id": "part-3",
+      "raw_identifier": {
+        "value": "OO10-TR",
+        "raw": "OO10-TR",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 216,
+            "end": 223,
+            "quote": "OO10-TR",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "OO10-TR",
+      "manufacturer": {
+        "value": "Indigo Circuits",
+        "raw": "Indigo Circuits",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 59,
+            "end": 74,
+            "quote": "Indigo Circuits",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-02-01",
+          "raw": "2028-02-01",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 226,
+              "end": 236,
+              "quote": "2028-02-01",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    },
+    {
+      "id": "part-4",
+      "raw_identifier": {
+        "value": "0010-T",
+        "raw": "0010-T",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 237,
+            "end": 243,
+            "quote": "0010-T",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "0010-T",
+      "manufacturer": {
+        "value": "Indigo Circuits",
+        "raw": "Indigo Circuits",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 59,
+            "end": 74,
+            "quote": "Indigo Circuits",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-02-01",
+          "raw": "2028-02-01",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 246,
+              "end": 256,
+              "quote": "2028-02-01",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [
+        {
+          "part_number": {
+            "value": "0010-N",
+            "raw": "0010-N",
+            "evidence": [
+              {
+                "page": 1,
+                "start": 281,
+                "end": 287,
+                "quote": "0010-N",
+                "bbox": null,
+                "method": "text"
+              }
+            ],
+            "review_status": "supported",
+            "method": "rules-v1",
+            "reason": null,
+            "model_run_id": null,
+            "model_candidate_index": null
+          },
+          "compatibility": "not_assessed"
+        }
+      ],
+      "review_status": "supported"
+    }
+  ],
+  "relationships": [],
+  "findings": [],
+  "unsupported_fields": [],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T03:42:25.622998+00:00",
+  "status": "supported",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

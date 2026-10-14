@@ -1,0 +1,2615 @@
+{
+  "purpose": "Real pretrained inference and LoRA execution on OWNED SYNTHETIC material; no authentic manufacturer validation or engineer study",
+  "freeze": {
+    "created_at": "2026-10-14T03:41:59.359788+00:00",
+    "purpose": "Freeze before any evaluation model scores; owned synthetic developmental evaluation, not authentic held-out manufacturer validation",
+    "prompt_sha256": "0e4ffbab3afb533c80581eb2c8ffab86ac95e0593b645f913805229f88869d75",
+    "parsed_inputs_sha256": "95dd805c75ab89fc6bd658d46f19d97d0c638cd04504ad882952354bc8e5153d",
+    "evaluation_manifest_sha256": "731a5aed0093a24e67a30b63caab1b8a245e5f600f49c31cdc48b3e323ef1125",
+    "training_manifest_sha256": "946e24c7c943d7931ce2f0c63389a1f1911ddd6bb77a839f98330c373ce859ce",
+    "annotations_sha256": "266812a1d5ccdaa1e4d858b99cd41fbf55b1c0a977ac7163b1b2da6809a321f4",
+    "profile_sha256": {
+      "untuned": "a24535a6478edd6e631f9a3685499cb581102c1bf89177bdd1bb9d5fa3bc023d",
+      "batched": "a24535a6478edd6e631f9a3685499cb581102c1bf89177bdd1bb9d5fa3bc023d",
+      "quantized": "4be4cd466141d75c0d73ed3a4226acb8e39ad0925185d98b74a8a19b8f893cf2",
+      "training": "299abd0f56b838dd511f4423b1097b5e99f485c75e0cfb1d02c7b09e78568b55",
+      "adapted": "7d70896f9cf963befecf103ab3ef3ce09093bf26c3190634d9c4e9e5fc2397df",
+      "adapted-batched": "7d70896f9cf963befecf103ab3ef3ce09093bf26c3190634d9c4e9e5fc2397df",
+      "adapted-quantized": "0283cc66d2bd19902e47f608fbb86f01e6fba52d92709739ea4b708d611b6e65",
+      "stronger": "c7b58843e0442bedeaae8220d4700bb1ba45f670ae8c221a6e854b0713d1aba5"
+    },
+    "policy": "Do not alter prompts, training hyperparameters, model selection, context bounds or thresholds in response to frozen evaluation results.",
+    "warmup_iterations": 1,
+    "repetitions": 1,
+    "batch_size": 2,
+    "classification": "synthetic",
+    "final_test_authentic_real_data": false,
+    "source_documents": {
+      "different-deadlines": "7cf98b48602ac342bfcbca62dc8ce0c3e1bcf87d9791bd5476ae7c950a726271",
+      "row-footnote": "a3a5635e681c369758d4b76513e7ceefa8547028b58264a779beeb08b8010acc",
+      "ambiguous-ordering": "170947bdce53a905d7b57cbcfa28b930bbb7199d242dfe1ca53667ae82e5c170",
+      "partial-revision": "7a86d0a5fa808d3a1472cd6e0492336d0056526d2cab1e18e51aa9ec08c3ece3",
+      "literal-identifiers": "54dee5feb9fea272ac9642ec2e005ab1d8a375f5c6785b3d42bbd0c83b0bbdd8",
+      "injection-data": "5875c6865712d03c025eaf74c0fa770454ad4a2be7c1432b87f88aa965bfb40e",
+      "missing-attachment": "6aa231c6bb8797b106e9965929bd6555880544314acb9c5578504d6af7a1b775",
+      "unsupported-ragged-row": "c7e5022dd27d4836548fb75527872f7c3c38623e7697fd341f0d2e2e9f0398b1"
+    }
+  },
+  "all_executed_models_used_identical_frozen_parsed_inputs": true,
+  "rules_baseline": {
+    "purpose": "synthetic developmental evaluation; parser designed around the supported fixture grammar; not authentic held-out real supplier validation",
+    "metrics": {
+      "expected_relationships": 19,
+      "predicted_relationships": 18,
+      "matched_relationships": 18,
+      "expected_parts": 16,
+      "predicted_parts": 15,
+      "matched_parts": 15,
+      "critical_omissions": 2,
+      "unsupported_assertions": 0,
+      "expected_review_required": 2,
+      "review_required_found": 2,
+      "expected_revisions": 1,
+      "predicted_revisions": 1,
+      "matched_revisions": 1,
+      "expected_exceptions": 1,
+      "matched_exceptions": 1,
+      "evidence_localized": 102,
+      "evidence_total": 102,
+      "expected_incomplete_documents": 1,
+      "incomplete_documents_flagged": 1,
+      "expected_document_review": 2,
+      "document_review_flagged": 2,
+      "cases": 8,
+      "exact_part_date_relationship_accuracy": 0.9473684210526315,
+      "relationship_recall": 0.9473684210526315,
+      "relationship_precision": 1.0,
+      "affected_part_recall": 0.9375,
+      "evidence_localization": 1.0,
+      "review_required_coverage": 1.0,
+      "revision_handling_recall": 1.0,
+      "incomplete_document_coverage": 1.0,
+      "document_review_coverage": 1.0
+    },
+    "benchmark": {
+      "p95_extraction_seconds": 0.0005954750231467187,
+      "requests": 80,
+      "concurrency": 1,
+      "warmups_per_case": 2,
+      "repetitions_per_case": 10,
+      "input_lengths_characters": [
+        397,
+        287,
+        234,
+        244,
+        300,
+        284,
+        200,
+        255
+      ],
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "x86_64",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 83943424,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "runtime_versions": {
+        "numpy": "2.5.4",
+        "pydantic": "2.14.1",
+        "httpx": "0.28.1",
+        "torch": "2.8.0+cpu",
+        "transformers": "4.56.2",
+        "peft": "0.17.1",
+        "accelerate": "1.10.1",
+        "bitsandbytes": "0.47.0",
+        "tokenizers": "0.22.0",
+        "safetensors": "0.6.2"
+      },
+      "raw_request_outcomes": [
+        {
+          "case": "different-deadlines",
+          "iteration": 0,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0006062450120225549,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "different-deadlines",
+          "iteration": 1,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0006298299995251,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "different-deadlines",
+          "iteration": 2,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0006070859963074327,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "different-deadlines",
+          "iteration": 3,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005893839988857508,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "different-deadlines",
+          "iteration": 4,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005954750231467187,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "different-deadlines",
+          "iteration": 5,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005894629866816103,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "different-deadlines",
+          "iteration": 6,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005973189836367965,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "different-deadlines",
+          "iteration": 7,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005892729968763888,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "different-deadlines",
+          "iteration": 8,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005936409579589963,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "different-deadlines",
+          "iteration": 9,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005911469925194979,
+          "bytes": 397,
+          "pages": 1,
+          "characters": 397,
+          "status": "review_required"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 0,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004707009647972882,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 1,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00046723498962819576,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 2,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004624860011972487,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 3,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00045922998106107116,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 4,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00046313798520714045,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 5,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004589690361171961,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 6,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004617240047082305,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 7,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004628369933925569,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 8,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00046547100646421313,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "row-footnote",
+          "iteration": 9,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004662029678002,
+          "bytes": 287,
+          "pages": 1,
+          "characters": 287,
+          "status": "supported"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 0,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004909990238957107,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 1,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005236300057731569,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 2,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00048652099212631583,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 3,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.000500697991810739,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 4,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00047878699842840433,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 5,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004857999738305807,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 6,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004842059570364654,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 7,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0004896469763480127,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 8,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00048387597780674696,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "ambiguous-ordering",
+          "iteration": 9,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00048720301128923893,
+          "bytes": 234,
+          "pages": 1,
+          "characters": 234,
+          "status": "review_required"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 0,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034817197592929006,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 1,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003519090241752565,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 2,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034583796514198184,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 3,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00033880502451211214,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 4,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034154998138546944,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 5,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034092896385118365,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 6,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003391450154595077,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 7,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034530600532889366,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 8,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003446349874138832,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "partial-revision",
+          "iteration": 9,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003425810136832297,
+          "bytes": 244,
+          "pages": 1,
+          "characters": 244,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 0,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005527449538931251,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 1,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005659700254909694,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 2,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005588760250248015,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 3,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005572839872911572,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 4,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005560819990932941,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 5,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005522430292330682,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 6,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005551500362344086,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 7,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005670419777743518,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 8,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.000558316009119153,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "literal-identifiers",
+          "iteration": 9,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0005490289768204093,
+          "bytes": 300,
+          "pages": 1,
+          "characters": 300,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 0,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003465989721007645,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 1,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003403970040380955,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 2,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003428019699640572,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 3,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034065800718963146,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 4,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.000341628969181329,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 5,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034277199301868677,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 6,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00033944594906643033,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 7,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00033874501241371036,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 8,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003409879864193499,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "injection-data",
+          "iteration": 9,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003391350037418306,
+          "bytes": 284,
+          "pages": 1,
+          "characters": 284,
+          "status": "supported"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 0,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00032396597089245915,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 1,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003310099709779024,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 2,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003248789580538869,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 3,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003174549783580005,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 4,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003205409739166498,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 5,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00031670299358665943,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 6,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.000313306984025985,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 7,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003194889868609607,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 8,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00031743402360007167,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "missing-attachment",
+          "iteration": 9,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00031433801632374525,
+          "bytes": 200,
+          "pages": 1,
+          "characters": 200,
+          "status": "incomplete"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 0,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003478709841147065,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 1,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003442550078034401,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 2,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034093798603862524,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 3,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034140003845095634,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 4,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.00034452497493475676,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 5,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003387040342204273,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 6,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003428119816817343,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 7,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003409489872865379,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 8,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.000339275982696563,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        },
+        {
+          "case": "unsupported-ragged-row",
+          "iteration": 9,
+          "success": true,
+          "error_type": null,
+          "latency_seconds": 0.0003464389592409134,
+          "bytes": 255,
+          "pages": 1,
+          "characters": 255,
+          "status": "review_required"
+        }
+      ],
+      "cost": {
+        "external_spend": 0,
+        "currency": null,
+        "measured_compute_seconds": 0.03458929242333397,
+        "utilization": "serial on this shared host; no dedicated capacity assumption",
+        "energy_cost": "not measured"
+      }
+    },
+    "by_supplier": {
+      "Vela Silicon": {
+        "expected_relationships": 6,
+        "predicted_relationships": 6,
+        "matched_relationships": 6,
+        "expected_parts": 3,
+        "predicted_parts": 3,
+        "matched_parts": 3,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 1,
+        "evidence_localized": 21,
+        "evidence_total": 21,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "Morrow Micro": {
+        "expected_relationships": 2,
+        "predicted_relationships": 2,
+        "matched_relationships": 2,
+        "expected_parts": 2,
+        "predicted_parts": 2,
+        "matched_parts": 2,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 14,
+        "evidence_total": 14,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "Quarry Logic": {
+        "expected_relationships": 2,
+        "predicted_relationships": 2,
+        "matched_relationships": 2,
+        "expected_parts": 2,
+        "predicted_parts": 2,
+        "matched_parts": 2,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 2,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 13,
+        "evidence_total": 13,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": 1.0,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "Helio Components": {
+        "expected_relationships": 1,
+        "predicted_relationships": 1,
+        "matched_relationships": 1,
+        "expected_parts": 1,
+        "predicted_parts": 1,
+        "matched_parts": 1,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 1,
+        "predicted_revisions": 1,
+        "matched_revisions": 1,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 10,
+        "evidence_total": 10,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": 1.0,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "Indigo Circuits": {
+        "expected_relationships": 4,
+        "predicted_relationships": 4,
+        "matched_relationships": 4,
+        "expected_parts": 4,
+        "predicted_parts": 4,
+        "matched_parts": 4,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 18,
+        "evidence_total": 18,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "Juniper Micro": {
+        "expected_relationships": 1,
+        "predicted_relationships": 1,
+        "matched_relationships": 1,
+        "expected_parts": 1,
+        "predicted_parts": 1,
+        "matched_parts": 1,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 9,
+        "evidence_total": 9,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "Lumen Analog": {
+        "expected_relationships": 1,
+        "predicted_relationships": 1,
+        "matched_relationships": 1,
+        "expected_parts": 1,
+        "predicted_parts": 1,
+        "matched_parts": 1,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 8,
+        "evidence_total": 8,
+        "expected_incomplete_documents": 1,
+        "incomplete_documents_flagged": 1,
+        "expected_document_review": 1,
+        "document_review_flagged": 1,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": 1.0,
+        "document_review_coverage": 1.0
+      },
+      "Tern Logic": {
+        "expected_relationships": 2,
+        "predicted_relationships": 1,
+        "matched_relationships": 1,
+        "expected_parts": 2,
+        "predicted_parts": 1,
+        "matched_parts": 1,
+        "critical_omissions": 2,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 9,
+        "evidence_total": 9,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 1,
+        "document_review_flagged": 1,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 0.5,
+        "relationship_recall": 0.5,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 0.5,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": 1.0
+      }
+    },
+    "by_template": {
+      "different-deadlines": {
+        "expected_relationships": 6,
+        "predicted_relationships": 6,
+        "matched_relationships": 6,
+        "expected_parts": 3,
+        "predicted_parts": 3,
+        "matched_parts": 3,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 1,
+        "evidence_localized": 21,
+        "evidence_total": 21,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "row-footnote": {
+        "expected_relationships": 2,
+        "predicted_relationships": 2,
+        "matched_relationships": 2,
+        "expected_parts": 2,
+        "predicted_parts": 2,
+        "matched_parts": 2,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 14,
+        "evidence_total": 14,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "ambiguous-ordering": {
+        "expected_relationships": 2,
+        "predicted_relationships": 2,
+        "matched_relationships": 2,
+        "expected_parts": 2,
+        "predicted_parts": 2,
+        "matched_parts": 2,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 2,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 13,
+        "evidence_total": 13,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": 1.0,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "partial-revision": {
+        "expected_relationships": 1,
+        "predicted_relationships": 1,
+        "matched_relationships": 1,
+        "expected_parts": 1,
+        "predicted_parts": 1,
+        "matched_parts": 1,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 1,
+        "predicted_revisions": 1,
+        "matched_revisions": 1,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 10,
+        "evidence_total": 10,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": 1.0,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "literal-identifiers": {
+        "expected_relationships": 4,
+        "predicted_relationships": 4,
+        "matched_relationships": 4,
+        "expected_parts": 4,
+        "predicted_parts": 4,
+        "matched_parts": 4,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 18,
+        "evidence_total": 18,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "injection-data": {
+        "expected_relationships": 1,
+        "predicted_relationships": 1,
+        "matched_relationships": 1,
+        "expected_parts": 1,
+        "predicted_parts": 1,
+        "matched_parts": 1,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 9,
+        "evidence_total": 9,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 0,
+        "document_review_flagged": 0,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": null
+      },
+      "missing-attachment": {
+        "expected_relationships": 1,
+        "predicted_relationships": 1,
+        "matched_relationships": 1,
+        "expected_parts": 1,
+        "predicted_parts": 1,
+        "matched_parts": 1,
+        "critical_omissions": 0,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 8,
+        "evidence_total": 8,
+        "expected_incomplete_documents": 1,
+        "incomplete_documents_flagged": 1,
+        "expected_document_review": 1,
+        "document_review_flagged": 1,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 1.0,
+        "relationship_recall": 1.0,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 1.0,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": 1.0,
+        "document_review_coverage": 1.0
+      },
+      "unsupported-ragged-row": {
+        "expected_relationships": 2,
+        "predicted_relationships": 1,
+        "matched_relationships": 1,
+        "expected_parts": 2,
+        "predicted_parts": 1,
+        "matched_parts": 1,
+        "critical_omissions": 2,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "expected_revisions": 0,
+        "predicted_revisions": 0,
+        "matched_revisions": 0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "evidence_localized": 9,
+        "evidence_total": 9,
+        "expected_incomplete_documents": 0,
+        "incomplete_documents_flagged": 0,
+        "expected_document_review": 1,
+        "document_review_flagged": 1,
+        "cases": 1,
+        "exact_part_date_relationship_accuracy": 0.5,
+        "relationship_recall": 0.5,
+        "relationship_precision": 1.0,
+        "affected_part_recall": 0.5,
+        "evidence_localization": 1.0,
+        "review_required_coverage": null,
+        "revision_handling_recall": null,
+        "incomplete_document_coverage": null,
+        "document_review_coverage": 1.0
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "profile": "untuned",
+      "status": "executed",
+      "precision": "float32",
+      "model_load_seconds": 1.4771511409780942,
+      "elapsed_seconds": 393.98419738397934,
+      "p95_latency_seconds": 95.6601182250306,
+      "requests_per_second": 0.02030538293951712,
+      "errors": 7,
+      "relationship_metrics": {
+        "matched_relationships": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "critical_omissions": 19,
+        "unsupported_assertions": 0,
+        "accuracy": 0.0,
+        "all_candidates_require_review": true
+      },
+      "output_validation": {
+        "schema_valid_requests": 1,
+        "schema_invalid_requests": 7,
+        "incomplete_generations": 4,
+        "evidence_rejected_candidates": 1,
+        "raw_wrong_relationships_in_schema_valid_outputs": 1,
+        "unsupported_assertions_in_invalid_schema_outputs": "not countable; inspect raw outputs; never assume zero"
+      },
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "x86_64",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 3365068800,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "parsed_inputs_sha256": "95dd805c75ab89fc6bd658d46f19d97d0c638cd04504ad882952354bc8e5153d",
+      "optimization": {
+        "precision": "float32",
+        "attention_implementation": "sdpa",
+        "cpu_threads": 4
+      },
+      "proposal_quality": {
+        "expected_parts": 16,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 0,
+        "critical_omissions": 36,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 0,
+        "affected_part_recall": 0.0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "review_required_coverage": 0.0
+      },
+      "throughput": {
+        "counts_include_failed_requests": true,
+        "all_completed_requests": 8,
+        "schema_valid_requests": 1,
+        "requests_with_accepted_candidates": 0,
+        "matched_supported_relationships": 0,
+        "per_second": {
+          "all_completed_requests": 0.02030538293951712,
+          "schema_valid_requests": 0.00253817286743964,
+          "requests_with_accepted_candidates": 0.0,
+          "matched_supported_relationships": 0.0
+        }
+      }
+    },
+    {
+      "profile": "adapted",
+      "status": "executed",
+      "precision": "float32",
+      "model_load_seconds": 2.6801692550070584,
+      "elapsed_seconds": 69.27891782700317,
+      "p95_latency_seconds": 10.036973643000238,
+      "requests_per_second": 0.11547524486420027,
+      "errors": 1,
+      "relationship_metrics": {
+        "matched_relationships": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "critical_omissions": 19,
+        "unsupported_assertions": 0,
+        "accuracy": 0.0,
+        "all_candidates_require_review": true
+      },
+      "output_validation": {
+        "schema_valid_requests": 7,
+        "schema_invalid_requests": 1,
+        "incomplete_generations": 0,
+        "evidence_rejected_candidates": 7,
+        "raw_wrong_relationships_in_schema_valid_outputs": 5,
+        "unsupported_assertions_in_invalid_schema_outputs": "not countable; inspect raw outputs; never assume zero"
+      },
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 3365339136,
+        "process_user_cpu_seconds": 263.099487,
+        "process_system_cpu_seconds": 3.05171,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "parsed_inputs_sha256": "95dd805c75ab89fc6bd658d46f19d97d0c638cd04504ad882952354bc8e5153d",
+      "optimization": {
+        "precision": "float32",
+        "attention_implementation": "sdpa",
+        "cpu_threads": 4
+      },
+      "proposal_quality": {
+        "expected_parts": 16,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 0,
+        "critical_omissions": 36,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 0,
+        "affected_part_recall": 0.0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "review_required_coverage": 0.0
+      },
+      "throughput": {
+        "counts_include_failed_requests": true,
+        "all_completed_requests": 8,
+        "schema_valid_requests": 7,
+        "requests_with_accepted_candidates": 0,
+        "matched_supported_relationships": 0,
+        "per_second": {
+          "all_completed_requests": 0.11547524486420027,
+          "schema_valid_requests": 0.10104083925617523,
+          "requests_with_accepted_candidates": 0.0,
+          "matched_supported_relationships": 0.0
+        }
+      }
+    },
+    {
+      "profile": "batched",
+      "status": "executed",
+      "precision": "float32",
+      "model_load_seconds": 1.67101463599829,
+      "elapsed_seconds": 339.837880069972,
+      "p95_latency_seconds": 115.48505790700438,
+      "requests_per_second": 0.023540636489236617,
+      "errors": 7,
+      "relationship_metrics": {
+        "matched_relationships": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "critical_omissions": 19,
+        "unsupported_assertions": 0,
+        "accuracy": 0.0,
+        "all_candidates_require_review": true
+      },
+      "output_validation": {
+        "schema_valid_requests": 1,
+        "schema_invalid_requests": 7,
+        "incomplete_generations": 4,
+        "evidence_rejected_candidates": 1,
+        "raw_wrong_relationships_in_schema_valid_outputs": 1,
+        "unsupported_assertions_in_invalid_schema_outputs": "not countable; inspect raw outputs; never assume zero"
+      },
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 3365249024,
+        "process_user_cpu_seconds": 1304.323458,
+        "process_system_cpu_seconds": 3.55835,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "parsed_inputs_sha256": "95dd805c75ab89fc6bd658d46f19d97d0c638cd04504ad882952354bc8e5153d",
+      "optimization": {
+        "precision": "float32",
+        "attention_implementation": "sdpa",
+        "cpu_threads": 4
+      },
+      "proposal_quality": {
+        "expected_parts": 16,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 0,
+        "critical_omissions": 36,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 0,
+        "affected_part_recall": 0.0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "review_required_coverage": 0.0
+      },
+      "throughput": {
+        "counts_include_failed_requests": true,
+        "all_completed_requests": 8,
+        "schema_valid_requests": 1,
+        "requests_with_accepted_candidates": 0,
+        "matched_supported_relationships": 0,
+        "per_second": {
+          "all_completed_requests": 0.023540636489236617,
+          "schema_valid_requests": 0.002942579561154577,
+          "requests_with_accepted_candidates": 0.0,
+          "matched_supported_relationships": 0.0
+        }
+      }
+    },
+    {
+      "profile": "quantized",
+      "status": "executed",
+      "precision": "cpu_dynamic_int8",
+      "model_load_seconds": 3.3682162319892086,
+      "elapsed_seconds": 135.47367230098462,
+      "p95_latency_seconds": 23.164646502002142,
+      "requests_per_second": 0.059052064243347864,
+      "errors": 8,
+      "relationship_metrics": {
+        "matched_relationships": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "critical_omissions": 19,
+        "unsupported_assertions": 0,
+        "accuracy": 0.0,
+        "all_candidates_require_review": true
+      },
+      "output_validation": {
+        "schema_valid_requests": 0,
+        "schema_invalid_requests": 8,
+        "incomplete_generations": 6,
+        "evidence_rejected_candidates": 0,
+        "raw_wrong_relationships_in_schema_valid_outputs": 0,
+        "unsupported_assertions_in_invalid_schema_outputs": "not countable; inspect raw outputs; never assume zero"
+      },
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 3365572608,
+        "process_user_cpu_seconds": 639.590441,
+        "process_system_cpu_seconds": 1.522198,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "parsed_inputs_sha256": "95dd805c75ab89fc6bd658d46f19d97d0c638cd04504ad882952354bc8e5153d",
+      "optimization": {
+        "precision": "cpu_dynamic_int8",
+        "attention_implementation": "sdpa",
+        "cpu_threads": 4,
+        "quantization": "PyTorch dynamic qint8 Linear kernels; FP32 embeddings/attention",
+        "eligible_linear_layers": 169,
+        "quantized_linear_layers": 169,
+        "engine": "x86"
+      },
+      "proposal_quality": {
+        "expected_parts": 16,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 0,
+        "critical_omissions": 36,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 0,
+        "affected_part_recall": 0.0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "review_required_coverage": 0.0
+      },
+      "throughput": {
+        "counts_include_failed_requests": true,
+        "all_completed_requests": 8,
+        "schema_valid_requests": 0,
+        "requests_with_accepted_candidates": 0,
+        "matched_supported_relationships": 0,
+        "per_second": {
+          "all_completed_requests": 0.059052064243347864,
+          "schema_valid_requests": 0.0,
+          "requests_with_accepted_candidates": 0.0,
+          "matched_supported_relationships": 0.0
+        }
+      }
+    },
+    {
+      "profile": "adapted-batched",
+      "status": "executed",
+      "precision": "float32",
+      "model_load_seconds": 2.6468297590035945,
+      "elapsed_seconds": 44.93948633898981,
+      "p95_latency_seconds": 12.29234083200572,
+      "requests_per_second": 0.17801716600973128,
+      "errors": 1,
+      "relationship_metrics": {
+        "matched_relationships": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "critical_omissions": 19,
+        "unsupported_assertions": 0,
+        "accuracy": 0.0,
+        "all_candidates_require_review": true
+      },
+      "output_validation": {
+        "schema_valid_requests": 7,
+        "schema_invalid_requests": 1,
+        "incomplete_generations": 0,
+        "evidence_rejected_candidates": 7,
+        "raw_wrong_relationships_in_schema_valid_outputs": 5,
+        "unsupported_assertions_in_invalid_schema_outputs": "not countable; inspect raw outputs; never assume zero"
+      },
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 3365326848,
+        "process_user_cpu_seconds": 200.060735,
+        "process_system_cpu_seconds": 3.571977,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "parsed_inputs_sha256": "95dd805c75ab89fc6bd658d46f19d97d0c638cd04504ad882952354bc8e5153d",
+      "optimization": {
+        "precision": "float32",
+        "attention_implementation": "sdpa",
+        "cpu_threads": 4
+      },
+      "proposal_quality": {
+        "expected_parts": 16,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 0,
+        "critical_omissions": 36,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 0,
+        "affected_part_recall": 0.0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "review_required_coverage": 0.0
+      },
+      "throughput": {
+        "counts_include_failed_requests": true,
+        "all_completed_requests": 8,
+        "schema_valid_requests": 7,
+        "requests_with_accepted_candidates": 0,
+        "matched_supported_relationships": 0,
+        "per_second": {
+          "all_completed_requests": 0.17801716600973128,
+          "schema_valid_requests": 0.15576502025851488,
+          "requests_with_accepted_candidates": 0.0,
+          "matched_supported_relationships": 0.0
+        }
+      }
+    },
+    {
+      "profile": "adapted-quantized",
+      "status": "executed",
+      "precision": "cpu_dynamic_int8",
+      "model_load_seconds": 3.826914664998185,
+      "elapsed_seconds": 104.70719948399346,
+      "p95_latency_seconds": 23.095258359971922,
+      "requests_per_second": 0.07640353327588478,
+      "errors": 8,
+      "relationship_metrics": {
+        "matched_relationships": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "critical_omissions": 19,
+        "unsupported_assertions": 0,
+        "accuracy": 0.0,
+        "all_candidates_require_review": true
+      },
+      "output_validation": {
+        "schema_valid_requests": 0,
+        "schema_invalid_requests": 8,
+        "incomplete_generations": 3,
+        "evidence_rejected_candidates": 0,
+        "raw_wrong_relationships_in_schema_valid_outputs": 0,
+        "unsupported_assertions_in_invalid_schema_outputs": "not countable; inspect raw outputs; never assume zero"
+      },
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 3370008576,
+        "process_user_cpu_seconds": 425.990481,
+        "process_system_cpu_seconds": 1.27995,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "parsed_inputs_sha256": "95dd805c75ab89fc6bd658d46f19d97d0c638cd04504ad882952354bc8e5153d",
+      "optimization": {
+        "precision": "cpu_dynamic_int8",
+        "attention_implementation": "sdpa",
+        "cpu_threads": 4,
+        "quantization": "PyTorch dynamic qint8 Linear kernels; FP32 embeddings/attention",
+        "eligible_linear_layers": 169,
+        "quantized_linear_layers": 169,
+        "engine": "x86"
+      },
+      "proposal_quality": {
+        "expected_parts": 16,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 0,
+        "critical_omissions": 36,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 0,
+        "affected_part_recall": 0.0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "review_required_coverage": 0.0
+      },
+      "throughput": {
+        "counts_include_failed_requests": true,
+        "all_completed_requests": 8,
+        "schema_valid_requests": 0,
+        "requests_with_accepted_candidates": 0,
+        "matched_supported_relationships": 0,
+        "per_second": {
+          "all_completed_requests": 0.07640353327588478,
+          "schema_valid_requests": 0.0,
+          "requests_with_accepted_candidates": 0.0,
+          "matched_supported_relationships": 0.0
+        }
+      }
+    },
+    {
+      "profile": "stronger",
+      "status": "executed",
+      "precision": "bfloat16",
+      "model_load_seconds": 1.6138777030282654,
+      "elapsed_seconds": 10.012773974973243,
+      "p95_latency_seconds": 1.3542869410011917,
+      "requests_per_second": 0.7989793857322519,
+      "errors": 0,
+      "relationship_metrics": {
+        "matched_relationships": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "critical_omissions": 19,
+        "unsupported_assertions": 0,
+        "accuracy": 0.0,
+        "all_candidates_require_review": true
+      },
+      "output_validation": {
+        "schema_valid_requests": 8,
+        "schema_invalid_requests": 0,
+        "incomplete_generations": 0,
+        "evidence_rejected_candidates": 0,
+        "raw_wrong_relationships_in_schema_valid_outputs": 0,
+        "unsupported_assertions_in_invalid_schema_outputs": "not countable; inspect raw outputs; never assume zero"
+      },
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 3584888832,
+        "process_user_cpu_seconds": 48.392804,
+        "process_system_cpu_seconds": 0.579674,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "parsed_inputs_sha256": "95dd805c75ab89fc6bd658d46f19d97d0c638cd04504ad882952354bc8e5153d",
+      "optimization": {
+        "precision": "bfloat16",
+        "attention_implementation": "sdpa",
+        "cpu_threads": 4
+      },
+      "proposal_quality": {
+        "expected_parts": 16,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "expected_relationships": 19,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 0,
+        "critical_omissions": 36,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 0,
+        "affected_part_recall": 0.0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "review_required_coverage": 0.0
+      },
+      "throughput": {
+        "counts_include_failed_requests": true,
+        "all_completed_requests": 8,
+        "schema_valid_requests": 8,
+        "requests_with_accepted_candidates": 0,
+        "matched_supported_relationships": 0,
+        "per_second": {
+          "all_completed_requests": 0.7989793857322519,
+          "schema_valid_requests": 0.7989793857322519,
+          "requests_with_accepted_candidates": 0.0,
+          "matched_supported_relationships": 0.0
+        }
+      }
+    }
+  ],
+  "training": {
+    "status": "executed",
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "training_material": "owned synthetic only",
+    "optimizer_steps": 24,
+    "training_seconds": 75.79183663899312,
+    "adapter_weights_changed": true,
+    "trainable_parameters": 540672,
+    "losses": [
+      0.20450080931186676,
+      0.3124461770057678,
+      0.44695672392845154,
+      0.2827555239200592,
+      0.3742426037788391,
+      0.21513663232326508,
+      0.12859268486499786,
+      0.22642233967781067,
+      0.1543181836605072,
+      0.19645927846431732,
+      0.13811255991458893,
+      0.09895084798336029,
+      0.1262199431657791,
+      0.130599707365036,
+      0.1106681227684021,
+      0.12211892008781433,
+      0.11414583772420883,
+      0.1030450090765953,
+      0.10788783431053162,
+      0.09766862541437149,
+      0.07917456328868866,
+      0.17558997869491577,
+      0.23290137946605682,
+      0.09453706443309784,
+      0.09066863358020782,
+      0.09884919971227646,
+      0.09312144666910172,
+      0.06647162139415741,
+      0.0916328877210617,
+      0.0847734808921814,
+      0.14470484852790833,
+      0.05841449275612831,
+      0.05249498784542084,
+      0.07227735966444016,
+      0.08374147862195969,
+      0.07130014151334763,
+      0.06059378385543823,
+      0.0473395474255085,
+      0.06526517122983932,
+      0.07789508998394012,
+      0.05747488886117935,
+      0.07009102404117584,
+      0.0638713613152504,
+      0.1308622658252716,
+      0.057785723358392715,
+      0.07825961709022522,
+      0.0477537102997303,
+      0.04274945706129074
+    ],
+    "hardware": {
+      "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+      "python": "3.12.3",
+      "processor": "x86_64",
+      "machine": "x86_64",
+      "logical_cpu_count": 16,
+      "process_peak_rss_bytes": 2906468352,
+      "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+    }
+  },
+  "teacher_forced_validation": {
+    "validation-base": {
+      "status": "executed",
+      "purpose": "owned synthetic validation teacher-forced loss; no final evaluation documents and no model-selection feedback",
+      "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "precision": "bfloat16",
+      "adapter_path": null,
+      "dataset_audit": {
+        "ok": true,
+        "documents": 20,
+        "classification_counts": {
+          "synthetic": 20,
+          "real": 0
+        },
+        "issues": [],
+        "near_duplicates": [
+          {
+            "documents": [
+              "owned-model-00",
+              "owned-model-06"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.8
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-01",
+              "owned-model-07"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.8
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-08",
+              "owned-model-14"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.8
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-16",
+              "owned-model-17"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.854167
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-16",
+              "owned-model-18"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.863158
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-16",
+              "owned-model-19"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.863158
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-17",
+              "owned-model-18"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.845361
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-17",
+              "owned-model-19"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.845361
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-18",
+              "owned-model-19"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.875
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          }
+        ],
+        "document_hashes": {
+          "owned-model-00": "047cc4961978f1ce10653b84f485721cdd2f0d3632d7e7c51f87b752a3f31243",
+          "owned-model-01": "6c7af5446245ca2acf2cbdbed8b727683ca47752337271d908c55dfaa9ab90df",
+          "owned-model-02": "4f18914402b8b365282fa92b0ffe0d503bcf838fb32477fecb9c9b569f6c4af1",
+          "owned-model-03": "59da043aa0539d059b6ad57a20ca0694d767b570e4c0ccd0f0dfebd4a7439947",
+          "owned-model-04": "e00ad51b707aad9e28133fe0d19db89a4d56f26c08326ef318c207deba5a3165",
+          "owned-model-05": "c50cebeff8b6fe66f1cb5181bad067f9de472fbe0b2074554e90dad08bea9098",
+          "owned-model-06": "9164072b5c38894d65a9c11972da11a41a7816d2de70deb263209625a49fbc53",
+          "owned-model-07": "e84f0ae6ba2633ef71d53db59a6f87099e1efd1411fc16dafa01ddb58720d575",
+          "owned-model-08": "f4f5411b339effe5842dd99706ce862930030fba62b5ab1927a6139edd3622ea",
+          "owned-model-09": "af717dc3132add0bf29a4bd3491fd3fe904c00168c175bc9c924593d9a1ff464",
+          "owned-model-10": "4e97ef8db05be9874aca206ac084b41c3093294578373646b190fc72b86d5f6d",
+          "owned-model-11": "bff3d100022468c894998d82d657865aaf7c10cf3bbf4045ea1fa7544ef306e7",
+          "owned-model-12": "ec8a857529267be622e1021d6b6689ea34401aab1ae1a7c743b23594ba46a9f1",
+          "owned-model-13": "86d5d098cf2ca2bf2d6edee6d4b2ea68f9d159a91f4f0e9bb530f895e07c688d",
+          "owned-model-14": "fa48baf86f4426c48889111d6f7f46c3a04dc43e74e906e2e02bd719c218e901",
+          "owned-model-15": "f24a150b2a7b2b9d6acf70e4f6a6a73c18d70ff862347dd4cf63e4e1b1978fb8",
+          "owned-model-16": "1def20e8e8e4e154ece5dbd9f9bd0cf28d1e64142a6cb5e6475e4edded6614c3",
+          "owned-model-17": "d0fb6cae8175d3c63496350132fe28dafb3c57c9094b55218bf49cd153be4f0d",
+          "owned-model-18": "e5323410ab978f62ae907c5ff848903c3cd33cfd69d877449e758d843fdefaa6",
+          "owned-model-19": "34ebc475c833c32ce1a983709cce13e87a2f18a1d645b8ad6e40282cda06e528"
+        },
+        "method": "max(word 5-shingle Jaccard, token sequence ratio for pages <=2000 tokens); exact normalized equality at any length",
+        "threshold": 0.8,
+        "holdouts": [
+          "family",
+          "supplier",
+          "template"
+        ],
+        "manifest_sha256": "946e24c7c943d7931ce2f0c63389a1f1911ddd6bb77a839f98330c373ce859ce",
+        "purpose": "unspecified"
+      },
+      "rows": [
+        {
+          "document_id": "owned-model-16",
+          "input_tokens": 405,
+          "target_tokens": 104,
+          "negative_log_likelihood": 0.3233620524406433
+        },
+        {
+          "document_id": "owned-model-17",
+          "input_tokens": 405,
+          "target_tokens": 104,
+          "negative_log_likelihood": 0.35405316948890686
+        },
+        {
+          "document_id": "owned-model-18",
+          "input_tokens": 404,
+          "target_tokens": 102,
+          "negative_log_likelihood": 0.3129462003707886
+        },
+        {
+          "document_id": "owned-model-19",
+          "input_tokens": 404,
+          "target_tokens": 102,
+          "negative_log_likelihood": 0.297005832195282
+        }
+      ],
+      "target_token_weighted_loss": 0.32200555922915636,
+      "elapsed_seconds": 1.8777455009985715,
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 2203492352,
+        "process_user_cpu_seconds": 8.455524,
+        "process_system_cpu_seconds": 1.038187,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "runtime_versions": {
+        "numpy": "2.5.4",
+        "pydantic": "2.14.1",
+        "httpx": "0.28.1",
+        "torch": "2.8.0+cpu",
+        "transformers": "4.56.2",
+        "peft": "0.17.1",
+        "accelerate": "1.10.1",
+        "bitsandbytes": "0.47.0",
+        "tokenizers": "0.22.0",
+        "safetensors": "0.6.2"
+      },
+      "selected_or_updated_weights": false
+    },
+    "validation-adapted": {
+      "status": "executed",
+      "purpose": "owned synthetic validation teacher-forced loss; no final evaluation documents and no model-selection feedback",
+      "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "precision": "bfloat16",
+      "adapter_path": "/home/ava/Desktop/pcn-model-compiler/reports/model-verification/adapter",
+      "dataset_audit": {
+        "ok": true,
+        "documents": 20,
+        "classification_counts": {
+          "synthetic": 20,
+          "real": 0
+        },
+        "issues": [],
+        "near_duplicates": [
+          {
+            "documents": [
+              "owned-model-00",
+              "owned-model-06"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.8
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-01",
+              "owned-model-07"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.8
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-08",
+              "owned-model-14"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.8
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-16",
+              "owned-model-17"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.854167
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-16",
+              "owned-model-18"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.863158
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-16",
+              "owned-model-19"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.863158
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-17",
+              "owned-model-18"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.845361
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-17",
+              "owned-model-19"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.845361
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          },
+          {
+            "documents": [
+              "owned-model-18",
+              "owned-model-19"
+            ],
+            "pages": [
+              {
+                "left_page": 1,
+                "right_page": 1,
+                "similarity": 0.875
+              }
+            ],
+            "identical_document_sha256": false,
+            "cross_split": false
+          }
+        ],
+        "document_hashes": {
+          "owned-model-00": "047cc4961978f1ce10653b84f485721cdd2f0d3632d7e7c51f87b752a3f31243",
+          "owned-model-01": "6c7af5446245ca2acf2cbdbed8b727683ca47752337271d908c55dfaa9ab90df",
+          "owned-model-02": "4f18914402b8b365282fa92b0ffe0d503bcf838fb32477fecb9c9b569f6c4af1",
+          "owned-model-03": "59da043aa0539d059b6ad57a20ca0694d767b570e4c0ccd0f0dfebd4a7439947",
+          "owned-model-04": "e00ad51b707aad9e28133fe0d19db89a4d56f26c08326ef318c207deba5a3165",
+          "owned-model-05": "c50cebeff8b6fe66f1cb5181bad067f9de472fbe0b2074554e90dad08bea9098",
+          "owned-model-06": "9164072b5c38894d65a9c11972da11a41a7816d2de70deb263209625a49fbc53",
+          "owned-model-07": "e84f0ae6ba2633ef71d53db59a6f87099e1efd1411fc16dafa01ddb58720d575",
+          "owned-model-08": "f4f5411b339effe5842dd99706ce862930030fba62b5ab1927a6139edd3622ea",
+          "owned-model-09": "af717dc3132add0bf29a4bd3491fd3fe904c00168c175bc9c924593d9a1ff464",
+          "owned-model-10": "4e97ef8db05be9874aca206ac084b41c3093294578373646b190fc72b86d5f6d",
+          "owned-model-11": "bff3d100022468c894998d82d657865aaf7c10cf3bbf4045ea1fa7544ef306e7",
+          "owned-model-12": "ec8a857529267be622e1021d6b6689ea34401aab1ae1a7c743b23594ba46a9f1",
+          "owned-model-13": "86d5d098cf2ca2bf2d6edee6d4b2ea68f9d159a91f4f0e9bb530f895e07c688d",
+          "owned-model-14": "fa48baf86f4426c48889111d6f7f46c3a04dc43e74e906e2e02bd719c218e901",
+          "owned-model-15": "f24a150b2a7b2b9d6acf70e4f6a6a73c18d70ff862347dd4cf63e4e1b1978fb8",
+          "owned-model-16": "1def20e8e8e4e154ece5dbd9f9bd0cf28d1e64142a6cb5e6475e4edded6614c3",
+          "owned-model-17": "d0fb6cae8175d3c63496350132fe28dafb3c57c9094b55218bf49cd153be4f0d",
+          "owned-model-18": "e5323410ab978f62ae907c5ff848903c3cd33cfd69d877449e758d843fdefaa6",
+          "owned-model-19": "34ebc475c833c32ce1a983709cce13e87a2f18a1d645b8ad6e40282cda06e528"
+        },
+        "method": "max(word 5-shingle Jaccard, token sequence ratio for pages <=2000 tokens); exact normalized equality at any length",
+        "threshold": 0.8,
+        "holdouts": [
+          "family",
+          "supplier",
+          "template"
+        ],
+        "manifest_sha256": "946e24c7c943d7931ce2f0c63389a1f1911ddd6bb77a839f98330c373ce859ce",
+        "purpose": "unspecified"
+      },
+      "rows": [
+        {
+          "document_id": "owned-model-16",
+          "input_tokens": 405,
+          "target_tokens": 104,
+          "negative_log_likelihood": 0.32185614109039307
+        },
+        {
+          "document_id": "owned-model-17",
+          "input_tokens": 405,
+          "target_tokens": 104,
+          "negative_log_likelihood": 0.3833874464035034
+        },
+        {
+          "document_id": "owned-model-18",
+          "input_tokens": 404,
+          "target_tokens": 102,
+          "negative_log_likelihood": 0.30602511763572693
+        },
+        {
+          "document_id": "owned-model-19",
+          "input_tokens": 404,
+          "target_tokens": 102,
+          "negative_log_likelihood": 0.30472642183303833
+        }
+      ],
+      "target_token_weighted_loss": 0.3292281313717944,
+      "elapsed_seconds": 1.7750524109578691,
+      "hardware": {
+        "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+        "python": "3.12.3",
+        "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+        "machine": "x86_64",
+        "logical_cpu_count": 16,
+        "process_peak_rss_bytes": 2213085184,
+        "process_user_cpu_seconds": 8.661597,
+        "process_system_cpu_seconds": 0.9637319999999999,
+        "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+      },
+      "runtime_versions": {
+        "numpy": "2.5.4",
+        "pydantic": "2.14.1",
+        "httpx": "0.28.1",
+        "torch": "2.8.0+cpu",
+        "transformers": "4.56.2",
+        "peft": "0.17.1",
+        "accelerate": "1.10.1",
+        "bitsandbytes": "0.47.0",
+        "tokenizers": "0.22.0",
+        "safetensors": "0.6.2"
+      },
+      "selected_or_updated_weights": false
+    }
+  },
+  "inference_profile_decision": "Do not deploy model proposals without evidence review. Fine-tuning/optimization earns deployment only if measured supported relationship coverage improves with no new critical errors.",
+  "unexecuted": [
+    "CUDA/QLoRA: NVIDIA driver/device unavailable",
+    "authorized real manufacturer supplier/template/family held-out evaluation",
+    "component-engineer review-time study",
+    "paid external prompted provider (no credentials/spend authorized); larger local model comparator used"
+  ],
+  "external_spend": 0,
+  "energy_cost": "not measured",
+  "training_and_serving_costs_separate": true
+}

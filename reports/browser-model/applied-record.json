@@ -1,0 +1,1438 @@
+{
+  "id": "e8a03eb264818fc99330",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "AST-PCN-2026-052",
+      "raw": "AST-PCN-2026-052",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 115,
+          "end": 131,
+          "quote": "AST-PCN-2026-052",
+          "bbox": [
+            57.02362060546875,
+            149.70298767089844,
+            179.55862426757812,
+            162.06898498535156
+          ],
+          "method": "pdf-text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Aster Semiconductor",
+      "raw": "Aster Semiconductor",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 142,
+          "end": 161,
+          "quote": "Aster Semiconductor",
+          "bbox": [
+            57.02362060546875,
+            163.70298767089844,
+            178.56861877441406,
+            176.06898498535156
+          ],
+          "method": "pdf-text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PCN",
+      "raw": "PCN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 175,
+          "end": 178,
+          "quote": "PCN",
+          "bbox": [
+            57.02362060546875,
+            177.70298767089844,
+            126.04463195800781,
+            190.06898498535156
+          ],
+          "method": "pdf-text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Assembly site transfer",
+      "raw": "Assembly site transfer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 186,
+          "end": 208,
+          "quote": "Assembly site transfer",
+          "bbox": [
+            57.02362060546875,
+            191.70298767089844,
+            167.5526123046875,
+            204.06898498535156
+          ],
+          "method": "pdf-text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2026-10-03",
+      "raw": "2026-10-03",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 221,
+          "end": 231,
+          "quote": "2026-10-03",
+          "bbox": [
+            57.02362060546875,
+            205.70298767089844,
+            149.57962036132812,
+            218.06898498535156
+          ],
+          "method": "pdf-text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": "A",
+      "raw": "A",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 242,
+          "end": 243,
+          "quote": "A",
+          "bbox": [
+            57.02362060546875,
+            219.70298767089844,
+            102.53662109375,
+            232.06898498535156
+          ],
+          "method": "pdf-text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": "MANUFACTURER",
+        "raw": "MANUFACTURER",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 429,
+            "end": 441,
+            "quote": "MANUFACTURER",
+            "bbox": [
+              57.02362060546875,
+              303.7030029296875,
+              188.04563903808594,
+              316.0690002441406
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 459,
+            "end": 478,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.02362060546875,
+              317.7029724121094,
+              215.58560180664062,
+              330.0689697265625
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": "notices@aster.example",
+        "raw": "notices@aster.example",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 494,
+            "end": 515,
+            "quote": "notices@aster.example",
+            "bbox": [
+              57.02362060546875,
+              331.7029724121094,
+              211.21160888671875,
+              344.0689697265625
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": "12 Example Way",
+        "raw": "12 Example Way",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 532,
+            "end": 546,
+            "quote": "12 Example Way",
+            "bbox": [
+              57.02362060546875,
+              345.7029724121094,
+              186.07461547851562,
+              358.0689697265625
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": "10115",
+        "raw": "10115",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 568,
+            "end": 573,
+            "quote": "10115",
+            "bbox": [
+              57.02362060546875,
+              359.7029724121094,
+              166.589599609375,
+              372.0689697265625
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": "Berlin",
+        "raw": "Berlin",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 588,
+            "end": 594,
+            "quote": "Berlin",
+            "bbox": [
+              57.02362060546875,
+              373.7029724121094,
+              132.04762268066406,
+              386.0689697265625
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": "DE",
+        "raw": "DE",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 612,
+            "end": 614,
+            "quote": "DE",
+            "bbox": [
+              57.02362060546875,
+              387.7029724121094,
+              137.55563354492188,
+              400.0689697265625
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": "Assembly site transfer",
+      "raw": "Assembly site transfer",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 258,
+          "end": 280,
+          "quote": "Assembly site transfer",
+          "bbox": [
+            57.02362060546875,
+            233.70298767089844,
+            198.5756072998047,
+            246.06898498535156
+          ],
+          "method": "pdf-text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": "Assembly moves to the qualified North plant.",
+      "raw": "Assembly moves to the qualified North plant.",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 296,
+          "end": 340,
+          "quote": "Assembly moves to the qualified North plant.",
+          "bbox": [
+            57.02362060546875,
+            247.70298767089844,
+            295.631591796875,
+            260.0690002441406
+          ],
+          "method": "pdf-text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "e8a03eb264818fc99330fbf8fbd4035d444b468fa206325b835c9469cef68c9d",
+    "filename": "aster-site-transfer.pdf",
+    "media_type": "application/pdf",
+    "byte_size": 2799,
+    "pages": [
+      {
+        "number": 1,
+        "text": "ASTER / ENGINEERING NOTIFICATIONS\nProduct change notice\nOWNED SYNTHETIC FIXTURE - no live supplier data\nNotice ID: AST-PCN-2026-052\nSupplier: Aster Semiconductor\nNotice type: PCN\nTitle: Assembly site transfer\nIssue date: 2026-10-03\nRevision: A\nChange title: Assembly site transfer\nChange detail: Assembly moves to the qualified North plant.\nChange category: PSITE\nItem name: Precision amplifier\nItem category: ACEL\nContact type: MANUFACTURER\nContact company: Aster Semiconductor\nContact email: notices@aster.example\nContact street: 12 Example Way\nContact postal code: 10115\nContact city: Berlin\nContact country: DE\nAffected products and deadlines\nGroup\nPart number\nEffective change\nNotes\nAmplifiers\nAMP-230-A\n2027-01-15\n-\nAmplifiers\nAMP-230-B\n2027-02-15\n-\nNoticeForge owned fixture | For evaluation and demonstration only\nPage 1 of 1\n",
+        "width": 595.2755737304688,
+        "height": 841.8897705078125,
+        "method": "pdf-text",
+        "lines": [
+          {
+            "text": "ASTER / ENGINEERING NOTIFICATIONS",
+            "start": 0,
+            "end": 33,
+            "bbox": [
+              57.02362060546875,
+              56.34868240356445,
+              229.55361938476562,
+              68.71468353271484
+            ]
+          },
+          {
+            "text": "Product change notice",
+            "start": 34,
+            "end": 55,
+            "bbox": [
+              57.02362060546875,
+              86.70149230957031,
+              261.8435974121094,
+              112.86449432373047
+            ]
+          },
+          {
+            "text": "OWNED SYNTHETIC FIXTURE - no live supplier data",
+            "start": 56,
+            "end": 103,
+            "bbox": [
+              57.02362060546875,
+              120.01045989990234,
+              225.83560180664062,
+              129.6284637451172
+            ]
+          },
+          {
+            "text": "Notice ID: AST-PCN-2026-052",
+            "start": 104,
+            "end": 131,
+            "bbox": [
+              57.02362060546875,
+              149.70298767089844,
+              179.55862426757812,
+              162.06898498535156
+            ]
+          },
+          {
+            "text": "Supplier: Aster Semiconductor",
+            "start": 132,
+            "end": 161,
+            "bbox": [
+              57.02362060546875,
+              163.70298767089844,
+              178.56861877441406,
+              176.06898498535156
+            ]
+          },
+          {
+            "text": "Notice type: PCN",
+            "start": 162,
+            "end": 178,
+            "bbox": [
+              57.02362060546875,
+              177.70298767089844,
+              126.04463195800781,
+              190.06898498535156
+            ]
+          },
+          {
+            "text": "Title: Assembly site transfer",
+            "start": 179,
+            "end": 208,
+            "bbox": [
+              57.02362060546875,
+              191.70298767089844,
+              167.5526123046875,
+              204.06898498535156
+            ]
+          },
+          {
+            "text": "Issue date: 2026-10-03",
+            "start": 209,
+            "end": 231,
+            "bbox": [
+              57.02362060546875,
+              205.70298767089844,
+              149.57962036132812,
+              218.06898498535156
+            ]
+          },
+          {
+            "text": "Revision: A",
+            "start": 232,
+            "end": 243,
+            "bbox": [
+              57.02362060546875,
+              219.70298767089844,
+              102.53662109375,
+              232.06898498535156
+            ]
+          },
+          {
+            "text": "Change title: Assembly site transfer",
+            "start": 244,
+            "end": 280,
+            "bbox": [
+              57.02362060546875,
+              233.70298767089844,
+              198.5756072998047,
+              246.06898498535156
+            ]
+          },
+          {
+            "text": "Change detail: Assembly moves to the qualified North plant.",
+            "start": 281,
+            "end": 340,
+            "bbox": [
+              57.02362060546875,
+              247.70298767089844,
+              295.631591796875,
+              260.0690002441406
+            ]
+          },
+          {
+            "text": "Change category: PSITE",
+            "start": 341,
+            "end": 363,
+            "bbox": [
+              57.02362060546875,
+              261.7030029296875,
+              156.5726318359375,
+              274.0690002441406
+            ]
+          },
+          {
+            "text": "Item name: Precision amplifier",
+            "start": 364,
+            "end": 394,
+            "bbox": [
+              57.02362060546875,
+              275.7030029296875,
+              178.0556182861328,
+              288.0690002441406
+            ]
+          },
+          {
+            "text": "Item category: ACEL",
+            "start": 395,
+            "end": 414,
+            "bbox": [
+              57.02362060546875,
+              289.7030029296875,
+              140.0576171875,
+              302.0690002441406
+            ]
+          },
+          {
+            "text": "Contact type: MANUFACTURER",
+            "start": 415,
+            "end": 441,
+            "bbox": [
+              57.02362060546875,
+              303.7030029296875,
+              188.04563903808594,
+              316.0690002441406
+            ]
+          },
+          {
+            "text": "Contact company: Aster Semiconductor",
+            "start": 442,
+            "end": 478,
+            "bbox": [
+              57.02362060546875,
+              317.7029724121094,
+              215.58560180664062,
+              330.0689697265625
+            ]
+          },
+          {
+            "text": "Contact email: notices@aster.example",
+            "start": 479,
+            "end": 515,
+            "bbox": [
+              57.02362060546875,
+              331.7029724121094,
+              211.21160888671875,
+              344.0689697265625
+            ]
+          },
+          {
+            "text": "Contact street: 12 Example Way",
+            "start": 516,
+            "end": 546,
+            "bbox": [
+              57.02362060546875,
+              345.7029724121094,
+              186.07461547851562,
+              358.0689697265625
+            ]
+          },
+          {
+            "text": "Contact postal code: 10115",
+            "start": 547,
+            "end": 573,
+            "bbox": [
+              57.02362060546875,
+              359.7029724121094,
+              166.589599609375,
+              372.0689697265625
+            ]
+          },
+          {
+            "text": "Contact city: Berlin",
+            "start": 574,
+            "end": 594,
+            "bbox": [
+              57.02362060546875,
+              373.7029724121094,
+              132.04762268066406,
+              386.0689697265625
+            ]
+          },
+          {
+            "text": "Contact country: DE",
+            "start": 595,
+            "end": 614,
+            "bbox": [
+              57.02362060546875,
+              387.7029724121094,
+              137.55563354492188,
+              400.0689697265625
+            ]
+          },
+          {
+            "text": "Affected products and deadlines",
+            "start": 615,
+            "end": 646,
+            "bbox": [
+              57.02362060546875,
+              420.89044189453125,
+              351.5805969238281,
+              447.053466796875
+            ]
+          },
+          {
+            "text": "Group",
+            "start": 647,
+            "end": 652,
+            "bbox": [
+              57.02362060546875,
+              465.0340881347656,
+              76.47662353515625,
+              474.6520690917969
+            ]
+          },
+          {
+            "text": "Part number",
+            "start": 653,
+            "end": 664,
+            "bbox": [
+              144.89764404296875,
+              465.0340881347656,
+              183.41165161132812,
+              474.6520690917969
+            ]
+          },
+          {
+            "text": "Effective change",
+            "start": 665,
+            "end": 681,
+            "bbox": [
+              266.78741455078125,
+              465.0340881347656,
+              318.5384216308594,
+              474.6520690917969
+            ]
+          },
+          {
+            "text": "Notes",
+            "start": 682,
+            "end": 687,
+            "bbox": [
+              380.1732177734375,
+              465.0340881347656,
+              398.45721435546875,
+              474.6520690917969
+            ]
+          },
+          {
+            "text": "Amplifiers",
+            "start": 688,
+            "end": 698,
+            "bbox": [
+              57.02362060546875,
+              491.0340881347656,
+              87.74662780761719,
+              500.6520690917969
+            ]
+          },
+          {
+            "text": "AMP-230-A",
+            "start": 699,
+            "end": 708,
+            "bbox": [
+              144.89764404296875,
+              491.0340881347656,
+              181.0736541748047,
+              500.6520690917969
+            ]
+          },
+          {
+            "text": "2027-01-15",
+            "start": 709,
+            "end": 719,
+            "bbox": [
+              266.78741455078125,
+              491.0340881347656,
+              302.5854187011719,
+              500.6520690917969
+            ]
+          },
+          {
+            "text": "-",
+            "start": 720,
+            "end": 721,
+            "bbox": [
+              380.1732177734375,
+              491.0340881347656,
+              382.50421142578125,
+              500.6520690917969
+            ]
+          },
+          {
+            "text": "Amplifiers",
+            "start": 722,
+            "end": 732,
+            "bbox": [
+              57.02362060546875,
+              517.0340576171875,
+              87.74662780761719,
+              526.652099609375
+            ]
+          },
+          {
+            "text": "AMP-230-B",
+            "start": 733,
+            "end": 742,
+            "bbox": [
+              144.89764404296875,
+              517.0340576171875,
+              181.0736541748047,
+              526.652099609375
+            ]
+          },
+          {
+            "text": "2027-02-15",
+            "start": 743,
+            "end": 753,
+            "bbox": [
+              266.78741455078125,
+              517.0340576171875,
+              302.5854187011719,
+              526.652099609375
+            ]
+          },
+          {
+            "text": "-",
+            "start": 754,
+            "end": 755,
+            "bbox": [
+              380.1732177734375,
+              517.0340576171875,
+              382.50421142578125,
+              526.652099609375
+            ]
+          },
+          {
+            "text": "NoticeForge owned fixture | For evaluation and demonstration only",
+            "start": 756,
+            "end": 821,
+            "bbox": [
+              51.02362060546875,
+              800.3489990234375,
+              257.488525390625,
+              809.967041015625
+            ]
+          },
+          {
+            "text": "Page 1 of 1",
+            "start": 822,
+            "end": 833,
+            "bbox": [
+              508.4469909667969,
+              800.3489990234375,
+              544.2520751953125,
+              809.967041015625
+            ]
+          }
+        ],
+        "tables": [
+          [
+            [
+              {
+                "text": "Group",
+                "bbox": [
+                  51.02362060546875,
+                  457.55908203125,
+                  138.89764404296875,
+                  483.55908203125
+                ]
+              },
+              {
+                "text": "Part number",
+                "bbox": [
+                  138.89764404296875,
+                  457.55908203125,
+                  260.78741455078125,
+                  483.55908203125
+                ]
+              },
+              {
+                "text": "Effective change",
+                "bbox": [
+                  260.78741455078125,
+                  457.55908203125,
+                  374.1732177734375,
+                  483.55908203125
+                ]
+              },
+              {
+                "text": "Notes",
+                "bbox": [
+                  374.1732177734375,
+                  457.55908203125,
+                  544.251953125,
+                  483.55908203125
+                ]
+              }
+            ],
+            [
+              {
+                "text": "Amplifiers",
+                "bbox": [
+                  51.02362060546875,
+                  483.55908203125,
+                  138.89764404296875,
+                  509.55908203125
+                ]
+              },
+              {
+                "text": "AMP-230-A",
+                "bbox": [
+                  138.89764404296875,
+                  483.55908203125,
+                  260.78741455078125,
+                  509.55908203125
+                ]
+              },
+              {
+                "text": "2027-01-15",
+                "bbox": [
+                  260.78741455078125,
+                  483.55908203125,
+                  374.1732177734375,
+                  509.55908203125
+                ]
+              },
+              {
+                "text": "-",
+                "bbox": [
+                  374.1732177734375,
+                  483.55908203125,
+                  544.251953125,
+                  509.55908203125
+                ]
+              }
+            ],
+            [
+              {
+                "text": "Amplifiers",
+                "bbox": [
+                  51.02362060546875,
+                  509.55908203125,
+                  138.89764404296875,
+                  535.55908203125
+                ]
+              },
+              {
+                "text": "AMP-230-B",
+                "bbox": [
+                  138.89764404296875,
+                  509.55908203125,
+                  260.78741455078125,
+                  535.55908203125
+                ]
+              },
+              {
+                "text": "2027-02-15",
+                "bbox": [
+                  260.78741455078125,
+                  509.55908203125,
+                  374.1732177734375,
+                  535.55908203125
+                ]
+              },
+              {
+                "text": "-",
+                "bbox": [
+                  374.1732177734375,
+                  509.55908203125,
+                  544.251953125,
+                  535.55908203125
+                ]
+              }
+            ]
+          ]
+        ]
+      }
+    ],
+    "expected_pages": 1,
+    "complete": true,
+    "warnings": [],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "AMP-230-A",
+        "raw": "AMP-230-A",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 699,
+            "end": 708,
+            "quote": "AMP-230-A",
+            "bbox": [
+              138.89764404296875,
+              483.55908203125,
+              260.78741455078125,
+              509.55908203125
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "AMP-230-A",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 142,
+            "end": 161,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.02362060546875,
+              163.70298767089844,
+              178.56861877441406,
+              176.06898498535156
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Amplifiers",
+      "item_name": {
+        "value": "Precision amplifier",
+        "raw": "Precision amplifier",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 375,
+            "end": 394,
+            "quote": "Precision amplifier",
+            "bbox": [
+              57.02362060546875,
+              275.7030029296875,
+              178.0556182861328,
+              288.0690002441406
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 410,
+            "end": 414,
+            "quote": "ACEL",
+            "bbox": [
+              57.02362060546875,
+              289.7030029296875,
+              140.0576171875,
+              302.0690002441406
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "PSITE",
+          "raw": "PSITE",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 358,
+              "end": 363,
+              "quote": "PSITE",
+              "bbox": [
+                57.02362060546875,
+                261.7030029296875,
+                156.5726318359375,
+                274.0690002441406
+              ],
+              "method": "pdf-text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-01-15",
+          "raw": "2027-01-15",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 699,
+              "end": 719,
+              "quote": "AMP-230-A\n2027-01-15",
+              "bbox": [
+                144.89764404296875,
+                491.0340881347656,
+                302.5854187011719,
+                500.6520690917969
+              ],
+              "method": "pdf-text"
+            }
+          ],
+          "review_status": "accepted",
+          "method": "human-review",
+          "reason": "Owned fixture review: AMP-230-A has the cited effective-change date 2027-01-15.",
+          "model_run_id": "bdde3e53cec44dd2a6aa1162d4b6f0a8",
+          "model_candidate_index": 0,
+          "kind": "effective_change",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    },
+    {
+      "id": "part-2",
+      "raw_identifier": {
+        "value": "AMP-230-B",
+        "raw": "AMP-230-B",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 733,
+            "end": 742,
+            "quote": "AMP-230-B",
+            "bbox": [
+              138.89764404296875,
+              509.55908203125,
+              260.78741455078125,
+              535.55908203125
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "AMP-230-B",
+      "manufacturer": {
+        "value": "Aster Semiconductor",
+        "raw": "Aster Semiconductor",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 142,
+            "end": 161,
+            "quote": "Aster Semiconductor",
+            "bbox": [
+              57.02362060546875,
+              163.70298767089844,
+              178.56861877441406,
+              176.06898498535156
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Amplifiers",
+      "item_name": {
+        "value": "Precision amplifier",
+        "raw": "Precision amplifier",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 375,
+            "end": 394,
+            "quote": "Precision amplifier",
+            "bbox": [
+              57.02362060546875,
+              275.7030029296875,
+              178.0556182861328,
+              288.0690002441406
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": "ACEL",
+        "raw": "ACEL",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 410,
+            "end": 414,
+            "quote": "ACEL",
+            "bbox": [
+              57.02362060546875,
+              289.7030029296875,
+              140.0576171875,
+              302.0690002441406
+            ],
+            "method": "pdf-text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [
+        {
+          "value": "PSITE",
+          "raw": "PSITE",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 358,
+              "end": 363,
+              "quote": "PSITE",
+              "bbox": [
+                57.02362060546875,
+                261.7030029296875,
+                156.5726318359375,
+                274.0690002441406
+              ],
+              "method": "pdf-text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null
+        }
+      ],
+      "dates": [
+        {
+          "value": "2027-02-15",
+          "raw": "2027-02-15",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 743,
+              "end": 753,
+              "quote": "2027-02-15",
+              "bbox": [
+                260.78741455078125,
+                509.55908203125,
+                374.1732177734375,
+                535.55908203125
+              ],
+              "method": "pdf-text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "effective_change",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    }
+  ],
+  "relationships": [],
+  "findings": [],
+  "unsupported_fields": [],
+  "mode": "deterministic-rules+reviewed-model-proposals",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T03:39:20.600577+00:00",
+  "status": "supported",
+  "version": 11,
+  "provenance": "synthetic",
+  "model_decisions": [
+    {
+      "run_id": "1490fe3a0bbf41e78f126fcaaaa96a1e",
+      "candidate_index": 0,
+      "action": "accept",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 0,
+      "included_characters": 0,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review: AMP-230-A has the cited effective-change date 2027-01-15.",
+      "decided_at": "2026-10-14T03:42:52.322463+00:00",
+      "field_paths": [
+        "parts.0.dates.0"
+      ]
+    },
+    {
+      "run_id": "1490fe3a0bbf41e78f126fcaaaa96a1e",
+      "candidate_index": 1,
+      "action": "reject",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 0,
+      "included_characters": 0,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review exercise: retain the independently reviewed baseline for AMP-230-B.",
+      "decided_at": "2026-10-14T03:42:52.531492+00:00",
+      "field_paths": []
+    },
+    {
+      "run_id": "5f81e19fc60f49799a8c33d8953d88e2",
+      "candidate_index": 0,
+      "action": "accept",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 0,
+      "included_characters": 0,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review: AMP-230-A has the cited effective-change date 2027-01-15.",
+      "decided_at": "2026-10-14T03:44:19.628642+00:00",
+      "field_paths": [
+        "parts.0.dates.0"
+      ]
+    },
+    {
+      "run_id": "5f81e19fc60f49799a8c33d8953d88e2",
+      "candidate_index": 1,
+      "action": "reject",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 0,
+      "included_characters": 0,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review exercise: retain the independently reviewed baseline for AMP-230-B.",
+      "decided_at": "2026-10-14T03:44:19.808995+00:00",
+      "field_paths": []
+    },
+    {
+      "run_id": "0ed859809b954d87a0d6034bab5d17b7",
+      "candidate_index": 0,
+      "action": "accept",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 0,
+      "included_characters": 0,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review: AMP-230-A has the cited effective-change date 2027-01-15.",
+      "decided_at": "2026-10-14T03:54:21.682874+00:00",
+      "field_paths": [
+        "parts.0.dates.0"
+      ]
+    },
+    {
+      "run_id": "0ed859809b954d87a0d6034bab5d17b7",
+      "candidate_index": 1,
+      "action": "reject",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 0,
+      "included_characters": 0,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review exercise: retain the independently reviewed baseline for AMP-230-B.",
+      "decided_at": "2026-10-14T03:54:21.886722+00:00",
+      "field_paths": []
+    },
+    {
+      "run_id": "65ac6e582fe24951821026a73054955e",
+      "candidate_index": 0,
+      "action": "accept",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 0,
+      "included_characters": 0,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review: AMP-230-A has the cited effective-change date 2027-01-15.",
+      "decided_at": "2026-10-14T03:56:40.253579+00:00",
+      "field_paths": [
+        "parts.0.dates.0"
+      ]
+    },
+    {
+      "run_id": "65ac6e582fe24951821026a73054955e",
+      "candidate_index": 1,
+      "action": "reject",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 0,
+      "included_characters": 0,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review exercise: retain the independently reviewed baseline for AMP-230-B.",
+      "decided_at": "2026-10-14T03:56:40.473468+00:00",
+      "field_paths": []
+    },
+    {
+      "run_id": "bdde3e53cec44dd2a6aa1162d4b6f0a8",
+      "candidate_index": 0,
+      "action": "accept",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 834,
+      "included_characters": 834,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review: AMP-230-A has the cited effective-change date 2027-01-15.",
+      "decided_at": "2026-10-14T03:58:33.168142+00:00",
+      "field_paths": [
+        "parts.0.dates.0"
+      ]
+    },
+    {
+      "run_id": "bdde3e53cec44dd2a6aa1162d4b6f0a8",
+      "candidate_index": 1,
+      "action": "reject",
+      "provider": "fixture-offline",
+      "model": "fixture-json-v1",
+      "revision": null,
+      "configuration_sha256": "b94c8712c8031153af779e01b8760812d0a267439d54db9715feadcc01010aa2",
+      "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+      "output_sha256": "a5f09af2d48326c2919c17a51b84b5914d59e6bf2ae0ce2c884b9991df07037d",
+      "context_truncated": false,
+      "input_characters": 834,
+      "included_characters": 834,
+      "reviewer": "Owned fixture browser QA",
+      "reason": "Owned fixture review exercise: retain the independently reviewed baseline for AMP-230-B.",
+      "decided_at": "2026-10-14T03:58:33.412512+00:00",
+      "field_paths": []
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "noticeforge"
+version = "0.1.0"
+description = "Evidence-linked, CPU-first product change notice compiler"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "fastapi==0.143.0",
+  "pydantic==2.14.1",
+  "uvicorn==0.54.0",
+  "pymupdf==1.28.2",
+  "lxml==6.1.3",
+  "python-multipart==0.0.32",
+  "httpx==0.28.1",
+  "reportlab==5.0.1",
+  "numpy==2.5.4",
+]
+
+[project.scripts]
+noticeforge = "noticeforge.cli:main"
+
+[dependency-groups]
+dev = ["pytest==9.1.1", "ruff==0.17.0", "mypy==2.4.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["noticeforge"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"schemas/smartpcn" = "noticeforge/data/schemas/smartpcn"
+"fixtures" = "noticeforge/data/fixtures"
+"configs" = "noticeforge/data/configs"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "noticeforge/", "fixtures/", "configs/", "schemas/", "scripts/", "tests/", "docs/",
+  "README.md", "Makefile", "pyproject.toml", "uv.lock", "package.json", "package-lock.json",
+  ".env.example", ".gitignore", ".gitattributes", ".prettierrc.json", ".github/", "requirements-ml.txt", "site/",
+]
+exclude = ["docs/superpowers/"]
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+check_untyped_defs = true

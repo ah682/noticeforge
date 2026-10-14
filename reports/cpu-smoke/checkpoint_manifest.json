@@ -1,0 +1,56 @@
+{
+  "purpose": "genuine tiny CPU training/checkpoint/load SMOKE; not a domain model or real-world validation",
+  "status": "executed",
+  "created_at": "2026-10-14T10:06:41.780577+00:00",
+  "config": {
+    "purpose": "CPU training/checkpoint/load plumbing smoke only; not a domain extractor",
+    "seed": 17,
+    "epochs": 300,
+    "learning_rate": 0.5,
+    "feature_dimension": 96,
+    "train_examples": 160,
+    "validation_examples": 40,
+    "benchmark_requests": 160,
+    "benchmark_warmup": 8
+  },
+  "model": "hashed-feature softmax classifier",
+  "labels": [
+    "last_buy",
+    "last_delivery",
+    "effective_change",
+    "sample_availability"
+  ],
+  "seed": 17,
+  "train_examples": 160,
+  "validation_examples": 40,
+  "data_classification": "owned_synthetic_generated_smoke",
+  "data_sha256": "fec88fcf6c64c3b3d80f2862c1a157a4b303bdef73bc87e30645e2dcb28b5084",
+  "initial_loss": 1.3834839270285288,
+  "final_loss": 0.059494553351185156,
+  "weight_change_l2": 10.503185396017074,
+  "epochs": 300,
+  "training_seconds": 0.008038591000513406,
+  "runtime_versions": {
+    "numpy": "2.5.4",
+    "pydantic": "2.14.1",
+    "httpx": "0.28.1"
+  },
+  "hardware": {
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+    "machine": "x86_64",
+    "logical_cpu_count": 16,
+    "process_peak_rss_bytes": 87457792,
+    "process_user_cpu_seconds": 0.6588539999999999,
+    "process_system_cpu_seconds": 0.012764,
+    "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+  },
+  "training_cost": {
+    "external_spend": 0,
+    "local_compute_seconds": 0.008038591000513406,
+    "currency": null,
+    "energy_cost": "not measured"
+  },
+  "checkpoint_sha256": "b01d82e80b2794a7c1664c5e317a00d2858a36979a1cc0d8bc93f506ef1afcd1"
+}

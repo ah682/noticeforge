@@ -1,0 +1,74 @@
+{
+  "unchanged": true,
+  "before": {
+    "notices": [
+      {
+        "id": "11338a742c7c56056b05",
+        "version": 1,
+        "original_sha256": "7f22ffab0016171d98f41011522686279553a408dde1a37c7aacd4ffb46a51d0",
+        "current_sha256": "7f22ffab0016171d98f41011522686279553a408dde1a37c7aacd4ffb46a51d0"
+      },
+      {
+        "id": "4ee9f922f6d31d516cc9",
+        "version": 1,
+        "original_sha256": "ddfb663d978ce59f58c50d1e9c404dd6880242a6438b4fc8072ab544ec2c61d3",
+        "current_sha256": "ddfb663d978ce59f58c50d1e9c404dd6880242a6438b4fc8072ab544ec2c61d3"
+      },
+      {
+        "id": "8a9bef13c1d06653477e",
+        "version": 1,
+        "original_sha256": "906a65b7fd243adcf106b04f6a93b6f6ef0615eab0d9f1e7a3472905afbe48ba",
+        "current_sha256": "906a65b7fd243adcf106b04f6a93b6f6ef0615eab0d9f1e7a3472905afbe48ba"
+      },
+      {
+        "id": "ac1e1941a4fa545b74c8",
+        "version": 1,
+        "original_sha256": "21e3c10cd2c587c5ec31743f1b68a54d06571a4529ac8101d961d51f6492a550",
+        "current_sha256": "21e3c10cd2c587c5ec31743f1b68a54d06571a4529ac8101d961d51f6492a550"
+      },
+      {
+        "id": "e8a03eb264818fc99330",
+        "version": 1,
+        "original_sha256": "68ea42c64908e6db16278de80ae0a158c756ab98f905bc1eeddb0d9ffba71926",
+        "current_sha256": "68ea42c64908e6db16278de80ae0a158c756ab98f905bc1eeddb0d9ffba71926"
+      }
+    ],
+    "audit_events": 5
+  },
+  "after": {
+    "notices": [
+      {
+        "id": "11338a742c7c56056b05",
+        "version": 1,
+        "original_sha256": "7f22ffab0016171d98f41011522686279553a408dde1a37c7aacd4ffb46a51d0",
+        "current_sha256": "7f22ffab0016171d98f41011522686279553a408dde1a37c7aacd4ffb46a51d0"
+      },
+      {
+        "id": "4ee9f922f6d31d516cc9",
+        "version": 1,
+        "original_sha256": "ddfb663d978ce59f58c50d1e9c404dd6880242a6438b4fc8072ab544ec2c61d3",
+        "current_sha256": "ddfb663d978ce59f58c50d1e9c404dd6880242a6438b4fc8072ab544ec2c61d3"
+      },
+      {
+        "id": "8a9bef13c1d06653477e",
+        "version": 1,
+        "original_sha256": "906a65b7fd243adcf106b04f6a93b6f6ef0615eab0d9f1e7a3472905afbe48ba",
+        "current_sha256": "906a65b7fd243adcf106b04f6a93b6f6ef0615eab0d9f1e7a3472905afbe48ba"
+      },
+      {
+        "id": "ac1e1941a4fa545b74c8",
+        "version": 1,
+        "original_sha256": "21e3c10cd2c587c5ec31743f1b68a54d06571a4529ac8101d961d51f6492a550",
+        "current_sha256": "21e3c10cd2c587c5ec31743f1b68a54d06571a4529ac8101d961d51f6492a550"
+      },
+      {
+        "id": "e8a03eb264818fc99330",
+        "version": 1,
+        "original_sha256": "68ea42c64908e6db16278de80ae0a158c756ab98f905bc1eeddb0d9ffba71926",
+        "current_sha256": "68ea42c64908e6db16278de80ae0a158c756ab98f905bc1eeddb0d9ffba71926"
+      }
+    ],
+    "audit_events": 5
+  },
+  "verification": "Read-only comparison around restarting the current default demo; no browser mutations used this database."
+}

@@ -1,0 +1,53 @@
+{
+  "base": "http://127.0.0.1:8878",
+  "provider": {
+    "configured": true,
+    "provider": "fixture-offline",
+    "model": "fixture-json-v1",
+    "remote": false,
+    "available": true,
+    "reason": "Model review runs only when explicitly requested; proposals require a decision."
+  },
+  "purpose": "Owned offline fixture workflow verification; not live model performance",
+  "checks": [
+    "Opening and switching notices never invokes the model",
+    "Offline fixture identity is explicit",
+    "Configured model and provider are visible",
+    "Only explicit Run model review is enabled",
+    "Model request is queued asynchronously",
+    "Two source-valid fixture proposals are displayed",
+    "Invented identifier output is rejected before review",
+    "Generation does not apply canonical edits",
+    "Exactly one explicit model request was sent",
+    "Proposal source uses actual text highlights",
+    "Acceptance persists the exact part/date and model provenance",
+    "Acceptance requires and retains reviewer attribution",
+    "Acceptance increments the record version once",
+    "Rejection records a decision without changing part facts",
+    "Rejected outputs do not become affected parts",
+    "Decision history shows request, completion, acceptance and rejection",
+    "Decision history retains model and reviewer attribution",
+    "Canonical export contains applied evidence and both model decisions",
+    "Supported applied record still exports schema-validated XML",
+    "Model run and both decisions survive browser reload",
+    "Model review fits desktop and mobile without page overflow",
+    "UI state inspections do not trigger additional generation"
+  ],
+  "mockedStateChecks": [
+    "Empty valid model response is explained without inventing proposals",
+    "Failed model response is actionable and preserves the record",
+    "Unavailable model runtime remains an explicit saved outcome",
+    "Truncated context is prominent and quantified",
+    "Unconfigured provider disables generation without a fixture AI fallback"
+  ],
+  "run_id": "3b250c4f31254e35a4c947d297f23c12",
+  "desktop": {
+    "width": 1440,
+    "scrollWidth": 1440
+  },
+  "mobile": {
+    "width": 390,
+    "scrollWidth": 390
+  },
+  "errors": []
+}

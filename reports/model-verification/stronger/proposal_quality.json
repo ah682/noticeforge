@@ -1,0 +1,818 @@
+{
+  "purpose": "Post-execution scoring from preserved outputs; no new generation or tuning",
+  "scope": "Accepted part/date/exception proposals only. Critical omissions combine missing parts, relationships and annotated exceptions; revision and source-completeness handling stay in the deterministic baseline.",
+  "metrics": {
+    "expected_parts": 16,
+    "predicted_parts": 0,
+    "matched_parts": 0,
+    "expected_relationships": 19,
+    "predicted_relationships": 0,
+    "matched_relationships": 0,
+    "expected_exceptions": 1,
+    "matched_exceptions": 0,
+    "critical_omissions": 36,
+    "unsupported_assertions": 0,
+    "expected_review_required": 2,
+    "review_required_found": 0,
+    "affected_part_recall": 0.0,
+    "exact_part_date_relationship_accuracy": 0.0,
+    "review_required_coverage": 0.0
+  },
+  "by_supplier": {
+    "Helio Components": {
+      "expected_parts": 1,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 1,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 2,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "Indigo Circuits": {
+      "expected_parts": 4,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 4,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 8,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "Juniper Micro": {
+      "expected_parts": 1,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 1,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 2,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "Lumen Analog": {
+      "expected_parts": 1,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 1,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 2,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "Morrow Micro": {
+      "expected_parts": 2,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 2,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 4,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "Quarry Logic": {
+      "expected_parts": 2,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 2,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 4,
+      "unsupported_assertions": 0,
+      "expected_review_required": 2,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": 0.0
+    },
+    "Tern Logic": {
+      "expected_parts": 2,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 2,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 4,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "Vela Silicon": {
+      "expected_parts": 3,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 6,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 1,
+      "matched_exceptions": 0,
+      "critical_omissions": 10,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    }
+  },
+  "by_template": {
+    "ambiguous-ordering": {
+      "expected_parts": 2,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 2,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 4,
+      "unsupported_assertions": 0,
+      "expected_review_required": 2,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": 0.0
+    },
+    "different-deadlines": {
+      "expected_parts": 3,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 6,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 1,
+      "matched_exceptions": 0,
+      "critical_omissions": 10,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "injection-data": {
+      "expected_parts": 1,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 1,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 2,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "literal-identifiers": {
+      "expected_parts": 4,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 4,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 8,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "missing-attachment": {
+      "expected_parts": 1,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 1,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 2,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "partial-revision": {
+      "expected_parts": 1,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 1,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 2,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "row-footnote": {
+      "expected_parts": 2,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 2,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 4,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    },
+    "unsupported-ragged-row": {
+      "expected_parts": 2,
+      "predicted_parts": 0,
+      "matched_parts": 0,
+      "expected_relationships": 2,
+      "predicted_relationships": 0,
+      "matched_relationships": 0,
+      "expected_exceptions": 0,
+      "matched_exceptions": 0,
+      "critical_omissions": 4,
+      "unsupported_assertions": 0,
+      "expected_review_required": 0,
+      "review_required_found": 0,
+      "affected_part_recall": 0.0,
+      "exact_part_date_relationship_accuracy": 0.0,
+      "review_required_coverage": null
+    }
+  },
+  "cases": [
+    {
+      "id": "different-deadlines",
+      "supplier": "Vela Silicon",
+      "template": "different-deadlines",
+      "metrics": {
+        "scope": "accepted part/date/exception proposals; not a complete canonical notice",
+        "expected_parts": 3,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "affected_part_recall": 0.0,
+        "expected_relationships": 6,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "expected_exceptions": 1,
+        "matched_exceptions": 0,
+        "critical_omissions": 10,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "review_required_coverage": null,
+        "accepted_evidence": {
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "raw_evidence": {
+          "schema_valid": true,
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "outside_proposal_contract": {
+          "expected_revision_relationships": 0,
+          "expected_source_incomplete": false,
+          "explanation": "Revision and source-completeness findings are supplied by the deterministic pipeline, never inferred from candidate JSON."
+        },
+        "errors": {
+          "missing_parts": [
+            "00042-T1",
+            "00042-T2",
+            "VX-920-B"
+          ],
+          "extra_parts": [],
+          "missing_relationships": [
+            [
+              "00042-T1",
+              "last_buy",
+              "2028-02-29"
+            ],
+            [
+              "00042-T1",
+              "last_delivery",
+              "2028-08-31"
+            ],
+            [
+              "00042-T2",
+              "last_buy",
+              "2028-02-29"
+            ],
+            [
+              "00042-T2",
+              "last_delivery",
+              "2028-08-31"
+            ],
+            [
+              "VX-920-B",
+              "last_buy",
+              "2028-05-31"
+            ],
+            [
+              "VX-920-B",
+              "last_delivery",
+              "2028-11-30"
+            ]
+          ],
+          "extra_relationships": [],
+          "missing_exceptions": [
+            {
+              "part": "00042-T2",
+              "contains": "inventory"
+            }
+          ],
+          "exception_scope_leakage": [],
+          "missing_review_required": []
+        }
+      }
+    },
+    {
+      "id": "row-footnote",
+      "supplier": "Morrow Micro",
+      "template": "row-footnote",
+      "metrics": {
+        "scope": "accepted part/date/exception proposals; not a complete canonical notice",
+        "expected_parts": 2,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "affected_part_recall": 0.0,
+        "expected_relationships": 2,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "critical_omissions": 4,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "review_required_coverage": null,
+        "accepted_evidence": {
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "raw_evidence": {
+          "schema_valid": true,
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "outside_proposal_contract": {
+          "expected_revision_relationships": 0,
+          "expected_source_incomplete": false,
+          "explanation": "Revision and source-completeness findings are supplied by the deterministic pipeline, never inferred from candidate JSON."
+        },
+        "errors": {
+          "missing_parts": [
+            "MX-010-A",
+            "MX-010-B"
+          ],
+          "extra_parts": [],
+          "missing_relationships": [
+            [
+              "MX-010-A",
+              "last_buy",
+              "2028-03-15"
+            ],
+            [
+              "MX-010-B",
+              "last_buy",
+              "2028-01-31"
+            ]
+          ],
+          "extra_relationships": [],
+          "missing_exceptions": [],
+          "exception_scope_leakage": [],
+          "missing_review_required": []
+        }
+      }
+    },
+    {
+      "id": "ambiguous-ordering",
+      "supplier": "Quarry Logic",
+      "template": "ambiguous-ordering",
+      "metrics": {
+        "scope": "accepted part/date/exception proposals; not a complete canonical notice",
+        "expected_parts": 2,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "affected_part_recall": 0.0,
+        "expected_relationships": 2,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "critical_omissions": 4,
+        "unsupported_assertions": 0,
+        "expected_review_required": 2,
+        "review_required_found": 0,
+        "review_required_coverage": 0.0,
+        "accepted_evidence": {
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "raw_evidence": {
+          "schema_valid": true,
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "outside_proposal_contract": {
+          "expected_revision_relationships": 0,
+          "expected_source_incomplete": false,
+          "explanation": "Revision and source-completeness findings are supplied by the deterministic pipeline, never inferred from candidate JSON."
+        },
+        "errors": {
+          "missing_parts": [
+            "000ZX-R",
+            "000ZX-S"
+          ],
+          "extra_parts": [],
+          "missing_relationships": [
+            [
+              "000ZX-R",
+              "last_buy",
+              null
+            ],
+            [
+              "000ZX-S",
+              "last_buy",
+              null
+            ]
+          ],
+          "extra_relationships": [],
+          "missing_exceptions": [],
+          "exception_scope_leakage": [],
+          "missing_review_required": [
+            "000ZX-R",
+            "000ZX-S"
+          ]
+        }
+      }
+    },
+    {
+      "id": "partial-revision",
+      "supplier": "Helio Components",
+      "template": "partial-revision",
+      "metrics": {
+        "scope": "accepted part/date/exception proposals; not a complete canonical notice",
+        "expected_parts": 1,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "affected_part_recall": 0.0,
+        "expected_relationships": 1,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "critical_omissions": 2,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "review_required_coverage": null,
+        "accepted_evidence": {
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "raw_evidence": {
+          "schema_valid": true,
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "outside_proposal_contract": {
+          "expected_revision_relationships": 1,
+          "expected_source_incomplete": false,
+          "explanation": "Revision and source-completeness findings are supplied by the deterministic pipeline, never inferred from candidate JSON."
+        },
+        "errors": {
+          "missing_parts": [
+            "HL-3B"
+          ],
+          "extra_parts": [],
+          "missing_relationships": [
+            [
+              "HL-3B",
+              "last_buy",
+              "2028-07-31"
+            ]
+          ],
+          "extra_relationships": [],
+          "missing_exceptions": [],
+          "exception_scope_leakage": [],
+          "missing_review_required": []
+        }
+      }
+    },
+    {
+      "id": "literal-identifiers",
+      "supplier": "Indigo Circuits",
+      "template": "literal-identifiers",
+      "metrics": {
+        "scope": "accepted part/date/exception proposals; not a complete canonical notice",
+        "expected_parts": 4,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "affected_part_recall": 0.0,
+        "expected_relationships": 4,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "critical_omissions": 8,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "review_required_coverage": null,
+        "accepted_evidence": {
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "raw_evidence": {
+          "schema_valid": true,
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "outside_proposal_contract": {
+          "expected_revision_relationships": 0,
+          "expected_source_incomplete": false,
+          "explanation": "Revision and source-completeness findings are supplied by the deterministic pipeline, never inferred from candidate JSON."
+        },
+        "errors": {
+          "missing_parts": [
+            "0010-T",
+            "0010-TR",
+            "010-TR",
+            "OO10-TR"
+          ],
+          "extra_parts": [],
+          "missing_relationships": [
+            [
+              "0010-TR",
+              "last_buy",
+              "2028-02-01"
+            ],
+            [
+              "010-TR",
+              "last_buy",
+              "2028-02-01"
+            ],
+            [
+              "OO10-TR",
+              "last_buy",
+              "2028-02-01"
+            ],
+            [
+              "0010-T",
+              "last_buy",
+              "2028-02-01"
+            ]
+          ],
+          "extra_relationships": [],
+          "missing_exceptions": [],
+          "exception_scope_leakage": [],
+          "missing_review_required": []
+        }
+      }
+    },
+    {
+      "id": "injection-data",
+      "supplier": "Juniper Micro",
+      "template": "injection-data",
+      "metrics": {
+        "scope": "accepted part/date/exception proposals; not a complete canonical notice",
+        "expected_parts": 1,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "affected_part_recall": 0.0,
+        "expected_relationships": 1,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "critical_omissions": 2,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "review_required_coverage": null,
+        "accepted_evidence": {
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "raw_evidence": {
+          "schema_valid": true,
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "outside_proposal_contract": {
+          "expected_revision_relationships": 0,
+          "expected_source_incomplete": false,
+          "explanation": "Revision and source-completeness findings are supplied by the deterministic pipeline, never inferred from candidate JSON."
+        },
+        "errors": {
+          "missing_parts": [
+            "JM-441-X"
+          ],
+          "extra_parts": [],
+          "missing_relationships": [
+            [
+              "JM-441-X",
+              "last_buy",
+              "2028-10-31"
+            ]
+          ],
+          "extra_relationships": [],
+          "missing_exceptions": [],
+          "exception_scope_leakage": [],
+          "missing_review_required": []
+        }
+      }
+    },
+    {
+      "id": "missing-attachment",
+      "supplier": "Lumen Analog",
+      "template": "missing-attachment",
+      "metrics": {
+        "scope": "accepted part/date/exception proposals; not a complete canonical notice",
+        "expected_parts": 1,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "affected_part_recall": 0.0,
+        "expected_relationships": 1,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "critical_omissions": 2,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "review_required_coverage": null,
+        "accepted_evidence": {
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "raw_evidence": {
+          "schema_valid": true,
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "outside_proposal_contract": {
+          "expected_revision_relationships": 0,
+          "expected_source_incomplete": true,
+          "explanation": "Revision and source-completeness findings are supplied by the deterministic pipeline, never inferred from candidate JSON."
+        },
+        "errors": {
+          "missing_parts": [
+            "LM-88A"
+          ],
+          "extra_parts": [],
+          "missing_relationships": [
+            [
+              "LM-88A",
+              "last_buy",
+              "2028-07-15"
+            ]
+          ],
+          "extra_relationships": [],
+          "missing_exceptions": [],
+          "exception_scope_leakage": [],
+          "missing_review_required": []
+        }
+      }
+    },
+    {
+      "id": "unsupported-ragged-row",
+      "supplier": "Tern Logic",
+      "template": "unsupported-ragged-row",
+      "metrics": {
+        "scope": "accepted part/date/exception proposals; not a complete canonical notice",
+        "expected_parts": 2,
+        "predicted_parts": 0,
+        "matched_parts": 0,
+        "affected_part_recall": 0.0,
+        "expected_relationships": 2,
+        "predicted_relationships": 0,
+        "matched_relationships": 0,
+        "exact_part_date_relationship_accuracy": 0.0,
+        "expected_exceptions": 0,
+        "matched_exceptions": 0,
+        "critical_omissions": 4,
+        "unsupported_assertions": 0,
+        "expected_review_required": 0,
+        "review_required_found": 0,
+        "review_required_coverage": null,
+        "accepted_evidence": {
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "raw_evidence": {
+          "schema_valid": true,
+          "localized": 0,
+          "total": 0,
+          "ratio": null
+        },
+        "outside_proposal_contract": {
+          "expected_revision_relationships": 0,
+          "expected_source_incomplete": false,
+          "explanation": "Revision and source-completeness findings are supplied by the deterministic pipeline, never inferred from candidate JSON."
+        },
+        "errors": {
+          "missing_parts": [
+            "TR-001",
+            "TR-002"
+          ],
+          "extra_parts": [],
+          "missing_relationships": [
+            [
+              "TR-001",
+              "last_buy",
+              "2028-11-30"
+            ],
+            [
+              "TR-002",
+              "last_buy",
+              "2028-12-31"
+            ]
+          ],
+          "extra_relationships": [],
+          "missing_exceptions": [],
+          "exception_scope_leakage": [],
+          "missing_review_required": []
+        }
+      }
+    }
+  ]
+}

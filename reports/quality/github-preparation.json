@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-14",
+  "repository": "https://github.com/ah682/noticeforge",
+  "status": "prepared; credentials and repository visibility pending",
+  "checks": {
+    "fresh_publication_checkout": {
+      "tests_passed": 174,
+      "optional_ocr_skipped": 1,
+      "lint": "passed",
+      "python_format": "passed",
+      "types": "passed (19 modules)",
+      "javascript_syntax": "passed",
+      "frontend_format": "passed",
+      "rules_relationships": "18/19",
+      "cpu_smoke": "passed"
+    },
+    "installed_distribution": "passed: seeding, evaluation, CPU checkpoint, XML export, static assets",
+    "project_page": {
+      "widths": [
+        320,
+        390,
+        768,
+        1440
+      ],
+      "overflow": false,
+      "axe_violations": 0,
+      "manual_diagnostic": "Decorative down arrow: white on #193130, inspected in desktop/mobile screenshots.",
+      "request_errors": []
+    },
+    "independent_publication_review": "no remaining Critical or Important findings",
+    "attribution_findings": [],
+    "credential_pattern_findings": []
+  },
+  "hosted_actions": "not run",
+  "github_pages": "not deployed",
+  "excluded": "local runtime databases, credentials, environments, caches, model weights, original task prompt and internal planning notes",
+  "historical_evidence": "Frozen experiment reports retain their original measured outcomes and paths.",
+  "publication_source_sha256": {
+    ".env.example": "c4287ef5e785ef1868adb26869ad86777e050173318698cc98d5df36339c1d8d",
+    ".gitignore": "0facce2004d101fbb0b033899f644bcb37892451a67680e85bc7daf6606cc315",
+    ".gitattributes": "63c702067216529b176251db7a543b6ad40d81e7e22ef366b65928a9c4800486",
+    ".github/workflows/ci.yml": "94814c2d38071fce28012c7f04b0641563b223e3ef7287531815dbbc8eaac62c",
+    ".github/workflows/pages.yml": "60b1fc537893bc3912e529a645f4f4b7272c186a4447d289243ce80798754355",
+    "README.md": "ce51c24855c361e36231f2620eabfc1d1d5714f4d3efac40ca04f573d1aa9be0",
+    "pyproject.toml": "614098ec2f84cb87947bb8e5543c12f6a0858e3f74095fecd082219f70a312d1",
+    "package.json": "c4aefc2a7583d75acae74aab8865f4e6810d2453b1d55780d6b0634f8b31fcda",
+    "scripts/browser-qa.mjs": "79ddefb8a4423ab5ad2c9591403a29ae5600b17ccd0e3753adae61fd2f10c6de",
+    "scripts/browser-pages.mjs": "61fca679a47b7bf530442043b58905089c4900d0fe7d69fd4f92cb25e01bc727",
+    "site/index.html": "5cb060eddf589891f60e587662f1e70c3b9b5ba1b230b46de4b1ff208c3911f4",
+    "site/style.css": "bec65cdfd75449b888f19a99a10667e2122ed84ba1ff015cf09afb63b0ca9735",
+    "site/favicon.svg": "f5cc805417da11c9dcdeb597534d956eb604e2e1a9a0336a9cca4f78d636e71b",
+    "docs/GITHUB.md": "3bd4c703792fc85cde436bdbce6d82e4dacfdb632baf42a863844e6ee07c131a",
+    "docs/VERIFICATION.md": "dc39a273492c4eed4b964f021bca670557b5d0f83b9164089571c9add610ec59",
+    "docs/MODELS.md": "4fe4bd1c2bef61fd849f406f1b7ae25681e5ada15a2c9a5625fcb58436a9ab3b",
+    "docs/BUILD_STATE.md": "748bd897626618ec6e8368cafcfbeb43cef981085bead8613c5fa72a906884b8",
+    "docs/QUALITY_AUDIT.md": "5cdbe606c10a410a3e0730ce1ec78d04792aeb59b00608918036a5efb1b07c23"
+  },
+  "distribution_archives": {
+    "noticeforge-0.1.0.tar.gz": {
+      "bytes": 692060,
+      "sha256": "d499b6dee5934b0fc7adf2bb2bdb1b4f071847ca3bc95a23d0b35513e077f30b"
+    },
+    "noticeforge-0.1.0-py3-none-any.whl": {
+      "bytes": 163294,
+      "sha256": "fb5836acfb56bee15d5717feef75b7f48a4c0eccaadc08a4fb93be6bc496991f"
+    }
+  }
+}

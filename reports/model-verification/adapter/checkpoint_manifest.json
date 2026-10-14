@@ -1,0 +1,352 @@
+{
+  "status": "executed",
+  "purpose": "compact model adapter training; deployment requires independent relationship evaluation",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "license": "Apache-2.0",
+  "created_at": "2026-10-14T03:43:43.685753+00:00",
+  "config": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "license": "Apache-2.0",
+    "device": "cpu",
+    "precision": "bfloat16",
+    "local_model_path": "/tmp/noticeforge-models/Qwen2.5-0.5B-Instruct",
+    "cpu_threads": 4,
+    "attention_implementation": "sdpa",
+    "allow_download": false,
+    "seed": 17,
+    "epochs": 3,
+    "learning_rate": 0.0003,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 2,
+    "max_input_tokens": 2048,
+    "max_sequence_tokens": 3072,
+    "max_new_tokens": 1024,
+    "max_characters": 7000,
+    "generation_max_seconds": 120.0,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "gradient_checkpointing": true,
+    "adapter_path": null,
+    "resource_planning": {}
+  },
+  "training_document_ids": [
+    "owned-model-00",
+    "owned-model-01",
+    "owned-model-02",
+    "owned-model-03",
+    "owned-model-04",
+    "owned-model-05",
+    "owned-model-06",
+    "owned-model-07",
+    "owned-model-08",
+    "owned-model-09",
+    "owned-model-10",
+    "owned-model-11",
+    "owned-model-12",
+    "owned-model-13",
+    "owned-model-14",
+    "owned-model-15"
+  ],
+  "training_input_token_lengths": [
+    475,
+    475,
+    475,
+    600,
+    448,
+    478,
+    475,
+    466,
+    474,
+    599,
+    447,
+    477,
+    474,
+    474,
+    474,
+    599
+  ],
+  "dataset_audit": {
+    "ok": true,
+    "documents": 20,
+    "classification_counts": {
+      "synthetic": 20,
+      "real": 0
+    },
+    "issues": [],
+    "near_duplicates": [
+      {
+        "documents": [
+          "owned-model-00",
+          "owned-model-06"
+        ],
+        "pages": [
+          {
+            "left_page": 1,
+            "right_page": 1,
+            "similarity": 0.8
+          }
+        ],
+        "identical_document_sha256": false,
+        "cross_split": false
+      },
+      {
+        "documents": [
+          "owned-model-01",
+          "owned-model-07"
+        ],
+        "pages": [
+          {
+            "left_page": 1,
+            "right_page": 1,
+            "similarity": 0.8
+          }
+        ],
+        "identical_document_sha256": false,
+        "cross_split": false
+      },
+      {
+        "documents": [
+          "owned-model-08",
+          "owned-model-14"
+        ],
+        "pages": [
+          {
+            "left_page": 1,
+            "right_page": 1,
+            "similarity": 0.8
+          }
+        ],
+        "identical_document_sha256": false,
+        "cross_split": false
+      },
+      {
+        "documents": [
+          "owned-model-16",
+          "owned-model-17"
+        ],
+        "pages": [
+          {
+            "left_page": 1,
+            "right_page": 1,
+            "similarity": 0.854167
+          }
+        ],
+        "identical_document_sha256": false,
+        "cross_split": false
+      },
+      {
+        "documents": [
+          "owned-model-16",
+          "owned-model-18"
+        ],
+        "pages": [
+          {
+            "left_page": 1,
+            "right_page": 1,
+            "similarity": 0.863158
+          }
+        ],
+        "identical_document_sha256": false,
+        "cross_split": false
+      },
+      {
+        "documents": [
+          "owned-model-16",
+          "owned-model-19"
+        ],
+        "pages": [
+          {
+            "left_page": 1,
+            "right_page": 1,
+            "similarity": 0.863158
+          }
+        ],
+        "identical_document_sha256": false,
+        "cross_split": false
+      },
+      {
+        "documents": [
+          "owned-model-17",
+          "owned-model-18"
+        ],
+        "pages": [
+          {
+            "left_page": 1,
+            "right_page": 1,
+            "similarity": 0.845361
+          }
+        ],
+        "identical_document_sha256": false,
+        "cross_split": false
+      },
+      {
+        "documents": [
+          "owned-model-17",
+          "owned-model-19"
+        ],
+        "pages": [
+          {
+            "left_page": 1,
+            "right_page": 1,
+            "similarity": 0.845361
+          }
+        ],
+        "identical_document_sha256": false,
+        "cross_split": false
+      },
+      {
+        "documents": [
+          "owned-model-18",
+          "owned-model-19"
+        ],
+        "pages": [
+          {
+            "left_page": 1,
+            "right_page": 1,
+            "similarity": 0.875
+          }
+        ],
+        "identical_document_sha256": false,
+        "cross_split": false
+      }
+    ],
+    "document_hashes": {
+      "owned-model-00": "047cc4961978f1ce10653b84f485721cdd2f0d3632d7e7c51f87b752a3f31243",
+      "owned-model-01": "6c7af5446245ca2acf2cbdbed8b727683ca47752337271d908c55dfaa9ab90df",
+      "owned-model-02": "4f18914402b8b365282fa92b0ffe0d503bcf838fb32477fecb9c9b569f6c4af1",
+      "owned-model-03": "59da043aa0539d059b6ad57a20ca0694d767b570e4c0ccd0f0dfebd4a7439947",
+      "owned-model-04": "e00ad51b707aad9e28133fe0d19db89a4d56f26c08326ef318c207deba5a3165",
+      "owned-model-05": "c50cebeff8b6fe66f1cb5181bad067f9de472fbe0b2074554e90dad08bea9098",
+      "owned-model-06": "9164072b5c38894d65a9c11972da11a41a7816d2de70deb263209625a49fbc53",
+      "owned-model-07": "e84f0ae6ba2633ef71d53db59a6f87099e1efd1411fc16dafa01ddb58720d575",
+      "owned-model-08": "f4f5411b339effe5842dd99706ce862930030fba62b5ab1927a6139edd3622ea",
+      "owned-model-09": "af717dc3132add0bf29a4bd3491fd3fe904c00168c175bc9c924593d9a1ff464",
+      "owned-model-10": "4e97ef8db05be9874aca206ac084b41c3093294578373646b190fc72b86d5f6d",
+      "owned-model-11": "bff3d100022468c894998d82d657865aaf7c10cf3bbf4045ea1fa7544ef306e7",
+      "owned-model-12": "ec8a857529267be622e1021d6b6689ea34401aab1ae1a7c743b23594ba46a9f1",
+      "owned-model-13": "86d5d098cf2ca2bf2d6edee6d4b2ea68f9d159a91f4f0e9bb530f895e07c688d",
+      "owned-model-14": "fa48baf86f4426c48889111d6f7f46c3a04dc43e74e906e2e02bd719c218e901",
+      "owned-model-15": "f24a150b2a7b2b9d6acf70e4f6a6a73c18d70ff862347dd4cf63e4e1b1978fb8",
+      "owned-model-16": "1def20e8e8e4e154ece5dbd9f9bd0cf28d1e64142a6cb5e6475e4edded6614c3",
+      "owned-model-17": "d0fb6cae8175d3c63496350132fe28dafb3c57c9094b55218bf49cd153be4f0d",
+      "owned-model-18": "e5323410ab978f62ae907c5ff848903c3cd33cfd69d877449e758d843fdefaa6",
+      "owned-model-19": "34ebc475c833c32ce1a983709cce13e87a2f18a1d645b8ad6e40282cda06e528"
+    },
+    "method": "max(word 5-shingle Jaccard, token sequence ratio for pages <=2000 tokens); exact normalized equality at any length",
+    "threshold": 0.8,
+    "holdouts": [
+      "family",
+      "supplier",
+      "template"
+    ],
+    "manifest_sha256": "946e24c7c943d7931ce2f0c63389a1f1911ddd6bb77a839f98330c373ce859ce",
+    "purpose": "unspecified"
+  },
+  "annotations_sha256": "266812a1d5ccdaa1e4d858b99cd41fbf55b1c0a977ac7163b1b2da6809a321f4",
+  "trainable_parameters": 540672,
+  "optimizer_steps": 24,
+  "losses": [
+    0.20450080931186676,
+    0.3124461770057678,
+    0.44695672392845154,
+    0.2827555239200592,
+    0.3742426037788391,
+    0.21513663232326508,
+    0.12859268486499786,
+    0.22642233967781067,
+    0.1543181836605072,
+    0.19645927846431732,
+    0.13811255991458893,
+    0.09895084798336029,
+    0.1262199431657791,
+    0.130599707365036,
+    0.1106681227684021,
+    0.12211892008781433,
+    0.11414583772420883,
+    0.1030450090765953,
+    0.10788783431053162,
+    0.09766862541437149,
+    0.07917456328868866,
+    0.17558997869491577,
+    0.23290137946605682,
+    0.09453706443309784,
+    0.09066863358020782,
+    0.09884919971227646,
+    0.09312144666910172,
+    0.06647162139415741,
+    0.0916328877210617,
+    0.0847734808921814,
+    0.14470484852790833,
+    0.05841449275612831,
+    0.05249498784542084,
+    0.07227735966444016,
+    0.08374147862195969,
+    0.07130014151334763,
+    0.06059378385543823,
+    0.0473395474255085,
+    0.06526517122983932,
+    0.07789508998394012,
+    0.05747488886117935,
+    0.07009102404117584,
+    0.0638713613152504,
+    0.1308622658252716,
+    0.057785723358392715,
+    0.07825961709022522,
+    0.0477537102997303,
+    0.04274945706129074
+  ],
+  "training_seconds": 75.79183663899312,
+  "artifact_hashes": {
+    "README.md": "261b23610386852bb3568563e4720d9da7befe6d6dd544ad46aa7056ce006463",
+    "adapter_config.json": "455d7b66e35839412d623e834d6441c233f97fe4c8134041ce1dd5d089df6c0c",
+    "adapter_model.safetensors": "380a5149450828212562f0819d4df1eab97293a58c1627357e3f0a4ab00fd854",
+    "added_tokens.json": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b",
+    "chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+    "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "special_tokens_map.json": "a36726f7fe394c1324021cac4a9ee3ad6c4f6285c0d98721f9b0b95888ec9905",
+    "tokenizer.json": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa",
+    "tokenizer_config.json": "0cd576157a061a0616665d86ca9360cb10a3b41cadc70b8e254fb1fec1e649e4",
+    "training_progress.jsonl": "ef7cb42435b2be84c63164c3e7bd921467c06f276fee8dca079f91545bb0acb5",
+    "training_status.json": "8ddd0cf8a377138fd6a82cc9614acad5ceaca5a4542cc60bd9d40e61e9e20942",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "runtime_versions": {
+    "numpy": "2.5.4",
+    "pydantic": "2.14.1",
+    "httpx": "0.28.1",
+    "torch": "2.8.0+cpu",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "bitsandbytes": "0.47.0",
+    "tokenizers": "0.22.0",
+    "safetensors": "0.6.2"
+  },
+  "hardware": {
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "processor": "x86_64",
+    "machine": "x86_64",
+    "logical_cpu_count": 16,
+    "process_peak_rss_bytes": 2906468352,
+    "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+  },
+  "cuda_peak_allocated_bytes": null,
+  "training_cost": {
+    "external_spend": 0,
+    "local_compute_seconds": 75.79183663899312,
+    "energy_cost": "not measured"
+  },
+  "final_test_used": false,
+  "initial_trainable_sha256": "8b4627b674277ce20ae7cfcb01a9e0c66b2f0a008373672e39273612b4b355ba",
+  "final_trainable_sha256": "641ce0d9a25c9cbea5e8e6993ed6094a09f6dc705730cbd8c9754b3688f83fdb",
+  "adapter_weights_changed": true,
+  "training_material": "owned synthetic only"
+}

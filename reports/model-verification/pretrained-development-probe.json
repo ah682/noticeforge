@@ -1,0 +1,26 @@
+{
+  "purpose": "real pretrained model loading/generation development probe, not frozen evaluation",
+  "model": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "license": "Apache-2.0",
+    "local_model_path": "/tmp/noticeforge-models/Qwen2.5-0.5B-Instruct",
+    "device": "cpu",
+    "precision": "bfloat16",
+    "cpu_threads": 4,
+    "max_new_tokens": 256,
+    "attention_implementation": "sdpa"
+  },
+  "load_seconds": 2.1471965249511413,
+  "raw_output": "{\"candidate\": {\"page\": 1, \"start\": 0, \"end\": 6, \"quote\": \"Laboratory-owned development note.\", \"evidence\": [{\"page\": 1, \"start\": 5, \"end\": 9, \"quote\": \"Laboratory-owned development note.\", \"date\": \"2027-04-30\", \"exception\": null}, {\"page\": 1, \"start\": 10, \"end\": 14, \"quote\": \"Laboratory-owned development note.\", \"date\": \"2027-04-30\", \"exception\": null}]}}",
+  "usage": {
+    "attempts": 1,
+    "input_tokens": 261,
+    "output_tokens": 135,
+    "precision": "bfloat16",
+    "batch_size": 1,
+    "complete": true,
+    "finish_reason": "eos",
+    "generation_seconds": 4.413967169006355
+  }
+}

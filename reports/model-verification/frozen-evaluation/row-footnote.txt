@@ -1,0 +1,11 @@
+OWNED SYNTHETIC EVALUATION CASE
+Notice ID: MM-771
+Supplier: Morrow Micro
+Notice type: PDN
+Title: Synthetic row-footnote
+Issue date: 2027-10-01
+Part number | Last buy
+MX-010-A | 2028-01-31 [7]
+MX-010-B | 2028-01-31
+[7] Last buy extended to 2028-03-15 for the marked row only.
+Page 1 of 1

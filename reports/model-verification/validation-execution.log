@@ -1,0 +1,2 @@
+The 8-bit optimizer is not available on your device, only available on CUDA for now.
+{"summary": "/home/ava/Desktop/pcn-model-compiler/reports/model-verification/comparison.json", "profiles": [{"profile": "untuned", "status": "executed"}, {"profile": "adapted", "status": "executed"}, {"profile": "batched", "status": "executed"}, {"profile": "quantized", "status": "executed"}, {"profile": "adapted-batched", "status": "executed"}, {"profile": "adapted-quantized", "status": "executed"}, {"profile": "stronger", "status": "executed"}]}

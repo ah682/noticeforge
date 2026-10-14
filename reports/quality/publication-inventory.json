@@ -1,0 +1,32 @@
+{
+  "files": 411,
+  "bytes": 18111053,
+  "largest": [
+    {
+      "path": "reports/browser-model/model-decision-history.png",
+      "bytes": 478394
+    },
+    {
+      "path": "reports/pages/1440.png",
+      "bytes": 404207
+    },
+    {
+      "path": "reports/ocr/discontinuation-300dpi.pdf",
+      "bytes": 267969
+    },
+    {
+      "path": "reports/quality/ocr/discontinuation-300dpi.pdf",
+      "bytes": 267969
+    },
+    {
+      "path": "reports/quality/accessibility/notice-export-dialog.png",
+      "bytes": 234029
+    }
+  ],
+  "forbidden_files": [],
+  "attribution_matches": [],
+  "credential_pattern_matches": [],
+  "missing_documentation_links": [],
+  "index_byte_mismatches": [],
+  "scope": "Prepared GitHub source inventory: application, owned fixtures, attributed schemas, documentation, project page and verification evidence. Runtime data, credentials, generated model weights and internal planning notes are excluded."
+}

@@ -1,0 +1,187 @@
+{
+  "axe_version": "4.14.0",
+  "official_api_reference": "https://github.com/dequelabs/axe-core/blob/develop/doc/API.md",
+  "standards": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "wcag22aa"
+  ],
+  "limitation": "Automated rule scanning and scripted keyboard checks only; not a human screen-reader or component-engineer usability study.",
+  "base": "http://127.0.0.1:8879",
+  "modelBase": "http://127.0.0.1:8878",
+  "keyboardChecks": [
+    {
+      "name": "Skip link is the first keyboard stop",
+      "passed": true
+    },
+    {
+      "name": "Skip link transfers focus into main content",
+      "passed": true
+    },
+    {
+      "name": "Right arrow changes the selected workspace tab",
+      "passed": true
+    },
+    {
+      "name": "End moves to the last workspace tab",
+      "passed": true
+    },
+    {
+      "name": "Home returns to the first workspace tab",
+      "passed": true
+    },
+    {
+      "name": "#queue-dialog: keyboard activation focuses the dialog",
+      "passed": true
+    },
+    {
+      "name": "#queue-dialog: Tab and Shift+Tab remain inside the modal",
+      "passed": true
+    },
+    {
+      "name": "#queue-dialog: Escape restores focus to its trigger",
+      "passed": true
+    },
+    {
+      "name": "#upload-dialog: keyboard activation focuses the dialog",
+      "passed": true
+    },
+    {
+      "name": "#upload-dialog: Tab and Shift+Tab remain inside the modal",
+      "passed": true
+    },
+    {
+      "name": "#upload-dialog: Escape restores focus to its trigger",
+      "passed": true
+    },
+    {
+      "name": "#export-dialog: keyboard activation focuses the dialog",
+      "passed": true
+    },
+    {
+      "name": "#export-dialog: Tab and Shift+Tab remain inside the modal",
+      "passed": true
+    },
+    {
+      "name": "#export-dialog: Escape restores focus to its trigger",
+      "passed": true
+    },
+    {
+      "name": "Field review opens from the keyboard with focus inside",
+      "passed": true
+    },
+    {
+      "name": "Field review Escape restores its field trigger",
+      "passed": true
+    },
+    {
+      "name": "#proposal-dialog: keyboard activation focuses the dialog",
+      "passed": true
+    },
+    {
+      "name": "#proposal-dialog: Tab and Shift+Tab remain inside the modal",
+      "passed": true
+    },
+    {
+      "name": "#proposal-dialog: Escape restores focus to its trigger",
+      "passed": true
+    }
+  ],
+  "diagnosticChecks": [
+    {
+      "name": "Proposal evidence contrast and visible bounds",
+      "reason": "axe reports this native-dialog text as partially overlapping other elements; retained as incomplete in the raw report.",
+      "foreground": "rgb(116, 105, 76)",
+      "background": "rgb(255, 254, 251)",
+      "contrast_ratio": 5.38,
+      "sampled_points_unobscured": true,
+      "sample_count": 9,
+      "screenshot": "model-proposal-dialog.png"
+    }
+  ],
+  "scans": [
+    {
+      "name": "default-review-desktop",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 0,
+      "pass_count": 27
+    },
+    {
+      "name": "notice-queue-dialog",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 0,
+      "pass_count": 15
+    },
+    {
+      "name": "notice-upload-dialog",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 0,
+      "pass_count": 15
+    },
+    {
+      "name": "notice-export-dialog",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 0,
+      "pass_count": 13
+    },
+    {
+      "name": "field-review-dialog",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 0,
+      "pass_count": 16
+    },
+    {
+      "name": "default-model-unconfigured",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 0,
+      "pass_count": 26
+    },
+    {
+      "name": "default-review-mobile",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 0,
+      "pass_count": 27
+    },
+    {
+      "name": "fixture-model-proposals-desktop",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 0,
+      "pass_count": 27
+    },
+    {
+      "name": "model-proposal-dialog",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 1,
+      "pass_count": 16
+    },
+    {
+      "name": "fixture-model-proposals-mobile",
+      "violation_count": 0,
+      "violating_nodes": 0,
+      "violations": [],
+      "incomplete_count": 0,
+      "pass_count": 25
+    }
+  ],
+  "errors": []
+}

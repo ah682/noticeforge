@@ -1,0 +1,9 @@
+OWNED SYNTHETIC EVALUATION CASE
+Notice ID: LA-41
+Supplier: Lumen Analog
+Notice type: PDN
+Title: Synthetic missing-attachment
+Issue date: 2027-10-01
+Part number | Last buy
+LM-88A | 2028-07-15
+Page 1/3

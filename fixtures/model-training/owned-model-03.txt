@@ -1,0 +1,5 @@
+Supplier: Cobalt training semiconductor
+Notice: OWN-TRAIN-003
+Affected identifier and deadline:
+00CF-1104-A | Sample availability: 2029-04-04
+00CF-1104-B | Sample availability: 2030-04-20

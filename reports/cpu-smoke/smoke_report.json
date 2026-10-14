@@ -1,0 +1,4276 @@
+{
+  "purpose": "genuine tiny CPU training/checkpoint/load SMOKE; not a domain model or real-world validation",
+  "status": "executed",
+  "created_at": "2026-10-14T10:06:41.780577+00:00",
+  "config": {
+    "purpose": "CPU training/checkpoint/load plumbing smoke only; not a domain extractor",
+    "seed": 17,
+    "epochs": 300,
+    "learning_rate": 0.5,
+    "feature_dimension": 96,
+    "train_examples": 160,
+    "validation_examples": 40,
+    "benchmark_requests": 160,
+    "benchmark_warmup": 8
+  },
+  "model": "hashed-feature softmax classifier",
+  "labels": [
+    "last_buy",
+    "last_delivery",
+    "effective_change",
+    "sample_availability"
+  ],
+  "seed": 17,
+  "train_examples": 160,
+  "validation_examples": 40,
+  "data_classification": "owned_synthetic_generated_smoke",
+  "data_sha256": "fec88fcf6c64c3b3d80f2862c1a157a4b303bdef73bc87e30645e2dcb28b5084",
+  "initial_loss": 1.3834839270285288,
+  "final_loss": 0.059494553351185156,
+  "weight_change_l2": 10.503185396017074,
+  "epochs": 300,
+  "training_seconds": 0.008038591000513406,
+  "runtime_versions": {
+    "numpy": "2.5.4",
+    "pydantic": "2.14.1",
+    "httpx": "0.28.1"
+  },
+  "hardware": {
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+    "machine": "x86_64",
+    "logical_cpu_count": 16,
+    "process_peak_rss_bytes": 87457792,
+    "process_user_cpu_seconds": 0.6588539999999999,
+    "process_system_cpu_seconds": 0.012764,
+    "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+  },
+  "training_cost": {
+    "external_spend": 0,
+    "local_compute_seconds": 0.008038591000513406,
+    "currency": null,
+    "energy_cost": "not measured"
+  },
+  "reload_exact": true,
+  "validation_classification_accuracy": 1.0,
+  "loss_history": [
+    1.3834839270285288,
+    1.3412957099541296,
+    1.3005111762504227,
+    1.2611038336043456,
+    1.2230455924795944,
+    1.1863069072829746,
+    1.1508569323662996,
+    1.1166636889898494,
+    1.0836942393881188,
+    1.0519148642276892,
+    1.0212912400093355,
+    0.9917886133164373,
+    0.9633719692222386,
+    0.9360061916130864,
+    0.9096562136396049,
+    0.8842871569525059,
+    0.8598644587984957,
+    0.8363539864328118,
+    0.8137221386408677,
+    0.7919359344484392,
+    0.7709630893369525,
+    0.7507720794692639,
+    0.7313321945750676,
+    0.7126135802480777,
+    0.6945872704744034,
+    0.6772252112482403,
+    0.6605002761423459,
+    0.6443862746915785,
+    0.6288579544225538,
+    0.6138909973251616,
+    0.5994620115157449,
+    0.5855485187900695,
+    0.5721289387092512,
+    0.559182569805488,
+    0.5466895684383271,
+    0.5346309257774554,
+    0.5229884433355194,
+    0.5117447074248591,
+    0.500883062865706,
+    0.4903875862305472,
+    0.4802430588701247,
+    0.47043493993088636,
+    0.46094933954155337,
+    0.45177299231767787,
+    0.44289323130744096,
+    0.43429796247927416,
+    0.4259756398319685,
+    0.41791524119051093,
+    0.4101062447357625,
+    0.40253860630300764,
+    0.3952027374731926,
+    0.38808948447109204,
+    0.38119010787654445,
+    0.3744962631480907,
+    0.3679999819526809,
+    0.3616936542904551,
+    0.3555700113997989,
+    0.34962210942484206,
+    0.34384331382517436,
+    0.3382272845057285,
+    0.3327679616434316,
+    0.3274595521862885,
+    0.32229651699996503,
+    0.31727355863663614,
+    0.31238560970080753,
+    0.30762782178695,
+    0.302995554964101,
+    0.29848436778301624,
+    0.29409000778200334,
+    0.28980840246819556,
+    0.2856356507517126,
+    0.2815680148108968,
+    0.27760191236757903,
+    0.2737339093521257,
+    0.26996071293881696,
+    0.2662791649329121,
+    0.2626862354915628,
+    0.2591790171615222,
+    0.2557547192173801,
+    0.2524106622848126,
+    0.24914427323407437,
+    0.24595308032968227,
+    0.2428347086229298,
+    0.23978687557454084,
+    0.23680738689541822,
+    0.23389413259405262,
+    0.23104508321975623,
+    0.2282582862914435,
+    0.2255318629022253,
+    0.22286400449059451,
+    0.22025296976947217,
+    0.21769708180484787,
+    0.21519472523618957,
+    0.21274434363122294,
+    0.21034443696807198,
+    0.20799355923813662,
+    0.2056903161634379,
+    0.2034333630225018,
+    0.20122140257917365,
+    0.1990531831090582,
+    0.19692749651856997,
+    0.1948431765518468,
+    0.19279909708103998,
+    0.19079417047573557,
+    0.18882734604748946,
+    0.18689760856567905,
+    0.18500397684107617,
+    0.18314550237374014,
+    0.18132126806201337,
+    0.17953038696957305,
+    0.17777200114765632,
+    0.17604528050973062,
+    0.17434942175602353,
+    0.17268364734546826,
+    0.17104720451274466,
+    0.1694393643282235,
+    0.16785942079873348,
+    0.16630669000718154,
+    0.1647805092891587,
+    0.16328023644476247,
+    0.16180524898395804,
+    0.1603549434038874,
+    0.15892873449661687,
+    0.15752605468589476,
+    0.15614635339155697,
+    0.1547890964202969,
+    0.15345376538157415,
+    0.15213985712750117,
+    0.15084688321560746,
+    0.14957436939343283,
+    0.148321855103956,
+    0.14708889301091538,
+    0.14587504854312114,
+    0.14467989945690923,
+    0.1435030354159233,
+    0.1423440575874547,
+    0.14120257825460686,
+    0.1400782204435861,
+    0.13897061756545476,
+    0.13787941307171617,
+    0.1368042601231275,
+    0.13574482127117127,
+    0.13470076815163734,
+    0.1336717811897975,
+    0.13265754931667811,
+    0.13165776969595902,
+    0.13067214746104855,
+    0.12970039546190876,
+    0.12874223402121934,
+    0.12779739069949397,
+    0.1268656000687752,
+    0.12594660349455497,
+    0.1250401489255812,
+    0.12414599069123045,
+    0.12326388930613427,
+    0.12239361128176915,
+    0.12153492894472662,
+    0.12068762026139593,
+    0.11985146866880314,
+    0.11902626291136058,
+    0.1182117968832936,
+    0.11740786947652063,
+    0.11661428443377106,
+    0.11583085020673815,
+    0.1150573798190699,
+    0.11429369073401077,
+    0.11353960472651499,
+    0.11279494775966015,
+    0.11205954986519603,
+    0.11133324502807271,
+    0.11061587107479545,
+    0.10990726956546419,
+    0.10920728568935752,
+    0.10851576816393042,
+    0.10783256913709707,
+    0.1071575440926789,
+    0.10649055175889983,
+    0.1058314540198176,
+    0.10518011582958371,
+    0.10453640512942904,
+    0.10390019276727687,
+    0.10327135241988741,
+    0.1026497605174451,
+    0.10203529617049838,
+    0.10142784109917166,
+    0.10082727956456568,
+    0.10023349830227195,
+    0.09964638645792437,
+    0.09906583552471923,
+    0.09849173928283314,
+    0.09792399374067393,
+    0.09736249707790161,
+    0.09680714959015724,
+    0.09625785363544312,
+    0.09571451358209551,
+    0.09517703575829883,
+    0.0946453284030862,
+    0.09411930161877873,
+    0.09359886732481379,
+    0.09308393921291663,
+    0.09257443270357055,
+    0.09207026490374197,
+    0.09157135456582108,
+    0.09107762204773424,
+    0.09058898927419513,
+    0.09010537969905255,
+    0.08962671826870194,
+    0.08915293138652694,
+    0.08868394687833478,
+    0.08821969395875702,
+    0.0877601031985831,
+    0.08730510649299644,
+    0.08685463703068699,
+    0.08640862926380904,
+    0.0859670188787617,
+    0.0855297427677629,
+    0.08509673900119423,
+    0.08466794680069215,
+    0.08424330651296189,
+    0.08382275958429317,
+    0.08340624853575458,
+    0.08299371693904724,
+    0.08258510939299675,
+    0.08218037150066486,
+    0.08177944984706144,
+    0.08138229197743861,
+    0.0809888463761513,
+    0.0805990624460644,
+    0.08021289048849319,
+    0.07983028168365859,
+    0.079451188071645,
+    0.0790755625338425,
+    0.07870335877486286,
+    0.0783345313049118,
+    0.07796903542260855,
+    0.07760682719823445,
+    0.07724786345740373,
+    0.07689210176514054,
+    0.07653950041035144,
+    0.07619001839068326,
+    0.07584361539775433,
+    0.0755002518027478,
+    0.07515988864235941,
+    0.07482248760508639,
+    0.0744880110178506,
+    0.0741564218329456,
+    0.0738276836152979,
+    0.0735017605300351,
+    0.07317861733035178,
+    0.07285821934566436,
+    0.07254053247004803,
+    0.07222552315094781,
+    0.07191315837815519,
+    0.07160340567304502,
+    0.07129623307806399,
+    0.070991609146465,
+    0.07068950293227941,
+    0.07038988398052351,
+    0.07009272231762927,
+    0.06979798844209684,
+    0.06950565331536053,
+    0.06921568835286426,
+    0.06892806541533991,
+    0.06864275680028352,
+    0.06835973523362457,
+    0.0680789738615831,
+    0.06780044624270926,
+    0.06752412634010148,
+    0.06724998851379826,
+    0.06697800751333872,
+    0.0667081584704882,
+    0.06644041689212465,
+    0.06617475865328118,
+    0.06591115999034133,
+    0.06564959749438334,
+    0.06539004810466867,
+    0.06513248910227296,
+    0.06487689810385373,
+    0.06462325305555297,
+    0.06437153222703067,
+    0.0641217142056266,
+    0.06387377789064563,
+    0.06362770248776596,
+    0.06338346750356505,
+    0.06314105274016144,
+    0.06290043828996987,
+    0.06266160453056595,
+    0.062424532119658926,
+    0.062189201990168565,
+    0.061955595345405366,
+    0.06172369365435006,
+    0.06149347864703074,
+    0.06126493230999523,
+    0.061038036881876756,
+    0.06081277484904955,
+    0.06058912894137414,
+    0.0603670821280284,
+    0.060146617613423235,
+    0.05992771883320105,
+    0.059710369450314736
+  ],
+  "benchmark": {
+    "purpose": "smoke classifier microbenchmark only; excludes tokenization, document parsing, model loading and real PCN relationship inference",
+    "domain_quality_evaluated": false,
+    "hardware": {
+      "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+      "python": "3.12.3",
+      "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+      "machine": "x86_64",
+      "logical_cpu_count": 16,
+      "process_peak_rss_bytes": 88829952,
+      "process_user_cpu_seconds": 0.95932,
+      "process_system_cpu_seconds": 0.012856,
+      "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+    },
+    "runtime_versions": {
+      "numpy": "2.5.4",
+      "pydantic": "2.14.1",
+      "httpx": "0.28.1"
+    },
+    "variants": [
+      {
+        "name": "unoptimized-python-dot",
+        "concurrency": 1,
+        "batch_size": 1,
+        "requests": 160,
+        "warmup_iterations": 8,
+        "feature_extraction_timed": false,
+        "precision": "float64",
+        "weight_storage_bytes": 3072,
+        "elapsed_seconds": 0.009353584000564297,
+        "requests_per_second": 17105.742567805803,
+        "p95_request_or_batch_completion_seconds": 7.546115111836114e-05,
+        "classification_accuracy": 1.0,
+        "outcomes": [
+          {
+            "request": 0,
+            "latency_seconds": 6.438000127673149e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 1,
+            "latency_seconds": 5.484299981617369e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 2,
+            "latency_seconds": 5.2918998335371725e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 3,
+            "latency_seconds": 5.229699854680803e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 4,
+            "latency_seconds": 5.238800076767802e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 5,
+            "latency_seconds": 5.2228000640752725e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 6,
+            "latency_seconds": 5.272899943520315e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 7,
+            "latency_seconds": 5.9390999012975954e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 8,
+            "latency_seconds": 5.224699998507276e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 9,
+            "latency_seconds": 5.2198000048520043e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 10,
+            "latency_seconds": 5.21180008945521e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 11,
+            "latency_seconds": 5.2228000640752725e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 12,
+            "latency_seconds": 5.190699994273018e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 13,
+            "latency_seconds": 7.470000127796084e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 14,
+            "latency_seconds": 0.00010399400161986705,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 15,
+            "latency_seconds": 7.662300049560145e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 16,
+            "latency_seconds": 0.0004937110006721923,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 17,
+            "latency_seconds": 5.21080000908114e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 18,
+            "latency_seconds": 5.20269986736821e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 19,
+            "latency_seconds": 8.178299867722671e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 20,
+            "latency_seconds": 5.552299990085885e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 21,
+            "latency_seconds": 5.223799962550402e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 22,
+            "latency_seconds": 5.219699960434809e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 23,
+            "latency_seconds": 5.225700078881346e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 24,
+            "latency_seconds": 5.21970014233375e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 25,
+            "latency_seconds": 5.193700053496286e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 26,
+            "latency_seconds": 5.223700100032147e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 27,
+            "latency_seconds": 5.206700006965548e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 28,
+            "latency_seconds": 5.199699990043882e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 29,
+            "latency_seconds": 5.210699964663945e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 30,
+            "latency_seconds": 5.201700150792021e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 31,
+            "latency_seconds": 5.193700053496286e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 32,
+            "latency_seconds": 5.1977000111946836e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 33,
+            "latency_seconds": 5.453099947771989e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 34,
+            "latency_seconds": 5.243800114840269e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 35,
+            "latency_seconds": 5.258800047158729e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 36,
+            "latency_seconds": 5.238699850451667e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 37,
+            "latency_seconds": 5.855899871676229e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 38,
+            "latency_seconds": 5.246799992164597e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 39,
+            "latency_seconds": 5.255799987935461e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 40,
+            "latency_seconds": 5.249800051387865e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 41,
+            "latency_seconds": 5.235699973127339e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 42,
+            "latency_seconds": 5.232700095803011e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 43,
+            "latency_seconds": 5.2538000090862624e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 44,
+            "latency_seconds": 5.236799916019663e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 45,
+            "latency_seconds": 5.2478000725386664e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 46,
+            "latency_seconds": 5.2538000090862624e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 47,
+            "latency_seconds": 5.232699913904071e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 48,
+            "latency_seconds": 5.2538000090862624e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 49,
+            "latency_seconds": 5.2397999752429314e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 50,
+            "latency_seconds": 8.415699994657189e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 51,
+            "latency_seconds": 5.309900006977841e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 52,
+            "latency_seconds": 5.597400013357401e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 53,
+            "latency_seconds": 5.258800047158729e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 54,
+            "latency_seconds": 7.740399996691849e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 55,
+            "latency_seconds": 5.235800017544534e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 56,
+            "latency_seconds": 5.274800059851259e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 57,
+            "latency_seconds": 5.27279989910312e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 58,
+            "latency_seconds": 5.2418001359910704e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 59,
+            "latency_seconds": 5.250799949862994e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 60,
+            "latency_seconds": 5.2347999371704645e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 61,
+            "latency_seconds": 5.250799949862994e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 62,
+            "latency_seconds": 5.2789000619668514e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 63,
+            "latency_seconds": 5.255799987935461e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 64,
+            "latency_seconds": 5.2597999456338584e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 65,
+            "latency_seconds": 5.255799987935461e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 66,
+            "latency_seconds": 5.244800013315398e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 67,
+            "latency_seconds": 5.274800059851259e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 68,
+            "latency_seconds": 5.249800051387865e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 69,
+            "latency_seconds": 5.260800026007928e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 70,
+            "latency_seconds": 5.436200081021525e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 71,
+            "latency_seconds": 5.251800030237064e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 72,
+            "latency_seconds": 5.232799958321266e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 73,
+            "latency_seconds": 5.25679988641059e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 74,
+            "latency_seconds": 5.244699968898203e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 75,
+            "latency_seconds": 5.2478000725386664e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 76,
+            "latency_seconds": 5.292899913911242e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 77,
+            "latency_seconds": 5.2407998737180606e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 78,
+            "latency_seconds": 5.24179995409213e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 79,
+            "latency_seconds": 5.246799992164597e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 80,
+            "latency_seconds": 5.246799992164597e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 81,
+            "latency_seconds": 5.258799865259789e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 82,
+            "latency_seconds": 5.2457999117905274e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 83,
+            "latency_seconds": 0.00019054600124945864,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 84,
+            "latency_seconds": 5.3981000746716745e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 85,
+            "latency_seconds": 5.248800152912736e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 86,
+            "latency_seconds": 5.5563001296832226e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 87,
+            "latency_seconds": 5.199699990043882e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 88,
+            "latency_seconds": 9.557799967296887e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 89,
+            "latency_seconds": 5.2277000577305444e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 90,
+            "latency_seconds": 5.2198000048520043e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 91,
+            "latency_seconds": 5.217800026002806e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 92,
+            "latency_seconds": 5.2618001063819975e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 93,
+            "latency_seconds": 5.221699939284008e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 94,
+            "latency_seconds": 5.221799983701203e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 95,
+            "latency_seconds": 5.221799983701203e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 96,
+            "latency_seconds": 5.214700104261283e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 97,
+            "latency_seconds": 5.238800076767802e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 98,
+            "latency_seconds": 5.2036999477422796e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 99,
+            "latency_seconds": 5.220800085226074e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 100,
+            "latency_seconds": 5.211699863139074e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 101,
+            "latency_seconds": 5.223700100032147e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 102,
+            "latency_seconds": 5.198699909669813e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 103,
+            "latency_seconds": 5.231700015428942e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 104,
+            "latency_seconds": 6.0413000028347597e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 105,
+            "latency_seconds": 5.2338000386953354e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 106,
+            "latency_seconds": 7.540000115113799e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 107,
+            "latency_seconds": 5.2347999371704645e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 108,
+            "latency_seconds": 5.230799979472067e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 109,
+            "latency_seconds": 5.2397999752429314e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 110,
+            "latency_seconds": 5.2027000492671505e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 111,
+            "latency_seconds": 5.218799924477935e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 112,
+            "latency_seconds": 5.2088000302319415e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 113,
+            "latency_seconds": 5.2198000048520043e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 114,
+            "latency_seconds": 5.21080000908114e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 115,
+            "latency_seconds": 5.2086999858147465e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 116,
+            "latency_seconds": 5.236799916019663e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 117,
+            "latency_seconds": 5.216699901211541e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 118,
+            "latency_seconds": 5.212699943513144e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 119,
+            "latency_seconds": 5.238799894868862e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 120,
+            "latency_seconds": 5.260800026007928e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 121,
+            "latency_seconds": 5.225700078881346e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 122,
+            "latency_seconds": 5.268800123303663e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 123,
+            "latency_seconds": 6.755600043106824e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 124,
+            "latency_seconds": 5.220700040808879e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 125,
+            "latency_seconds": 5.223699918133207e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 126,
+            "latency_seconds": 5.231700015428942e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 127,
+            "latency_seconds": 5.222799882176332e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 128,
+            "latency_seconds": 5.2277000577305444e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 129,
+            "latency_seconds": 5.225700078881346e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 130,
+            "latency_seconds": 5.2288000006228685e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 131,
+            "latency_seconds": 5.212699943513144e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 132,
+            "latency_seconds": 5.240800055617001e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 133,
+            "latency_seconds": 5.2428000344661996e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 134,
+            "latency_seconds": 5.225700078881346e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 135,
+            "latency_seconds": 5.230799979472067e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 136,
+            "latency_seconds": 5.224699998507276e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 137,
+            "latency_seconds": 5.231800059846137e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 138,
+            "latency_seconds": 5.2278001021477394e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 139,
+            "latency_seconds": 5.223699918133207e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 140,
+            "latency_seconds": 5.232700095803011e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 141,
+            "latency_seconds": 5.4150999858393334e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 142,
+            "latency_seconds": 5.2176999815856107e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 143,
+            "latency_seconds": 5.252799928712193e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 144,
+            "latency_seconds": 5.224699998507276e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 145,
+            "latency_seconds": 5.220700040808879e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 146,
+            "latency_seconds": 5.2407998737180606e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 147,
+            "latency_seconds": 5.224699998507276e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 148,
+            "latency_seconds": 5.223799962550402e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 149,
+            "latency_seconds": 5.24179995409213e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 150,
+            "latency_seconds": 5.231800059846137e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 151,
+            "latency_seconds": 5.229799899097998e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 152,
+            "latency_seconds": 5.219699960434809e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 153,
+            "latency_seconds": 5.2336999942781404e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 154,
+            "latency_seconds": 5.2036999477422796e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 155,
+            "latency_seconds": 5.226699977356475e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 156,
+            "latency_seconds": 5.215800047153607e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 157,
+            "latency_seconds": 5.22680002177367e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 158,
+            "latency_seconds": 5.230699935054872e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 159,
+            "latency_seconds": 5.2338000386953354e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          }
+        ]
+      },
+      {
+        "name": "numpy-batch",
+        "concurrency": 1,
+        "batch_size": 160,
+        "requests": 160,
+        "warmup_iterations": 8,
+        "feature_extraction_timed": false,
+        "precision": "float64",
+        "weight_storage_bytes": 3072,
+        "elapsed_seconds": 6.835800013504922e-05,
+        "requests_per_second": 2340618.50381669,
+        "p95_request_or_batch_completion_seconds": 1.3053999282419682e-05,
+        "classification_accuracy": 1.0,
+        "outcomes": [
+          {
+            "request": 0,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 1,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 2,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 3,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 4,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 5,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 6,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 7,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 8,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 9,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 10,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 11,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 12,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 13,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 14,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 15,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 16,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 17,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 18,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 19,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 20,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 21,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 22,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 23,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 24,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 25,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 26,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 27,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 28,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 29,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 30,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 31,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 32,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 33,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 34,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 35,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 36,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 37,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 38,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 39,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 40,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 41,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 42,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 43,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 44,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 45,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 46,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 47,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 48,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 49,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 50,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 51,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 52,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 53,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 54,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 55,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 56,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 57,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 58,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 59,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 60,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 61,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 62,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 63,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 64,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 65,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 66,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 67,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 68,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 69,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 70,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 71,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 72,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 73,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 74,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 75,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 76,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 77,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 78,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 79,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 80,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 81,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 82,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 83,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 84,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 85,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 86,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 87,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 88,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 89,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 90,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 91,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 92,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 93,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 94,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 95,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 96,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 97,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 98,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 99,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 100,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 101,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 102,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 103,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 104,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 105,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 106,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 107,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 108,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 109,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 110,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 111,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 112,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 113,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 114,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 115,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 116,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 117,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 118,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 119,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 120,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 121,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 122,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 123,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 124,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 125,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 126,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 127,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 128,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 129,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 130,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 131,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 132,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 133,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 134,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 135,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 136,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 137,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 138,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 139,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 140,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 141,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 142,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 143,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 144,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 145,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 146,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 147,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 148,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 149,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 150,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 151,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 152,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 153,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 154,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 155,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 156,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 157,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 158,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 159,
+            "batch_completion_latency_seconds": 1.3053999282419682e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          }
+        ]
+      },
+      {
+        "name": "int8-storage-dequantized-numpy",
+        "concurrency": 1,
+        "batch_size": 160,
+        "requests": 160,
+        "warmup_iterations": 8,
+        "feature_extraction_timed": false,
+        "precision": "int8 weights, float64 dequantization/compute",
+        "weight_storage_bytes": 416,
+        "elapsed_seconds": 6.528199992317241e-05,
+        "requests_per_second": 2450905.3060307154,
+        "p95_request_or_batch_completion_seconds": 1.3064998711342923e-05,
+        "classification_accuracy": 1.0,
+        "outcomes": [
+          {
+            "request": 0,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 1,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 2,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 3,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 4,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 5,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 6,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 7,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 8,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 9,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 10,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 11,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 12,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 13,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 14,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 15,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 16,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 17,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 18,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 19,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 20,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 21,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 22,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 23,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 24,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 25,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 26,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 27,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 28,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 29,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 30,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 31,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 32,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 33,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 34,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 35,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 36,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 37,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 38,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 39,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 40,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 41,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 42,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 43,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 44,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 45,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 46,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 47,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 48,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 49,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 50,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 51,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 52,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 53,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 54,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 55,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 56,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 57,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 58,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 59,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 60,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 61,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 62,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 63,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 64,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 65,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 66,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 67,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 68,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 69,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 70,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 71,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 72,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 73,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 74,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 75,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 76,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 77,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 78,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 79,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 80,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 81,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 82,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 83,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 84,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 85,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 86,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 87,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 88,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 89,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 90,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 91,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 92,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 93,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 94,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 95,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 96,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 97,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 98,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 99,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 100,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 101,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 102,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 103,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 104,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 105,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 106,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 107,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 108,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 109,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 110,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 111,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 112,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 113,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 114,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 115,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 116,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 117,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 118,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 119,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 120,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 121,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 122,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 123,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 124,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 125,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 126,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 127,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 128,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 129,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 130,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 131,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 132,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 133,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 134,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 135,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 136,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 137,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 138,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 139,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 140,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 141,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 142,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 143,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 144,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 145,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 146,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 147,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 148,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 149,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 150,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 151,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 152,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 153,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 154,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 155,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          },
+          {
+            "request": 156,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_buy",
+            "expected": "last_buy",
+            "correct": true,
+            "input_characters": 37
+          },
+          {
+            "request": 157,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "last_delivery",
+            "expected": "last_delivery",
+            "correct": true,
+            "input_characters": 42
+          },
+          {
+            "request": 158,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "effective_change",
+            "expected": "effective_change",
+            "correct": true,
+            "input_characters": 41
+          },
+          {
+            "request": 159,
+            "batch_completion_latency_seconds": 1.3064998711342923e-05,
+            "predicted": "sample_availability",
+            "expected": "sample_availability",
+            "correct": true,
+            "input_characters": 44
+          }
+        ]
+      }
+    ]
+  },
+  "unexecuted": [
+    "Qwen model weights training/inference",
+    "LoRA and QLoRA real corpus training",
+    "GPU batching/quantization relationship comparison",
+    "authorized held-out real supplier/template evaluation",
+    "component-engineer review-time study"
+  ]
+}

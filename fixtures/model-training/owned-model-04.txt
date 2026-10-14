@@ -1,0 +1,4 @@
+Supplier: Cobalt training semiconductor
+Notice: OWN-TRAIN-004
+Affected identifier and deadline:
+00CF-1105-A | Acknowledgment: while inventory lasts

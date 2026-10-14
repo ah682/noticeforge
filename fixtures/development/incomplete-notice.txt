@@ -1,0 +1,9 @@
+OWNED SYNTHETIC FIXTURE
+Notice ID: CRS-PDN-2026-009
+Supplier: Crest Components
+Notice type: PDN
+Title: Incomplete attachment
+Issue date: 2026-10-02
+Part number | Last buy
+CX-1000 | 2027-06-01
+Page 1 of 3

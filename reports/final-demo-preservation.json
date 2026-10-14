@@ -1,0 +1,84 @@
+{
+  "before": {
+    "notices": [
+      {
+        "id": "11338a742c7c56056b05",
+        "version": 1,
+        "current_sha256": "7f22ffab0016171d98f41011522686279553a408dde1a37c7aacd4ffb46a51d0",
+        "original_sha256": "7f22ffab0016171d98f41011522686279553a408dde1a37c7aacd4ffb46a51d0",
+        "document_sha256": "11338a742c7c56056b057e6b7d2737035b1c6c0fd569360e05e61d0e694f736c"
+      },
+      {
+        "id": "4ee9f922f6d31d516cc9",
+        "version": 1,
+        "current_sha256": "ddfb663d978ce59f58c50d1e9c404dd6880242a6438b4fc8072ab544ec2c61d3",
+        "original_sha256": "ddfb663d978ce59f58c50d1e9c404dd6880242a6438b4fc8072ab544ec2c61d3",
+        "document_sha256": "4ee9f922f6d31d516cc939500d566db37efe7408c7cac4b6132cf4a06ffa5701"
+      },
+      {
+        "id": "8a9bef13c1d06653477e",
+        "version": 1,
+        "current_sha256": "906a65b7fd243adcf106b04f6a93b6f6ef0615eab0d9f1e7a3472905afbe48ba",
+        "original_sha256": "906a65b7fd243adcf106b04f6a93b6f6ef0615eab0d9f1e7a3472905afbe48ba",
+        "document_sha256": "8a9bef13c1d06653477ed0dba31335b41e753c516e005de74f004b826bac9834"
+      },
+      {
+        "id": "ac1e1941a4fa545b74c8",
+        "version": 1,
+        "current_sha256": "21e3c10cd2c587c5ec31743f1b68a54d06571a4529ac8101d961d51f6492a550",
+        "original_sha256": "21e3c10cd2c587c5ec31743f1b68a54d06571a4529ac8101d961d51f6492a550",
+        "document_sha256": "ac1e1941a4fa545b74c81c40398b982c4da05ad6673b67537bc9238af8c63b04"
+      },
+      {
+        "id": "e8a03eb264818fc99330",
+        "version": 1,
+        "current_sha256": "68ea42c64908e6db16278de80ae0a158c756ab98f905bc1eeddb0d9ffba71926",
+        "original_sha256": "68ea42c64908e6db16278de80ae0a158c756ab98f905bc1eeddb0d9ffba71926",
+        "document_sha256": "e8a03eb264818fc99330fbf8fbd4035d444b468fa206325b835c9469cef68c9d"
+      }
+    ],
+    "audit_count": 5
+  },
+  "purpose": "Preserve existing workspace notices and review history across server restart; no reset",
+  "after": {
+    "notices": [
+      {
+        "id": "11338a742c7c56056b05",
+        "version": 1,
+        "current_sha256": "7f22ffab0016171d98f41011522686279553a408dde1a37c7aacd4ffb46a51d0",
+        "original_sha256": "7f22ffab0016171d98f41011522686279553a408dde1a37c7aacd4ffb46a51d0",
+        "document_sha256": "11338a742c7c56056b057e6b7d2737035b1c6c0fd569360e05e61d0e694f736c"
+      },
+      {
+        "id": "4ee9f922f6d31d516cc9",
+        "version": 1,
+        "current_sha256": "ddfb663d978ce59f58c50d1e9c404dd6880242a6438b4fc8072ab544ec2c61d3",
+        "original_sha256": "ddfb663d978ce59f58c50d1e9c404dd6880242a6438b4fc8072ab544ec2c61d3",
+        "document_sha256": "4ee9f922f6d31d516cc939500d566db37efe7408c7cac4b6132cf4a06ffa5701"
+      },
+      {
+        "id": "8a9bef13c1d06653477e",
+        "version": 1,
+        "current_sha256": "906a65b7fd243adcf106b04f6a93b6f6ef0615eab0d9f1e7a3472905afbe48ba",
+        "original_sha256": "906a65b7fd243adcf106b04f6a93b6f6ef0615eab0d9f1e7a3472905afbe48ba",
+        "document_sha256": "8a9bef13c1d06653477ed0dba31335b41e753c516e005de74f004b826bac9834"
+      },
+      {
+        "id": "ac1e1941a4fa545b74c8",
+        "version": 1,
+        "current_sha256": "21e3c10cd2c587c5ec31743f1b68a54d06571a4529ac8101d961d51f6492a550",
+        "original_sha256": "21e3c10cd2c587c5ec31743f1b68a54d06571a4529ac8101d961d51f6492a550",
+        "document_sha256": "ac1e1941a4fa545b74c81c40398b982c4da05ad6673b67537bc9238af8c63b04"
+      },
+      {
+        "id": "e8a03eb264818fc99330",
+        "version": 1,
+        "current_sha256": "68ea42c64908e6db16278de80ae0a158c756ab98f905bc1eeddb0d9ffba71926",
+        "original_sha256": "68ea42c64908e6db16278de80ae0a158c756ab98f905bc1eeddb0d9ffba71926",
+        "document_sha256": "e8a03eb264818fc99330fbf8fbd4035d444b468fa206325b835c9469cef68c9d"
+      }
+    ],
+    "audit_count": 5
+  },
+  "preserved_exactly": true
+}

@@ -1,0 +1,5 @@
+Supplier: Copper training devices
+Notice: OWN-TRAIN-009
+Affected identifier and deadline:
+00CF-1110-A | Sample availability: 2029-10-10
+00CF-1110-B | Sample availability: 2030-10-20

@@ -1,0 +1,21 @@
+{
+  "name": "noticeforge-local",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local development and browser verification commands; the app ships static JavaScript",
+  "scripts": {
+    "dev": "make demo",
+    "test": "make verify",
+    "test:unit": ".venv/bin/python -m pytest",
+    "test:browser": "node scripts/browser-qa.mjs",
+    "format": "prettier --write \"noticeforge/static/*.{js,css,html}\" \"site/*.{html,css}\" \"scripts/*.mjs\"",
+    "format:check": "prettier --check \"noticeforge/static/*.{js,css,html}\" \"site/*.{html,css}\" \"scripts/*.mjs\"",
+    "test:races": "node scripts/browser-qa.mjs --races",
+    "test:pages": "node scripts/browser-qa.mjs --pages"
+  },
+  "devDependencies": {
+    "axe-core": "4.14.0",
+    "playwright": "1.58.2",
+    "prettier": "3.9.10"
+  }
+}

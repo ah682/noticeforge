@@ -1,0 +1,976 @@
+{
+  "documents": [
+    {
+      "id": "owned-model-00",
+      "path": "owned-model-00.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Cobalt training semiconductor",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-000",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1101-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1101-A",
+            "kind": "last_buy",
+            "date": "2029-01-01"
+          }
+        ]
+      },
+      "sha256": "047cc4961978f1ce10653b84f485721cdd2f0d3632d7e7c51f87b752a3f31243",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-01",
+      "path": "owned-model-01.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Cobalt training semiconductor",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-001",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1102-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1102-A",
+            "kind": "last_delivery",
+            "date": "2029-02-02"
+          }
+        ]
+      },
+      "sha256": "6c7af5446245ca2acf2cbdbed8b727683ca47752337271d908c55dfaa9ab90df",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-02",
+      "path": "owned-model-02.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Cobalt training semiconductor",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-002",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1103-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1103-A",
+            "kind": "effective_change",
+            "date": "2029-03-03"
+          }
+        ]
+      },
+      "sha256": "4f18914402b8b365282fa92b0ffe0d503bcf838fb32477fecb9c9b569f6c4af1",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-03",
+      "path": "owned-model-03.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Cobalt training semiconductor",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-003",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1104-A",
+          "00CF-1104-B"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1104-A",
+            "kind": "sample_availability",
+            "date": "2029-04-04"
+          },
+          {
+            "part": "00CF-1104-B",
+            "kind": "sample_availability",
+            "date": "2030-04-20"
+          }
+        ]
+      },
+      "sha256": "59da043aa0539d059b6ad57a20ca0694d767b570e4c0ccd0f0dfebd4a7439947",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-04",
+      "path": "owned-model-04.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Cobalt training semiconductor",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-004",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1105-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1105-A",
+            "kind": "acknowledgment",
+            "date": null
+          }
+        ]
+      },
+      "sha256": "e00ad51b707aad9e28133fe0d19db89a4d56f26c08326ef318c207deba5a3165",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-05",
+      "path": "owned-model-05.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Cobalt training semiconductor",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-005",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1106-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1106-A",
+            "kind": "end_of_production",
+            "date": "2029-06-06"
+          }
+        ]
+      },
+      "sha256": "c50cebeff8b6fe66f1cb5181bad067f9de472fbe0b2074554e90dad08bea9098",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-06",
+      "path": "owned-model-06.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Cobalt training semiconductor",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-006",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1107-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1107-A",
+            "kind": "last_buy",
+            "date": "2029-07-07"
+          }
+        ]
+      },
+      "sha256": "9164072b5c38894d65a9c11972da11a41a7816d2de70deb263209625a49fbc53",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-07",
+      "path": "owned-model-07.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Cobalt training semiconductor",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-007",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1108-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1108-A",
+            "kind": "last_delivery",
+            "date": null
+          }
+        ]
+      },
+      "sha256": "e84f0ae6ba2633ef71d53db59a6f87099e1efd1411fc16dafa01ddb58720d575",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-08",
+      "path": "owned-model-08.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Copper training devices",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-008",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1109-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1109-A",
+            "kind": "effective_change",
+            "date": "2029-09-09"
+          }
+        ]
+      },
+      "sha256": "f4f5411b339effe5842dd99706ce862930030fba62b5ab1927a6139edd3622ea",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-09",
+      "path": "owned-model-09.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Copper training devices",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-009",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1110-A",
+          "00CF-1110-B"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1110-A",
+            "kind": "sample_availability",
+            "date": "2029-10-10"
+          },
+          {
+            "part": "00CF-1110-B",
+            "kind": "sample_availability",
+            "date": "2030-10-20"
+          }
+        ]
+      },
+      "sha256": "af717dc3132add0bf29a4bd3491fd3fe904c00168c175bc9c924593d9a1ff464",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-10",
+      "path": "owned-model-10.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Copper training devices",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-010",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1111-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1111-A",
+            "kind": "acknowledgment",
+            "date": null
+          }
+        ]
+      },
+      "sha256": "4e97ef8db05be9874aca206ac084b41c3093294578373646b190fc72b86d5f6d",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-11",
+      "path": "owned-model-11.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Copper training devices",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-011",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1112-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1112-A",
+            "kind": "end_of_production",
+            "date": "2029-12-12"
+          }
+        ]
+      },
+      "sha256": "bff3d100022468c894998d82d657865aaf7c10cf3bbf4045ea1fa7544ef306e7",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-12",
+      "path": "owned-model-12.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Copper training devices",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-012",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1113-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1113-A",
+            "kind": "last_buy",
+            "date": "2029-01-13"
+          }
+        ]
+      },
+      "sha256": "ec8a857529267be622e1021d6b6689ea34401aab1ae1a7c743b23594ba46a9f1",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-13",
+      "path": "owned-model-13.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Copper training devices",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-013",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1114-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1114-A",
+            "kind": "last_delivery",
+            "date": "2029-02-14"
+          }
+        ]
+      },
+      "sha256": "86d5d098cf2ca2bf2d6edee6d4b2ea68f9d159a91f4f0e9bb530f895e07c688d",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-14",
+      "path": "owned-model-14.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Copper training devices",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-014",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1115-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1115-A",
+            "kind": "effective_change",
+            "date": "2029-03-15"
+          }
+        ]
+      },
+      "sha256": "fa48baf86f4426c48889111d6f7f46c3a04dc43e74e906e2e02bd719c218e901",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-15",
+      "path": "owned-model-15.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Copper training devices",
+      "template": "owned-training-schedule-v1",
+      "family": "OWN-MODEL-FAMILY-015",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1116-A",
+          "00CF-1116-B"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1116-A",
+            "kind": "sample_availability",
+            "date": "2029-04-16"
+          },
+          {
+            "part": "00CF-1116-B",
+            "kind": "sample_availability",
+            "date": "2030-04-20"
+          }
+        ]
+      },
+      "sha256": "f24a150b2a7b2b9d6acf70e4f6a6a73c18d70ff862347dd4cf63e4e1b1978fb8",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-16",
+      "path": "owned-model-16.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Larch validation works 16",
+      "template": "larch-validation-prose-v16",
+      "family": "OWN-MODEL-FAMILY-016",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1117-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1117-A",
+            "kind": "acknowledgment",
+            "date": "2029-05-17"
+          }
+        ]
+      },
+      "sha256": "1def20e8e8e4e154ece5dbd9f9bd0cf28d1e64142a6cb5e6475e4edded6614c3",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-17",
+      "path": "owned-model-17.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Larch validation works 17",
+      "template": "larch-validation-prose-v17",
+      "family": "OWN-MODEL-FAMILY-017",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1118-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1118-A",
+            "kind": "end_of_production",
+            "date": "2029-06-18"
+          }
+        ]
+      },
+      "sha256": "d0fb6cae8175d3c63496350132fe28dafb3c57c9094b55218bf49cd153be4f0d",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-18",
+      "path": "owned-model-18.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Larch validation works 18",
+      "template": "larch-validation-prose-v18",
+      "family": "OWN-MODEL-FAMILY-018",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1119-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1119-A",
+            "kind": "last_buy",
+            "date": "2029-07-19"
+          }
+        ]
+      },
+      "sha256": "e5323410ab978f62ae907c5ff848903c3cd33cfd69d877449e758d843fdefaa6",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "owned-model-19",
+      "path": "owned-model-19.txt",
+      "source": "NoticeForge authored synthetic model-training fixture, seed 17",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Larch validation works 19",
+      "template": "larch-validation-prose-v19",
+      "family": "OWN-MODEL-FAMILY-019",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "Deterministically authored literal gold; independent of model outputs",
+      "expected": {
+        "parts": [
+          "00CF-1120-A"
+        ],
+        "relationships": [
+          {
+            "part": "00CF-1120-A",
+            "kind": "last_delivery",
+            "date": "2029-08-20"
+          }
+        ]
+      },
+      "sha256": "34ebc475c833c32ce1a983709cce13e87a2f18a1d645b8ad6e40282cda06e528",
+      "created_at": "2026-10-14T00:00:00Z",
+      "transformations": [
+        "authored locally with seed 17",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "different-deadlines",
+      "path": "different-deadlines.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Vela Silicon",
+      "template": "different-deadlines",
+      "family": "VLA-013",
+      "classification": "synthetic",
+      "split": "test",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "expected": {
+        "parts": [
+          "00042-T1",
+          "00042-T2",
+          "VX-920-B"
+        ],
+        "relationships": [
+          {
+            "part": "00042-T1",
+            "kind": "last_buy",
+            "date": "2028-02-29"
+          },
+          {
+            "part": "00042-T1",
+            "kind": "last_delivery",
+            "date": "2028-08-31"
+          },
+          {
+            "part": "00042-T2",
+            "kind": "last_buy",
+            "date": "2028-02-29"
+          },
+          {
+            "part": "00042-T2",
+            "kind": "last_delivery",
+            "date": "2028-08-31"
+          },
+          {
+            "part": "VX-920-B",
+            "kind": "last_buy",
+            "date": "2028-05-31"
+          },
+          {
+            "part": "VX-920-B",
+            "kind": "last_delivery",
+            "date": "2028-11-30"
+          }
+        ],
+        "exceptions": [
+          {
+            "part": "00042-T2",
+            "contains": "inventory"
+          }
+        ]
+      },
+      "sha256": "7cf98b48602ac342bfcbca62dc8ce0c3e1bcf87d9791bd5476ae7c950a726271",
+      "created_at": "2026-10-13T00:00:00Z",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "row-footnote",
+      "path": "row-footnote.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Morrow Micro",
+      "template": "row-footnote",
+      "family": "MM-771",
+      "classification": "synthetic",
+      "split": "test",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "expected": {
+        "parts": [
+          "MX-010-A",
+          "MX-010-B"
+        ],
+        "relationships": [
+          {
+            "part": "MX-010-A",
+            "kind": "last_buy",
+            "date": "2028-03-15"
+          },
+          {
+            "part": "MX-010-B",
+            "kind": "last_buy",
+            "date": "2028-01-31"
+          }
+        ]
+      },
+      "sha256": "a3a5635e681c369758d4b76513e7ceefa8547028b58264a779beeb08b8010acc",
+      "created_at": "2026-10-13T00:00:00Z",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "ambiguous-ordering",
+      "path": "ambiguous-ordering.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Quarry Logic",
+      "template": "ambiguous-ordering",
+      "family": "QL-94",
+      "classification": "synthetic",
+      "split": "test",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "expected": {
+        "parts": [
+          "000ZX-R",
+          "000ZX-S"
+        ],
+        "relationships": [
+          {
+            "part": "000ZX-R",
+            "kind": "last_buy",
+            "date": null
+          },
+          {
+            "part": "000ZX-S",
+            "kind": "last_buy",
+            "date": null
+          }
+        ],
+        "review_required": [
+          "000ZX-R",
+          "000ZX-S"
+        ]
+      },
+      "sha256": "170947bdce53a905d7b57cbcfa28b930bbb7199d242dfe1ca53667ae82e5c170",
+      "created_at": "2026-10-13T00:00:00Z",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "partial-revision",
+      "path": "partial-revision.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Helio Components",
+      "template": "partial-revision",
+      "family": "HEL-211-B",
+      "classification": "synthetic",
+      "split": "test",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "expected": {
+        "parts": [
+          "HL-3B"
+        ],
+        "relationships": [
+          {
+            "part": "HL-3B",
+            "kind": "last_buy",
+            "date": "2028-07-31"
+          }
+        ],
+        "revisions": [
+          {
+            "kind": "supersedes",
+            "target_notice_id": "HEL-211-A",
+            "scope": "subset",
+            "parts": [
+              "HL-3B"
+            ]
+          }
+        ]
+      },
+      "sha256": "7a86d0a5fa808d3a1472cd6e0492336d0056526d2cab1e18e51aa9ec08c3ece3",
+      "created_at": "2026-10-13T00:00:00Z",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "literal-identifiers",
+      "path": "literal-identifiers.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Indigo Circuits",
+      "template": "literal-identifiers",
+      "family": "IC-09",
+      "classification": "synthetic",
+      "split": "test",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "expected": {
+        "parts": [
+          "0010-TR",
+          "010-TR",
+          "OO10-TR",
+          "0010-T"
+        ],
+        "relationships": [
+          {
+            "part": "0010-TR",
+            "kind": "last_buy",
+            "date": "2028-02-01"
+          },
+          {
+            "part": "010-TR",
+            "kind": "last_buy",
+            "date": "2028-02-01"
+          },
+          {
+            "part": "OO10-TR",
+            "kind": "last_buy",
+            "date": "2028-02-01"
+          },
+          {
+            "part": "0010-T",
+            "kind": "last_buy",
+            "date": "2028-02-01"
+          }
+        ]
+      },
+      "sha256": "54dee5feb9fea272ac9642ec2e005ab1d8a375f5c6785b3d42bbd0c83b0bbdd8",
+      "created_at": "2026-10-13T00:00:00Z",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "injection-data",
+      "path": "injection-data.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Juniper Micro",
+      "template": "injection-data",
+      "family": "JM-718",
+      "classification": "synthetic",
+      "split": "test",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "expected": {
+        "parts": [
+          "JM-441-X"
+        ],
+        "relationships": [
+          {
+            "part": "JM-441-X",
+            "kind": "last_buy",
+            "date": "2028-10-31"
+          }
+        ]
+      },
+      "sha256": "5875c6865712d03c025eaf74c0fa770454ad4a2be7c1432b87f88aa965bfb40e",
+      "created_at": "2026-10-13T00:00:00Z",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "missing-attachment",
+      "path": "missing-attachment.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Lumen Analog",
+      "template": "missing-attachment",
+      "family": "LA-41",
+      "classification": "synthetic",
+      "split": "test",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "expected": {
+        "parts": [
+          "LM-88A"
+        ],
+        "relationships": [
+          {
+            "part": "LM-88A",
+            "kind": "last_buy",
+            "date": "2028-07-15"
+          }
+        ],
+        "incomplete": true,
+        "review_required_document": true
+      },
+      "sha256": "6aa231c6bb8797b106e9965929bd6555880544314acb9c5578504d6af7a1b775",
+      "created_at": "2026-10-13T00:00:00Z",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ]
+    },
+    {
+      "id": "unsupported-ragged-row",
+      "path": "unsupported-ragged-row.txt",
+      "source": "NoticeForge authored synthetic fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "Tern Logic",
+      "template": "unsupported-ragged-row",
+      "family": "TL-98",
+      "classification": "synthetic",
+      "split": "test",
+      "annotation_provenance": "Hand-authored expected relationships, independent of compiler output",
+      "expected": {
+        "parts": [
+          "TR-001",
+          "TR-002"
+        ],
+        "relationships": [
+          {
+            "part": "TR-001",
+            "kind": "last_buy",
+            "date": "2028-11-30"
+          },
+          {
+            "part": "TR-002",
+            "kind": "last_buy",
+            "date": "2028-12-31"
+          }
+        ],
+        "review_required_document": true
+      },
+      "sha256": "c7e5022dd27d4836548fb75527872f7c3c38623e7697fd341f0d2e2e9f0398b1",
+      "created_at": "2026-10-13T00:00:00Z",
+      "transformations": [
+        "authored locally",
+        "UTF-8 text"
+      ]
+    }
+  ]
+}

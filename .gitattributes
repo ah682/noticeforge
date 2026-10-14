@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.pdf binary
+
+# Keep the publisher's schema files byte-for-byte for checksum verification.
+/schemas/smartpcn/*.xsd binary
+/schemas/smartpcn/*.xml binary

@@ -1,0 +1,45 @@
+{
+  "purpose": "Actual pretrained model browser/API/persistence integration on an owned development fixture; not extraction-quality evidence",
+  "base": "http://127.0.0.1:8876",
+  "config": {
+    "configured": true,
+    "provider": "local-transformers",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "remote": false,
+    "available": true,
+    "reason": "Model review runs only when explicitly requested; proposals require a decision."
+  },
+  "checks": [
+    "Actual local Transformers provider is configured, available and nonremote",
+    "Opening the actual-model view does not invoke inference",
+    "Explicit browser request creates an asynchronous model run",
+    "Actual model generated tokens and retained its output hash",
+    "Provider and pretrained revision provenance persist",
+    "Actual inference leaves canonical facts and review version unchanged",
+    "Only one explicitly requested model inference occurred",
+    "No usable output produces an explicit failure or empty explanation",
+    "Actual model run is not labelled as an offline fixture",
+    "Canonical JSON export remains intact after the model result",
+    "The supported deterministic fixture remains exportable",
+    "Request and completion are recorded in history",
+    "No unexpected browser errors occurred"
+  ],
+  "errors": [],
+  "run_id": "1c39d25cf1fa4f64a71eb730055e990f",
+  "model_status": "partial",
+  "validated_candidates": 0,
+  "rejected_candidates": 1,
+  "usage": {
+    "attempts": 1,
+    "input_tokens": 574,
+    "output_tokens": 93,
+    "precision": "float32",
+    "batch_size": 1,
+    "complete": true,
+    "finish_reason": "eos",
+    "generation_seconds": 9.516896232031286
+  },
+  "elapsed_seconds": 12.83,
+  "canonical_unchanged": true,
+  "fixture_provider": false
+}

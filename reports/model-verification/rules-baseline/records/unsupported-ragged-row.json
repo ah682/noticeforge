@@ -1,0 +1,422 @@
+{
+  "id": "c7e5022dd27d4836548f",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "TL-98",
+      "raw": "TL-98",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 43,
+          "end": 48,
+          "quote": "TL-98",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Tern Logic",
+      "raw": "Tern Logic",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 59,
+          "end": 69,
+          "quote": "Tern Logic",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PDN",
+      "raw": "PDN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 83,
+          "end": 86,
+          "quote": "PDN",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Synthetic unsupported-ragged-row",
+      "raw": "Synthetic unsupported-ragged-row",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 94,
+          "end": 126,
+          "quote": "Synthetic unsupported-ragged-row",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2027-10-01",
+      "raw": "2027-10-01",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 139,
+          "end": 149,
+          "quote": "2027-10-01",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "c7e5022dd27d4836548fb75527872f7c3c38623e7697fd341f0d2e2e9f0398b1",
+    "filename": "unsupported-ragged-row.txt",
+    "media_type": "text/plain",
+    "byte_size": 255,
+    "pages": [
+      {
+        "number": 1,
+        "text": "OWNED SYNTHETIC EVALUATION CASE\nNotice ID: TL-98\nSupplier: Tern Logic\nNotice type: PDN\nTitle: Synthetic unsupported-ragged-row\nIssue date: 2027-10-01\nPart number | Last buy\nTR-001 | 2028-11-30\nTR-002 | Unlabelled legacy qualifier | 2028-12-31\nPage 1 of 1\n",
+        "width": null,
+        "height": null,
+        "method": "text",
+        "lines": [
+          {
+            "text": "OWNED SYNTHETIC EVALUATION CASE",
+            "start": 0,
+            "end": 31,
+            "bbox": null
+          },
+          {
+            "text": "Notice ID: TL-98",
+            "start": 32,
+            "end": 48,
+            "bbox": null
+          },
+          {
+            "text": "Supplier: Tern Logic",
+            "start": 49,
+            "end": 69,
+            "bbox": null
+          },
+          {
+            "text": "Notice type: PDN",
+            "start": 70,
+            "end": 86,
+            "bbox": null
+          },
+          {
+            "text": "Title: Synthetic unsupported-ragged-row",
+            "start": 87,
+            "end": 126,
+            "bbox": null
+          },
+          {
+            "text": "Issue date: 2027-10-01",
+            "start": 127,
+            "end": 149,
+            "bbox": null
+          },
+          {
+            "text": "Part number | Last buy",
+            "start": 150,
+            "end": 172,
+            "bbox": null
+          },
+          {
+            "text": "TR-001 | 2028-11-30",
+            "start": 173,
+            "end": 192,
+            "bbox": null
+          },
+          {
+            "text": "TR-002 | Unlabelled legacy qualifier | 2028-12-31",
+            "start": 193,
+            "end": 242,
+            "bbox": null
+          },
+          {
+            "text": "Page 1 of 1",
+            "start": 243,
+            "end": 254,
+            "bbox": null
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 1,
+    "complete": true,
+    "warnings": [],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "TR-001",
+        "raw": "TR-001",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 173,
+            "end": 179,
+            "quote": "TR-001",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "TR-001",
+      "manufacturer": {
+        "value": "Tern Logic",
+        "raw": "Tern Logic",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 59,
+            "end": 69,
+            "quote": "Tern Logic",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": "2028-11-30",
+          "raw": "2028-11-30",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 182,
+              "end": 192,
+              "quote": "2028-11-30",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "supported",
+          "method": "rules-v1",
+          "reason": null,
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "exact"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "supported"
+    }
+  ],
+  "relationships": [],
+  "findings": [
+    {
+      "code": "unparsed_part_row",
+      "severity": "error",
+      "message": "Page 1: part-like table row has missing headers or inconsistent columns",
+      "part_ids": [],
+      "field_path": null,
+      "evidence": [
+        {
+          "page": 1,
+          "start": 193,
+          "end": 242,
+          "quote": "TR-002 | Unlabelled legacy qualifier | 2028-12-31",
+          "bbox": null,
+          "method": "text"
+        }
+      ]
+    }
+  ],
+  "unsupported_fields": [
+    "Page 1: part-like table row has missing headers or inconsistent columns"
+  ],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T03:42:25.636441+00:00",
+  "status": "review_required",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

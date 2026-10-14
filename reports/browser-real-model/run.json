@@ -1,0 +1,65 @@
+{
+  "id": "1c39d25cf1fa4f64a71eb730055e990f",
+  "notice_id": "e8a03eb264818fc99330",
+  "base_version": 1,
+  "created_at": "2026-10-14T04:04:59.175796+00:00",
+  "completed_at": "2026-10-14T04:05:10.800695+00:00",
+  "status": "partial",
+  "result": {
+    "provider": "local-transformers",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "status": "partial",
+    "candidates": [],
+    "rejected": [
+      {
+        "candidate_index": 0,
+        "part_raw": "AMP-230-A",
+        "reasons": [
+          "evidence_offsets_do_not_match_input"
+        ]
+      }
+    ],
+    "warnings": [],
+    "errors": [],
+    "truncated": false,
+    "input_characters": 834,
+    "included_characters": 834,
+    "elapsed_seconds": 9.524132628983352,
+    "attempts": 1,
+    "output_sha256": "9a2d72d593148b3c0b7e8f9ad36dc3d320d09fe72303467dad3e09717aa508cb",
+    "review_required": true,
+    "usage": {
+      "attempts": 1,
+      "input_tokens": 574,
+      "output_tokens": 93,
+      "precision": "float32",
+      "batch_size": 1,
+      "complete": true,
+      "finish_reason": "eos",
+      "generation_seconds": 9.516896232031286
+    }
+  },
+  "provider": "local-transformers",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "configuration": {
+    "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "precision": "float32",
+    "local_model_path": "/tmp/noticeforge-models/Qwen2.5-0.5B-Instruct",
+    "cpu_threads": 4,
+    "attention_implementation": "sdpa",
+    "max_input_tokens": 2048,
+    "max_new_tokens": 1024,
+    "max_characters": 7000,
+    "generation_max_seconds": 120,
+    "adapter_path": "/home/ava/Desktop/pcn-model-compiler/reports/model-verification/adapter",
+    "provider": "local-transformers",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "remote": false,
+    "adapter_manifest_sha256": "330a6e2de0c32659c05556c70eaf3cc9f89a1a01f134d26522acdcacd4b7fe45",
+    "configuration_sha256": "5d1bc0b2c2df397d3a6d8d0d6d7cede1d87d6cd1f498ce283bee1f53292d1b7e"
+  },
+  "input_sha256": "c4d65ffae1809f8e635ba42bacaf08f6397f96d5227c897ffe5f9aeba53d8177",
+  "decisions": [],
+  "candidate_context": []
+}

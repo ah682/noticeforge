@@ -1,0 +1,4 @@
+Supplier: Copper training devices
+Notice: OWN-TRAIN-014
+Affected identifier and deadline:
+00CF-1115-A | Effective change: 2029-03-15

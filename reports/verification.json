@@ -1,0 +1,321 @@
+{
+  "verified_at": "2026-10-14T09:20:07.060755+00:00",
+  "status": "scoped_local_release_verified_external_validation_gates_preserved",
+  "scope": "scoped local release; synthetic evaluation, not authentic supplier validation",
+  "workspace_full_command": "npm test -- NOTICEFORGE_TEST_REAL_OCR=1 LD_LIBRARY_PATH=/tmp/noticeforge-ocr/root/usr/lib/x86_64-linux-gnu TESSDATA_PREFIX=/tmp/noticeforge-ocr/root/usr/share/tesseract-ocr/5/tessdata PATH=/tmp/noticeforge-ocr/root/usr/bin:/home/ava/.local/bin:/home/ava/.nvm/versions/node/v24.16.0/bin:/usr/local/bin:/usr/bin:/bin",
+  "workspace_tests_passed": 175,
+  "workspace_tests_skipped": 0,
+  "clean_environment_path": "/tmp/noticeforge-clean-quality/noticeforge-0.1.0",
+  "clean_environment_tests_passed": 174,
+  "clean_environment_tests_skipped": 1,
+  "clean_environment_skip_reason": "explicit real-OCR profile is optional; separately executed in workspace",
+  "ruff": "lint and formatting passed",
+  "mypy": {
+    "status": "passed",
+    "source_files": 19
+  },
+  "javascript_syntax": "passed",
+  "browser_checks_passed": 22,
+  "model_fixture_browser_checks_passed": 22,
+  "model_mocked_ui_states_checked": 5,
+  "accessibility": {
+    "automated_scans": 10,
+    "axe_violations": 0,
+    "keyboard_checks_passed": 19,
+    "incomplete_diagnostics": 1,
+    "human_screenreader_study": "unexecuted"
+  },
+  "xsd_browser_downloads_and_owned_body": "independently validated against pinned original COGD XSD",
+  "ocr": "Actual Tesseract 5.3.4 rerun on eight owned inputs once in quality audit; original three-repetition report retained",
+  "pretrained_training": "actual Qwen2.5-0.5B LoRA on16 owned train documents,24 optimizer steps",
+  "ci": "configured with CPU/wheel/browser checks; local equivalents and YAML/shell syntax passed; no hosted run",
+  "external_gates": [
+    "authentic permitted supplier corpus training/holdout evaluation",
+    "CUDA/QLoRA execution (driver unavailable)",
+    "downstream smartPCN receiver interoperability",
+    "real component-engineer time/quality study"
+  ],
+  "artifacts": {
+    "browser": "reports/quality/browser/result.json",
+    "model_fixture_browser": "reports/quality/browser-model/result.json",
+    "accessibility": "reports/quality/accessibility/result.json",
+    "ocr": "reports/quality/ocr/report.json",
+    "standards": "reports/ocr/standards-verification.json",
+    "model_comparison": "reports/model-verification/comparison.json",
+    "actual_pretrained_browser": "reports/browser-real-model/result.json",
+    "demo_preservation": "reports/final-demo-preservation.json",
+    "evaluation": "reports/evaluation.json",
+    "pipeline_benchmark": "reports/pipeline-benchmark.json",
+    "browser_races": "reports/quality/browser-races/result.json",
+    "publication_inventory": "reports/quality/publication-inventory.json",
+    "user_data_preservation": "reports/quality/user-data-preservation.json"
+  },
+  "actual_pretrained_browser_checks_passed": 13,
+  "source_matches_clean_copy": true,
+  "documentation_local_links": "passed",
+  "source_files_sha256": {
+    ".github/workflows/ci.yml": "f6f39b71fdd0ee85dbeb58a5a7af30f6eb066c57fe619c88e921cd41e3e057e6",
+    ".gitignore": "7f9937deddc3c8e6aa2ffd1f1d50fc6f12cfabe1a5bb7a2cdb8df3929390f14d",
+    ".prettierrc.json": "9e3f4400302363300d4b372c1afd52d56733e9a213154630b7c72923069ce6d7",
+    "Makefile": "0d2c4fd0a3ebb0a706d05d47e831827064a9662ef4c1779d7540840006a95b18",
+    "configs/compact-lora.json": "477749ef5d1e50521648559c1e194f7c0efd2e31268a819b660db51b61d79a76",
+    "configs/compact-qlora.json": "d14dad4581defaf3c98577f1ab8ba53643e972c25ec95911c24647f825fa0351",
+    "configs/smoke.json": "72b466aa7dbf9a313a93bd4810c32425104e7b921f0bb428e00e272ab3ef3dda",
+    "fixtures/bom.csv": "93962b9d81c4a34c1e5265c3276fbb30b5aacbf56219423152306be04783ac9e",
+    "fixtures/development/aster-discontinuation.pdf": "4ee9f922f6d31d516cc939500d566db37efe7408c7cac4b6132cf4a06ffa5701",
+    "fixtures/development/aster-discontinuation.txt": "f0cb1142bd620b129d998a2fe42db4aefc349da1497b95d39d2de5541e12c8d4",
+    "fixtures/development/aster-revision.txt": "8a9bef13c1d06653477ed0dba31335b41e753c516e005de74f004b826bac9834",
+    "fixtures/development/aster-site-transfer.pdf": "e8a03eb264818fc99330fbf8fbd4035d444b468fa206325b835c9469cef68c9d",
+    "fixtures/development/borealis-review.txt": "ac1e1941a4fa545b74c81c40398b982c4da05ad6673b67537bc9238af8c63b04",
+    "fixtures/development/incomplete-notice.txt": "11338a742c7c56056b057e6b7d2737035b1c6c0fd569360e05e61d0e694f736c",
+    "fixtures/development/manifest.json": "7a3586dc1edc507930def6e152dc17926e5bdd1c398785156418b7f085fada15",
+    "fixtures/evaluation/ambiguous-ordering.txt": "170947bdce53a905d7b57cbcfa28b930bbb7199d242dfe1ca53667ae82e5c170",
+    "fixtures/evaluation/different-deadlines.txt": "7cf98b48602ac342bfcbca62dc8ce0c3e1bcf87d9791bd5476ae7c950a726271",
+    "fixtures/evaluation/injection-data.txt": "5875c6865712d03c025eaf74c0fa770454ad4a2be7c1432b87f88aa965bfb40e",
+    "fixtures/evaluation/literal-identifiers.txt": "54dee5feb9fea272ac9642ec2e005ab1d8a375f5c6785b3d42bbd0c83b0bbdd8",
+    "fixtures/evaluation/manifest.json": "731a5aed0093a24e67a30b63caab1b8a245e5f600f49c31cdc48b3e323ef1125",
+    "fixtures/evaluation/missing-attachment.txt": "6aa231c6bb8797b106e9965929bd6555880544314acb9c5578504d6af7a1b775",
+    "fixtures/evaluation/partial-revision.txt": "7a86d0a5fa808d3a1472cd6e0492336d0056526d2cab1e18e51aa9ec08c3ece3",
+    "fixtures/evaluation/row-footnote.txt": "a3a5635e681c369758d4b76513e7ceefa8547028b58264a779beeb08b8010acc",
+    "fixtures/evaluation/unsupported-ragged-row.txt": "c7e5022dd27d4836548fb75527872f7c3c38623e7697fd341f0d2e2e9f0398b1",
+    "fixtures/model-training/annotations.jsonl": "266812a1d5ccdaa1e4d858b99cd41fbf55b1c0a977ac7163b1b2da6809a321f4",
+    "fixtures/model-training/manifest.json": "946e24c7c943d7931ce2f0c63389a1f1911ddd6bb77a839f98330c373ce859ce",
+    "fixtures/model-training/owned-model-00.txt": "047cc4961978f1ce10653b84f485721cdd2f0d3632d7e7c51f87b752a3f31243",
+    "fixtures/model-training/owned-model-01.txt": "6c7af5446245ca2acf2cbdbed8b727683ca47752337271d908c55dfaa9ab90df",
+    "fixtures/model-training/owned-model-02.txt": "4f18914402b8b365282fa92b0ffe0d503bcf838fb32477fecb9c9b569f6c4af1",
+    "fixtures/model-training/owned-model-03.txt": "59da043aa0539d059b6ad57a20ca0694d767b570e4c0ccd0f0dfebd4a7439947",
+    "fixtures/model-training/owned-model-04.txt": "e00ad51b707aad9e28133fe0d19db89a4d56f26c08326ef318c207deba5a3165",
+    "fixtures/model-training/owned-model-05.txt": "c50cebeff8b6fe66f1cb5181bad067f9de472fbe0b2074554e90dad08bea9098",
+    "fixtures/model-training/owned-model-06.txt": "9164072b5c38894d65a9c11972da11a41a7816d2de70deb263209625a49fbc53",
+    "fixtures/model-training/owned-model-07.txt": "e84f0ae6ba2633ef71d53db59a6f87099e1efd1411fc16dafa01ddb58720d575",
+    "fixtures/model-training/owned-model-08.txt": "f4f5411b339effe5842dd99706ce862930030fba62b5ab1927a6139edd3622ea",
+    "fixtures/model-training/owned-model-09.txt": "af717dc3132add0bf29a4bd3491fd3fe904c00168c175bc9c924593d9a1ff464",
+    "fixtures/model-training/owned-model-10.txt": "4e97ef8db05be9874aca206ac084b41c3093294578373646b190fc72b86d5f6d",
+    "fixtures/model-training/owned-model-11.txt": "bff3d100022468c894998d82d657865aaf7c10cf3bbf4045ea1fa7544ef306e7",
+    "fixtures/model-training/owned-model-12.txt": "ec8a857529267be622e1021d6b6689ea34401aab1ae1a7c743b23594ba46a9f1",
+    "fixtures/model-training/owned-model-13.txt": "86d5d098cf2ca2bf2d6edee6d4b2ea68f9d159a91f4f0e9bb530f895e07c688d",
+    "fixtures/model-training/owned-model-14.txt": "fa48baf86f4426c48889111d6f7f46c3a04dc43e74e906e2e02bd719c218e901",
+    "fixtures/model-training/owned-model-15.txt": "f24a150b2a7b2b9d6acf70e4f6a6a73c18d70ff862347dd4cf63e4e1b1978fb8",
+    "fixtures/model-training/owned-model-16.txt": "1def20e8e8e4e154ece5dbd9f9bd0cf28d1e64142a6cb5e6475e4edded6614c3",
+    "fixtures/model-training/owned-model-17.txt": "d0fb6cae8175d3c63496350132fe28dafb3c57c9094b55218bf49cd153be4f0d",
+    "fixtures/model-training/owned-model-18.txt": "e5323410ab978f62ae907c5ff848903c3cd33cfd69d877449e758d843fdefaa6",
+    "fixtures/model-training/owned-model-19.txt": "34ebc475c833c32ce1a983709cce13e87a2f18a1d645b8ad6e40282cda06e528",
+    "fixtures/review-study.csv": "b23e99d6eb99cd7b428391ca5de3b9fea0862ececd183491f913dd1096af312d",
+    "noticeforge/__init__.py": "d45d6dd0ca6fff306d4a72f2f5489db8821cfffeddf6e23e632370659f34e2da",
+    "noticeforge/api.py": "e1f083af179b72921bf0d70ed4b2001d186a76849f09f3eb2e09f81836a941ee",
+    "noticeforge/bom.py": "f0146d7d8b192307d27a4d9e7b44ccd2ca63c8ac185a153dacfcabb7fc5796a2",
+    "noticeforge/cli.py": "3ae583b1de52fdc2b07b9f85b67f72da3e8a8a7977f0597e58ef802514c507f5",
+    "noticeforge/datasets.py": "bddfd636b11a44f94447fc34c35d11b25b9adadfa2e7eb968b547c7af102d2d5",
+    "noticeforge/evaluation.py": "c56fab2bdce0301e6554181152193b24f1e2391e928c0f799fd33b0e1434602b",
+    "noticeforge/exporters.py": "6767ae3a0c89fef3b589261d09a7076a42ae89b41c1528acbe6a7a3e29bc53ca",
+    "noticeforge/extraction.py": "60b2399055ea82d2009b295345acd27859775f797b8cadd36ec05e73dfda23f7",
+    "noticeforge/ingest.py": "2f0b422b9de245956d75b866ed434abdff0f9b346667004341afbdf633f871e2",
+    "noticeforge/model_service.py": "519d8afa5600736dff9c064ce43427ff274acfc6ec2e1436ed443dff0ffcdf83",
+    "noticeforge/models.py": "775e8a2e3b1d146ee88440d737b058141fb331ba235ef0afe29c7a23a4b306e1",
+    "noticeforge/pipeline.py": "39c56c635d293fe68ce85009da29363e5b43e04ec1b33def10079d72b119a00a",
+    "noticeforge/proposals.py": "5df68eb7bcd740a1bf9e7d5448870cef4a2abf95cf8945aac4480360457c3d12",
+    "noticeforge/providers.py": "a6a366a6bc3ee6822c51c080004568c6bfdbfe64da5d6c917e69626986b6db04",
+    "noticeforge/repository.py": "add2ed725d9ea734fcebace1714ee5a07643aa8c511dde543011c2f8de25597d",
+    "noticeforge/resources.py": "65a2a0ee73f094db26d8b1d53e6b7265c76ddaee515e1fc259f892fb1ee98f62",
+    "noticeforge/static/app.css": "eb599bff3e5a2eaca6ce8e66721890c6a8a5a549d6b4cf4bfb0cfbaa32394047",
+    "noticeforge/static/app.js": "07eb740641c67957dd214d29c152a199ba53c2e685df88531a03605b06b54d2e",
+    "noticeforge/static/index.html": "cf66fe38f23b77866cd388e72098857ea2de547a78caf09ff10cd75ee70e7c2f",
+    "noticeforge/study.py": "55eed81978667822f01774884d05bff48b63ac03fa332dd13393eac31ddda1e3",
+    "noticeforge/training.py": "f282a2637d73c5cce48e43efba8764bb5956b48a0dfb5032e02a7e1f0a597544",
+    "noticeforge/validation.py": "c484357601a046643c05cc1446df5f6e6c4dbbbb270796ba52ad2d0f2fe0c99b",
+    "package-lock.json": "2feeb31d51ba67013c0aa752f09baba61b3c5ea20480d5aed91d86175c550a36",
+    "package.json": "772db8ad32ab5646531ffb2c5d6de8b6b93d8b0d5b336c38523c1630c247b110",
+    "pyproject.toml": "687302b6743825be96d4763de200219f7a4c631fa8f0ce2b1c0eb03ef474df32",
+    "requirements-ml.txt": "85f503374535ba56f9bf4601623f57082259ab75af133698e9941f0155709449",
+    "schemas/canonical-v1.json": "95bd56f0fd2165303497eff0925d8415bee5dab69f49ad22ffe5b5dc237e1df5",
+    "schemas/smartpcn/Attachment_V3_03.xsd": "637f05a7a8e1d59252db7ac14c11964b4fff1d25c1d46cdd481c16ef98eae875",
+    "schemas/smartpcn/PCNbody_V3_08.xsd": "0e6f6b6b7edb8a34b0258e8996f25349a070d7b2ef67a6b84fb0951fe84de38d",
+    "schemas/smartpcn/README.md": "c8bee0284f3d2e3dc7b970fa15963fd07a84f97ff9eba77a11c44cd32aba9c17",
+    "schemas/smartpcn/SOURCE.json": "058696023f9c491a270b2ce3406e8d3e2d5dcbdcbcb07d719a8e0af4694c90e3",
+    "scripts/benchmark_pipeline.py": "6010d7835eb8215dda5de9b7758acc2eeef40124eedfc1bb56a5fc7029370484",
+    "scripts/browser-accessibility.mjs": "336c2864c8043d6046e24a8b0eea704df2f899933778c7461f20a88f5ed83897",
+    "scripts/browser-model-review.mjs": "35fac8c7d1776d352c87ea0b4f59a3fe841b9960aed7013933c60ebc598bc426",
+    "scripts/browser-qa.mjs": "8c2732f1cd6fcb441c50bebe01a589d8ffb7d9e86e3bbeaf7897fd7de70c7739",
+    "scripts/browser-real-model.mjs": "4562e620e7785ee8def5eac13d058d3fc23f51ea638fb591d316c04c877f05eb",
+    "scripts/browser-review-races.mjs": "a56921e6758b33982af2c3829332b2dbe56a529806045308f53c63b1ed50f482",
+    "scripts/build_fixtures.py": "d23089eaf5eefdadd3d5bd4f323e89160ca3b5d3e253d12b56ec3241248dd9a8",
+    "scripts/model_review_demo.py": "353e846b658ac8a7d632a50c46cc0f352224c1976d8540bf250ac448a54b3dd2",
+    "scripts/model_verification.py": "5521e8e97158c253d53140e1c36244c0455d9a5b138208a7ebaa89a6fa311c2c",
+    "scripts/verify_distribution.py": "07c78f652fceed6b6e70b5371823d6bedbcbf161c548877832aaab92de77be07",
+    "scripts/verify_ocr.py": "e6ca75659d5d44f1bcb79f03d8033d990b8e983bc97612516e53cf36f8434403",
+    "tests/test_acceptance.py": "c1192077c54906c5703d18b32489e363226fc3d8a2b3b99b19b454b57a189a4d",
+    "tests/test_api_lifecycle.py": "7b89fe9096eaa8d8c95e02b5e51e2f550e03a27f9018a4eb93439ca9d19bf5d3",
+    "tests/test_data_models.py": "fceb9be6c6fc5ed74238ff870ae263f0bd52fea9bbe7de486f87b3890dff4fb5",
+    "tests/test_evaluation.py": "f917064bcc82ab46f6bd96de3fbcd1dd56c0b966fc275c4afa7cad625b1a48ad",
+    "tests/test_export.py": "52887b25618af3c34697923c138c51d3d8b8ff179888e407faa3d5761b6f9e9f",
+    "tests/test_model_review.py": "8f2a44a70f69ddc38bb3f40e60de0e8317c3cbbe9be85be24b1afde11f03254a",
+    "tests/test_ocr.py": "13ccf07f9eb9fe28aa748bf7158d345b0691a5100462b77aa5899b8959431319",
+    "tests/test_review_api.py": "1503fd311a156c12af3a5a222e8e29a4662f938bd47aae2dd3d5bb60af8f80c2",
+    "tests/test_robustness.py": "087141a9beceabebaf2de9064ee8bb2d928b6d676db0c8f6c3473049fa80653f",
+    "tests/test_study.py": "2e3b2193c4e12927773c44df74475b91f5a7f6629450b2311d696534a746f8d0",
+    "uv.lock": "5ae64d83d8c2aa652a4965bba41c381052d3545e585479ca81072fe1660c54c7"
+  },
+  "initial_prompt_sha256": "48556929321134d45d3ffae5350486dcabf22dbc4ae3f49d035259ddb87e86ef",
+  "final_demo": {
+    "url": "http://127.0.0.1:8877",
+    "health": "ok",
+    "user_records_preserved": 5,
+    "audit_events_preserved": 5
+  },
+  "model_matrix": {
+    "profiles_executed": 7,
+    "measured_requests": 56,
+    "equivalent_parsed_and_request_hashes": "independently verified",
+    "adapter_checksums": "independently verified",
+    "all_profiles_evidence_valid_relationships": "0/19",
+    "deployment_decision": "rules baseline remains default; no tested model earned deployment",
+    "actual_app_generation": {
+      "output_tokens": 93,
+      "rejected_candidates": 1,
+      "canonical_unchanged": true
+    }
+  },
+  "observed_baseline": {
+    "exact_relationships": "18/19",
+    "parts": "15/16",
+    "critical_omissions": 2,
+    "unsupported_assertions": 0,
+    "evidence_localization": "102/102",
+    "native_pdf_p95_ms": 22.754,
+    "native_pdf_measured_requests": 20
+  },
+  "artifact_sha256": {
+    "reports/quality/browser/result.json": "6e02dd603555cd0354d686820b1f839f6acbeeb350e94fae4611d4902cbdcb00",
+    "reports/quality/browser-model/result.json": "eaceb69af75156cc98266a076d3f7056a0b30307c0559d142ff19d0ae60a9924",
+    "reports/quality/accessibility/result.json": "084d044143e2151d8ba4f23696b2ecdce108251c57b7e3c4b8e610c258b348e6",
+    "reports/quality/ocr/report.json": "e3660292627cbcb885c5caf7bf2fa0ef546c263c5c9dbb379dd0ab68aabcbd83",
+    "reports/ocr/standards-verification.json": "864d53ea09c9fd70ab75d7fcbcfdfd333b4def24d7cad5830225fbad5ad0a028",
+    "reports/model-verification/comparison.json": "dbe5003969f0506a4de9e79e77bb9e06c1c6f138ab112091e7b150bad7ba1b78",
+    "reports/browser-real-model/result.json": "83886e621d67b13e6112d00b91279609c8b84d1b5ed6bbb0f537d05dca537de6",
+    "reports/final-demo-preservation.json": "c0d509de58ae218e7731e0bdf709dffa3e3fc68a9983d34004ba4369465fc52d",
+    "reports/evaluation.json": "6e15b81ef3fbaf2628ecd18ef5c207011639cb9864c4f38754721360c5df583a",
+    "reports/pipeline-benchmark.json": "c06124cbf813220f0ff2e34989db985ede7b74287e8d1f9aba75c849a9397ee5",
+    "reports/quality/browser-races/result.json": "fc7e4c611256880e762910ae176b8fa5da7cb8dd5c39650540cd43e56d8bc58a",
+    "reports/quality/publication-inventory.json": "c0f3d2033072ccf63acf1745546bfa4fdc21dc261c4fff62cc4465e681e0b370",
+    "reports/quality/user-data-preservation.json": "85f414542798fa7278bccd026bed325564f882061b23a5879a4d8f515b85c6d4"
+  },
+  "mandatory_acceptance_mapping": [
+    {
+      "requirement": "Two groups have different last-buy dates",
+      "implementation_and_executed_evidence": "`extraction.py`; PDF/text acceptance tests",
+      "observed_result_and_boundary": "Distinct March/June deadlines remain attached to their parts.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "One-part inventory exception",
+      "implementation_and_executed_evidence": "Extraction/validation, acceptance, robustness and model-review tests",
+      "observed_result_and_boundary": "Condition stays on the named part; model acceptance cannot erase it; exact XML deadline remains blocked.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Row footnote modifies a deadline",
+      "implementation_and_executed_evidence": "Acceptance and multi-date/shared-row/reused-marker robustness tests",
+      "observed_result_and_boundary": "Only the marked part/date changes; unrelated deadlines survive.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Revision supersedes a subset",
+      "implementation_and_executed_evidence": "Repository/API history tests and browser",
+      "observed_result_and_boundary": "One part superseded, five earlier parts outside scope; immutable originals retained.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Ambiguous date requires review",
+      "implementation_and_executed_evidence": "Validation/API/model review and browser correction",
+      "observed_result_and_boundary": "Slash date stays unresolved; acceptance refused until sourced correction, with audit history.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "OCR confusion/zeros/suffixes cannot merge",
+      "implementation_and_executed_evidence": "Exact identifier/BOM tests, real OCR profile",
+      "observed_result_and_boundary": "Distinct records retained; recognized duplicates flagged; wrong OCR characters remain review-required.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Missing pages/truncated context",
+      "implementation_and_executed_evidence": "Ingest/provider/dataset/model-review tests",
+      "observed_result_and_boundary": "Explicit incomplete/warning/error; model truncation retained after acceptance and JSON export.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Evidence corresponds to values",
+      "implementation_and_executed_evidence": "Validation, repeated-PDF occurrence, invented-value/export tests",
+      "observed_result_and_boundary": "Exact offsets and regions checked; 102/102 native evaluation citations localize. Semantic/OCR errors remain separately measured.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Replacements are not approved substitutes",
+      "implementation_and_executed_evidence": "Canonical/UI/export acceptance tests",
+      "observed_result_and_boundary": "Compatibility explicitly not assessed.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Manufacturer-aware literal BOM matching",
+      "implementation_and_executed_evidence": "BOM/API/robustness tests and browser",
+      "observed_result_and_boundary": "Literal, ambiguous and unmatched states; unresolved scope cannot become a definite match.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Valid/invalid XML checked against actual XSD",
+      "implementation_and_executed_evidence": "Export tests, publisher example and real browser downloads",
+      "observed_result_and_boundary": "Genuine pinned COGD XSD 3.08 passes supported XML and rejects invalid XML; restricted body only.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Supplier/template/family/duplicate leakage",
+      "implementation_and_executed_evidence": "Dataset audits and data-model tests",
+      "observed_result_and_boundary": "Leakage, changed hashes, incomplete annotations and missing real-data permission references rejected.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Uploaded instructions cannot alter schema/evidence",
+      "implementation_and_executed_evidence": "Strict provider validation, injection fixture, API/browser tests",
+      "observed_result_and_boundary": "Schema changes and invented evidence rejected; uploaded markup rendered as text.",
+      "software_checks": "passed"
+    }
+  ],
+  "prettier": "3.9.10 check passed",
+  "browser_race_checks_passed": 10,
+  "installed_distribution": "make distribution-check passed; wheel built from sdist; independent installed venv also passed",
+  "quality_audit": "docs/QUALITY_AUDIT.md",
+  "historical_evidence_not_reexecuted_in_quality_audit": [
+    "pretrained_training",
+    "model_matrix",
+    "actual_pretrained_browser_checks_passed"
+  ],
+  "readability": {
+    "python_files_compared": 35,
+    "python_syntax_trees_changed_by_formatter": 0,
+    "standardized": [
+      "Ruff",
+      "Prettier"
+    ],
+    "authorship_claim": false
+  },
+  "clean_comparison_scope": "all application Python/static files and tests; later documentation and check-script updates separately verified",
+  "publication": {
+    "status": "prepared_not_pushed",
+    "owner": "ah682",
+    "visibility": "awaiting_selection",
+    "project_license": "not_selected",
+    "project_page": "prepared; not deployed",
+    "live_application": "local Python backend; not hosted on Pages",
+    "preparation_checks": "reports/quality/github-preparation.json"
+  },
+  "distribution_archives": {
+    "noticeforge-0.1.0-py3-none-any.whl": {
+      "bytes": 163294,
+      "sha256": "fb5836acfb56bee15d5717feef75b7f48a4c0eccaadc08a4fb93be6bc496991f"
+    },
+    "noticeforge-0.1.0.tar.gz": {
+      "bytes": 295057,
+      "sha256": "b0fdcb92ac3ef092994f30e5ae6c5a2d9408513a61425acb4111f632ccc686bf"
+    }
+  },
+  "source_files_sha256_scope": "Snapshot from the local quality audit, before GitHub publication preparation. Updated publication files and package checks are recorded in reports/quality/github-preparation.json."
+}

@@ -1,0 +1,4 @@
+Supplier: Cobalt training semiconductor
+Notice: OWN-TRAIN-002
+Affected identifier and deadline:
+00CF-1103-A | Effective change: 2029-03-03

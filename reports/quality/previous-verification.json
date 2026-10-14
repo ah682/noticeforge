@@ -1,0 +1,227 @@
+{
+  "verified_at": "2026-10-14T04:12:33.563002+00:00",
+  "status": "scoped_local_release_verified_external_validation_gates_preserved",
+  "scope": "scoped local release; synthetic evaluation, not authentic supplier validation",
+  "workspace_full_command": "npm test -- NOTICEFORGE_TEST_REAL_OCR=1 LD_LIBRARY_PATH=/tmp/noticeforge-ocr/root/usr/lib/x86_64-linux-gnu TESSDATA_PREFIX=/tmp/noticeforge-ocr/root/usr/share/tesseract-ocr/5/tessdata PATH=/tmp/noticeforge-ocr/root/usr/bin:/home/ava/.local/bin:/home/ava/.nvm/versions/node/v24.16.0/bin:/usr/local/bin:/usr/bin:/bin",
+  "workspace_tests_passed": 161,
+  "workspace_tests_skipped": 0,
+  "clean_environment_path": "/tmp/noticeforge-final-verification",
+  "clean_environment_tests_passed": 160,
+  "clean_environment_tests_skipped": 1,
+  "clean_environment_skip_reason": "explicit real-OCR profile is optional; separately executed in workspace",
+  "ruff": "passed",
+  "mypy": {
+    "status": "passed",
+    "source_files": 18
+  },
+  "javascript_syntax": "passed",
+  "browser_checks_passed": 22,
+  "model_fixture_browser_checks_passed": 22,
+  "model_mocked_ui_states_checked": 5,
+  "accessibility": {
+    "automated_scans": 10,
+    "axe_violations": 0,
+    "keyboard_checks_passed": 19,
+    "incomplete_diagnostics": 1,
+    "human_screenreader_study": "unexecuted"
+  },
+  "xsd_browser_downloads_and_owned_body": "independently validated against pinned original COGD XSD",
+  "ocr": "actual Tesseract5.3.4,8 owned inputs,3 repetitions; recognition errors retained",
+  "pretrained_training": "actual Qwen2.5-0.5B LoRA on16 owned train documents,24 optimizer steps",
+  "ci": "configured; equivalent commands run locally, not remotely dispatched",
+  "external_gates": [
+    "authentic permitted supplier corpus training/holdout evaluation",
+    "CUDA/QLoRA execution (driver unavailable)",
+    "downstream smartPCN receiver interoperability",
+    "real component-engineer time/quality study"
+  ],
+  "artifacts": {
+    "browser": "reports/browser-clean/result.json",
+    "model_fixture_browser": "reports/browser-model/result.json",
+    "accessibility": "reports/accessibility/result.json",
+    "ocr": "reports/ocr/report.json",
+    "standards": "reports/ocr/standards-verification.json",
+    "model_comparison": "reports/model-verification/comparison.json",
+    "actual_pretrained_browser": "reports/browser-real-model/result.json",
+    "demo_preservation": "reports/final-demo-preservation.json",
+    "evaluation": "reports/evaluation.json",
+    "pipeline_benchmark": "reports/pipeline-benchmark.json"
+  },
+  "actual_pretrained_browser_checks_passed": 13,
+  "source_matches_clean_copy": true,
+  "documentation_local_links": "passed",
+  "final_report_formatter": "Formatting-only final change separately linted and executed; product runtime and test suite unchanged",
+  "source_files_sha256": {
+    "noticeforge/study.py": "ff3f2ddd0813c5d80e43eab399f857871862af778f39355cabdd1da8209529c0",
+    "noticeforge/pipeline.py": "39c56c635d293fe68ce85009da29363e5b43e04ec1b33def10079d72b119a00a",
+    "noticeforge/providers.py": "959fb9723398d4c50aa1d580977d3b2174695a465713f9ebe0dc3fab46ae6eba",
+    "noticeforge/exporters.py": "29d0c86f349e8d95172b61d30a847a6cf446827d38c5ce6b85425891911a0ec8",
+    "noticeforge/proposals.py": "788d6e1bcc5acdad969521e77556e3f344e35989cdcbf51e49128c3a7b9332fc",
+    "noticeforge/model_service.py": "96f3c7eeef756c766fb1b2974010ac1961d95cb9ffdd10d69cfe9ecf6ca74607",
+    "noticeforge/__init__.py": "6529731391749bb8fa065c9b96aee6aa0e75b184b8f8427f514a0ca792946337",
+    "noticeforge/ingest.py": "04177341e0d93ba1d90d8d111eeadd48b91fe4dbc425eceb95219fb8dab25a6c",
+    "noticeforge/validation.py": "bcdf32851cc3b03c46663f24eb2c678fb1fe822f429b28c02dd5091ded4b8f9d",
+    "noticeforge/repository.py": "9c533e923e0615cef0075a09fe5b3fd7e104119dcb76db2bfb089d90e6040193",
+    "noticeforge/extraction.py": "b45c1664db945d3f3335ccbeba90a619d8fc700c1741f76f53eb6cd83982fbbb",
+    "noticeforge/training.py": "ea7775c1a6e1a0862a13036de6a4af9c1eb01dc080aad7b70222a5f844802acb",
+    "noticeforge/bom.py": "304db5e7bb5c19ffaa4e1b6c1d7f583ff57d03b98a1cf034a1017d093ffff24c",
+    "noticeforge/datasets.py": "b524b087654b7247a46716cdeaf5509ed08ee9c4dbc257ac5d480cb3b3e85d1e",
+    "noticeforge/api.py": "c20418d3de5548568f304c6d59e898f0e3727d87e49c76625a432d975c7bf076",
+    "noticeforge/cli.py": "d453048beada70db9bc11386cc3688e471e95d9ee4b879427a38cddcdf515c85",
+    "noticeforge/models.py": "3344a9eef7c0fe67cfd6c2fdc189036e6b7795cc2e8a181e36666b7758992ae8",
+    "noticeforge/evaluation.py": "664a3afbbf9b47bbbba22d3d4f76be2a2c82c056a8bcb600d13f78543c462e66",
+    "noticeforge/static/app.js": "abbde9e335c0100eef64f80b6f8e86be61efcc003394165e0d072126036905da",
+    "noticeforge/static/index.html": "88e6c8c85c932c3e8ac21470ad8749aee159602bb4f78052c506c37c1835388a",
+    "noticeforge/static/app.css": "3729c12653ba3e8638425278d08cd610dfc5a5203ba52ec3cb004911bccc3881",
+    "tests/test_study.py": "467360ba276837a3b90c1de98e746a24318cff4dd16c80b7613649fb209e7034",
+    "tests/test_evaluation.py": "4753ab07245db1e7631a66ce8aba9b2054ca1b5b3c2fb00b7ee978d70ad14081",
+    "tests/test_ocr.py": "80281bc207ed770177b7d7debf710135d9edd6b5381e0a6f8a38fe7a807a0305",
+    "tests/test_review_api.py": "e0dee7b311854a26749c63dacc97bd3058d17081604959ae2a9547e3481e5681",
+    "tests/test_robustness.py": "86c6a2634fa7458b7de8780a0bc87ef56b74bbf28d562863e11253ab63e33304",
+    "tests/test_export.py": "e473a7d1e2f633e4b4298b95bce837ae16702db1c7f1e11fd71d9b6e443f2829",
+    "tests/test_data_models.py": "c98f44ce51dd58b9daabcf4db5484bf80ed1f1800800924d8c05c84cbede1d0a",
+    "tests/test_acceptance.py": "8cdfe2dae2a19958189951d01b87c1acb239c0d08c55aabe54452f8f3cb4950d",
+    "tests/test_model_review.py": "979aa4a6a40eeaa740fad3ce0b6fe17c39ebd5ecc9c3d1177d7f5095100d24f2",
+    "scripts/browser-real-model.mjs": "8cf7206ec84508ed2bb788964f6b9575547de9267a2fb4037d27cdec9fed03bf",
+    "scripts/model_verification.py": "6f9f4d14409983dd8c10626a936b849f036d3b103ad9a569384962b74df38dd3",
+    "scripts/browser-model-review.mjs": "a01cbd1de4eb737dc99fb309d49633c0ca85d5596f0e33457d3959e4eabe2e5d",
+    "scripts/browser-accessibility.mjs": "093a10f8ddfd8ca3e1eb143484a9904095a45312175c9c72b8fc10a737efef6f",
+    "scripts/verify_ocr.py": "150dc59b4c286ce200eedebff22ff88ecaf471127f041da35992ba8d459aa311",
+    "scripts/build_fixtures.py": "a1d3978d5d4314910c425b092af90008ac47322f8eba27cbb7513af983afeb71",
+    "scripts/benchmark_pipeline.py": "cbf1a07103a22d460089ee584ecc7e8f57b92f8541d426b7abb7ab6cb145e3c0",
+    "scripts/browser-qa.mjs": "2b3ba53c94dfee15d522dfd88d6d10eeac8d2ac39d4d1f209f19d1a6b59f42d5",
+    "scripts/model_review_demo.py": "76c46ba9534d90dcf73413b37aff30c1b62edd53ad1fc3ea9dc9fb900383ef17",
+    "configs/smoke.json": "72b466aa7dbf9a313a93bd4810c32425104e7b921f0bb428e00e272ab3ef3dda",
+    "configs/compact-qlora.json": "d14dad4581defaf3c98577f1ab8ba53643e972c25ec95911c24647f825fa0351",
+    "configs/compact-lora.json": "477749ef5d1e50521648559c1e194f7c0efd2e31268a819b660db51b61d79a76",
+    "schemas/canonical-v1.json": "95bd56f0fd2165303497eff0925d8415bee5dab69f49ad22ffe5b5dc237e1df5",
+    "schemas/smartpcn/README.md": "c8bee0284f3d2e3dc7b970fa15963fd07a84f97ff9eba77a11c44cd32aba9c17",
+    "schemas/smartpcn/PCNbody_V3_08.xsd": "0e6f6b6b7edb8a34b0258e8996f25349a070d7b2ef67a6b84fb0951fe84de38d",
+    "schemas/smartpcn/SOURCE.json": "058696023f9c491a270b2ce3406e8d3e2d5dcbdcbcb07d719a8e0af4694c90e3",
+    "schemas/smartpcn/Attachment_V3_03.xsd": "637f05a7a8e1d59252db7ac14c11964b4fff1d25c1d46cdd481c16ef98eae875"
+  },
+  "initial_prompt_sha256": "48556929321134d45d3ffae5350486dcabf22dbc4ae3f49d035259ddb87e86ef",
+  "final_demo": {
+    "url": "http://127.0.0.1:8877",
+    "health": "ok",
+    "mode": "deterministic-rules",
+    "automatic_external_calls": false,
+    "notices_preserved": 5,
+    "audit_events_preserved": 5,
+    "database_reset": false
+  },
+  "model_matrix": {
+    "profiles_executed": 7,
+    "measured_requests": 56,
+    "equivalent_parsed_and_request_hashes": "independently verified",
+    "adapter_checksums": "independently verified",
+    "all_profiles_evidence_valid_relationships": "0/19",
+    "deployment_decision": "rules baseline remains default; no tested model earned deployment",
+    "actual_app_generation": {
+      "output_tokens": 93,
+      "rejected_candidates": 1,
+      "canonical_unchanged": true
+    }
+  },
+  "observed_baseline": {
+    "exact_relationships": "18/19",
+    "parts": "15/16",
+    "critical_omissions": 2,
+    "unsupported_assertions": 0,
+    "evidence_localization": "102/102",
+    "native_pdf_p95_ms": 22.754,
+    "native_pdf_measured_requests": 20
+  },
+  "artifact_sha256": {
+    "reports/browser-clean/result.json": "9ec4a3808b367a835376683fd4567f7e8d1d2516e9bcc202dd8d35b42998e71b",
+    "reports/browser-model/result.json": "ca0dae72a2ae0c0cc370ce342b92376d5f6d9ed0ce394f532fd0ad06e67f41f8",
+    "reports/accessibility/result.json": "d5a41fca47c7397905e6f968f4cfb2649585c41bb9e9e40d618d5ea85221a5a0",
+    "reports/ocr/report.json": "31a3777fea9c45247599d34b6e60234268a8f8a2826b15fb67b23ba8db34f057",
+    "reports/ocr/standards-verification.json": "864d53ea09c9fd70ab75d7fcbcfdfd333b4def24d7cad5830225fbad5ad0a028",
+    "reports/model-verification/comparison.json": "dbe5003969f0506a4de9e79e77bb9e06c1c6f138ab112091e7b150bad7ba1b78",
+    "reports/browser-real-model/result.json": "83886e621d67b13e6112d00b91279609c8b84d1b5ed6bbb0f537d05dca537de6",
+    "reports/final-demo-preservation.json": "c0d509de58ae218e7731e0bdf709dffa3e3fc68a9983d34004ba4369465fc52d",
+    "reports/evaluation.json": "a65cef48956a94cb5d91846a6df630efea4cd700528ba778cc73e55937a63a3c",
+    "reports/pipeline-benchmark.json": "b5503147c56b02c60549ba1642e0bf883044adeadfc6aa003b11495607b639a7"
+  },
+  "mandatory_acceptance_mapping": [
+    {
+      "requirement": "Two groups have different last-buy dates",
+      "implementation_and_executed_evidence": "`extraction.py`; PDF/text acceptance tests",
+      "observed_result_and_boundary": "Distinct March/June deadlines remain attached to their parts.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "One-part inventory exception",
+      "implementation_and_executed_evidence": "Extraction/validation, acceptance, robustness and model-review tests",
+      "observed_result_and_boundary": "Condition stays on the named part; model acceptance cannot erase it; exact XML deadline remains blocked.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Row footnote modifies a deadline",
+      "implementation_and_executed_evidence": "Acceptance and multi-date/shared-row/reused-marker robustness tests",
+      "observed_result_and_boundary": "Only the marked part/date changes; unrelated deadlines survive.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Revision supersedes a subset",
+      "implementation_and_executed_evidence": "Repository/API history tests and browser",
+      "observed_result_and_boundary": "One part superseded, five earlier parts outside scope; immutable originals retained.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Ambiguous date requires review",
+      "implementation_and_executed_evidence": "Validation/API/model review and browser correction",
+      "observed_result_and_boundary": "Slash date stays unresolved; acceptance refused until sourced correction, with audit history.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "OCR confusion/zeros/suffixes cannot merge",
+      "implementation_and_executed_evidence": "Exact identifier/BOM tests, real OCR profile",
+      "observed_result_and_boundary": "Distinct records retained; recognized duplicates flagged; wrong OCR characters remain review-required.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Missing pages/truncated context",
+      "implementation_and_executed_evidence": "Ingest/provider/dataset/model-review tests",
+      "observed_result_and_boundary": "Explicit incomplete/warning/error; model truncation retained after acceptance and JSON export.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Evidence corresponds to values",
+      "implementation_and_executed_evidence": "Validation, repeated-PDF occurrence, invented-value/export tests",
+      "observed_result_and_boundary": "Exact offsets and regions checked; 102/102 native evaluation citations localize. Semantic/OCR errors remain separately measured.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Replacements are not approved substitutes",
+      "implementation_and_executed_evidence": "Canonical/UI/export acceptance tests",
+      "observed_result_and_boundary": "Compatibility explicitly not assessed.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Manufacturer-aware literal BOM matching",
+      "implementation_and_executed_evidence": "BOM/API/robustness tests and browser",
+      "observed_result_and_boundary": "Literal, ambiguous and unmatched states; unresolved scope cannot become a definite match.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Valid/invalid XML checked against actual XSD",
+      "implementation_and_executed_evidence": "Export tests, publisher example and real browser downloads",
+      "observed_result_and_boundary": "Genuine pinned COGD XSD 3.08 passes supported XML and rejects invalid XML; restricted body only.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Supplier/template/family/duplicate leakage",
+      "implementation_and_executed_evidence": "Dataset audits and data-model tests",
+      "observed_result_and_boundary": "Leakage, changed hashes, incomplete annotations and missing real-data permission references rejected.",
+      "software_checks": "passed"
+    },
+    {
+      "requirement": "Uploaded instructions cannot alter schema/evidence",
+      "implementation_and_executed_evidence": "Strict provider validation, injection fixture, API/browser tests",
+      "observed_result_and_boundary": "Schema changes and invented evidence rejected; uploaded markup rendered as text.",
+      "software_checks": "passed"
+    }
+  ]
+}

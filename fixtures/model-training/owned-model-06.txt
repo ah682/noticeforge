@@ -1,0 +1,4 @@
+Supplier: Cobalt training semiconductor
+Notice: OWN-TRAIN-006
+Affected identifier and deadline:
+00CF-1107-A | Last buy: 2029-07-07

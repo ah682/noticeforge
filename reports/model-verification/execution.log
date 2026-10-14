@@ -1,0 +1,84 @@
+The 8-bit optimizer is not available on your device, only available on CUDA for now.
+{"epoch": 1, "optimizer_step": 1, "loss": 0.3124461770057678, "elapsed_seconds": 3.550683673005551}
+{"epoch": 1, "optimizer_step": 2, "loss": 0.2827555239200592, "elapsed_seconds": 6.376590736035723}
+{"epoch": 1, "optimizer_step": 3, "loss": 0.21513663232326508, "elapsed_seconds": 9.165923946013208}
+{"epoch": 1, "optimizer_step": 4, "loss": 0.22642233967781067, "elapsed_seconds": 12.663487130019348}
+{"epoch": 1, "optimizer_step": 5, "loss": 0.19645927846431732, "elapsed_seconds": 15.48823832499329}
+{"epoch": 1, "optimizer_step": 6, "loss": 0.09895084798336029, "elapsed_seconds": 19.004314280988183}
+{"epoch": 1, "optimizer_step": 7, "loss": 0.130599707365036, "elapsed_seconds": 21.89428902202053}
+{"epoch": 1, "optimizer_step": 8, "loss": 0.12211892008781433, "elapsed_seconds": 25.044802232994698}
+{"epoch": 2, "optimizer_step": 9, "loss": 0.1030450090765953, "elapsed_seconds": 27.990277092030738}
+{"epoch": 2, "optimizer_step": 10, "loss": 0.09766862541437149, "elapsed_seconds": 30.94274307001615}
+{"epoch": 2, "optimizer_step": 11, "loss": 0.17558997869491577, "elapsed_seconds": 34.474994116986636}
+{"epoch": 2, "optimizer_step": 12, "loss": 0.09453706443309784, "elapsed_seconds": 37.2998471170431}
+{"epoch": 2, "optimizer_step": 13, "loss": 0.09884919971227646, "elapsed_seconds": 40.21388628100976}
+{"epoch": 2, "optimizer_step": 14, "loss": 0.06647162139415741, "elapsed_seconds": 43.90222472703317}
+{"epoch": 2, "optimizer_step": 15, "loss": 0.0847734808921814, "elapsed_seconds": 46.84895653399872}
+{"epoch": 2, "optimizer_step": 16, "loss": 0.05841449275612831, "elapsed_seconds": 50.416088066005614}
+{"epoch": 3, "optimizer_step": 17, "loss": 0.07227735966444016, "elapsed_seconds": 54.02533259004122}
+{"epoch": 3, "optimizer_step": 18, "loss": 0.07130014151334763, "elapsed_seconds": 56.827198623039294}
+{"epoch": 3, "optimizer_step": 19, "loss": 0.0473395474255085, "elapsed_seconds": 60.4627597409999}
+{"epoch": 3, "optimizer_step": 20, "loss": 0.07789508998394012, "elapsed_seconds": 63.39465007302351}
+{"epoch": 3, "optimizer_step": 21, "loss": 0.07009102404117584, "elapsed_seconds": 66.28535292402375}
+{"epoch": 3, "optimizer_step": 22, "loss": 0.1308622658252716, "elapsed_seconds": 69.21049771399703}
+{"epoch": 3, "optimizer_step": 23, "loss": 0.07825961709022522, "elapsed_seconds": 72.04674930602778}
+{"epoch": 3, "optimizer_step": 24, "loss": 0.04274945706129074, "elapsed_seconds": 75.79164032102562}
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"benchmark": "untuned", "completed_requests": 1, "cases": ["different-deadlines"]}
+{"benchmark": "untuned", "completed_requests": 2, "cases": ["row-footnote"]}
+{"benchmark": "untuned", "completed_requests": 3, "cases": ["ambiguous-ordering"]}
+{"benchmark": "untuned", "completed_requests": 4, "cases": ["partial-revision"]}
+{"benchmark": "untuned", "completed_requests": 5, "cases": ["literal-identifiers"]}
+{"benchmark": "untuned", "completed_requests": 6, "cases": ["injection-data"]}
+{"benchmark": "untuned", "completed_requests": 7, "cases": ["missing-attachment"]}
+{"benchmark": "untuned", "completed_requests": 8, "cases": ["unsupported-ragged-row"]}
+The 8-bit optimizer is not available on your device, only available on CUDA for now.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"benchmark": "adapted", "completed_requests": 1, "cases": ["different-deadlines"]}
+{"benchmark": "adapted", "completed_requests": 2, "cases": ["row-footnote"]}
+{"benchmark": "adapted", "completed_requests": 3, "cases": ["ambiguous-ordering"]}
+{"benchmark": "adapted", "completed_requests": 4, "cases": ["partial-revision"]}
+{"benchmark": "adapted", "completed_requests": 5, "cases": ["literal-identifiers"]}
+{"benchmark": "adapted", "completed_requests": 6, "cases": ["injection-data"]}
+{"benchmark": "adapted", "completed_requests": 7, "cases": ["missing-attachment"]}
+{"benchmark": "adapted", "completed_requests": 8, "cases": ["unsupported-ragged-row"]}
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"benchmark": "batched", "completed_requests": 2, "cases": ["different-deadlines", "row-footnote"]}
+{"benchmark": "batched", "completed_requests": 4, "cases": ["ambiguous-ordering", "partial-revision"]}
+{"benchmark": "batched", "completed_requests": 6, "cases": ["literal-identifiers", "injection-data"]}
+{"benchmark": "batched", "completed_requests": 8, "cases": ["missing-attachment", "unsupported-ragged-row"]}
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"benchmark": "quantized", "completed_requests": 1, "cases": ["different-deadlines"]}
+{"benchmark": "quantized", "completed_requests": 2, "cases": ["row-footnote"]}
+{"benchmark": "quantized", "completed_requests": 3, "cases": ["ambiguous-ordering"]}
+{"benchmark": "quantized", "completed_requests": 4, "cases": ["partial-revision"]}
+{"benchmark": "quantized", "completed_requests": 5, "cases": ["literal-identifiers"]}
+{"benchmark": "quantized", "completed_requests": 6, "cases": ["injection-data"]}
+{"benchmark": "quantized", "completed_requests": 7, "cases": ["missing-attachment"]}
+{"benchmark": "quantized", "completed_requests": 8, "cases": ["unsupported-ragged-row"]}
+The 8-bit optimizer is not available on your device, only available on CUDA for now.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"benchmark": "adapted-batched", "completed_requests": 2, "cases": ["different-deadlines", "row-footnote"]}
+{"benchmark": "adapted-batched", "completed_requests": 4, "cases": ["ambiguous-ordering", "partial-revision"]}
+{"benchmark": "adapted-batched", "completed_requests": 6, "cases": ["literal-identifiers", "injection-data"]}
+{"benchmark": "adapted-batched", "completed_requests": 8, "cases": ["missing-attachment", "unsupported-ragged-row"]}
+The 8-bit optimizer is not available on your device, only available on CUDA for now.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"benchmark": "adapted-quantized", "completed_requests": 1, "cases": ["different-deadlines"]}
+{"benchmark": "adapted-quantized", "completed_requests": 2, "cases": ["row-footnote"]}
+{"benchmark": "adapted-quantized", "completed_requests": 3, "cases": ["ambiguous-ordering"]}
+{"benchmark": "adapted-quantized", "completed_requests": 4, "cases": ["partial-revision"]}
+{"benchmark": "adapted-quantized", "completed_requests": 5, "cases": ["literal-identifiers"]}
+{"benchmark": "adapted-quantized", "completed_requests": 6, "cases": ["injection-data"]}
+{"benchmark": "adapted-quantized", "completed_requests": 7, "cases": ["missing-attachment"]}
+{"benchmark": "adapted-quantized", "completed_requests": 8, "cases": ["unsupported-ragged-row"]}
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+{"benchmark": "stronger", "completed_requests": 1, "cases": ["different-deadlines"]}
+{"benchmark": "stronger", "completed_requests": 2, "cases": ["row-footnote"]}
+{"benchmark": "stronger", "completed_requests": 3, "cases": ["ambiguous-ordering"]}
+{"benchmark": "stronger", "completed_requests": 4, "cases": ["partial-revision"]}
+{"benchmark": "stronger", "completed_requests": 5, "cases": ["literal-identifiers"]}
+{"benchmark": "stronger", "completed_requests": 6, "cases": ["injection-data"]}
+{"benchmark": "stronger", "completed_requests": 7, "cases": ["missing-attachment"]}
+{"benchmark": "stronger", "completed_requests": 8, "cases": ["unsupported-ragged-row"]}
+{"summary": "/home/ava/Desktop/pcn-model-compiler/reports/model-verification/comparison.json", "profiles": [{"profile": "untuned", "status": "executed"}, {"profile": "adapted", "status": "executed"}, {"profile": "batched", "status": "executed"}, {"profile": "quantized", "status": "executed"}, {"profile": "adapted-batched", "status": "executed"}, {"profile": "adapted-quantized", "status": "executed"}, {"profile": "stronger", "status": "executed"}]}

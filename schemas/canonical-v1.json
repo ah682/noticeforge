@@ -1,0 +1,1008 @@
+{
+  "$defs": {
+    "Contact": {
+      "additionalProperties": false,
+      "properties": {
+        "contact_type": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "company": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "email": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "street": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "zip_code": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "city": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "country": {
+          "$ref": "#/$defs/CriticalValue"
+        }
+      },
+      "title": "Contact",
+      "type": "object"
+    },
+    "CriticalValue": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "raw": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "review_status": {
+          "default": "supported",
+          "enum": [
+            "supported",
+            "review_required",
+            "accepted",
+            "corrected"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "method": {
+          "default": "rules-v1",
+          "title": "Method",
+          "type": "string"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        },
+        "model_run_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Run Id"
+        },
+        "model_candidate_index": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Candidate Index"
+        }
+      },
+      "title": "CriticalValue",
+      "type": "object"
+    },
+    "DateValue": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "raw": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "review_status": {
+          "default": "supported",
+          "enum": [
+            "supported",
+            "review_required",
+            "accepted",
+            "corrected"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        },
+        "method": {
+          "default": "rules-v1",
+          "title": "Method",
+          "type": "string"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        },
+        "model_run_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Run Id"
+        },
+        "model_candidate_index": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Model Candidate Index"
+        },
+        "kind": {
+          "enum": [
+            "last_buy",
+            "last_delivery",
+            "effective_change",
+            "sample_availability",
+            "acknowledgment",
+            "issue_date",
+            "revision_date",
+            "end_of_production"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "qualifier": {
+          "default": "exact",
+          "enum": [
+            "exact",
+            "tentative",
+            "ambiguous",
+            "inventory_limited",
+            "missing"
+          ],
+          "title": "Qualifier",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind"
+      ],
+      "title": "DateValue",
+      "type": "object"
+    },
+    "Document": {
+      "additionalProperties": false,
+      "properties": {
+        "sha256": {
+          "title": "Sha256",
+          "type": "string"
+        },
+        "filename": {
+          "title": "Filename",
+          "type": "string"
+        },
+        "media_type": {
+          "title": "Media Type",
+          "type": "string"
+        },
+        "byte_size": {
+          "title": "Byte Size",
+          "type": "integer"
+        },
+        "pages": {
+          "items": {
+            "$ref": "#/$defs/SourcePage"
+          },
+          "title": "Pages",
+          "type": "array"
+        },
+        "expected_pages": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expected Pages"
+        },
+        "complete": {
+          "default": true,
+          "title": "Complete",
+          "type": "boolean"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "coordinate_system": {
+          "default": "PDF points, top-left origin; zero-based Unicode offsets within each page",
+          "title": "Coordinate System",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sha256",
+        "filename",
+        "media_type",
+        "byte_size",
+        "pages"
+      ],
+      "title": "Document",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "page": {
+          "minimum": 1,
+          "title": "Page",
+          "type": "integer"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "minimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "quote": {
+          "title": "Quote",
+          "type": "string"
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "maxItems": 4,
+              "minItems": 4,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bbox"
+        },
+        "method": {
+          "default": "text",
+          "title": "Method",
+          "type": "string"
+        }
+      },
+      "required": [
+        "page",
+        "start",
+        "end",
+        "quote"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "Finding": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "severity": {
+          "enum": [
+            "info",
+            "warning",
+            "error"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "part_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Part Ids",
+          "type": "array"
+        },
+        "field_path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Field Path"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "severity",
+        "message"
+      ],
+      "title": "Finding",
+      "type": "object"
+    },
+    "ModelDecision": {
+      "additionalProperties": false,
+      "properties": {
+        "run_id": {
+          "title": "Run Id",
+          "type": "string"
+        },
+        "candidate_index": {
+          "minimum": 0,
+          "title": "Candidate Index",
+          "type": "integer"
+        },
+        "action": {
+          "enum": [
+            "accept",
+            "reject"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "provider": {
+          "title": "Provider",
+          "type": "string"
+        },
+        "model": {
+          "title": "Model",
+          "type": "string"
+        },
+        "revision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Revision"
+        },
+        "configuration_sha256": {
+          "title": "Configuration Sha256",
+          "type": "string"
+        },
+        "input_sha256": {
+          "title": "Input Sha256",
+          "type": "string"
+        },
+        "output_sha256": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output Sha256"
+        },
+        "context_truncated": {
+          "default": false,
+          "title": "Context Truncated",
+          "type": "boolean"
+        },
+        "input_characters": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Input Characters",
+          "type": "integer"
+        },
+        "included_characters": {
+          "default": 0,
+          "minimum": 0,
+          "title": "Included Characters",
+          "type": "integer"
+        },
+        "reviewer": {
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "decided_at": {
+          "title": "Decided At",
+          "type": "string"
+        },
+        "field_paths": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Field Paths",
+          "type": "array"
+        }
+      },
+      "required": [
+        "run_id",
+        "candidate_index",
+        "action",
+        "provider",
+        "model",
+        "configuration_sha256",
+        "input_sha256",
+        "reviewer",
+        "reason",
+        "decided_at"
+      ],
+      "title": "ModelDecision",
+      "type": "object"
+    },
+    "NoticeMetadata": {
+      "additionalProperties": false,
+      "properties": {
+        "notice_id": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "supplier": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "notice_type": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "title": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "issue_date": {
+          "$ref": "#/$defs/DateValue"
+        },
+        "revision": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "revision_date": {
+          "$ref": "#/$defs/DateValue"
+        },
+        "contact": {
+          "$ref": "#/$defs/Contact"
+        },
+        "change_title": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "change_detail": {
+          "$ref": "#/$defs/CriticalValue"
+        }
+      },
+      "required": [
+        "notice_id",
+        "supplier",
+        "notice_type",
+        "title",
+        "issue_date"
+      ],
+      "title": "NoticeMetadata",
+      "type": "object"
+    },
+    "PartRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "raw_identifier": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "normalized_identifier": {
+          "title": "Normalized Identifier",
+          "type": "string"
+        },
+        "manufacturer": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "group": {
+          "title": "Group",
+          "type": "string"
+        },
+        "item_name": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "item_category": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "exclusions": {
+          "items": {
+            "$ref": "#/$defs/CriticalValue"
+          },
+          "title": "Exclusions",
+          "type": "array"
+        },
+        "change_categories": {
+          "items": {
+            "$ref": "#/$defs/CriticalValue"
+          },
+          "title": "Change Categories",
+          "type": "array"
+        },
+        "dates": {
+          "items": {
+            "$ref": "#/$defs/DateValue"
+          },
+          "title": "Dates",
+          "type": "array"
+        },
+        "exceptions": {
+          "items": {
+            "$ref": "#/$defs/CriticalValue"
+          },
+          "title": "Exceptions",
+          "type": "array"
+        },
+        "replacement_suggestions": {
+          "items": {
+            "$ref": "#/$defs/Replacement"
+          },
+          "title": "Replacement Suggestions",
+          "type": "array"
+        },
+        "review_status": {
+          "default": "supported",
+          "enum": [
+            "supported",
+            "review_required",
+            "accepted",
+            "corrected"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "raw_identifier",
+        "normalized_identifier",
+        "manufacturer",
+        "group"
+      ],
+      "title": "PartRecord",
+      "type": "object"
+    },
+    "Replacement": {
+      "additionalProperties": false,
+      "properties": {
+        "part_number": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "compatibility": {
+          "const": "not_assessed",
+          "default": "not_assessed",
+          "title": "Compatibility",
+          "type": "string"
+        }
+      },
+      "required": [
+        "part_number"
+      ],
+      "title": "Replacement",
+      "type": "object"
+    },
+    "RevisionRelationship": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "supersedes",
+            "cancels"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "target_notice_id": {
+          "$ref": "#/$defs/CriticalValue"
+        },
+        "parts": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Parts",
+          "type": "array"
+        },
+        "scope": {
+          "enum": [
+            "subset",
+            "all",
+            "unknown"
+          ],
+          "title": "Scope",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "review_status": {
+          "default": "supported",
+          "enum": [
+            "supported",
+            "review_required",
+            "accepted",
+            "corrected"
+          ],
+          "title": "Review Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "target_notice_id",
+        "scope"
+      ],
+      "title": "RevisionRelationship",
+      "type": "object"
+    },
+    "SourcePage": {
+      "additionalProperties": false,
+      "properties": {
+        "number": {
+          "title": "Number",
+          "type": "integer"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "width": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Width"
+        },
+        "height": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Height"
+        },
+        "method": {
+          "default": "text",
+          "title": "Method",
+          "type": "string"
+        },
+        "lines": {
+          "items": {
+            "$ref": "#/$defs/TextLine"
+          },
+          "title": "Lines",
+          "type": "array"
+        },
+        "tables": {
+          "items": {
+            "items": {
+              "items": {
+                "$ref": "#/$defs/TableCell"
+              },
+              "type": "array"
+            },
+            "type": "array"
+          },
+          "title": "Tables",
+          "type": "array"
+        }
+      },
+      "required": [
+        "number",
+        "text"
+      ],
+      "title": "SourcePage",
+      "type": "object"
+    },
+    "TableCell": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "maxItems": 4,
+              "minItems": 4,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bbox"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "TableCell",
+      "type": "object"
+    },
+    "TextLine": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "start": {
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "title": "End",
+          "type": "integer"
+        },
+        "bbox": {
+          "anyOf": [
+            {
+              "maxItems": 4,
+              "minItems": 4,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Bbox"
+        }
+      },
+      "required": [
+        "text",
+        "start",
+        "end"
+      ],
+      "title": "TextLine",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "metadata": {
+      "$ref": "#/$defs/NoticeMetadata"
+    },
+    "document": {
+      "$ref": "#/$defs/Document"
+    },
+    "parts": {
+      "items": {
+        "$ref": "#/$defs/PartRecord"
+      },
+      "title": "Parts",
+      "type": "array"
+    },
+    "relationships": {
+      "items": {
+        "$ref": "#/$defs/RevisionRelationship"
+      },
+      "title": "Relationships",
+      "type": "array"
+    },
+    "findings": {
+      "items": {
+        "$ref": "#/$defs/Finding"
+      },
+      "title": "Findings",
+      "type": "array"
+    },
+    "unsupported_fields": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unsupported Fields",
+      "type": "array"
+    },
+    "mode": {
+      "default": "deterministic-rules",
+      "title": "Mode",
+      "type": "string"
+    },
+    "compiler_version": {
+      "default": "0.1.0",
+      "title": "Compiler Version",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "status": {
+      "default": "supported",
+      "enum": [
+        "supported",
+        "review_required",
+        "incomplete",
+        "reviewed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "version": {
+      "default": 1,
+      "title": "Version",
+      "type": "integer"
+    },
+    "provenance": {
+      "default": "user_supplied",
+      "enum": [
+        "synthetic",
+        "user_supplied"
+      ],
+      "title": "Provenance",
+      "type": "string"
+    },
+    "model_decisions": {
+      "items": {
+        "$ref": "#/$defs/ModelDecision"
+      },
+      "title": "Model Decisions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "metadata",
+    "document",
+    "parts"
+  ],
+  "title": "NoticeRecord",
+  "type": "object"
+}

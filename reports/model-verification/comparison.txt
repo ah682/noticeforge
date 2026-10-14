@@ -1,0 +1,21 @@
+NoticeForge real model verification — synthetic material
+
+Profile | Status | Matched/expected relationships | Schema-valid requests | p95 seconds | Peak RSS MiB
+--- | --- | --- | --- | --- | ---
+untuned | executed | 0/19 | 1/8 | 95.660 | 3209.2
+adapted | executed | 0/19 | 7/8 | 10.037 | 3209.4
+batched | executed | 0/19 | 1/8 | 115.485 | 3209.4
+quantized | executed | 0/19 | 0/8 | 23.165 | 3209.7
+adapted-batched | executed | 0/19 | 7/8 | 12.292 | 3209.4
+adapted-quantized | executed | 0/19 | 0/8 | 23.095 | 3213.9
+stronger | executed | 0/19 | 8/8 | 1.354 | 3418.8
+
+Rules baseline: 18/19 exact supported tuples; 15/16 affected parts; 2 critical omissions and 0 unsupported assertions.
+
+One measured request for each of 8 short synthetic documents, 1 excluded warmup, concurrency 1, 4 CPU threads on a shared host. Nearest-rank p95 is the maximum here; batch-size-2 profiles measure batch completion, not independent single-request latency.
+RSS is the process lifetime peak including weight loading and INT8 conversion, not steady serving memory. The larger model uses BF16; compact comparisons use FP32 or real dynamic INT8.
+Raw model strings, token counts, schema/evidence failures and per-request omissions remain in each profile's serving_benchmark.json and request_outcomes.jsonl.
+proposal_quality.json adds part recall, exception scope, evidence localization, review coverage and per-supplier/template outcomes from those preserved strings.
+All-request throughput includes errors; comparison.json separately records schema-valid and evidence-accepted throughput.
+Wrong relationship counts on invalid-schema outputs are unknown, never assumed zero. Accepted candidates still require review.
+The frozen parsed input digest must match across all variants. GPU, authentic supplier validation and engineer-time gains remain unperformed.

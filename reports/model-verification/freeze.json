@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-10-14T03:41:59.359788+00:00",
+  "purpose": "Freeze before any evaluation model scores; owned synthetic developmental evaluation, not authentic held-out manufacturer validation",
+  "prompt_sha256": "0e4ffbab3afb533c80581eb2c8ffab86ac95e0593b645f913805229f88869d75",
+  "parsed_inputs_sha256": "95dd805c75ab89fc6bd658d46f19d97d0c638cd04504ad882952354bc8e5153d",
+  "evaluation_manifest_sha256": "731a5aed0093a24e67a30b63caab1b8a245e5f600f49c31cdc48b3e323ef1125",
+  "training_manifest_sha256": "946e24c7c943d7931ce2f0c63389a1f1911ddd6bb77a839f98330c373ce859ce",
+  "annotations_sha256": "266812a1d5ccdaa1e4d858b99cd41fbf55b1c0a977ac7163b1b2da6809a321f4",
+  "profile_sha256": {
+    "untuned": "a24535a6478edd6e631f9a3685499cb581102c1bf89177bdd1bb9d5fa3bc023d",
+    "batched": "a24535a6478edd6e631f9a3685499cb581102c1bf89177bdd1bb9d5fa3bc023d",
+    "quantized": "4be4cd466141d75c0d73ed3a4226acb8e39ad0925185d98b74a8a19b8f893cf2",
+    "training": "299abd0f56b838dd511f4423b1097b5e99f485c75e0cfb1d02c7b09e78568b55",
+    "adapted": "7d70896f9cf963befecf103ab3ef3ce09093bf26c3190634d9c4e9e5fc2397df",
+    "adapted-batched": "7d70896f9cf963befecf103ab3ef3ce09093bf26c3190634d9c4e9e5fc2397df",
+    "adapted-quantized": "0283cc66d2bd19902e47f608fbb86f01e6fba52d92709739ea4b708d611b6e65",
+    "stronger": "c7b58843e0442bedeaae8220d4700bb1ba45f670ae8c221a6e854b0713d1aba5"
+  },
+  "policy": "Do not alter prompts, training hyperparameters, model selection, context bounds or thresholds in response to frozen evaluation results.",
+  "warmup_iterations": 1,
+  "repetitions": 1,
+  "batch_size": 2,
+  "classification": "synthetic",
+  "final_test_authentic_real_data": false,
+  "source_documents": {
+    "different-deadlines": "7cf98b48602ac342bfcbca62dc8ce0c3e1bcf87d9791bd5476ae7c950a726271",
+    "row-footnote": "a3a5635e681c369758d4b76513e7ceefa8547028b58264a779beeb08b8010acc",
+    "ambiguous-ordering": "170947bdce53a905d7b57cbcfa28b930bbb7199d242dfe1ca53667ae82e5c170",
+    "partial-revision": "7a86d0a5fa808d3a1472cd6e0492336d0056526d2cab1e18e51aa9ec08c3ece3",
+    "literal-identifiers": "54dee5feb9fea272ac9642ec2e005ab1d8a375f5c6785b3d42bbd0c83b0bbdd8",
+    "injection-data": "5875c6865712d03c025eaf74c0fa770454ad4a2be7c1432b87f88aa965bfb40e",
+    "missing-attachment": "6aa231c6bb8797b106e9965929bd6555880544314acb9c5578504d6af7a1b775",
+    "unsupported-ragged-row": "c7e5022dd27d4836548fb75527872f7c3c38623e7697fd341f0d2e2e9f0398b1"
+  }
+}

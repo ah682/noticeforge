@@ -1,0 +1,12 @@
+OWNED SYNTHETIC FIXTURE
+Notice ID: AST-PDN-2026-041-B
+Supplier: Aster Semiconductor
+Notice type: PDN
+Title: Revised ordering date for NX-4100-B
+Issue date: 2026-10-10
+Revision: B
+Revision date: 2026-10-10
+Supersedes: AST-PDN-2026-041; Parts: NX-4100-B
+Group | Part number | Last buy | Last delivery | End of production
+Power | NX-4100-B | 2027-08-15 | 2027-12-15 | 2027-11-30
+Page 1 of 1

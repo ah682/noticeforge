@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "id": 7,
+      "notice_id": "e8a03eb264818fc99330",
+      "action": "model_completed",
+      "field_path": null,
+      "reviewer": "model service",
+      "reason": "Model output retained as proposals; no canonical values applied",
+      "created_at": "2026-10-14T04:05:10.800695+00:00",
+      "version": 1,
+      "before": null,
+      "after": {
+        "run_id": "1c39d25cf1fa4f64a71eb730055e990f",
+        "status": "partial",
+        "candidates": 0,
+        "rejected": 1
+      }
+    },
+    {
+      "id": 6,
+      "notice_id": "e8a03eb264818fc99330",
+      "action": "model_requested",
+      "field_path": null,
+      "reviewer": "local reviewer",
+      "reason": "Explicit model review requested; no values applied",
+      "created_at": "2026-10-14T04:04:59.175796+00:00",
+      "version": 1,
+      "before": null,
+      "after": {
+        "run_id": "1c39d25cf1fa4f64a71eb730055e990f",
+        "provider": "local-transformers",
+        "model": "Qwen/Qwen2.5-0.5B-Instruct"
+      }
+    },
+    {
+      "id": 4,
+      "notice_id": "e8a03eb264818fc99330",
+      "action": "import",
+      "field_path": null,
+      "reviewer": "compiler",
+      "reason": "deterministic-rules 0.1.0; source retained",
+      "created_at": "2026-10-14T04:04:57.303903+00:00",
+      "version": 1,
+      "before": null,
+      "after": null
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "documents": [
+    {
+      "id": "train-row",
+      "path": "train-row.txt",
+      "source": "owned random-model API smoke fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "train-row",
+      "template": "train-row",
+      "family": "train-row",
+      "classification": "synthetic",
+      "split": "train",
+      "annotation_provenance": "locally authored literal values for API smoke, not domain validation"
+    },
+    {
+      "id": "validation-row",
+      "path": "validation-row.txt",
+      "source": "owned random-model API smoke fixture",
+      "permission_status": "owned_synthetic",
+      "license": "CC0-1.0",
+      "supplier": "validation-row",
+      "template": "validation-row",
+      "family": "validation-row",
+      "classification": "synthetic",
+      "split": "validation",
+      "annotation_provenance": "locally authored literal values for API smoke, not domain validation"
+    }
+  ]
+}

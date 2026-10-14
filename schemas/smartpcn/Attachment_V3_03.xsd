@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+==========================================================================
+Schema: Attachment.xsd
+Version: VDMA24903_1.03		SmartPCN_3.03
+Date: 2018.01.22
+Author: COG Deutschland e.V. (HR)
+
+Changelog
+
+Version: SmartPCN_3.03
+Date: 2018.02.16
+Author: H.Reger  DDM
+
+Pattern for filename removed because some environments do not support lookahead in regular expressions
+
+Version: SmartPCN_3.02
+Date: 2018.01.22
+Author: H.Reger  DDM
+
+Pattern for filename changed
+
+Version: SmartPCN_3.01
+Date: 2017.11.24
+Author: H.Reger  DDM
+
+URL for targetNamespace changed
+md5checksum is optional and no longer checked for a unique name
+filesize is now string according to VDMA 24903 document
+
+==========================================================================
+-->
+
+<xsd:schema 
+  xmlns="http://www.smartpcn.org/images/files/VDMA24903Schema/attachments" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.smartpcn.org/images/files/VDMA24903Schema/attachments" 
+  elementFormDefault="qualified">
+  
+  <!--Attachements-->
+  <xsd:element name="attachments">
+    <xsd:complexType>
+      <xsd:sequence>
+        <!--Single Attachment-->
+        <xsd:element name="attachment" type="attachmentType" minOccurs="1" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+
+    <!--Unique Filename-->
+    <xsd:unique name="uniqueFilename">
+      <xsd:selector xpath="attachment"/>
+      <xsd:field xpath="filename"/>
+    </xsd:unique>
+
+  </xsd:element>
+
+  <!--############ data types definitions for attachments ###############-->
+  <xsd:complexType name="attachmentType">
+    <xsd:sequence>
+
+      <!--Filename-->
+      <xsd:element name="filename" minOccurs="1" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="256"/>
+            <!--<xsd:pattern value="(.)+\.(gif|jpg|jpeg|bmp|pdf|txt|tif|tiff|zip)"/>-->
+            <!--<xsd:pattern value=".+\.(?!(exe|dll|bat|vbs))[^.]*" />-->
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      
+      <!--MD5 Checksumme-->
+      <xsd:element name="md5checksum" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="32"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      
+      <!--Filesize in Byte-->
+      <xsd:element name="filesize" minOccurs="0" maxOccurs="1">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="32"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      
+    </xsd:sequence>
+    
+    <!--Filetype-->
+    <xsd:attribute name="attachmentType" use="required">
+      <xsd:simpleType >
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="FILE"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+    </xsd:attribute>
+  </xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,28 @@
+{
+  "model_id": "/home/ava/Desktop/pcn-model-compiler/reports/ml-compatibility/profile-smoke/random-tiny-base",
+  "revision": "0000000000000000000000000000000000000000",
+  "license": "random weights authored locally",
+  "device": "cpu",
+  "precision": "float32",
+  "allow_download": false,
+  "seed": 17,
+  "epochs": 2,
+  "learning_rate": 0.003,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 4,
+  "max_input_tokens": 1600,
+  "max_sequence_tokens": 2048,
+  "max_new_tokens": 8,
+  "max_characters": 7000,
+  "generation_max_seconds": 120,
+  "lora_rank": 4,
+  "lora_alpha": 8,
+  "lora_dropout": 0.0,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "gradient_checkpointing": true,
+  "adapter_path": null,
+  "resource_planning": {}
+}

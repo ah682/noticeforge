@@ -1,0 +1,548 @@
+{
+  "id": "170947bdce53a905d7b5",
+  "schema_version": "1.0",
+  "metadata": {
+    "notice_id": {
+      "value": "QL-94",
+      "raw": "QL-94",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 43,
+          "end": 48,
+          "quote": "QL-94",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "supplier": {
+      "value": "Quarry Logic",
+      "raw": "Quarry Logic",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 59,
+          "end": 71,
+          "quote": "Quarry Logic",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "notice_type": {
+      "value": "PDN",
+      "raw": "PDN",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 85,
+          "end": 88,
+          "quote": "PDN",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "title": {
+      "value": "Synthetic ambiguous-ordering",
+      "raw": "Synthetic ambiguous-ordering",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 96,
+          "end": 124,
+          "quote": "Synthetic ambiguous-ordering",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "issue_date": {
+      "value": "2027-10-01",
+      "raw": "2027-10-01",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 137,
+          "end": 147,
+          "quote": "2027-10-01",
+          "bbox": null,
+          "method": "text"
+        }
+      ],
+      "review_status": "supported",
+      "method": "rules-v1",
+      "reason": null,
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "issue_date",
+      "qualifier": "exact"
+    },
+    "revision": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "revision_date": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null,
+      "kind": "revision_date",
+      "qualifier": "missing"
+    },
+    "contact": {
+      "contact_type": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "company": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "email": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "street": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "zip_code": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "city": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "country": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      }
+    },
+    "change_title": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    },
+    "change_detail": {
+      "value": null,
+      "raw": null,
+      "evidence": [],
+      "review_status": "review_required",
+      "method": "rules-v1",
+      "reason": "Not found in source",
+      "model_run_id": null,
+      "model_candidate_index": null
+    }
+  },
+  "document": {
+    "sha256": "170947bdce53a905d7b57cbcfa28b930bbb7199d242dfe1ca53667ae82e5c170",
+    "filename": "ambiguous-ordering.txt",
+    "media_type": "text/plain",
+    "byte_size": 234,
+    "pages": [
+      {
+        "number": 1,
+        "text": "OWNED SYNTHETIC EVALUATION CASE\nNotice ID: QL-94\nSupplier: Quarry Logic\nNotice type: PDN\nTitle: Synthetic ambiguous-ordering\nIssue date: 2027-10-01\nPart number | Last buy\n000ZX-R | 05/06/2028\n000ZX-S | while supplies last\nPage 1 of 1\n",
+        "width": null,
+        "height": null,
+        "method": "text",
+        "lines": [
+          {
+            "text": "OWNED SYNTHETIC EVALUATION CASE",
+            "start": 0,
+            "end": 31,
+            "bbox": null
+          },
+          {
+            "text": "Notice ID: QL-94",
+            "start": 32,
+            "end": 48,
+            "bbox": null
+          },
+          {
+            "text": "Supplier: Quarry Logic",
+            "start": 49,
+            "end": 71,
+            "bbox": null
+          },
+          {
+            "text": "Notice type: PDN",
+            "start": 72,
+            "end": 88,
+            "bbox": null
+          },
+          {
+            "text": "Title: Synthetic ambiguous-ordering",
+            "start": 89,
+            "end": 124,
+            "bbox": null
+          },
+          {
+            "text": "Issue date: 2027-10-01",
+            "start": 125,
+            "end": 147,
+            "bbox": null
+          },
+          {
+            "text": "Part number | Last buy",
+            "start": 148,
+            "end": 170,
+            "bbox": null
+          },
+          {
+            "text": "000ZX-R | 05/06/2028",
+            "start": 171,
+            "end": 191,
+            "bbox": null
+          },
+          {
+            "text": "000ZX-S | while supplies last",
+            "start": 192,
+            "end": 221,
+            "bbox": null
+          },
+          {
+            "text": "Page 1 of 1",
+            "start": 222,
+            "end": 233,
+            "bbox": null
+          }
+        ],
+        "tables": []
+      }
+    ],
+    "expected_pages": 1,
+    "complete": true,
+    "warnings": [],
+    "coordinate_system": "PDF points, top-left origin; zero-based Unicode offsets within each page"
+  },
+  "parts": [
+    {
+      "id": "part-1",
+      "raw_identifier": {
+        "value": "000ZX-R",
+        "raw": "000ZX-R",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 171,
+            "end": 178,
+            "quote": "000ZX-R",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "000ZX-R",
+      "manufacturer": {
+        "value": "Quarry Logic",
+        "raw": "Quarry Logic",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 59,
+            "end": 71,
+            "quote": "Quarry Logic",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": null,
+          "raw": "05/06/2028",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 181,
+              "end": 191,
+              "quote": "05/06/2028",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "No unambiguous calendar date; review the original wording",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "ambiguous"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    },
+    {
+      "id": "part-2",
+      "raw_identifier": {
+        "value": "000ZX-S",
+        "raw": "000ZX-S",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 192,
+            "end": 199,
+            "quote": "000ZX-S",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "normalized_identifier": "000ZX-S",
+      "manufacturer": {
+        "value": "Quarry Logic",
+        "raw": "Quarry Logic",
+        "evidence": [
+          {
+            "page": 1,
+            "start": 59,
+            "end": 71,
+            "quote": "Quarry Logic",
+            "bbox": null,
+            "method": "text"
+          }
+        ],
+        "review_status": "supported",
+        "method": "rules-v1",
+        "reason": null,
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "group": "Affected parts",
+      "item_name": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "item_category": {
+        "value": null,
+        "raw": null,
+        "evidence": [],
+        "review_status": "review_required",
+        "method": "rules-v1",
+        "reason": "Not found in source",
+        "model_run_id": null,
+        "model_candidate_index": null
+      },
+      "exclusions": [],
+      "change_categories": [],
+      "dates": [
+        {
+          "value": null,
+          "raw": "while supplies last",
+          "evidence": [
+            {
+              "page": 1,
+              "start": 202,
+              "end": 221,
+              "quote": "while supplies last",
+              "bbox": null,
+              "method": "text"
+            }
+          ],
+          "review_status": "review_required",
+          "method": "rules-v1",
+          "reason": "Ordering depends on inventory; no exact deadline asserted",
+          "model_run_id": null,
+          "model_candidate_index": null,
+          "kind": "last_buy",
+          "qualifier": "inventory_limited"
+        }
+      ],
+      "exceptions": [],
+      "replacement_suggestions": [],
+      "review_status": "review_required"
+    }
+  ],
+  "relationships": [],
+  "findings": [
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "No unambiguous calendar date; review the original wording",
+      "part_ids": [],
+      "field_path": "parts.0.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 181,
+          "end": 191,
+          "quote": "05/06/2028",
+          "bbox": null,
+          "method": "text"
+        }
+      ]
+    },
+    {
+      "code": "ambiguous_value",
+      "severity": "warning",
+      "message": "Ordering depends on inventory; no exact deadline asserted",
+      "part_ids": [],
+      "field_path": "parts.1.dates.0",
+      "evidence": [
+        {
+          "page": 1,
+          "start": 202,
+          "end": 221,
+          "quote": "while supplies last",
+          "bbox": null,
+          "method": "text"
+        }
+      ]
+    },
+    {
+      "code": "missing_date",
+      "severity": "warning",
+      "message": "000ZX-R: no supported last buy relationship",
+      "part_ids": [
+        "part-1"
+      ],
+      "field_path": null,
+      "evidence": []
+    },
+    {
+      "code": "missing_date",
+      "severity": "warning",
+      "message": "000ZX-S: no supported last buy relationship",
+      "part_ids": [
+        "part-2"
+      ],
+      "field_path": null,
+      "evidence": []
+    }
+  ],
+  "unsupported_fields": [],
+  "mode": "deterministic-rules",
+  "compiler_version": "0.1.0",
+  "created_at": "2026-10-14T03:42:25.611448+00:00",
+  "status": "review_required",
+  "version": 1,
+  "provenance": "user_supplied",
+  "model_decisions": []
+}

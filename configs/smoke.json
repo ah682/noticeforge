@@ -1,0 +1,11 @@
+{
+  "purpose": "CPU training/checkpoint/load plumbing smoke only; not a domain extractor",
+  "seed": 17,
+  "epochs": 300,
+  "learning_rate": 0.5,
+  "feature_dimension": 96,
+  "train_examples": 160,
+  "validation_examples": 40,
+  "benchmark_requests": 160,
+  "benchmark_warmup": 8
+}
