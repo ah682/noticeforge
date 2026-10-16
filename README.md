@@ -1,10 +1,37 @@
-# NoticeForge
+# NoticeForge — AI/ML Engineering for Document Intelligence
 
-NoticeForge is a local review tool for semiconductor product-change and discontinuance notices. It reads PDF or text notices, connects affected parts to their deadlines, and keeps the source evidence beside the extracted records.
+NoticeForge extracts structured records from semiconductor product-change and discontinuance notices, then lets a reviewer check each finding against the original document.
 
-[Project page](https://ah682.github.io/noticeforge/) · [Walkthrough](docs/WALKTHROUGH.md)
+The project brings together document processing, dataset validation, LLM fine-tuning, inference benchmarking, and a working review application. The central challenge is preserving the relationship between a specific part, its deadline, and the footnote or exception that changes its meaning.
+
+[Project page](https://ah682.github.io/noticeforge/) · [Walkthrough](docs/WALKTHROUGH.md) · [Model experiments](docs/MODELS.md) · [Architecture](docs/ARCHITECTURE.md)
+
+**Stack:** Python, PyTorch, Hugging Face Transformers, PEFT/LoRA, FastAPI, Pydantic, SQLite, PyMuPDF, Tesseract, JavaScript, Playwright, and GitHub Actions. The ML and OCR dependencies are optional.
 
 ![NoticeForge review workspace](docs/images/review.png)
+
+## AI/ML engineering
+
+- **Document processing:** PDF text and table-layout extraction, optional OCR, and source citations with exact text offsets and page coordinates. Typed records retain uncertain values and incomplete source coverage.
+- **Data preparation:** Owned synthetic notices, structured annotations, permission records, and audits for supplier, template, revision-family, and near-duplicate leakage across splits. Evaluation inputs and configurations are frozen before the model comparison.
+- **LLM fine-tuning:** Qwen2.5-0.5B-Instruct adapted with PEFT LoRA on CPU. The recorded run trained 540,672 parameters over 24 optimizer steps using 16 training documents and four separate validation documents, with checkpoint hashes and reload checks.
+- **Inference experiments:** Seven measured profiles covering untuned and adapted models, padded batching, CPU dynamic INT8 quantization, and a larger Qwen2.5-1.5B comparator. Reports retain raw outputs, validation failures, latency, and peak memory.
+- **Model validation:** Structured output is checked against a strict schema, exact source quotes, identifier boundaries, and date evidence. Invalid proposals are rejected; surviving proposals still require an explicit review decision.
+- **Application integration:** A persistent model queue, source-linked proposal review, audited accept/reject decisions, and JSON/XML exports connect the experiments to a usable FastAPI and SQLite application.
+
+The main implementation entry points are the [dataset pipeline](noticeforge/datasets.py), [training code](noticeforge/training.py), [provider adapters](noticeforge/providers.py), [model service](noticeforge/model_service.py), and [experiment runner](scripts/model_verification.py).
+
+## Measured results
+
+The recorded comparison uses **eight synthetic development cases**. These results describe that small corpus; they do not establish accuracy on unfamiliar supplier notices.
+
+| Approach | Recorded result |
+| --- | --- |
+| Rules baseline | 18/19 exact part/date relationships and 15/16 exact parts, with zero unsupported assertions. One ragged table row remains a counted omission. |
+| Qwen LoRA adaptation | Schema-valid responses increased from 1/8 to 7/8, but no proposed relationship passed the full evidence checks. Validation loss increased from 0.3220 to 0.3292. |
+| Seven model serving profiles | Every profile recovered 0/19 evidence-valid relationships. Batching, quantization, and the larger comparator did not produce a usable extraction improvement on this set. |
+
+The rules pipeline therefore remains the default extractor. Models are available for explicit proposal review, with their failures and resource costs preserved in the [comparison report](reports/model-verification/comparison.txt) and [evaluation notes](docs/EVALUATION.md).
 
 ## Run it locally
 
@@ -20,6 +47,8 @@ Open **http://127.0.0.1:8877**. The command installs the locked dependencies, ad
 
 The examples are fictional. Your uploaded notices and review history stay in a local SQLite database. Set `NOTICEFORGE_DATA_DIR` to use a different storage directory, or `NOTICEFORGE_PORT` to change the port. Other settings are listed in [`.env.example`](.env.example); export them in your shell before starting the app.
 
+To reproduce the model experiments, follow the separate environment and training instructions in [Models](docs/MODELS.md). Published artifacts include configurations, checkpoint manifests, and measured reports; model weights must be downloaded or regenerated locally.
+
 ## What it does
 
 - Keeps exact part identifiers and manufacturer context, including leading zeros and suffixes.
@@ -31,12 +60,6 @@ The examples are fictional. Your uploaded notices and review history stay in a l
 - Exports canonical JSON and a restricted smartPCN XML body validated against the original COGD XSD.
 
 Try **AST-PDN-2026-041** for grouped deadlines and a row-specific footnote. **BRS-PDN-2026-018** shows an ambiguous date that needs review. **AST-PCN-2026-052** supports the XML export. The [walkthrough](docs/WALKTHROUGH.md) covers these examples.
-
-## How it works
-
-The default extractor uses text, table layout, and deterministic rules. Optional local or compatible model providers can propose changes, but nothing is applied without an explicit review decision. OCR is optional and its output always needs review.
-
-The backend is FastAPI with SQLite. The interface uses plain JavaScript and CSS. See [Architecture](docs/ARCHITECTURE.md) for the data flow and module boundaries.
 
 ## Development
 
@@ -51,6 +74,7 @@ Node 24 is used for the development checks. To run browser tests, start a dispos
 
 ```bash
 NOTICEFORGE_DATA_DIR=/tmp/noticeforge-browser-check make demo
+# In another terminal:
 npm run test:browser
 npm run test:races
 ```
@@ -63,7 +87,7 @@ Browser checks use Chrome; set `CHROME_PATH` if it is installed elsewhere. `make
 
 This is a single-user local application. It has no login or tenant isolation, so it should not be exposed directly as a public service. GitHub Pages can show a project page; it cannot run the Python backend or SQLite storage.
 
-The rules baseline recovered **18 of 19 exact part/date relationships** on eight synthetic development cases. One unsupported table row remains a counted omission. Those results do not establish accuracy on unfamiliar supplier notices. Experimental model profiles did not recover evidence-valid relationships on the comparison set and are not enabled by default.
+CPU inference and LoRA training have been exercised. CUDA/QLoRA execution, evaluation on an authorized real supplier corpus, and component-engineer usability studies remain unverified. OCR output always requires review.
 
 The XML export is a restricted **smartPCN 3.0 body using XSD revision 3.08**, not a complete `.smartPCN` archive. Suggested replacement parts are never treated as approved substitutes.
 
