@@ -13,23 +13,20 @@ provenance. Owned fixture content is CC0-1.0. Schema implementation material has
 ownership and attribution; see `schemas/smartpcn/SOURCE.json`.
 
 The evaluation fixtures use different synthetic suppliers/templates/families from the UI examples.
-They still use the documented parser grammar and are developmental cases, not a frozen real-world
-test set. The malformed-row case deliberately measures a known unsupported layout and its omission.
+They use the parser's supported grammar and are development cases. The malformed-row case deliberately measures a known unsupported layout and its omission.
 
 `fixtures/model-training/` adds 16 owned synthetic training documents and four separate validation
 documents. A combined audit covers those and the eight evaluation cases, holding out suppliers,
 templates and complete families and screening near duplicates. Before pretrained-model evaluation,
 `reports/model-verification/freeze.json` recorded source, parsed-input, prompt and configuration
-hashes. No evaluation feedback changed that matrix. This frozen model comparison still uses
-developmental synthetic grammar cases; it does not turn them into an authentic supplier holdout.
+hashes. No evaluation feedback changed that matrix. It remains a comparison on synthetic
+development cases.
 
 ## Authorized partner data
 
-Public readability does not establish permission for training or evaluation. TI's
-[notice information](https://www.ti.com/quality-reliability/quality/product-change-notification.html)
-and [terms of use](https://www.ti.com/legal/terms-conditions/terms-of-use.html) were inspected as
-context; no reuse entitlement is inferred from access. A responsible owner must verify the scope
-of authorization before importing real notices.
+Before importing real notices, check that permission covers the planned training,
+evaluation or sharing, and record it in the manifest. A publicly readable notice
+may still have reuse restrictions.
 
 `noticeforge.datasets` implements a typed manifest and JSONL partner annotation format, validates
 page-local evidence spans, checks attribution/permissions and imports a contained source package
@@ -45,7 +42,7 @@ not proof against all OCR/paraphrase duplication. Image-only pages need a checke
 Do not tune prompts, thresholds, model selection or normalization using final-test documents.
 Freeze the training and validation configuration before an authentic final test. Training only
 consumes explicitly audited `train` annotations; separate validation and final evaluation remain
-required. A successful software import cannot validate the legal scope or human annotation quality.
+required. Review permissions and annotation quality separately from the software checks.
 
 ## Engineer review-time workflow
 

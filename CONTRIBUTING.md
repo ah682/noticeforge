@@ -1,17 +1,16 @@
 # Contributing
 
-Start with the [README](README.md), [current verification](docs/VERIFICATION.md)
-and [limitations](docs/LIMITATIONS.md). This is a maintained local engineering
-demonstration; no response-time or production-support commitment is offered.
+The [walkthrough](docs/WALKTHROUGH.md) is a useful way to get familiar with notice
+review, BOM matching and export. The [architecture](docs/ARCHITECTURE.md) maps those
+workflows to the Python modules.
 
-For a bug, open an issue with the source revision, Python/OS versions, exact
-command, expected/actual result and a minimal permitted synthetic case. Include
-relevant errors; remove credentials, private notices and payment/customer data.
-Use GitHub's private vulnerability reporting if enabled for security-sensitive
-reports; do not publish a working exploit or sensitive data in a public issue.
+For an extraction bug, include a small notice you can share, the expected
+part/date relationships and the actual result. Record the source revision,
+Python/OS versions and command. Use fictional identifiers when reproducing a
+problem from a private supplier notice, and remove credentials from logs.
+Security-sensitive reports belong in private vulnerability reporting when available.
 
-Keep pull requests focused. For a behavior fix, first add a regression test that
-fails on the original source, then run the existing full checks:
+Add a regression case for behavior changes, then run:
 
 ```bash
 make verify
@@ -20,12 +19,16 @@ npm run format:check
 make distribution-check
 ```
 
-Describe the failing example, fix, commands/results and any checks you could not
-run. Documentation-only edits need accurate commands and working relative links.
-Discuss broad parser/model changes before investing in them. Preserve provenance,
-unknown outcomes, original records and third-party notices. Do not tune a frozen
-evaluation to make a score improve; add development cases and reserve new holdouts.
+UI changes should also run the browser workflow and delayed-response checks
+listed in the [README](README.md#development). Describe the problem, changes and
+check results in the pull request, including anything you could not run.
+Documentation edits need working links and accurate commands.
 
-Independent trials are welcome using the [evaluation protocol](docs/EXTERNAL_EVALUATION.md).
-No independent onboarding or user trial is claimed by this guide. Project-wide
-licensing is still pending an owner decision; existing third-party terms apply.
+Keep original records and review history intact. New extraction rules must retain
+uncertainty and cite the source for each relationship. Use development fixtures
+for parser and prompt changes; preserve frozen experiment results and reserve
+new holdouts for later model comparisons. The [trial protocol](docs/EXTERNAL_EVALUATION.md)
+covers independent engineer reviews.
+
+Original code and documentation use [AGPL-3.0-only](LICENSE). Fixture, schema and
+dependency terms are listed in [NOTICE](NOTICE).

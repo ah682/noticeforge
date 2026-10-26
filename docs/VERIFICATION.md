@@ -3,7 +3,7 @@
 Software behavior, extraction accuracy, XML validity and usefulness to component
 engineers are measured separately.
 
-## Current hosted checks — 26 October 2026
+## Hosted checks — 26 October 2026
 
 Source revision: [`e7413a11c799b86295f20e01079d9aba87d2f42b`](https://github.com/ah682/noticeforge/commit/e7413a11c799b86295f20e01079d9aba87d2f42b).
 Both [run 40291140321](https://github.com/ah682/noticeforge/actions/runs/40291140321)
@@ -14,39 +14,33 @@ benchmark, project-page layout/accessibility, application browser workflows and
 delayed-response regressions all passed. The workflow pins Ubuntu 24.04 for the
 locked Playwright version, using Python 3.12 and Node 24.
 
-The hosted runner resolves the restricted local suite/browser gap described below;
-that local failure is retained as historical environment evidence. CI success is
-software/workflow evidence at the exact revision above, not a new OCR/pretrained
-model evaluation, supplier holdout result, user trial or full WCAG certification.
-The negative model results and remaining external-evaluation limits below still
-apply. Release publication and project-wide licensing remain pending.
+These runs completed the suite and browser checks that were blocked locally.
+The OCR and pretrained-model experiments below retain their original dates;
+they were not rerun by this workflow.
 
 ## Historical restricted local maintenance checks — 26 October 2026, v0.1.1
 
 Fresh checkout; Python 3.12.3, uv 0.11.28, Node 24.16.0. A network `uv sync`
 failed DNS. Copying public package caches into this checkout then running
 `uv sync --frozen --offline` installed the locked environment. `npm ci --offline`
-likewise used copied exact-integrity public package blobs. No reference source
-or environment was changed. This is cached installation evidence, not an
-independent unaided trial or a new network-install result.
+likewise used cached packages with matching integrity hashes. These local
+checks used the locked packages without a fresh network download.
 
 | Command/check | Observed result |
 | --- | --- |
 | Standard `make verify` | **Incomplete**: stopped during the threadpool lifecycle test; runtime denies asyncio socketpair wakeup sends (`EPERM`). A dependency-free cross-thread callback probe reproduced the restriction. |
 | `make check evaluate smoke` | Ruff lint/format, mypy (19 files), JS syntax, eight-case synthetic evaluation and CPU checkpoint smoke passed. |
 | `npm run format:check` | Passed. |
-| `UV_OFFLINE=1 make distribution-check` | Built wheel/source archive; installed wheel passed five-notice seed, eight-case evaluation, CPU checkpoint, genuine XSD export and UI asset checks outside source. |
+| `UV_OFFLINE=1 make distribution-check` | Built wheel/source archive; installed wheel passed five-notice seed, eight-case evaluation, CPU checkpoint, XSD export and UI asset checks outside source. |
 | Wheel/source archive inspection | README and source URLs present; fixture CC0 records and original schema hashes retained; generated data/caches absent. |
 | `npm run test:pages` | Blocked before browser checks: loopback listener returns `EPERM`. Browser workflows/races were not rerun in this environment. |
 
-At that local pass, the ordinary full suite and browser checks were blocked; the
-current hosted record above now supplies their unrestricted-runner evidence. The
-optional real OCR engine was not installed locally. Pretrained inference, LoRA/CUDA,
-remote model APIs and user trials were not rerun. The CPU smoke trains a tiny
-compatibility classifier, not the pretrained domain model. These local results
-alone did not establish hosted acceptance, and no published release is claimed.
+The local run had no OCR engine and did not repeat pretrained inference or LoRA
+training. Its CPU smoke uses a tiny classifier to check training and checkpoint
+loading. The hosted runs above subsequently completed the full suite and browser
+checks.
 
-The results below are **historical 14 October evidence**, not new v0.1.1 tests.
+The results below were recorded on **14 October**.
 
 ## Reproduce the checks
 
@@ -89,7 +83,8 @@ Playwright Chromium and stores the reports with the run.
 | Keyboard and automated accessibility | 19 keyboard checks; no axe violations in ten states |
 
 The accessibility run retained one manual-review diagnostic. Sampled evidence text had 5.38:1
-contrast and nine unobscured points; this is not a claim of complete WCAG conformance.
+contrast and nine unobscured points. Full WCAG and human screen-reader testing
+remain separate work.
 
 Evidence is in [the quality audit](QUALITY_AUDIT.md), [the machine-readable summary](../reports/verification.json),
 and `reports/quality/`. The pretrained model matrix and actual-model browser run are earlier
@@ -135,7 +130,7 @@ memory, batch, and quantization results are retained in the [comparison](../repo
 An actual-model browser run exercised queue, review, history, and export behavior and rejected an
 invalid-evidence proposal; it did not demonstrate useful extraction accuracy.
 
-No authentic authorized supplier corpus or completed component-engineer trials were supplied.
-Real supplier holdout accuracy, real-corpus adaptation, engineer time savings, GPU/QLoRA runs,
-and downstream smartPCN receiver interoperability remain unverified. The review-study report
-contains zero trials and no time-saving estimate.
+Remaining evaluation work includes a real supplier holdout, adaptation on that
+corpus, a component-engineer study, GPU/QLoRA runs and downstream smartPCN receiver
+tests. The review-study report currently contains zero trials and no time-saving
+estimate.

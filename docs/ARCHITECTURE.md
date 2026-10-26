@@ -1,4 +1,4 @@
-# Implemented architecture
+# Architecture
 
 NoticeForge runs as one local Python process serving a static accessible browser workspace and a
 FastAPI API. SQLite stores the source bytes, immutable original canonical record, latest reviewed
@@ -45,9 +45,8 @@ even a stated cutoff is not represented as guaranteed inventory availability. Mi
 rows, duplicate columns, ambiguous scope and conflicting dates become findings. A source page
 limit, text limit, failed OCR, mixed raster content or advertised missing page marks coverage incomplete.
 
-Source-supported means a rule linked data with evidence under the supported grammar. It is not
-a calibrated probability, a human acceptance or a promise of full supplier-document correctness.
-Model proposals remain separate from automatically supported records.
+`Source-supported` means a rule linked a value to text under the supported grammar.
+Human acceptance is recorded separately, and model proposals remain separate until reviewed.
 
 ## Persistence and review
 
@@ -74,12 +73,12 @@ inside supplier scope, excludes self-links and retains subset membership. Missin
 targets/scopes remain unresolved. The UI shows incoming revisions beside original affected parts.
 There is no inferred global latest-notice overwrite.
 
-## Export and execution boundaries
+## Export and runtime
 
 Canonical JSON preserves incomplete and unsupported findings; schema validation does not erase
 uncertainty. The smartPCN exporter has separate no-loss eligibility checks and actual original
 COGD XSD validation. Required standard metadata must be evidenced. Some provenance and conditions
-use explicitly named extension containers; generic consumers may ignore them. See SMARTPCN.md.
+use named extension containers; generic consumers may ignore them. See [smartPCN](SMARTPCN.md).
 
 The default listener binds loopback. Cross-origin mutations are rejected, untrusted strings render
 as text, credentials are not stored, and XML disables DTD/entity/network loading. Uploaded notices
@@ -87,6 +86,5 @@ are data; prompt-like instructions cannot alter the schema or extraction code. O
 model calls require explicit configuration and data-transfer authorization.
 
 PDF parsing occurs locally in the app process, with input/page/character limits and a 30-second
-per-page OCR subprocess timeout. This is not a hardened multi-tenant document processing service.
-The default deployment has no user account system or distributed worker infrastructure. Its
-optional in-process model worker is for one local server per database, not shared multi-instance use.
+per-page OCR subprocess timeout. Run one local server per database: the app has no
+user accounts, tenant isolation, document sandbox or distributed worker infrastructure.

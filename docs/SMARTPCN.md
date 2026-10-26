@@ -3,16 +3,13 @@
 NoticeForge produces a **`PCNbody.xml` body for smartPCN 3.0**, pinned to the
 publisher's **`SmartPCN_3.08` XSD** dated 2018-08-09. Every returned XML body is
 validated with `lxml.etree.XMLSchema` against the unmodified official XSD. A
-successful export means it passed that XSD and NoticeForge's restrictions. It
-does not establish supplier accuracy, downstream interoperability, or compliance
-of a complete smartPCN transport container.
+successful export has passed that XSD and NoticeForge's field and evidence checks.
 
 The actual COGD schemas, source URLs, SHA-256 hashes, and permission attribution
 are in [schemas/smartpcn](../schemas/smartpcn/README.md). The publisher's current
 [downloads page](https://smartpcn.org/downloads/) was rechecked on 2026-10-14. The
 linked body schema identifies `SmartPCN_3.08`; the specification PDF's `3.01` is a
-document revision. NoticeForge does not silently substitute a locally invented
-schema or claim support for other schema versions.
+document revision, distinct from the pinned XSD revision.
 
 The exporter returns the XML body, **not the `.smartPCN` ZIP container**, attachment
 manifest, source-file attachments, or a delivery/acknowledgment workflow. Native
@@ -140,7 +137,7 @@ encoding.
 raises `ExportError` for malformed or schema-invalid XML. It rejects DTDs; entity
 resolution and network access are disabled. Schema bytes are checked against
 the pinned SHA-256 before compiling the schema. This function validates structure
-only; `export_smartpcn` performs the additional profile/evidence checks.
+only; `export_smartpcn` performs the additional field and evidence checks.
 
 `export_json(record) -> bytes` validates the canonical model and exports it even
 when XML is blocked, preserving unsupported fields, uncertain values, warnings,
@@ -157,8 +154,7 @@ supported XML body, verify distinct item-level deadlines and raw identifiers,
 verify the exact canonical snapshot, preserve a part-specific footnote and an
 unassessed suggestion, test explicit PDN end-of-production mapping, reject
 incomplete/ambiguous/unsupported records, and reject invalid XML and external
-entity declarations. These tests establish local behavior and schema validity,
-not real supplier performance or acceptance by an external smartPCN receiver.
+entity declarations.
 
 ### Independent verification executed on 2026-10-14
 
@@ -168,17 +164,15 @@ lossless canonical reconstruction, exact per-item lifecycle mappings, and direct
 export calls with stale `supported` status but unsupported date/supplier values.
 The native owned PDF test reconstructs every source page, line, coordinate, exact
 identifier and date/evidence relationship from the emitted canonical chunks and
-checks the original PDF hash. That is verification of the documented NoticeForge
-extension contract, not native smartPCN import support.
+checks the original PDF hash. This tests the NoticeForge extension encoding.
 
 As a separate publisher sanity check, `PCNbody.xml` from the official
 [COGD test archive](https://smartpcn.org/wp-content/uploads/2021/03/COG-smartPCN-3.0-Testfile-3.2.zip)
 validated against the vendored XSD. The archive's `PCNbody_V3_08.xsd` had the same
 SHA-256 as the pinned file. Inspection of the original specification confirmed
 that `itemEOS` is last time buy, `itemLTD` is last delivery, and `itemEOPeffDate`
-changes meaning with PCN versus PDN. The publisher example is implementation
-verification material; it is not training data or evidence of supplier extraction
-accuracy.
+changes meaning with PCN versus PDN. The publisher example was used to check
+the schema and mapping.
 The executed check is recorded in
 [standards-verification.json](../reports/ocr/standards-verification.json), alongside
 the [owned XML body](../reports/ocr/owned-PCNbody.xml).

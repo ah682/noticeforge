@@ -1,0 +1,20 @@
+NoticeForge
+Copyright (C) 2026 Ava Hall
+
+NoticeForge's original code and documentation are licensed under the GNU
+Affero General Public License, version 3 only (AGPL-3.0-only). See LICENSE.
+
+Third-party material
+
+The smartPCN 3.0 schemas in schemas/smartpcn are published by COGD (Component
+Obsolescence Group Deutschland) e.V. Their original attribution and bytes
+are retained. COGD permits use, including partial use, with reference to COGD.
+The source, permission statement and file hashes are in
+schemas/smartpcn/SOURCE.json and travel with the packaged schemas.
+
+NoticeForge's authored fixture content remains CC0-1.0 as recorded in the
+fixture manifests. The application licence does not replace those terms.
+
+PyMuPDF and MuPDF are provided by Artifex under their AGPL/commercial terms.
+Other dependencies and optional pretrained models keep their own licences.
+Consult the relevant dependency or model distribution for its notices.

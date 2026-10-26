@@ -1,9 +1,10 @@
-# Measured behavior and remaining evidence
+# Evaluation results
 
-The deterministic text/table/rules compiler was evaluated on eight owned synthetic notices,
-separate from the five UI demonstration documents. Different fictional suppliers/templates/families
-do not make these an authentic held-out manufacturer test: the parser was developed around this
-supported grammar. No real-world accuracy is established.
+The rules pipeline was evaluated on eight synthetic notices, separate from the
+five UI examples. They use different fictional suppliers, templates and revision
+families, but follow the grammar used to develop the parser. These results
+therefore describe the development corpus; unfamiliar supplier documents need
+a separate holdout evaluation.
 
 ## Reproduce
 
@@ -71,7 +72,6 @@ The development workload spans 204–3,224 source bytes and 204–1,103 extracte
 [pipeline-benchmark.json](../reports/pipeline-benchmark.json) contains all 50 outcomes, hashes
 and lengths. RSS is the process-lifetime peak, including interpreter/prior allocations. These
 small warm fixtures do not establish performance for scans, large documents or concurrent users.
-No performance pass threshold was invented.
 
 External spend was zero. The text evaluation recorded 0.0461 seconds of measured extraction work.
 Training timers are separate. Energy, depreciation, dedicated utilization and provider prices were
@@ -79,7 +79,7 @@ not measured, so no total monetary cost is inferred.
 
 ## Training and model comparisons
 
-The NumPy CPU smoke actually optimizes a tiny softmax classifier and saves/reloads checksummed
+The NumPy CPU smoke optimizes a tiny softmax classifier and saves/reloads checksummed
 weights exactly. In the final run, 300 epochs reduced toy loss from 1.38348 to 0.05949; training took
 0.00901 seconds excluding imports/setup, with 86,712,320 bytes peak RSS. Its int8 storage
 microbenchmark dequantizes for float64 compute and is not a native int8 domain model. The smoke
@@ -87,7 +87,7 @@ report's unexecuted list describes that command alone; later pretrained experime
 
 The earlier random-weight Transformers/PEFT compatibility test trained/saved/reloaded a tiny
 Qwen2 adapter with exact restored logits. That establishes API compatibility only. The subsequent
-experiment loaded actual pinned Apache-2.0 Qwen2.5 pretrained weights and trained a real rank 8
+experiment loaded pinned Apache-2.0 Qwen2.5 pretrained weights and trained a rank 8
 q/v LoRA adapter on 16 owned synthetic documents: three epochs, 48 microbatches, 24 optimizer steps,
 540,672 trainable parameters and 75.792 seconds of timed CPU training. Adapter weight hashes changed.
 The training process peaked at 2,906,468,352 bytes RSS. Separate validation on four disjoint documents
@@ -113,7 +113,7 @@ request; batch rows show batch-completion latency, not isolated per-request late
 | LoRA 0.5B, CPU INT8 | 0/8 | 0/19 | 23.095 s | 3213.9 MiB |
 | Larger prompted 1.5B, BF16 | 8/8 | 0/19 | 1.354 s | 3418.8 MiB |
 
-**None of these model profiles earned deployment.** Every profile recovered 0/19 evidence-valid
+**The rules pipeline remains the default.** Every model profile recovered 0/19 evidence-valid
 relationships and 0/16 exact parts. The full proposal scorer also counts the missing annotated
 exception, giving 36 overlapping omissions (16 parts, 19 relationships, one exception). Accepted-set
 unsupported assertions are zero because the accepted set is empty; that is not a raw-model safety
@@ -124,7 +124,7 @@ LoRA improved JSON validity from 1/8 to 7/8 and shortened generation, but source
 wrong. The larger 1.5B model returned an empty candidate list for every document; its 1.354-second
 p95 measures abstention. CPU dynamic INT8 converted 169 Linear layers to actual x86 quantized
 kernels, retaining FP32 embeddings/attention, but both INT8 variants had 0/8 valid JSON outputs.
-No throughput improvement justifies those failures. All-request throughput includes errors;
+All-request throughput includes errors;
 separate schema-valid and evidence-accepted rates appear in the comparison report. Peak RSS includes
 loading and conversion and therefore does not demonstrate lower steady-state quantized memory.
 The 1.5B profile used BF16, so this is not a precision-controlled model-size ablation.
@@ -141,7 +141,7 @@ SQLite: 93 output tokens, one evidence-invalid proposal, no canonical mutation a
 exports. All 13 integration checks passed. This development check is separate from the frozen
 quality matrix; see [the integration result](../reports/browser-real-model/result.json).
 
-## Actual OCR baseline
+## OCR baseline
 
 Tesseract 5.3.4 ran across eight owned rasterized development inputs, three repetitions at
 concurrency 1. Both site-transfer resolutions recovered 2/2 relationships; both discontinuation
@@ -158,11 +158,11 @@ and 124,052 KiB observed peak RSS; sampling can miss brief peaks and there is no
 limit. Raw results, wrong candidates, raster PDFs and evidence overlays are in
 [the OCR report](../reports/ocr/README.md). These clean owned rasterizations are not supplier scans.
 
-## Engineer utility and real-data gate
+## Engineer review study
 
-The study importer ran on the empty template and reported unexecuted, zero trials and no time-gain
-value. No component engineer time saving or customer validation is claimed. [DATA.md](DATA.md)
-describes the timed, independently quality-adjudicated workflow.
+The study importer ran on the empty template and reported zero trials and no
+time-gain value. A review study is still needed; [DATA.md](DATA.md) describes how
+to record paired timings and independently assessed errors.
 
 Obtain permitted notices and adjudicated annotations; audit entire supplier/template/revision-family
 holdouts and near duplicates; freeze model/prompt/threshold selection before an authentic final

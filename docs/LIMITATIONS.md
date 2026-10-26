@@ -1,90 +1,82 @@
-# Scope and remaining gates
+# Limitations
 
-## Extraction
+## Documents and extraction
 
-The baseline is deterministic and grammar-limited. Supported inputs include labelled English
-metadata, ruled native PDF tables, pipe/tab text tables and explicit part/date prose. It handles
-only evidenced links. Free-form prose, complex nested headers, arbitrary row continuations,
-rotated pages, handwritten material and multi-language notices are not validated at scale.
-Malformed rows can remain unextracted; the evaluation counts those omissions and the record
-requires review. The application does not infer unseen pages when no page total is supplied.
+The rules extractor supports labelled English metadata, ruled native PDF tables,
+pipe/tab text tables and explicit part/date prose. Free-form prose, nested headers,
+row continuations, rotated pages, handwriting and other languages need broader
+evaluation. Malformed rows can be omitted; known omissions count as errors and
+leave the record requiring review.
 
-Inputs are limited to 10 MiB, 100 pages and 60,000 retained characters per page by default.
-Exceeding retained coverage creates warnings rather than silent success. Evidence offsets refer
-to extracted page text, not the PDF byte stream. Text-offset validity alone is not proof of the
-semantic correctness of every part/date relationship.
+Defaults are 10 MiB per file, 100 pages and 60,000 retained characters per page.
+Reaching a coverage limit creates a warning. Missing pages can only be detected
+when the document supplies an expected page count. Evidence offsets refer to
+extracted page text; a matching text slice alone does not establish the correct
+part/date association.
 
-Tesseract is an optional local OCR dependency. Actual Tesseract 5.3.4 was provisioned and tested
-on eight owned rasterized fixtures. Clean site-transfer scans recovered 2/2 relationships; the
-deliberately confusing identifier scan recovered only 2/6. All OCR critical fields require review.
-Internal evidence offsets can be valid despite wrong recognized characters. The measured native
-source geometry mismatches and missing relationships remain in [the OCR report](../reports/ocr/README.md).
-These are development scans, not authentic supplier quality measurements. Substantial raster
-regions alongside native PDF text remain incomplete because embedded content has not been
-OCR-verified. No O/0, I/1 or punctuation substitutions are automatically normalized.
+OCR always requires review. Tesseract 5.3.4 was tested on eight synthetic raster
+variants: clean site-transfer scans recovered 2/2 relationships, while the
+identifier-confusion scan recovered 2/6. The [OCR report](../reports/ocr/README.md)
+retains recognition errors, geometry mismatches and missing relationships.
+Substantial raster regions alongside native text leave coverage incomplete.
+Identifiers are kept literally; O/0, I/1 and punctuation are not autocorrected.
 
-Inventory-limited ordering and tentative dates require review and cannot be emitted as guaranteed
-exact XML deadlines. Supplier replacement suggestions never establish physical/electrical fit.
-There is no external component catalogue, distributor feed, approved substitute workflow or purchasing.
+Inventory-limited ordering and tentative dates stay uncertain. Suggested
+replacement parts require a separate compatibility assessment. The app has no
+component catalogue, distributor feed or purchasing workflow.
 
-## Standards
+## XML export
 
-The implemented exporter validates a **SmartPCN_3.08 XML body** using unmodified COGD XSDs from
-the smartPCN 3.0 release family. It is not a full `.smartPCN` ZIP transport implementation or a
-guarantee of interoperability with every downstream application. Required contact/change/item
-fields must be supported by source evidence. Revisions, exclusions, unsupported date categories,
-incomplete documents and unresolved values can require canonical JSON.
+The exporter validates a smartPCN 3.0 XML body against the unmodified COGD XSD
+revision 3.08. It does not create a full `.smartPCN` ZIP package. Contact, change,
+item and date fields must have source evidence; unsupported revisions, exclusions,
+dates or incomplete records may require canonical JSON instead.
 
-Exceptions, evidence and suggestion semantics may rely on NoticeForge extension containers;
-generic readers may ignore those containers. A complete canonical snapshot is retained in them.
-Actual XSD validity, extraction correctness and useful downstream behavior are separate gates.
+NoticeForge stores exceptions, evidence and the full canonical snapshot in its
+own extension containers. Other readers may ignore them. Downstream receiver
+interoperability still needs testing; [smartPCN](SMARTPCN.md) documents the exact
+mapping and blocked cases.
 
-## Models, evaluation and deployment
+## Models and evaluation
 
-No authorized authentic manufacturer corpus was supplied. Developmental synthetic scores do not
-measure unfamiliar supplier performance. Fine-tuning has not earned deployment; the default
-rules baseline remains useful independently of an LLM. Actual pretrained Qwen2.5-0.5B inference
-and LoRA optimization ran on the CPU with owned synthetic documents. The frozen comparison
-also exercises batching, real CPU dynamic INT8 kernels and a larger prompted Qwen2.5-1.5B model.
-Raw malformed, incomplete and evidence-invalid outputs remain failures. Faster JSON generation
-does not establish correct relationships. See [the measured comparison](../reports/model-verification/comparison.txt).
+The published corpus is synthetic. The rules baseline and model comparisons
+need a new holdout of permitted supplier notices to measure generalization.
+All seven pretrained serving profiles recovered 0/19 evidence-valid relationships,
+so rules remain the default. Invalid model output is retained as a failed request
+or rejected proposal, and valid proposals still need a review decision. See the
+[comparison report](../reports/model-verification/comparison.txt).
 
-Authentic supplier training/evaluation and CUDA/QLoRA remain unexecuted: no authorized real corpus
-was provided and the NVIDIA device driver was unavailable. The larger local comparator is not
-proof of superior capability or a paid-provider integration. GPU budgets are planning allocations,
-not measured claims. Random-weight compatibility and tiny classifier tests are labelled separately.
+CPU inference, LoRA training, padded batching and dynamic INT8 quantization were
+run. CUDA/QLoRA was not run because the NVIDIA driver was unavailable. Resource
+budgets in the configs are planning estimates. Tiny random-weight and classifier
+smokes check API and checkpoint behavior separately from pretrained extraction.
 
-No engineer review-time improvement, customer validation, production readiness or unique category
-position is claimed. The importer/study workflow supports future evidence collection.
+No component-engineer review study has been completed. The
+[study protocol](EXTERNAL_EVALUATION.md) covers errors, corrections and paired
+review timings. Browser tests include desktop/mobile workflows, axe checks and
+keyboard navigation; human screen-reader testing and full WCAG assessment remain
+separate work.
 
-Browser verification includes desktop/mobile workflows, automated axe checks and scripted keyboard
-navigation. It is not a complete WCAG conformance assessment, human screen-reader test or engineer
-usability study. The raw accessibility report retains any checks requiring manual interpretation.
+## Running the app
 
-This is a local single-user demonstration. Multi-tenant authentication, document sandbox workers,
-robust distributed jobs, encrypted backup/restore and deployment operations are outside scope.
-Do not expose the demonstration server as a hosted service without that additional engineering.
-PyMuPDF has AGPL/commercial terms; evaluate dependency obligations for any intended redistribution.
+Use one local serving process per database. There is no login or tenant isolation,
+so do not expose the app directly as a public service. A shared deployment would
+need authentication, document sandbox workers, durable jobs, backup/restore and
+retention controls; see [hosting](GITHUB.md).
 
-Uploads run outside the web event loop. Native PDF parsing, OCR rasterization and rendering share
-one process-local lock to prevent simultaneous native PDF calls; this is not a multiworker or
-hostile-document sandbox. One serving process must own a database. Graceful shutdown drains
-queued model work and waits for results; it does not forcibly terminate an in-progress native call.
-Allowed Host names and same-origin checks protect the local browser boundary, but are not user
-authentication. Re-uploading identical bytes with a conflicting expected page count returns a
-conflict and preserves the existing notice and review history.
+Uploads run outside the web event loop, but native PDF parsing, rasterization
+and rendering share a process-local lock. This prevents simultaneous calls within
+one process; it is not a hostile-document sandbox or a multiworker lock. Shutdown
+drains queued model work and waits for active calls instead of forcibly stopping
+them. Host and same-origin checks protect browser requests but do not authenticate
+users. Identical uploads with conflicting expected page counts return a conflict
+and preserve the existing notice and review history.
 
-## Reference verification
+## Implementation references
 
-The implementation consulted official [smartPCN downloads](https://smartpcn.org/downloads/),
+The implementation used the official [smartPCN downloads](https://smartpcn.org/downloads/),
 [specification 3.01](https://smartpcn.org/wp-content/uploads/2021/01/Specification-smartPCN-3.01-released-20180323.pdf),
-[PyMuPDF text/layout documentation](https://pymupdf.readthedocs.io/en/latest/recipes-text.html),
-[OCR documentation](https://pymupdf.readthedocs.io/en/latest/recipes-ocr.html),
-[FastAPI upload documentation](https://fastapi.tiangolo.com/tutorial/request-files/), and
-[TRL PEFT guidance](https://huggingface.co/docs/trl/peft_integration).
-The actual model implementation uses the independently pinned Transformers/PEFT APIs described in MODELS.md.
-
-The supplied [SPARTAN research reference](https://pmc.ncbi.nlm.nih.gov/articles/PMC13168265/)
-was identified as table extraction work using OpenCV heuristics/OCR. Its direct page initially
-returned a browser challenge; no results from that paper were reproduced or used as our benchmark.
-Existing products already provide extraction/BOM/workflow features; this release makes no market-gap claim.
+[PyMuPDF text/layout](https://pymupdf.readthedocs.io/en/latest/recipes-text.html) and
+[OCR documentation](https://pymupdf.readthedocs.io/en/latest/recipes-ocr.html), and
+[FastAPI upload documentation](https://fastapi.tiangolo.com/tutorial/request-files/).
+Pinned Transformers and PEFT references are in [Models](MODELS.md).

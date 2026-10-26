@@ -52,5 +52,5 @@ A public service would also need authentication, authorization, upload/rate limi
 restore checks, document-retention rules, and stronger process isolation for untrusted PDF input.
 Those controls are not part of this local release.
 
-The application has no project-wide license yet. Fixture permissions and third-party schema and
-dependency licenses still apply; see the README and `schemas/smartpcn/SOURCE.json`.
+Original code and documentation use [AGPL-3.0-only](../LICENSE). Fixtures, COGD schemas
+and dependencies retain their own terms, recorded in [NOTICE](../NOTICE).

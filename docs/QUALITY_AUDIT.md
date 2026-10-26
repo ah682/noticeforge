@@ -1,8 +1,7 @@
 # Historical quality audit — 14 October 2026
 
 This dated record describes the 14 October local repair pass. See
-[VERIFICATION.md](VERIFICATION.md) for current checks. These results do not establish
-authentic supplier accuracy, useful learned extraction or engineer time savings.
+[VERIFICATION.md](VERIFICATION.md) for later checks.
 
 ## Fixed findings
 
@@ -28,9 +27,8 @@ allowing an installed wheel in that cache, and `make distribution-check` passes.
 Applied Ruff formatting to Python and pinned Prettier 3.9.10 to the static UI/browser scripts.
 Long compound statements and object literals now have conventional indentation and line breaks.
 The 35 Python syntax trees were identical immediately before and after mechanical formatting.
-Behavior fixes were tested separately. Existing domain names and module boundaries were retained;
-no speculative framework rewrite or generic helper layer was added. Authorship cannot be inferred
-reliably from code style; the improvement is readability and maintainability.
+Behavior fixes were tested separately, keeping the existing domain names and
+module boundaries.
 
 `make format`, Python format checks in `make verify`, and `npm run format:check` keep this consistent.
 
@@ -40,9 +38,9 @@ reliably from code style; the improvement is readability and maintainability.
 | --- | --- |
 | Full workspace verification with actual Tesseract | 175 tests passed, zero skips; Ruff, mypy across 19 modules, JavaScript syntax, evaluation and CPU smoke passed. |
 | Fresh source archive in `/tmp/noticeforge-clean-quality/noticeforge-0.1.0` | Locked install; 174 tests passed, one explicitly optional OCR skip; remaining verification checks passed. |
-| Built/installed wheel | Five demo notices, eight evaluation cases, CPU checkpoint, genuine COGD-XSD export and all UI assets passed outside the source checkout. |
+| Built/installed wheel | Five demo notices, eight evaluation cases, CPU checkpoint, COGD-XSD export and all UI assets passed outside the source checkout. |
 | Default browser workflow | 22 checks passed; desktop/mobile screenshots inspected; no page overflow or unexpected JavaScript errors. |
-| Offline model browser workflow | 22 checks passed plus five explicitly mocked response-state checks. This does not claim live model quality. |
+| Offline model browser workflow | 22 fixture-provider checks passed plus five mocked response-state checks. |
 | Delayed-response regressions | Ten passed. Successful responses come from the real API; error responses are explicitly mocked 409s. |
 | Keyboard/accessibility | 19 keyboard checks passed; ten axe scans with zero violations. One native-dialog overlap diagnostic remains, with measured contrast and unobscured-point evidence. |
 | Actual OCR | Repeated the eight owned raster fixtures once with Tesseract 5.3.4; earlier three-repetition results remain available separately. Recognition errors and incomplete mixed-image coverage remain explicit. |
@@ -51,9 +49,9 @@ reliably from code style; the improvement is readability and maintainability.
 Current detailed browser/OCR reports are in `reports/quality/`. One upstream Starlette/httpx
 deprecation warning remains; it does not fail the suite. The benchmark uses 20 small warm native
 PDF requests and 30 text requests on the shared host; see `reports/pipeline-benchmark.json` for
-measured latency and memory rather than treating those figures as a general service guarantee.
+the measured latency, memory and workload.
 
-## Completion boundary
+## Evaluation results and follow-up
 
 The local demonstration uses owned synthetic data and a restricted validated smartPCN body exporter.
 Acceptance cases are mapped in [VERIFICATION.md](VERIFICATION.md). Rules still
@@ -63,9 +61,10 @@ omission is a counted failure and requires review; it was not patched to improve
 The earlier real pretrained comparison remains negative: all seven profiles recovered 0/19
 evidence-valid relationships. It was neither rerun nor retuned during this maintenance pass.
 Authentic permitted supplier evaluation, real-corpus adaptation, CUDA/QLoRA, downstream receiver
-interoperability and a component-engineer study remain external validation gates.
+interoperability and a component-engineer study still need separate evaluation.
 
 This audit predates GitHub publication. See the [hosting guide](GITHUB.md) for the repository,
 project page, and deployment setup. GitHub Pages cannot run the Python/SQLite backend. A live
 shared service additionally needs authentication, authorization, durable storage, and deployment
-operations described in that guide. A project-wide application license has not been selected.
+operations described in that guide. Original code and documentation are now
+licensed under [AGPL-3.0-only](../LICENSE); see [NOTICE](../NOTICE) for third-party terms.

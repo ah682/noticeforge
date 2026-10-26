@@ -1,8 +1,7 @@
 # NoticeForge demonstration walkthrough
 
-This walkthrough uses owned synthetic notices. Extraction runs locally with the
-deterministic baseline. The examples demonstrate product behavior, not measured
-performance on real supplier documents.
+This walkthrough uses the five fictional notices bundled with NoticeForge.
+Extraction runs locally with the rules pipeline.
 
 ## Start the workspace
 
@@ -15,7 +14,7 @@ make demo
 Open `http://127.0.0.1:8877`. The demo seeds five notices without replacing existing
 review decisions. To restore the demonstration, stop the server, run `make reset`,
 then run `make demo` again. Reset removes the local notice database and its review
-history, then reseeds the owned fixtures.
+history, then restores the examples.
 
 ## Inspect exact part relationships
 
@@ -57,8 +56,7 @@ record version. Reloading the notice retains the decision.
 new value and a reason. Expand **Source evidence for this correction** to select
 a source page or replace the supporting excerpt. The excerpt must occur exactly
 once on that page; an absent or ambiguous excerpt is rejected. Dates use
-`YYYY-MM-DD`. Only make a real correction when the source and authorized reviewer
-evidence justify it.
+`YYYY-MM-DD`. Cite the source that supports your correction.
 
 ## See uncertainty remain explicit
 
@@ -91,8 +89,7 @@ Return to **AST-PDN-2026-041**, open **BOM matching**, and paste the contents of
 | `MISSING-99`, Aster Semiconductor | Unmatched identifier |
 
 **Use notice parts** fills the input with the current notice's exact identifiers
-and manufacturers. It is a convenience for examining the matching workflow, not
-an independent customer BOM or an engineering substitution assessment.
+and manufacturers so you can try matching without entering a BOM.
 
 ## Export a supported record and inspect a blocked export
 
@@ -115,8 +112,7 @@ missing page is not filled with invented data to make the schema pass.
 ## Request and review optional model proposals
 
 The **Model review** tab reuses the source pane. The default local demo has no
-model configured and explains the required setup; it does not substitute fixture
-output for live inference. Upload, deterministic extraction, manual review, and
+model configured and links to the setup instructions. Upload, deterministic extraction, manual review, and
 export remain available without a model.
 
 After configuring a provider using [MODELS.md](MODELS.md), the tab identifies its
@@ -161,9 +157,8 @@ labelled fixture-only server:
 Open `http://127.0.0.1:8878`, select **AST-PCN-2026-052**, and open **Model review**.
 The fixture returns two source-matching proposals for `AMP-230-A` and `AMP-230-B`,
 plus an invented identifier that source validation rejects. Accept the first and
-reject the second to inspect persistence, audit, and export. This is a hard-coded
-owned fixture for the review workflow, **not live model inference or a model
-quality evaluation**.
+reject the second to inspect persistence, audit and export. This server uses
+hard-coded fixture responses to exercise the review workflow.
 
 With that server running, the browser verification command is:
 
@@ -173,8 +168,7 @@ node scripts/browser-qa.mjs --model
 
 Its `reports/browser-model/result.json` separates end-to-end fixture-provider
 checks from UI-only mocked response-state checks. The latter exercise error,
-unavailable, empty, truncation, and setup messages without claiming that those
-mocked responses came from an actual model run.
+unavailable, empty, truncation and setup messages.
 
 ## Import your own authorized source
 
@@ -199,8 +193,7 @@ The API tests cover persistence, evidence validation, review correction and
 stale-write rejection, subset revisions, manufacturer-aware matching, and the
 successful/blocked export paths described above. Export tests validate the
 supported fixture against the actual XSD and reject invalid XML. The browser
-artifacts in `reports/browser/` document the inspected workspace; they do not
-establish review-time savings or real-world extraction accuracy.
+artifacts in `reports/browser/` document the inspected workspace.
 
 Browser acceptance checks make review decisions and import a synthetic notice.
 Run them against a separate, freshly seeded data directory so existing review
@@ -231,6 +224,5 @@ remain in the reports; they are not silently counted as passes. A native-dialog
 evidence contrast diagnostic also records computed contrast and visibility samples
 for inspection alongside its screenshot.
 
-These are automated rule and interaction checks with visual inspection, not a
-human screen-reader evaluation or a component-engineer usability study. They do
-not establish full WCAG conformance, extraction quality, or time saved in review.
+Human screen-reader testing and component-engineer usability studies remain
+separate from these automated checks.

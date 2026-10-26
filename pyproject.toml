@@ -5,8 +5,10 @@ build-backend = "hatchling.build"
 [project]
 name = "noticeforge"
 version = "0.1.1"
-description = "Evidence-linked, CPU-first product change notice compiler"
+description = "Review semiconductor change notices with source-linked records and BOM matching."
 readme = "README.md"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE", "NOTICE"]
 requires-python = ">=3.12,<3.14"
 dependencies = [
   "fastapi==0.143.0",

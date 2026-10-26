@@ -1,8 +1,8 @@
-# NoticeForge — Source-linked product notice review
+# NoticeForge
 
 NoticeForge extracts structured records from semiconductor product-change and discontinuance notices, then lets a reviewer check each finding against the original document.
 
-Use the local review workspace to trace each part, deadline, footnote and exception to its source, record corrections, match a BOM and export reviewed records. Deterministic rules are the default extractor; optional ML experiments measure alternatives and retain their negative results.
+The central challenge is keeping a part, its deadline and any qualifying footnote together. The local workspace puts those findings beside the source PDF or text, so you can correct them, match a BOM and export the reviewed record. Rules handle the default extraction; optional model proposals go through the same source checks and human review.
 
 [Project page](https://ah682.github.io/noticeforge/) · [Walkthrough](docs/WALKTHROUGH.md) · [Model experiments](docs/MODELS.md) · [Architecture](docs/ARCHITECTURE.md)
 
@@ -16,9 +16,9 @@ Use the local review workspace to trace each part, deadline, footnote and except
 2. Resolve ambiguous dates and exceptions, recording sourced corrections and review decisions.
 3. Match a BOM by exact part/manufacturer, then export canonical JSON or the supported smartPCN XML body.
 
-The five fictional examples run without a model, API key or GPU. Start with **AST-PDN-2026-041** for grouped deadlines and a row-specific footnote.
+Five fictional examples are included, so you can try the workflow without a model, API key or GPU.
 
-## Implementation and optional ML experiments
+## Document processing and model experiments
 
 - **Document processing:** PDF text and table-layout extraction, optional OCR, and source citations with exact text offsets and page coordinates. Typed records retain uncertain values and incomplete source coverage.
 - **Data preparation:** Owned synthetic notices, structured annotations, permission records, and audits for supplier, template, revision-family, and near-duplicate leakage across splits. Evaluation inputs and configurations are frozen before the model comparison.
@@ -31,7 +31,7 @@ The main implementation entry points are the [dataset pipeline](noticeforge/data
 
 ## Measured results
 
-The recorded comparison uses **eight synthetic development cases**. These results describe that small corpus; they do not establish accuracy on unfamiliar supplier notices.
+The recorded comparison uses **eight synthetic development cases** built around the supported parser grammar. Accuracy on unfamiliar supplier notices still needs evaluation.
 
 | Approach | Recorded result |
 | --- | --- |
@@ -109,4 +109,4 @@ The XML export is a restricted **smartPCN 3.0 body using XSD revision 3.08**, no
 - [smartPCN](docs/SMARTPCN.md) — supported mappings and export boundaries.
 - [Limitations](docs/LIMITATIONS.md) — unsupported inputs and remaining validation work.
 
-The fictional fixtures are CC0. Vendored schema material belongs to COGD and retains its [source and permission record](schemas/smartpcn/SOURCE.json). PyMuPDF has AGPL/commercial licensing terms. A project-wide license has not yet been selected.
+Original code and documentation use [AGPL-3.0-only](LICENSE). The fictional fixtures remain CC0, and the COGD schemas and dependencies retain their own terms. See [NOTICE](NOTICE) and the [schema source record](schemas/smartpcn/SOURCE.json).
