@@ -1,7 +1,33 @@
 # Verification
 
-The local release was audited on **14 October 2026**. Software behavior, extraction accuracy,
-XML validity, and usefulness to component engineers are measured separately.
+Software behavior, extraction accuracy, XML validity and usefulness to component
+engineers are measured separately.
+
+## Local maintenance checks — 26 October 2026, v0.1.1
+
+Fresh checkout; Python 3.12.3, uv 0.11.28, Node 24.16.0. A network `uv sync`
+failed DNS. Copying public package caches into this checkout then running
+`uv sync --frozen --offline` installed the locked environment. `npm ci --offline`
+likewise used copied exact-integrity public package blobs. No reference source
+or environment was changed. This is cached installation evidence, not an
+independent unaided trial or a new network-install result.
+
+| Command/check | Observed result |
+| --- | --- |
+| Standard `make verify` | **Incomplete**: stopped during the threadpool lifecycle test; runtime denies asyncio socketpair wakeup sends (`EPERM`). A dependency-free cross-thread callback probe reproduced the restriction. |
+| `make check evaluate smoke` | Ruff lint/format, mypy (19 files), JS syntax, eight-case synthetic evaluation and CPU checkpoint smoke passed. |
+| `npm run format:check` | Passed. |
+| `UV_OFFLINE=1 make distribution-check` | Built wheel/source archive; installed wheel passed five-notice seed, eight-case evaluation, CPU checkpoint, genuine XSD export and UI asset checks outside source. |
+| Wheel/source archive inspection | README and source URLs present; fixture CC0 records and original schema hashes retained; generated data/caches absent. |
+| `npm run test:pages` | Blocked before browser checks: loopback listener returns `EPERM`. Browser workflows/races were not rerun in this environment. |
+
+The ordinary full suite and browser checks remain release gates for an unrestricted
+runner; the Actions workflow already runs them. The optional real OCR engine was
+not installed here. Pretrained inference, LoRA/CUDA, remote model APIs and user
+trials were not rerun. The CPU smoke trains a tiny compatibility classifier,
+not the pretrained domain model. No new hosted run or published release is claimed.
+
+The results below are **historical 14 October evidence**, not new v0.1.1 tests.
 
 ## Reproduce the checks
 
@@ -30,7 +56,7 @@ npm run test:pages
 Use `CHROME_PATH` to select a Chrome installation. The Actions workflow installs its own
 Playwright Chromium and stores the reports with the run.
 
-## Recorded local results
+## Historical local results — 14 October 2026
 
 | Check | Result |
 | --- | --- |

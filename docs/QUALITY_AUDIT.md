@@ -1,8 +1,8 @@
-# Quality and completion audit
+# Historical quality audit — 14 October 2026
 
-Audited 2026-10-14 against the original folder prompt. The scoped CPU-first local release is
-complete after the fixes below. This is a software-release conclusion, not a claim of authentic
-supplier accuracy, useful learned extraction, public-service readiness or engineer time savings.
+This dated record describes the 14 October local repair pass. See
+[VERIFICATION.md](VERIFICATION.md) for current checks. These results do not establish
+authentic supplier accuracy, useful learned extraction or engineer time savings.
 
 ## Fixed findings
 
@@ -55,8 +55,8 @@ measured latency and memory rather than treating those figures as a general serv
 
 ## Completion boundary
 
-The original prompt permits owned synthetic data and a restricted validated smartPCN body exporter.
-All 13 mandatory acceptance cases remain mapped in [VERIFICATION.md](VERIFICATION.md). Rules still
+The local demonstration uses owned synthetic data and a restricted validated smartPCN body exporter.
+Acceptance cases are mapped in [VERIFICATION.md](VERIFICATION.md). Rules still
 recover 18/19 exact relationships and 15/16 parts on the eight developmental cases. The ragged-row
 omission is a counted failure and requires review; it was not patched to improve the frozen score.
 

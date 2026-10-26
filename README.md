@@ -1,8 +1,8 @@
-# NoticeForge — AI/ML Engineering for Document Intelligence
+# NoticeForge — Source-linked product notice review
 
 NoticeForge extracts structured records from semiconductor product-change and discontinuance notices, then lets a reviewer check each finding against the original document.
 
-The project brings together document processing, dataset validation, LLM fine-tuning, inference benchmarking, and a working review application. The central challenge is preserving the relationship between a specific part, its deadline, and the footnote or exception that changes its meaning.
+Use the local review workspace to trace each part, deadline, footnote and exception to its source, record corrections, match a BOM and export reviewed records. Deterministic rules are the default extractor; optional ML experiments measure alternatives and retain their negative results.
 
 [Project page](https://ah682.github.io/noticeforge/) · [Walkthrough](docs/WALKTHROUGH.md) · [Model experiments](docs/MODELS.md) · [Architecture](docs/ARCHITECTURE.md)
 
@@ -10,7 +10,15 @@ The project brings together document processing, dataset validation, LLM fine-tu
 
 ![NoticeForge review workspace](docs/images/review.png)
 
-## AI/ML engineering
+## Review workflow
+
+1. Open an example or upload a permitted notice. Inspect extracted parts and deadlines beside their source text/PDF regions.
+2. Resolve ambiguous dates and exceptions, recording sourced corrections and review decisions.
+3. Match a BOM by exact part/manufacturer, then export canonical JSON or the supported smartPCN XML body.
+
+The five fictional examples run without a model, API key or GPU. Start with **AST-PDN-2026-041** for grouped deadlines and a row-specific footnote.
+
+## Implementation and optional ML experiments
 
 - **Document processing:** PDF text and table-layout extraction, optional OCR, and source citations with exact text offsets and page coordinates. Typed records retain uncertain values and incomplete source coverage.
 - **Data preparation:** Owned synthetic notices, structured annotations, permission records, and audits for supplier, template, revision-family, and near-duplicate leakage across splits. Evaluation inputs and configurations are frozen before the model comparison.
@@ -93,6 +101,7 @@ The XML export is a restricted **smartPCN 3.0 body using XSD revision 3.08**, no
 
 ## Further reading
 
+- [Contributing](CONTRIBUTING.md) · [Release notes](CHANGELOG.md) · [Independent trial protocol](docs/EXTERNAL_EVALUATION.md)
 - [Verification](docs/VERIFICATION.md) — checks, results, and acceptance cases.
 - [Data](docs/DATA.md) — fixture permissions, annotations, and split rules.
 - [Models](docs/MODELS.md) — optional training, inference, and measured comparisons.
