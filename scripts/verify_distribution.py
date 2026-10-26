@@ -1,6 +1,6 @@
 """Exercise an installed wheel outside the checkout, without model downloads.
 
-Run with: uv run --isolated --no-project --with ./dist/noticeforge-0.1.0-py3-none-any.whl
+Run with: uv run --isolated --no-project --with ./dist/noticeforge-0.1.1-py3-none-any.whl
           python scripts/verify_distribution.py
 """
 

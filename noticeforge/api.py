@@ -35,7 +35,7 @@ def create_app(data_dir: Path | None = None, *, model_provider: Provider | None 
         finally:
             await run_in_threadpool(model_service.close)
 
-    app = FastAPI(title="NoticeForge local review", version="0.1.0", lifespan=lifespan)
+    app = FastAPI(title="NoticeForge local review", version="0.1.1", lifespan=lifespan)
     app.state.repo = repo
     app.state.model_service = model_service
 
@@ -87,7 +87,7 @@ def create_app(data_dir: Path | None = None, *, model_provider: Provider | None 
         return {
             "status": "ok",
             "mode": "deterministic-rules",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "ocr_available": bool(shutil.which("tesseract")),
             "automatic_external_calls": False,
             "remote_model_configured": model_service.remote,

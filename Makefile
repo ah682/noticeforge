@@ -43,4 +43,4 @@ build: setup
 	$(UV) build
 
 distribution-check: build
-	$(UV) run --isolated --no-project --with ./dist/noticeforge-0.1.0-py3-none-any.whl python scripts/verify_distribution.py
+	$(UV) run --isolated --no-project --with ./dist/noticeforge-0.1.1-py3-none-any.whl python scripts/verify_distribution.py

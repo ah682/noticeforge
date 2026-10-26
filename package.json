@@ -1,7 +1,7 @@
 {
   "name": "noticeforge-local",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Local development and browser verification commands; the app ships static JavaScript",
   "scripts": {
     "dev": "make demo",

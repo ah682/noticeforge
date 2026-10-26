@@ -184,7 +184,7 @@ class NoticeRecord(StrictModel):
     findings: list[Finding] = Field(default_factory=list)
     unsupported_fields: list[str] = Field(default_factory=list)
     mode: str = "deterministic-rules"
-    compiler_version: str = "0.1.0"
+    compiler_version: str = "0.1.1"
     created_at: str = Field(default_factory=now_iso)
     status: Literal["supported", "review_required", "incomplete", "reviewed"] = "supported"
     version: int = 1

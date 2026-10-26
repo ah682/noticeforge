@@ -4,8 +4,9 @@ build-backend = "hatchling.build"
 
 [project]
 name = "noticeforge"
-version = "0.1.0"
+version = "0.1.1"
 description = "Evidence-linked, CPU-first product change notice compiler"
+readme = "README.md"
 requires-python = ">=3.12,<3.14"
 dependencies = [
   "fastapi==0.143.0",
@@ -19,11 +20,20 @@ dependencies = [
   "numpy==2.5.4",
 ]
 
+[project.urls]
+Homepage = "https://ah682.github.io/noticeforge/"
+Repository = "https://github.com/ah682/noticeforge"
+Issues = "https://github.com/ah682/noticeforge/issues"
+Changelog = "https://github.com/ah682/noticeforge/blob/main/CHANGELOG.md"
+
 [project.scripts]
 noticeforge = "noticeforge.cli:main"
 
 [dependency-groups]
 dev = ["pytest==9.1.1", "ruff==0.17.0", "mypy==2.4.0"]
+
+[tool.hatch.build]
+include = ["noticeforge/**", "README.md", "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE*", "NOTICE*"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["noticeforge"]
@@ -36,7 +46,7 @@ packages = ["noticeforge"]
 [tool.hatch.build.targets.sdist]
 include = [
   "noticeforge/", "fixtures/", "configs/", "schemas/", "scripts/", "tests/", "docs/",
-  "README.md", "Makefile", "pyproject.toml", "uv.lock", "package.json", "package-lock.json",
+  "README.md", "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE*", "NOTICE*", "Makefile", "pyproject.toml", "uv.lock", "package.json", "package-lock.json",
   ".env.example", ".gitignore", ".gitattributes", ".prettierrc.json", ".github/", "requirements-ml.txt", "site/",
 ]
 exclude = ["docs/superpowers/"]
