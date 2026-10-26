@@ -3,7 +3,25 @@
 Software behavior, extraction accuracy, XML validity and usefulness to component
 engineers are measured separately.
 
-## Local maintenance checks — 26 October 2026, v0.1.1
+## Current hosted checks — 26 October 2026
+
+Source revision: [`e7413a11c799b86295f20e01079d9aba87d2f42b`](https://github.com/ah682/noticeforge/commit/e7413a11c799b86295f20e01079d9aba87d2f42b).
+Both [run 40291140321](https://github.com/ah682/noticeforge/actions/runs/40291140321)
+and [run 40291147862](https://github.com/ah682/noticeforge/actions/runs/40291147862)
+completed successfully. Public run/job records confirm that the ordinary
+`make verify`, frontend formatting, installed-distribution acceptance, pipeline
+benchmark, project-page layout/accessibility, application browser workflows and
+delayed-response regressions all passed. The workflow pins Ubuntu 24.04 for the
+locked Playwright version, using Python 3.12 and Node 24.
+
+The hosted runner resolves the restricted local suite/browser gap described below;
+that local failure is retained as historical environment evidence. CI success is
+software/workflow evidence at the exact revision above, not a new OCR/pretrained
+model evaluation, supplier holdout result, user trial or full WCAG certification.
+The negative model results and remaining external-evaluation limits below still
+apply. Release publication and project-wide licensing remain pending.
+
+## Historical restricted local maintenance checks — 26 October 2026, v0.1.1
 
 Fresh checkout; Python 3.12.3, uv 0.11.28, Node 24.16.0. A network `uv sync`
 failed DNS. Copying public package caches into this checkout then running
@@ -21,11 +39,12 @@ independent unaided trial or a new network-install result.
 | Wheel/source archive inspection | README and source URLs present; fixture CC0 records and original schema hashes retained; generated data/caches absent. |
 | `npm run test:pages` | Blocked before browser checks: loopback listener returns `EPERM`. Browser workflows/races were not rerun in this environment. |
 
-The ordinary full suite and browser checks remain release gates for an unrestricted
-runner; the Actions workflow already runs them. The optional real OCR engine was
-not installed here. Pretrained inference, LoRA/CUDA, remote model APIs and user
-trials were not rerun. The CPU smoke trains a tiny compatibility classifier,
-not the pretrained domain model. No new hosted run or published release is claimed.
+At that local pass, the ordinary full suite and browser checks were blocked; the
+current hosted record above now supplies their unrestricted-runner evidence. The
+optional real OCR engine was not installed locally. Pretrained inference, LoRA/CUDA,
+remote model APIs and user trials were not rerun. The CPU smoke trains a tiny
+compatibility classifier, not the pretrained domain model. These local results
+alone did not establish hosted acceptance, and no published release is claimed.
 
 The results below are **historical 14 October evidence**, not new v0.1.1 tests.
 
