@@ -283,6 +283,55 @@ def test_model_evidence_guards_literal_identifiers_and_dates():
     }
 
 
+@pytest.mark.parametrize(
+    "source_part, part, quote, valid",
+    [
+        ("ABC-00123/A", "ABC-00123", "ABC-00123/A", False),
+        ("ABC-00123/A", "123", "123", False),
+        ("ABC-00123/A", "ABC-00123", "ABC-00123", False),
+        ("ABC-00123/A", "00123/A", "00123/A", False),
+        ("µABC-00123", "ABC-00123", "ABC-00123", False),
+        ("ABC-00123/A", "ABC-00123/A", "ABC-00123/A", True),
+        ("ABC-00123/A, ABC-00123", "ABC-00123", "ABC-00123/A, ABC-00123", True),
+    ],
+)
+def test_model_identifier_boundaries_use_original_page(source_part, part, quote, valid):
+    text = f"{source_part} last buy 2027-01-31"
+    value = valid_output(text)
+    candidate = value["candidates"][0]
+    candidate["part_raw"] = part
+    candidate["evidence"] = [
+        {"page": 1, "start": text.index(span), "end": text.index(span) + len(span), "quote": span}
+        for span in (quote, "2027-01-31")
+    ]
+    accepted, rejected = validate_output(json.dumps(value), bound_pages([{"number": 1, "text": text}]))
+    assert bool(accepted) is valid
+    if not valid:
+        assert "exact_part_missing_from_evidence" in rejected[0]["reasons"]
+
+
+def test_model_identifier_at_clipped_page_end_has_no_proven_boundary():
+    text = "last buy 2027-01-31: ABC-00123/A"
+    request = bound_pages([{"number": 1, "text": text}], max_characters=len(text) - 2)
+    value = valid_output(text)
+    value["candidates"][0].update(
+        part_raw="ABC-00123",
+        evidence=[{"page": 1, "start": 0, "end": len(text) - 2, "quote": text[:-2]}],
+    )
+    accepted, rejected = validate_output(json.dumps(value), request)
+    assert not accepted
+    assert "exact_part_missing_from_evidence" in rejected[0]["reasons"]
+
+
+def test_model_evidence_cannot_extend_past_the_original_page():
+    text = "0012-A last buy 2027-01-31"
+    value = valid_output(text)
+    value["candidates"][0]["evidence"][0]["end"] += 1
+    accepted, rejected = validate_output(json.dumps(value), bound_pages([{"number": 1, "text": text}]))
+    assert not accepted
+    assert "evidence_offsets_do_not_match_input" in rejected[0]["reasons"]
+
+
 def test_truncation_is_reported_and_missing_context_evidence_rejected():
     text = "0012-A last buy 2027-01-31"
     pages = [{"number": 1, "text": text}, {"number": 2, "text": "another part"}]

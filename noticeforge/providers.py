@@ -206,6 +206,13 @@ def _normalized_literal_date(raw: str) -> str | None:
     return None
 
 
+def identifier_match(part: str, text: str, start: int, end: int) -> re.Match[str] | None:
+    """Find a whole identifier inside a citation, checking the surrounding source."""
+    pattern = re.compile(r"(?<![\w./-])" + re.escape(part) + r"(?![\w./-])")
+    match = pattern.search(text, start)
+    return match if match and match.end() <= end else None
+
+
 def validate_output(raw: str, request: BoundedInput) -> tuple[list[CandidateRelation], list[dict[str, Any]]]:
     """Validate strict structure, cited bytes/offsets, identifiers, and literal dates.
 
@@ -215,24 +222,26 @@ def validate_output(raw: str, request: BoundedInput) -> tuple[list[CandidateRela
     if len(raw.encode()) > 1024 * 1024:
         raise ValueError("model output exceeds 1 MiB")
     output = CandidateOutput.model_validate_json(raw)
-    pages = {p.number: p.text for p in request.pages}
+    pages = {p.number: p for p in request.pages}
     accepted, rejected = [], []
     for index, candidate in enumerate(output.candidates):
         reasons = []
         quotes = []
+        part_found = False
         for span in candidate.evidence:
+            page = pages.get(span.page)
             if (
-                span.page not in pages
-                or span.end <= span.start
-                or pages[span.page][span.start : span.end] != span.quote
+                page is None
+                or not 0 <= span.start < span.end <= len(page.text)
+                or page.text[span.start : span.end] != span.quote
             ):
                 reasons.append("evidence_offsets_do_not_match_input")
+            elif match := identifier_match(candidate.part_raw, page.text, span.start, span.end):
+                # A clipped page cannot prove the boundary immediately after its last character.
+                part_found |= match.end() < len(page.text) or len(page.text) == page.original_characters
             quotes.append(span.quote)
         combined = "\n".join(quotes)
-        # Token boundaries prevent '00123' or 'ABC-1A' from proving '123' or 'ABC-1'.
-        if not re.search(
-            r"(?<![A-Za-z0-9_.-])" + re.escape(candidate.part_raw) + r"(?![A-Za-z0-9_.-])", combined
-        ):
+        if not part_found:
             reasons.append("exact_part_missing_from_evidence")
         if candidate.date_text and candidate.date_text not in combined:
             reasons.append("date_text_missing_from_evidence")

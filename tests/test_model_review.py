@@ -235,6 +235,37 @@ def test_candidate_revalidation_prevents_persisted_bad_evidence_from_being_appli
     assert client.get(f"/api/notices/{record['id']}").json() == record
 
 
+def test_candidate_revalidation_rejects_a_narrow_identifier_fragment(setup):
+    client, record, _ = setup
+    run = start_and_wait(client, record)
+    candidate = run["result"]["candidates"][0]
+    candidate["part_raw"] = "01A"
+    candidate["evidence"] = [
+        {"page": 1, "start": SOURCE.index(quote), "end": SOURCE.index(quote) + len(quote), "quote": quote}
+        for quote in ("01A", "2027-03-01")
+    ]
+    with client.app.state.repo.connect() as db:
+        db.execute("UPDATE model_runs SET run_json=? WHERE id=?", (json.dumps(run), run["id"]))
+    audit = client.get(f"/api/notices/{record['id']}/audit").json()
+    assert decide(client, record, run).status_code == 422
+    assert client.get(f"/api/notices/{record['id']}").json() == record
+    assert client.get(f"/api/notices/{record['id']}/audit").json() == audit
+
+
+def test_new_part_evidence_uses_the_complete_identifier_occurrence(tmp_path):
+    quote = "Additional scoped entry: RX-02C/A is distinct; RX-02C moves on 2027-04-01."
+    source = SOURCE.replace("Additional scoped entry: RX-02C moves on 2027-04-01.", quote)
+    provider = CountingFixture([proposal("RX-02C", "2027-04-01", quote, source=source)])
+    with TestClient(create_app(tmp_path, model_provider=provider), base_url="http://127.0.0.1") as client:
+        record = client.post("/api/notices", files={"file": ("owned.txt", source.encode())}).json()
+        run = start_and_wait(client, record)
+        response = decide(client, record, run)
+        assert response.status_code == 200, response.text
+        identifier = response.json()["record"]["parts"][2]["raw_identifier"]
+        assert identifier["value"] == "RX-02C"
+        assert identifier["evidence"][0]["start"] == source.index("RX-02C moves")
+
+
 def test_invalid_output_is_visible_and_cannot_be_accepted(tmp_path):
     provider = CountingFixture([{**proposal(), "date": "2030-12-31"}])
     app = create_app(tmp_path, model_provider=provider)

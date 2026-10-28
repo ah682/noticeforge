@@ -8,7 +8,7 @@ import re
 
 from noticeforge.extraction import field, labelled, locate, parse_date
 from noticeforge.models import CriticalValue, Evidence, ModelDecisionRequest, NoticeRecord, PartRecord
-from noticeforge.providers import CandidateRelation, bound_pages, validate_output
+from noticeforge.providers import CandidateRelation, bound_pages, identifier_match, validate_output
 from noticeforge.validation import evidence_valid, validate_record
 
 
@@ -75,15 +75,13 @@ def apply_candidate(
         supplier = record.metadata.supplier.model_copy(deep=True)
         if not supplier.value or not evidence_valid(record, supplier):
             raise ValueError("A new part requires sourced supplier/manufacturer metadata first")
-        identifier_span = next(
-            ev
-            for ev in evidence
-            if re.search(
-                r"(?<![A-Za-z0-9_.-])" + re.escape(candidate.part_raw) + r"(?![A-Za-z0-9_.-])", ev.quote
-            )
-        )
-        page = next(page for page in record.document.pages if page.number == identifier_span.page)
-        identifier = field(candidate.part_raw, page, identifier_span.start)
+        for span in evidence:
+            page = next(page for page in record.document.pages if page.number == span.page)
+            if match := identifier_match(candidate.part_raw, page.text, span.start, span.end):
+                identifier = field(candidate.part_raw, page, match.start())
+                break
+        else:
+            raise ValueError("Candidate has no complete identifier in its cited source")
         identifier.review_status = "accepted"
         identifier.method = "human-review"
         identifier.reason = request.reason
