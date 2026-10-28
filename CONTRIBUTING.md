@@ -62,3 +62,5 @@ score does not establish supplier-document accuracy.
 
 Original code and documentation use [AGPL-3.0-only](LICENSE). Fixture, schema and
 dependency terms are listed in [NOTICE](NOTICE).
+
+Install ShellCheck alongside actionlint when checking workflow edits, so embedded shell commands are validated as they are on the GitHub runner.

@@ -18,7 +18,7 @@
 ## Tasks
 
 - [x] Update `.github/workflows/` action versions, permissions, cancellation and evidence retention.
-- [ ] Run existing browser workflows in CI and validate workflow syntax with actionlint.
+- [x] Run existing browser workflows in CI and validate workflow syntax with actionlint.
 - [x] Add `.github/workflows/dependencies.yml` for push/PR and weekly advisory checks; add Actions/npm update proposals in `.github/dependabot.yml` where applicable.
 - [x] Verify lock changes through the project suite and dependency audit.
-- [ ] Document reproducible contributor checks, independent review and exact hosted results.
+- [x] Document reproducible contributor checks, independent review and exact hosted results.

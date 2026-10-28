@@ -165,3 +165,11 @@ project page, and deployment setup. GitHub Pages cannot run the Python/SQLite ba
 shared service additionally needs authentication, authorization, durable storage, and deployment
 operations described in that guide. Original code and documentation are now
 licensed under [AGPL-3.0-only](../LICENSE); see [NOTICE](../NOTICE) for third-party terms.
+
+## Hosted verification — 28 October 2026
+
+Reviewed implementation and workflow revision: `2f4a6f243d1a214ab0eff66aa6521315a0ca8279`.
+[Verification](https://github.com/ah682/noticeforge/actions/runs/40670050784) and
+[dependency auditing](https://github.com/ah682/noticeforge/actions/runs/40670050595) both passed.
+The run artifacts retain the generated test/browser evidence for 14 days.
+Subsequent documentation-only commits do not change this tested implementation.
