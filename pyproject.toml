@@ -49,7 +49,7 @@ packages = ["noticeforge"]
 include = [
   "noticeforge/", "fixtures/", "configs/", "schemas/", "scripts/", "tests/", "docs/",
   "README.md", "CONTRIBUTING.md", "CHANGELOG.md", "LICENSE*", "NOTICE*", "Makefile", "pyproject.toml", "uv.lock", "package.json", "package-lock.json",
-  ".env.example", ".gitignore", ".gitattributes", ".prettierrc.json", ".github/", "requirements-ml.txt", "site/",
+  ".env.example", ".gitignore", ".gitattributes", ".prettierrc.json", ".github/", "requirements-ml.txt", "requirements-ml-cpu.lock", "site/",
 ]
 exclude = ["docs/superpowers/"]
 

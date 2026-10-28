@@ -110,3 +110,5 @@ The XML export is a restricted **smartPCN 3.0 body using XSD revision 3.08**, no
 - [Limitations](docs/LIMITATIONS.md) — unsupported inputs and remaining validation work.
 
 Original code and documentation use [AGPL-3.0-only](LICENSE). The fictional fixtures remain CC0, and the COGD schemas and dependencies retain their own terms. See [NOTICE](NOTICE) and the [schema source record](schemas/smartpcn/SOURCE.json).
+
+The [October maintenance audit](docs/QUALITY_AUDIT.md) records the latest fixes, checks and remaining validation work.

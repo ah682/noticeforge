@@ -46,21 +46,41 @@ Offsets are page-local, zero-based Unicode positions with exclusive ends. Datase
 
 The selected model is [Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct), pinned to revision `7ae557604adf67be50417f59c2c2f167def9a775` with Apache-2.0 licensing. The official model card identifies the Qwen2 architecture and requires Transformers 4.37 or newer. The 0.49B model provides the compact experiment profile. The model card and its [revision history](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/commits/main) were checked during implementation.
 
-`requirements-ml.txt` pins Torch 2.8.0, Transformers 4.56.2, PEFT 0.17.1, Accelerate 1.10.1, bitsandbytes 0.47.0, tokenizers 0.22.0, safetensors 0.6.2 and huggingface-hub 0.34.4. The implementation follows the official [Transformers 4.56.2 quantization API](https://huggingface.co/docs/transformers/v4.56.2/en/quantization/bitsandbytes), [PEFT quantization guide](https://huggingface.co/docs/peft/v0.17.0/en/developer_guides/quantization), [adapter loading API](https://huggingface.co/docs/peft/v0.17.0/en/package_reference/peft_model), and [PEFT 0.17.1 package requirements](https://github.com/huggingface/peft/blob/v0.17.1/setup.py). PEFT publishes the 0.17.0 documentation for this minor-version API.
+The current optional profile pins Torch 2.13.0, Transformers 5.21.0, PEFT 0.21.2,
+Accelerate 1.15.0, bitsandbytes 0.50.2, tokenizers 0.23.3, safetensors 0.8.0 and
+huggingface-hub 2.3.0. The complete Linux x86_64 / Python 3.12 CPU environment,
+including transitive dependencies and hashes, is in
+[`requirements-ml-cpu.lock`](../requirements-ml-cpu.lock). The default demo still
+installs no Torch or model weights.
 
-Install in a separate environment; the standard demo never installs Torch:
+Run from the source checkout in a separate environment:
 
 ```bash
 uv venv --python 3.12 .venv-ml
-# CPU-only API compatibility check (install this first to avoid CUDA dependency downloads).
-uv pip install --python .venv-ml/bin/python --index-url https://download.pytorch.org/whl/cpu torch==2.8.0
-uv pip install --python .venv-ml/bin/python -e . -r requirements-ml.txt
+uv pip sync --python .venv-ml/bin/python --torch-backend cpu --require-hashes requirements-ml-cpu.lock
+.venv-ml/bin/python -m unittest discover -s tests -p test_ml_compatibility.py -v
 .venv-ml/bin/python -m noticeforge.training compatibility --output output/ml-api-smoke
+```
+
+Use a fresh output directory for each training check. Regenerate the CPU lock
+only when intentionally updating this profile:
+
+```bash
+uv pip compile pyproject.toml requirements-ml.txt --torch-backend cpu --python-version 3.12 --python-platform x86_64-unknown-linux-gnu --generate-hashes --output-file requirements-ml-cpu.lock
 ```
 
 The compatibility command constructs random tiny Qwen2 weights locally, applies real PEFT LoRA, updates parameters, saves both safe base weights and adapter, reloads the adapter, and compares logits. It downloads no pretrained weights. It checks the CPU APIs; pretrained extraction and CUDA/QLoRA need separate experiments.
 
-The [recorded compatibility run](../reports/ml-compatibility/compatibility_report.json) used Torch `2.8.0+cpu` with the pinned stack above on Python 3.12.3. Twenty-four LoRA optimizer steps reduced the toy loss from 4.1541605 to 3.7332263, and the restored adapter produced exactly equal logits. A second probe exercised the actual `train_compact` path with a local toy tokenizer, 309-token training example, prompt-label masking, gradient checkpointing, two optimizer steps, checkpoint checksums, and the serving adapter loader. It loaded a 12,992-parameter random model. Process high-water RSS was 485,339,136 bytes. These measurements describe the tiny compatibility model. [Exact observed packages](../reports/ml-compatibility/requirements-observed.txt) are included with the report. The generated tiny base/adapter weights are excluded from Git; rerun the compatibility command to create them locally.
+The historical [recorded compatibility run](../reports/ml-compatibility/compatibility_report.json) used Torch `2.8.0+cpu` with the historical package versions recorded alongside that report on Python 3.12.3. Twenty-four LoRA optimizer steps reduced the toy loss from 4.1541605 to 3.7332263, and the restored adapter produced exactly equal logits. A second probe exercised the actual `train_compact` path with a local toy tokenizer, 309-token training example, prompt-label masking, gradient checkpointing, two optimizer steps, checkpoint checksums, and the serving adapter loader. It loaded a 12,992-parameter random model. Process high-water RSS was 485,339,136 bytes. These measurements describe the tiny compatibility model. [Exact observed packages](../reports/ml-compatibility/requirements-observed.txt) are included with the report. The generated tiny base/adapter weights are excluded from Git; rerun the compatibility command to create them locally.
+
+The [28 October compatibility record](../reports/quality/ponytail-ml-compatibility/compatibility_report.json)
+uses the refreshed CPU lock. Its real 24-step LoRA check reloads with exactly equal
+logits. The full training/serving path also completes two optimizer steps with
+finite losses and changed adapter weights. The tiny fixture now uses Qwen2's byte
+tokenizer: Transformers 5 otherwise reinterpreted its old generic tokenizer and
+dropped the prompt. The regression checks text round-trip and supervised target
+positions. These checks establish API compatibility, not extraction quality. The
+older model comparison below was not rerun or relabelled.
 
 For CUDA training, install a Torch build compatible with the machine's CUDA installation in a separate environment, obtain authorized annotated documents, and provide enough compute. `configs/compact-lora.json` requests bfloat16 CUDA LoRA; `configs/compact-qlora.json` requests NF4 CUDA QLoRA with double quantization and bfloat16 compute. Planning allocations are 8 GiB GPU / 8 GiB host for LoRA and 6 GiB GPU / 8 GiB host for QLoRA, plus 4 GiB disk. These configurable budgets are planning estimates. Actual allocated GPU memory and host high-water RSS are recorded only on execution. CPU float32 LoRA can be selected by editing `device` and `precision`; it may be slow.
 

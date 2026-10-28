@@ -1,0 +1,120 @@
+{
+  "status": "executed",
+  "purpose": "compact model adapter training; deployment requires independent relationship evaluation",
+  "model_id": "output/ponytail-ml-locked/profile-smoke/random-tiny-base",
+  "revision": "0000000000000000000000000000000000000000",
+  "license": "random weights authored locally",
+  "created_at": "2026-10-28T09:39:26.414038+00:00",
+  "config": {
+    "model_id": "output/ponytail-ml-locked/profile-smoke/random-tiny-base",
+    "revision": "0000000000000000000000000000000000000000",
+    "license": "random weights authored locally",
+    "device": "cpu",
+    "precision": "float32",
+    "local_model_path": null,
+    "cpu_threads": 4,
+    "attention_implementation": "eager",
+    "allow_download": false,
+    "seed": 17,
+    "epochs": 2,
+    "learning_rate": 0.003,
+    "batch_size": 1,
+    "gradient_accumulation_steps": 4,
+    "max_input_tokens": 2048,
+    "max_sequence_tokens": 2048,
+    "max_new_tokens": 8,
+    "max_characters": 7000,
+    "generation_max_seconds": 120.0,
+    "lora_rank": 4,
+    "lora_alpha": 8,
+    "lora_dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "gradient_checkpointing": true,
+    "adapter_path": null,
+    "resource_planning": {}
+  },
+  "training_document_ids": [
+    "train-row"
+  ],
+  "training_input_token_lengths": [
+    1892
+  ],
+  "dataset_audit": {
+    "ok": true,
+    "documents": 2,
+    "classification_counts": {
+      "synthetic": 2,
+      "real": 0
+    },
+    "issues": [],
+    "near_duplicates": [],
+    "document_hashes": {
+      "train-row": "028a17613e9e28ba63e812b290de9a94e67c1b65ffbfcad376e4c459a4e9f0d3",
+      "validation-row": "231eae42732c1855d2610c0c266007ba1a9c3138b90f3cab7febd0223991ac84"
+    },
+    "method": "max(word 5-shingle Jaccard, token sequence ratio for pages <=2000 tokens); exact normalized equality at any length",
+    "threshold": 0.8,
+    "holdouts": [
+      "family",
+      "supplier",
+      "template"
+    ],
+    "manifest_sha256": "606c112b78f296ba6350949f2b26ceb68707f522c2aa819546ab6fb7e30c3cef",
+    "purpose": "unspecified"
+  },
+  "annotations_sha256": "e8945f41f12ee3bb5b40192a53b8fca46c0b8b787deaee45babe2209bf2494ed",
+  "trainable_parameters": 512,
+  "optimizer_steps": 2,
+  "losses": [
+    5.550586700439453,
+    5.549436092376709
+  ],
+  "training_seconds": 0.09391924901865423,
+  "artifact_hashes": {
+    "README.md": "026f3f140a017746fef46b3812f6673c46b1a0c8992039de49326f736252384d",
+    "adapter_config.json": "368cffc15c47a76e7fb6e361607c2f8ee711dd328666a758034e3acdcfb8c361",
+    "adapter_model.safetensors": "da688382e28d49ce29376ee9a49eb1f9e524ad5b4a362d241dabf8aba3a45801",
+    "chat_template.jinja": "f559720ce344deeedefc43f351fbf03736e5b6a83ad3b3aabb255bed3784da69",
+    "tokenizer.json": "d359df1a6379c0480e55d6e192c0a2d79eedb3e2e3c6e9b94a543085e4fd1b71",
+    "tokenizer_config.json": "d627db9c8c5c1132d501321c2cde91d42f7d699c140761a73d8cb3736d2f9edc",
+    "training_progress.jsonl": "a6791be0ce52419cad21092c3ec0e15a6c09becdd78588c56b6deea31eb629eb",
+    "training_status.json": "b47df8ae6bb12a5c56ce8bc3cfcf3d4a9ac9c9aa1fbabf017aff999d23623807"
+  },
+  "runtime_versions": {
+    "numpy": "2.5.4",
+    "pydantic": "2.14.1",
+    "httpx": "0.28.1",
+    "torch": "2.13.0+cpu",
+    "transformers": "5.21.0",
+    "peft": "0.21.2",
+    "accelerate": "1.15.0",
+    "bitsandbytes": "0.50.2",
+    "tokenizers": "0.23.3",
+    "safetensors": "0.8.0"
+  },
+  "hardware": {
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "processor": "AMD Ryzen 7 9700X 8-Core Processor",
+    "machine": "x86_64",
+    "logical_cpu_count": 16,
+    "process_peak_rss_bytes": 605564928,
+    "process_user_cpu_seconds": 3.415825,
+    "process_system_cpu_seconds": 0.302807,
+    "memory_measurement": "process lifetime high-water RSS; includes interpreter and prior work"
+  },
+  "cuda_peak_allocated_bytes": null,
+  "training_cost": {
+    "external_spend": 0,
+    "local_compute_seconds": 0.09391924901865423,
+    "energy_cost": "not measured"
+  },
+  "final_test_used": false,
+  "initial_trainable_sha256": "ee014185b5b8e7a90b849255f8f1086c60a13b58bc6d49db36560e56422564c9",
+  "final_trainable_sha256": "4368f79f31918b979247dec2074d253ecaef8c0f6e4e42972e6c1386073a3aba",
+  "adapter_weights_changed": true,
+  "training_material": "owned synthetic only"
+}

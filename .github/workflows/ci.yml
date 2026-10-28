@@ -14,14 +14,16 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: '3.12'
-      - uses: astral-sh/setup-uv@v6
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
         with:
           version: '0.11.28'
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: '24'
           cache: npm
@@ -46,7 +48,16 @@ jobs:
           curl --fail --silent --show-error --retry 30 --retry-delay 1 --retry-connrefused http://127.0.0.1:8877/api/health
           node scripts/browser-qa.mjs --output reports/browser-ci
           node scripts/browser-qa.mjs --races --output reports/browser-races-ci
-      - uses: actions/upload-artifact@v4
+      - name: Offline model review and delayed-decision regressions
+        shell: bash
+        run: |
+          export CHROME_PATH="$(node --input-type=module -e "import { chromium } from 'playwright'; console.log(chromium.executablePath());")"
+          .venv/bin/python scripts/model_review_demo.py --data-dir "$RUNNER_TEMP/noticeforge-model-review" --port 8878 > "$RUNNER_TEMP/noticeforge-model-server.log" 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          curl --fail --silent --show-error --retry 30 --retry-delay 1 --retry-connrefused http://127.0.0.1:8878/api/health
+          node scripts/browser-model-review.mjs --base http://127.0.0.1:8878 --output reports/model-browser-ci
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
         with:
           name: cpu-verification
@@ -58,5 +69,52 @@ jobs:
             reports/browser-ci/
             reports/browser-races-ci/
             reports/pages-ci/
-            ${{ runner.temp }}/noticeforge-server.log
+            reports/model-browser-ci/
+            ${{ runner.temp }}/noticeforge-*.log
+          retention-days: 14
+
+  workflow-check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Validate GitHub workflows
+        shell: bash
+        run: |
+          curl -fsSL https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz -o "$RUNNER_TEMP/actionlint.tar.gz"
+          echo "8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8  $RUNNER_TEMP/actionlint.tar.gz" | sha256sum --check
+          tar -xzf "$RUNNER_TEMP/actionlint.tar.gz" -C "$RUNNER_TEMP" actionlint
+          "$RUNNER_TEMP/actionlint" -color
+
+  ml-compatibility:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+        with:
+          version: '0.11.28'
+      - name: Install the hashed CPU profile
+        run: |
+          uv venv --python 3.12 .venv-ml
+          uv pip sync --python .venv-ml/bin/python --torch-backend cpu --require-hashes requirements-ml-cpu.lock
+      - name: Train and reload the tiny local adapter
+        run: |
+          .venv-ml/bin/python -m unittest discover -s tests -p test_ml_compatibility.py -v
+          .venv-ml/bin/python -m noticeforge.training compatibility --output output/ml-ci
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: optional-cpu-compatibility
+          path: |
+            output/ml-ci/compatibility_report.json
+            output/ml-ci/profile-smoke/trained-adapter/checkpoint_manifest.json
+            output/ml-ci/profile-smoke/trained-adapter/training_status.json
           retention-days: 14
