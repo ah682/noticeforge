@@ -95,6 +95,28 @@ def test_reused_footnote_numbers_across_pages_do_not_cross_attach():
     assert_review_or(record, correct)
 
 
+def test_unreferenced_reused_footnote_cannot_be_silently_ignored():
+    record = compile_body(
+        "Part number | Last buy\nA1 | 2027-01-01[1]\n"
+        "[1] Last buy: 2027-02-01\f"
+        "Part number | Last buy\nB2 | 2027-03-01\n"
+        "[1] B2 Last buy: 2027-04-01\n"
+    )
+    assert record.status == "review_required"
+    finding = next(f for f in record.findings if f.code == "unlinked_footnote")
+    assert finding.evidence[0].page == 2
+    assert finding.evidence[0].quote == "[1] B2 Last buy: 2027-04-01"
+    assert deadline(record, "A1") == ["2027-02-01"]
+    assert deadline(record, "B2") == ["2027-03-01"]
+
+
+def test_unique_cross_page_footnote_is_counted_as_linked():
+    record = compile_body("Part number | Last buy\nA1 | 2027-01-01[1]\f[1] Last buy: 2027-02-01\n")
+    assert record.status == "supported"
+    assert deadline(record, "A1") == ["2027-02-01"]
+    assert not any(f.code == "unlinked_footnote" for f in record.findings)
+
+
 def test_explicit_part_scope_in_shared_row_footnote_is_not_ignored():
     record = compile_body(
         "Part number | Last buy\nA1, B2 | 2027-01-01[1]\n"

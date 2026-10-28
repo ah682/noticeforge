@@ -384,6 +384,7 @@ def extract_notice(document: Document) -> NoticeRecord:
                 continue
             marker, statement = footnote.groups()
             definitions.setdefault((page.number, marker), []).append((page, line, statement))
+    linked_definitions: set[tuple[int, str]] = set()
     for (reference_page, marker), referenced in row_footnotes.items():
         matches = definitions.get((reference_page, marker), [])
         if not matches:
@@ -400,6 +401,7 @@ def extract_notice(document: Document) -> NoticeRecord:
             )
             continue
         page, line, statement = matches[0]
+        linked_definitions.add((page.number, marker))
         # Named exceptions narrow a shared row. Unchanged/excluded parts never receive a changed date.
         mentioned = [
             p
@@ -478,7 +480,7 @@ def extract_notice(document: Document) -> NoticeRecord:
                     part.dates.remove(original)
                 part.dates.append(replacement)
     for (definition_page, marker), entries in definitions.items():
-        if not any(m == marker for _, m in row_footnotes):
+        if (definition_page, marker) not in linked_definitions:
             page, line, statement = entries[0]
             record.findings.append(
                 Finding(
