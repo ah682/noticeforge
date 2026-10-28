@@ -46,7 +46,7 @@ What this repo does: NoticeForge extracts semiconductor change notices into sour
 
 | Check | Baseline | After repairs |
 | --- | --- | --- |
-| Default Python suite | 174 passed, one optional OCR skip | 194 passed, two skips after adding the optional ML test: ML libraries and actual OCR are absent from the default environment |
+| Default Python suite | 174 passed, one optional OCR skip | 194 passed, two skips after adding the optional ML test: optional ML libraries are not installed and the opt-in real-OCR check was not enabled |
 | `make verify` | Existing acceptance command | Passed after runtime repairs: 194 passed, one OCR skip, Ruff/formatting, mypy on 19 modules, JavaScript syntax, rules evaluation and CPU smoke |
 | Rules evaluation | 18/19 relationships, 15/16 parts | Unchanged; zero unsupported assertions |
 | Actual Chrome workflows | Existing standard/review suites | 20 standard checks, 10 review/BOM races, 23 model checks, five mocked response-state checks and four new model-decision races passed |
