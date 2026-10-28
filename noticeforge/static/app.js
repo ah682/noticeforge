@@ -28,6 +28,7 @@ const state = {
 let modelPollTimer;
 let bomRequest = 0;
 let reviewRequest = 0;
+let proposalRequest = 0;
 const labels = {
   last_buy: 'Last buy',
   last_delivery: 'Last delivery',
@@ -295,8 +296,10 @@ async function loadNotice(id, suppliedRecord = null) {
   clearError('#global-error');
   ++bomRequest;
   ++reviewRequest;
+  ++proposalRequest;
   setBusy($('#bom-form button[type=submit]'), false);
   setBusy($('#review-submit'), false);
+  setBusy($('#proposal-submit'), false);
   clearError('#bom-error');
   clearError('#review-error');
   if (!state.record) {
@@ -1841,6 +1844,8 @@ async function runModelReview() {
 function openProposalDecision(run, index, action) {
   const candidate = run.result?.candidates?.[index];
   if (!candidate) return;
+  ++proposalRequest;
+  setBusy($('#proposal-submit'), false);
   state.modelDecision = { runId: run.id, index, action, candidate };
   clearError('#proposal-error');
   setText('#proposal-dialog-title', action === 'accept' ? 'Accept model proposal' : 'Reject model proposal');
@@ -1944,6 +1949,13 @@ async function submitProposalDecision(event) {
   setBusy(submit, true, 'Saving decision…');
   const decision = state.modelDecision;
   const recordId = state.record.id;
+  const workspaceRequest = state.request;
+  const token = ++proposalRequest;
+  const currentContext = () =>
+    token === proposalRequest &&
+    workspaceRequest === state.request &&
+    state.record?.id === recordId &&
+    state.modelDecision === decision;
   const body = {
     candidate_index: decision.index,
     action: decision.action,
@@ -1963,7 +1975,7 @@ async function submitProposalDecision(event) {
       `/api/notices/${encodeURIComponent(recordId)}/model-runs/${encodeURIComponent(decision.runId)}/decisions`,
       { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) },
     );
-    if (state.record?.id !== recordId) return;
+    if (!currentContext()) return;
     state.record = response.record;
     mergeModelRun(response.run);
     localStorage.setItem('noticeforge-reviewer', body.reviewer);
@@ -1972,6 +1984,7 @@ async function submitProposalDecision(event) {
     switchView('model');
     inspectModelCandidate(response.run, decision.candidate, decision.index);
     await Promise.allSettled([refreshList(), loadHistory()]);
+    if (!currentContext()) return;
     renderModelReview();
     toast(
       decision.action === 'accept'
@@ -1979,6 +1992,7 @@ async function submitProposalDecision(event) {
         : 'Proposal rejected. Your reason is saved with the run.',
     );
   } catch (error) {
+    if (!currentContext() || !$('#proposal-dialog').open) return;
     showError(
       '#proposal-error',
       error.status === 409
@@ -1993,7 +2007,7 @@ async function submitProposalDecision(event) {
         }),
       );
   } finally {
-    setBusy(submit, false);
+    if (token === proposalRequest) setBusy(submit, false);
   }
 }
 

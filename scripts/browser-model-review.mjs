@@ -24,10 +24,16 @@ const page = await browser.newPage({ viewport: { width: 1440, height: 1100 }, de
 const errors = [];
 const checks = [];
 const mockedStateChecks = [];
+const decisionRaceChecks = [];
+const expectedHttpFailures = [];
+let delayedErrorExpected = false;
 let modelRequests = 0;
 page.on('pageerror', (error) => errors.push(String(error)));
 page.on('console', (message) => {
-  if (message.type() === 'error') errors.push(message.text());
+  if (message.type() !== 'error') return;
+  if (delayedErrorExpected && /Failed to load resource.*409/.test(message.text()))
+    expectedHttpFailures.push(message.text());
+  else errors.push(message.text());
 });
 page.on('request', (request) => {
   if (request.method() === 'POST' && /\/model-runs$/.test(new URL(request.url()).pathname)) modelRequests++;
@@ -62,6 +68,43 @@ async function decide(card, action, reason) {
   await page.locator('#proposal-submit').click();
   await page.locator('#proposal-dialog').waitFor({ state: 'hidden' });
   await card.locator('.proposal-decision').waitFor({ state: 'visible' });
+}
+async function delayNextDecision(error) {
+  let started, release, completed;
+  const requested = new Promise((resolve) => {
+    started = resolve;
+  });
+  const released = new Promise((resolve) => {
+    release = resolve;
+  });
+  const done = new Promise((resolve) => {
+    completed = resolve;
+  });
+  await page.route(
+    '**/api/notices/*/model-runs/*/decisions',
+    async (route) => {
+      const response = error ? null : await route.fetch();
+      started();
+      await released;
+      const delivered = page.waitForResponse(
+        (result) => result.url() === route.request().url() && result.request().method() === 'POST',
+      );
+      if (error)
+        await route.fulfill({
+          status: 409,
+          contentType: 'application/json',
+          body: JSON.stringify({ detail: 'Deliberately delayed stale model decision' }),
+        });
+      else await route.fulfill({ response });
+      await (await delivered).finished();
+      await page.evaluate(
+        () => new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve))),
+      );
+      completed();
+    },
+    { times: 1 },
+  );
+  return { requested, release, done };
 }
 let happyId;
 let run;
@@ -236,6 +279,72 @@ try {
   );
   await page.setViewportSize({ width: 1440, height: 1100 });
 
+  for (const error of [false, true]) {
+    for (const next of ['reopen', 'reload']) {
+      await page.goto(`${base}/?notice=${happyId}`, { waitUntil: 'networkidle' });
+      await modelView();
+      const queued = page.waitForResponse(
+        (response) =>
+          response.request().method() === 'POST' && /\/model-runs$/.test(new URL(response.url()).pathname),
+      );
+      await page.locator('#run-model-review').click();
+      const raceRun = await (await queued).json();
+      const raceNode = page.locator(`.model-run[data-run-id="${raceRun.id}"]`);
+      await raceNode.locator('.proposal-card').first().waitFor({ state: 'visible' });
+      const delayed = await delayNextDecision(error);
+      await raceNode
+        .locator('.proposal-card')
+        .first()
+        .getByRole('button', { name: 'Accept', exact: true })
+        .click();
+      await page.locator('#proposal-reason').fill('Owned fixture delayed-response regression.');
+      await page.locator('#proposal-reviewer').fill('Owned fixture browser QA');
+      await page.locator('#proposal-submit').click();
+      await delayed.requested;
+      await page.keyboard.press('Escape');
+      if (next === 'reload') {
+        const loaded = page.waitForResponse(
+          (response) =>
+            response.request().method() === 'GET' &&
+            new URL(response.url()).pathname === `/api/notices/${happyId}`,
+        );
+        await switchNotice('AST-PCN-2026-052');
+        await (await loaded).finished();
+        await modelView();
+      }
+      await raceNode
+        .locator('.proposal-card')
+        .nth(1)
+        .getByRole('button', { name: 'Reject', exact: true })
+        .click();
+      await page.locator('#proposal-reason').fill('Newer unsaved decision must remain open.');
+      const context = await page.locator('#proposal-review-context').innerText();
+      const readyBeforeRelease = await page.locator('#proposal-submit').isEnabled();
+      delayedErrorExpected = error;
+      delayed.release();
+      await delayed.done;
+      delayedErrorExpected = false;
+      decisionRaceChecks.push({
+        name: `Late model ${error ? 'error' : 'success'} after ${next} preserves the new decision`,
+        passed:
+          readyBeforeRelease &&
+          (await page.locator('#proposal-dialog').isVisible()) &&
+          (await page.locator('#proposal-submit').isEnabled()) &&
+          !(await page.locator('#proposal-error').isVisible()) &&
+          (await page.locator('#proposal-review-context').innerText()) === context &&
+          (await page.locator('#proposal-reason').inputValue()) ===
+            'Newer unsaved decision must remain open.',
+      });
+      await page.keyboard.press('Escape');
+    }
+  }
+  await writeFile(path.join(output, 'decision-races.json'), JSON.stringify(decisionRaceChecks, null, 2));
+  check(
+    'Late model responses preserve newer decision dialogs',
+    decisionRaceChecks.every((result) => result.passed),
+  );
+  const requestsBeforeStateChecks = modelRequests;
+
   // The following UI-only response-contract checks mock transport states; they are
   // kept separate from the real fixture-provider persistence checks above.
   const actualRuns = await (await page.request.get(`${base}/api/notices/${happyId}/model-runs`)).json();
@@ -333,7 +442,10 @@ try {
     true,
   );
   await page.unroute('**/api/model');
-  check('UI state inspections do not trigger additional generation', modelRequests === 1);
+  check(
+    'UI state inspections do not trigger additional generation',
+    modelRequests === requestsBeforeStateChecks,
+  );
   await writeFile(
     path.join(output, 'result.json'),
     JSON.stringify(
@@ -343,6 +455,8 @@ try {
         purpose: 'Owned offline fixture workflow verification; not live model performance',
         checks,
         mockedStateChecks,
+        decisionRaceChecks,
+        expectedHttpFailures,
         run_id: run.id,
         desktop,
         mobile,
@@ -352,13 +466,28 @@ try {
       2,
     ),
   );
-  console.log(JSON.stringify({ base, checks, mockedStateChecks, desktop, mobile, errors }));
+  console.log(
+    JSON.stringify({
+      base,
+      checks,
+      mockedStateChecks,
+      decisionRaceChecks,
+      expectedHttpFailures,
+      desktop,
+      mobile,
+      errors,
+    }),
+  );
   if (errors.length) process.exitCode = 1;
 } catch (error) {
   await page.screenshot({ path: path.join(output, 'failure.png'), fullPage: true }).catch(() => {});
   await writeFile(
     path.join(output, 'failure.json'),
-    JSON.stringify({ base, checks, mockedStateChecks, error: String(error), errors }, null, 2),
+    JSON.stringify(
+      { base, checks, mockedStateChecks, decisionRaceChecks, error: String(error), errors },
+      null,
+      2,
+    ),
   );
   throw error;
 } finally {
