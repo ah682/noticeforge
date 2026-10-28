@@ -310,17 +310,20 @@ def test_model_identifier_boundaries_use_original_page(source_part, part, quote,
         assert "exact_part_missing_from_evidence" in rejected[0]["reasons"]
 
 
-def test_model_identifier_at_clipped_page_end_has_no_proven_boundary():
-    text = "last buy 2027-01-31: ABC-00123/A"
-    request = bound_pages([{"number": 1, "text": text}], max_characters=len(text) - 2)
+@pytest.mark.parametrize("truncated", [False, True])
+def test_model_identifier_at_page_end_requires_complete_context(truncated):
+    retained = "last buy 2027-01-31: ABC-00123"
+    text = retained + ("/A" if truncated else "")
+    request = bound_pages([{"number": 1, "text": text}], max_characters=len(retained))
     value = valid_output(text)
     value["candidates"][0].update(
         part_raw="ABC-00123",
-        evidence=[{"page": 1, "start": 0, "end": len(text) - 2, "quote": text[:-2]}],
+        evidence=[{"page": 1, "start": 0, "end": len(retained), "quote": retained}],
     )
     accepted, rejected = validate_output(json.dumps(value), request)
-    assert not accepted
-    assert "exact_part_missing_from_evidence" in rejected[0]["reasons"]
+    assert bool(accepted) is not truncated
+    if truncated:
+        assert "exact_part_missing_from_evidence" in rejected[0]["reasons"]
 
 
 def test_model_evidence_cannot_extend_past_the_original_page():
