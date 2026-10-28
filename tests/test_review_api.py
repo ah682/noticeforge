@@ -81,6 +81,30 @@ def test_review_rejects_arbitrary_schema_change_and_bad_evidence(client):
     assert client.post(url, json=payload).status_code == 422
 
 
+@pytest.mark.parametrize(
+    "reviewer, reason",
+    [(" \t", "Checked source"), ("Engineer", "   "), ("Engineer", " a ")],
+)
+def test_review_requires_meaningful_attribution_without_changing_history(client, reviewer, reason):
+    record = named(client, "aster-site-transfer")
+    url = f"/api/notices/{record['id']}"
+    audit = client.get(f"{url}/audit").json()
+    response = client.post(
+        f"{url}/reviews",
+        json={
+            "field_path": "parts.0.raw_identifier",
+            "action": "accept",
+            "reviewer": reviewer,
+            "reason": reason,
+            "expected_version": record["version"],
+        },
+    )
+    assert response.status_code == 422
+    assert "meaningful decision reason" in response.json()["detail"]
+    assert client.get(url).json() == record
+    assert client.get(f"{url}/audit").json() == audit
+
+
 def test_subset_revision_never_overwrites_other_parts(client):
     old = named(client, "aster-discontinuation")
     history = client.get(f"/api/notices/{old['id']}/history").json()

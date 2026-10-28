@@ -201,6 +201,12 @@ class ReviewRequest(StrictModel):
     expected_version: int = Field(ge=1)
     evidence: Evidence | None = None
 
+    @model_validator(mode="after")
+    def meaningful_attribution(self):
+        if len(self.reason.strip()) < 3 or not self.reviewer.strip():
+            raise ValueError("Provide a reviewer and a meaningful decision reason")
+        return self
+
 
 class ModelRunRequest(StrictModel):
     expected_version: int = Field(ge=1)
