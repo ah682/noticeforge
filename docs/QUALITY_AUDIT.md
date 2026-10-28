@@ -1,6 +1,6 @@
 What this repo does: NoticeForge extracts semiconductor change notices into source-linked records, keeps local review history, matches parts to a BOM, and exports JSON or a restricted smartPCN body. Optional model proposals remain separate until a reviewer accepts them. This audit assumes the documented single-process, single-reviewer local application.
 
-**Audit date:** 28 October 2026. **Method:** Ponytail 5.3.2 and relevant Superpowers 7.0.1 skills. The audit followed input, evidence, review, persistence and browser-response boundaries, reproduced concrete failures, and checked small repairs with failing-then-passing regressions. Final integration review and hosted execution of the revised workflows are pending. The earlier audit is retained below as a dated record.
+**Audit date:** 28 October 2026. **Method:** Ponytail 5.3.2 and relevant Superpowers 7.0.1 skills. The audit followed input, evidence, review, persistence and browser-response boundaries, reproduced concrete failures, and checked small repairs with failing-then-passing regressions. Final integration review and hosted execution passed for the revision recorded below. The earlier audit is retained below as a dated record.
 
 ## Must fix — resolved
 
@@ -87,7 +87,7 @@ The browser scripts need Chrome/Chromium; set `CHROME_PATH` when necessary. Stop
 
 Default dependency repairs update Pillow to 13.0.0 and certifi to 2026.10.19. The optional CPU profile now has a hashed lock and a separate compatibility check. The [full optional dependency audit](../reports/quality/ponytail-ml-compatibility/dependency-audit.json) checked 54 packages and skipped the non-PyPI `torch` CPU build; the [direct public-release audit](../reports/quality/ponytail-ml-compatibility/direct-dependency-audit.json) checked all eight direct pins, including public Torch 2.13.0. Both reported zero known vulnerabilities in the checked packages. The default audit likewise skips the local NoticeForge package, which is covered by code tests. These are advisory checks at the recorded date, not a guarantee about undiscovered vulnerabilities.
 
-Verification jobs now use pinned action commits, read-only repository permissions, time limits, cancellation of superseded runs, browser checks and actionlint. [Dependency audits](../.github/workflows/dependencies.yml) run on pushes, pull requests and weekly schedules; [Dependabot](../.github/dependabot.yml) proposes action and npm updates. Hosted results for the revised workflows are pending.
+Verification jobs now use pinned action commits, read-only repository permissions, time limits, cancellation of superseded runs, browser checks and actionlint. [Dependency audits](../.github/workflows/dependencies.yml) run on pushes, pull requests and weekly schedules; [Dependabot](../.github/dependabot.yml) proposes action and npm updates. Hosted verification and dependency checks passed for the revision recorded below.
 
 Verdict: The five reproduced runtime defects and the optional tokenizer compatibility defect are fixed. Source-linked review, explicit uncertainty and the local deployment scope remain intact. The new compatibility result establishes CPU API behavior only; the historical pretrained comparison still recovered 0/19 evidence-valid relationships in all seven profiles.
 
