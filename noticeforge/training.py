@@ -404,35 +404,25 @@ def run_ml_compatibility(out_dir: Path) -> dict[str, Any]:
 
 def _full_profile_compatibility_smoke(folder: Path) -> dict[str, Any]:
     """Exercise the actual train_compact and serving load paths with tiny local assets."""
-    from tokenizers import Tokenizer
-    from tokenizers.models import WordLevel
-    from tokenizers.pre_tokenizers import Whitespace
-    from transformers import AutoModelForCausalLM, PreTrainedTokenizerFast, Qwen2Config
+    from tokenizers.pre_tokenizers import ByteLevel
+    from transformers import AutoModelForCausalLM, Qwen2Config, Qwen2Tokenizer
 
     from .providers import TransformersProvider
 
     folder.mkdir(parents=True)
     base_path = (folder / "random-tiny-base").resolve()
+    # AutoTokenizer reloads Qwen2 as byte BPE; its fixture must use the same tokenizer family.
     vocabulary = {
-        "[UNK]": 0,
-        "[PAD]": 1,
-        "[EOS]": 2,
-        "system": 3,
-        "user": 4,
-        "assistant": 5,
-        "candidates": 6,
-        "last_buy": 7,
+        token: index for index, token in enumerate(["[PAD]", "[EOS]", *sorted(ByteLevel.alphabet())])
     }
-    token_model = Tokenizer(WordLevel(vocabulary, unk_token="[UNK]"))
-    token_model.pre_tokenizer = Whitespace()
-    tokenizer = PreTrainedTokenizerFast(
-        tokenizer_object=token_model, unk_token="[UNK]", pad_token="[PAD]", eos_token="[EOS]"
+    tokenizer = Qwen2Tokenizer(
+        vocab=vocabulary, merges=[], unk_token="[EOS]", pad_token="[PAD]", eos_token="[EOS]"
     )
     tokenizer.chat_template = "{% for message in messages %}{{ message['role'] + '\\n' + message['content'] + '\\n' }}{% endfor %}{% if add_generation_prompt %}{{ 'assistant\\n' }}{% endif %}"
     tokenizer.save_pretrained(base_path)
     base = AutoModelForCausalLM.from_config(
         Qwen2Config(
-            vocab_size=64,
+            vocab_size=len(tokenizer),
             hidden_size=32,
             intermediate_size=64,
             num_hidden_layers=1,
@@ -440,8 +430,9 @@ def _full_profile_compatibility_smoke(folder: Path) -> dict[str, Any]:
             num_key_value_heads=2,
             max_position_embeddings=2048,
             tie_word_embeddings=True,
-            bos_token_id=1,
-            eos_token_id=2,
+            bos_token_id=tokenizer.bos_token_id,
+            eos_token_id=tokenizer.eos_token_id,
+            pad_token_id=tokenizer.pad_token_id,
         ),
         attn_implementation="eager",
     )
@@ -509,7 +500,7 @@ def _full_profile_compatibility_smoke(folder: Path) -> dict[str, Any]:
         precision="float32",
         epochs=2,
         learning_rate=0.003,
-        max_input_tokens=1600,
+        max_input_tokens=2048,
         max_sequence_tokens=2048,
         max_new_tokens=8,
         lora_rank=4,
