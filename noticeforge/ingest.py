@@ -241,8 +241,15 @@ def extract_document(data: bytes, filename: str, expected_pages: int | None = No
     numbers = []
     for page in pages:
         for match in re.finditer(r"\bPage\s+(\d+)\s*(?:of|/)\s*(\d+)\b", page.text, re.I):
-            numbers.append(int(match[1]))
-            advertised.append(int(match[2]))
+            try:
+                number, total = int(match[1]), int(match[2])
+                if not 1 <= number <= total <= 10000:
+                    raise ValueError()
+            except ValueError:
+                warnings.append("Printed page count is invalid or exceeds 10000; verify the original notice")
+                continue
+            numbers.append(number)
+            advertised.append(total)
     expected = expected_pages or (max(advertised) if advertised else actual_count)
     if expected != actual_count:
         warnings.append(f"Expected {expected} pages but received {actual_count}; notice may be incomplete")

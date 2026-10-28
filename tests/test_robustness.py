@@ -5,6 +5,10 @@ refused or sent for review; the invariant is that omissions and wrong critical
 relationships must not be returned as a complete, supported extraction.
 """
 
+import json
+import subprocess
+import sys
+
 import pymupdf
 import pytest
 
@@ -210,6 +214,29 @@ def test_common_compact_page_fraction_detects_missing_pages():
     record = compile_body("Part number | Last buy\nA1 | 2027-01-01\nPage 1/3\n")
     assert not record.document.complete
     assert record.status == "incomplete"
+
+
+@pytest.mark.skipif(sys.platform == "win32", reason="The memory-limit probe uses POSIX resource limits")
+@pytest.mark.parametrize("total", ["1000000000", "9" * 5000, "0"], ids=["huge", "long_digits", "zero"])
+def test_invalid_printed_page_counts_are_bounded_coverage_warnings(total):
+    probe = """
+import json, resource, sys
+from noticeforge.ingest import extract_document
+resource.setrlimit(resource.RLIMIT_AS, (256 * 1024 * 1024, 256 * 1024 * 1024))
+document = extract_document(sys.stdin.buffer.read(), "owned-page-count.txt")
+print(json.dumps({"complete": document.complete, "warnings": document.warnings}))
+"""
+    result = subprocess.run(
+        [sys.executable, "-c", probe],
+        input=f"Page 1 of {total}",
+        text=True,
+        capture_output=True,
+        timeout=10,
+    )
+    assert result.returncode == 0, result.stderr
+    document = json.loads(result.stdout)
+    assert not document["complete"]
+    assert any("Printed page count" in warning for warning in document["warnings"])
 
 
 def test_mixed_pdf_text_and_raster_table_cannot_be_reported_complete_without_inspection(monkeypatch):
