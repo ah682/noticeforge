@@ -14,7 +14,7 @@
     "test:pages": "node scripts/browser-qa.mjs --pages"
   },
   "devDependencies": {
-    "axe-core": "4.14.0",
+    "axe-core": "4.14.1",
     "playwright": "1.58.2",
     "prettier": "3.9.10"
   }
